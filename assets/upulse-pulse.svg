@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470">
+<rect width="1000" height="470" fill="#ffffff"/>
+<defs><radialGradient id="heat" cx="50%" cy="0%" r="100%"><stop offset="0%" stop-color="#ff7a3d" stop-opacity="0.75"/><stop offset="100%" stop-color="#ffb04a" stop-opacity="0.15"/></radialGradient></defs>
+<rect x="20" y="20" width="460" height="430" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="250.0" y="58" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="20" font-weight="700" fill="#1a1a1a">짧고 강하게 · 울트라펄스</text>
+<line x1="80" y1="200" x2="440" y2="200" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="80" y1="82" x2="80" y2="200" stroke="#1a1a1a" stroke-width="1.5"/>
+<text x="70" y="96" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#555555">출력</text>
+<text x="440" y="220" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#555555">시간</text>
+<rect x="130" y="90" width="14" height="110" fill="#1a1a1a"/>
+<rect x="240" y="90" width="14" height="110" fill="#1a1a1a"/>
+<rect x="350" y="90" width="14" height="110" fill="#1a1a1a"/>
+<defs><clipPath id="p20"><rect x="60" y="250" width="380" height="130"/></clipPath></defs>
+<g clip-path="url(#p20)">
+<rect x="60" y="250" width="380" height="34" fill="#f7e6da"/>
+<line x1="60" y1="257" x2="71" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="78" y1="257" x2="89" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="96" y1="257" x2="107" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="114" y1="257" x2="125" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="132" y1="257" x2="143" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="150" y1="257" x2="161" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="168" y1="257" x2="179" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="186" y1="257" x2="197" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="204" y1="257" x2="215" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="222" y1="257" x2="233" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="240" y1="257" x2="251" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="258" y1="257" x2="269" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="276" y1="257" x2="287" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="294" y1="257" x2="305" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="312" y1="257" x2="323" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="330" y1="257" x2="341" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="348" y1="257" x2="359" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="366" y1="257" x2="377" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="384" y1="257" x2="395" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="402" y1="257" x2="413" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="420" y1="257" x2="431" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="438" y1="257" x2="449" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<rect x="60" y="284" width="380" height="96" fill="#f5d6d4"/>
+<path d="M60 306 Q85 298 110 306 Q135 314 160 306 Q185 298 210 306 Q235 314 260 306 Q285 298 310 306 Q335 314 360 306 Q385 298 410 306 Q435 314 460 306" fill="none" stroke="#e0a5a1" stroke-width="3" stroke-linecap="round"/>
+<path d="M60 332 Q85 324 110 332 Q135 340 160 332 Q185 324 210 332 Q235 340 260 332 Q285 324 310 332 Q335 340 360 332 Q385 324 410 332 Q435 340 460 332" fill="none" stroke="#e0a5a1" stroke-width="3" stroke-linecap="round"/>
+<path d="M60 358 Q85 350 110 358 Q135 366 160 358 Q185 350 210 358 Q235 366 260 358 Q285 350 310 358 Q335 366 360 358 Q385 350 410 358 Q435 366 460 358" fill="none" stroke="#e0a5a1" stroke-width="3" stroke-linecap="round"/>
+</g>
+<line x1="60" y1="284" x2="440" y2="284" stroke="#d9b6a0" stroke-width="1.5" stroke-dasharray="4 4"/>
+<path d="M190.0 250 Q250.0 346 310.0 250 Z" fill="url(#heat)"/>
+<path d="M216.0 250 Q250.0 312 284.0 250 Z" fill="#ffffff" stroke="#8a6450" stroke-width="2"/>
+<rect x="60" y="250" width="380" height="130" fill="none" stroke="#cfcfcf" stroke-width="1.5"/>
+<text x="250.0" y="240" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#8a6a5a">병변을 제거한 자리</text>
+<text x="250.0" y="410" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" font-weight="400" fill="#444444">순간 출력이 높고 조사 시간이 짧아</text>
+<text x="250.0" y="432" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" font-weight="700" fill="#1a1a1a">주변으로 번지는 열이 적습니다</text>
+<rect x="520" y="20" width="460" height="430" fill="#ffffff" stroke="#cfcfcf" stroke-width="1.5"/>
+<text x="750.0" y="58" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="20" font-weight="700" fill="#555555">길고 약하게</text>
+<line x1="580" y1="200" x2="940" y2="200" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="580" y1="82" x2="580" y2="200" stroke="#1a1a1a" stroke-width="1.5"/>
+<text x="570" y="96" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#555555">출력</text>
+<text x="940" y="220" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#555555">시간</text>
+<rect x="600" y="166" width="320" height="34" fill="#9a9a9a"/>
+<defs><clipPath id="p520"><rect x="560" y="250" width="380" height="130"/></clipPath></defs>
+<g clip-path="url(#p520)">
+<rect x="560" y="250" width="380" height="34" fill="#f7e6da"/>
+<line x1="560" y1="257" x2="571" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="578" y1="257" x2="589" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="596" y1="257" x2="607" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="614" y1="257" x2="625" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="632" y1="257" x2="643" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="650" y1="257" x2="661" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="668" y1="257" x2="679" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="686" y1="257" x2="697" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="704" y1="257" x2="715" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="722" y1="257" x2="733" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="740" y1="257" x2="751" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="758" y1="257" x2="769" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="776" y1="257" x2="787" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="794" y1="257" x2="805" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="812" y1="257" x2="823" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="830" y1="257" x2="841" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="848" y1="257" x2="859" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="866" y1="257" x2="877" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="884" y1="257" x2="895" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="902" y1="257" x2="913" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="920" y1="257" x2="931" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="938" y1="257" x2="949" y2="257" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<rect x="560" y="284" width="380" height="96" fill="#f5d6d4"/>
+<path d="M560 306 Q585 298 610 306 Q635 314 660 306 Q685 298 710 306 Q735 314 760 306 Q785 298 810 306 Q835 314 860 306 Q885 298 910 306 Q935 314 960 306" fill="none" stroke="#e0a5a1" stroke-width="3" stroke-linecap="round"/>
+<path d="M560 332 Q585 324 610 332 Q635 340 660 332 Q685 324 710 332 Q735 340 760 332 Q785 324 810 332 Q835 340 860 332 Q885 324 910 332 Q935 340 960 332" fill="none" stroke="#e0a5a1" stroke-width="3" stroke-linecap="round"/>
+<path d="M560 358 Q585 350 610 358 Q635 366 660 358 Q685 350 710 358 Q735 366 760 358 Q785 350 810 358 Q835 366 860 358 Q885 350 910 358 Q935 366 960 358" fill="none" stroke="#e0a5a1" stroke-width="3" stroke-linecap="round"/>
+</g>
+<line x1="560" y1="284" x2="940" y2="284" stroke="#d9b6a0" stroke-width="1.5" stroke-dasharray="4 4"/>
+<path d="M646.0 250 Q750.0 414 854.0 250 Z" fill="url(#heat)"/>
+<path d="M716.0 250 Q750.0 312 784.0 250 Z" fill="#ffffff" stroke="#8a6450" stroke-width="2"/>
+<rect x="560" y="250" width="380" height="130" fill="none" stroke="#cfcfcf" stroke-width="1.5"/>
+<text x="750.0" y="240" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#8a6a5a">병변을 제거한 자리</text>
+<text x="750.0" y="410" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" font-weight="400" fill="#444444">출력이 낮고 조사 시간이 길면</text>
+<text x="750.0" y="432" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" font-weight="400" fill="#444444">주변으로 열이 더 넓게 번집니다</text>
+</svg>

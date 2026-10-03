@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640">
+<rect width="1000" height="640" fill="#ffffff"/>
+<defs><radialGradient id="heat" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ff7a3d" stop-opacity="0.85"/><stop offset="100%" stop-color="#ffb04a" stop-opacity="0"/></radialGradient><radialGradient id="infl" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#e2463a" stop-opacity="0.55"/><stop offset="100%" stop-color="#e2463a" stop-opacity="0"/></radialGradient><marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1a1a1a"/></marker></defs>
+<path d="M466 330 L460 460 L458 585" fill="none" stroke="#c9a48e" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/><path d="M466 330 L460 460 L458 585" fill="none" stroke="#f3e1d4" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M534 330 L540 460 L542 585" fill="none" stroke="#c9a48e" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/><path d="M534 330 L540 460 L542 585" fill="none" stroke="#f3e1d4" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M422 168 L400 262 L388 352" fill="none" stroke="#c9a48e" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/><path d="M422 168 L400 262 L388 352" fill="none" stroke="#f3e1d4" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M578 168 L600 262 L612 352" fill="none" stroke="#c9a48e" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/><path d="M578 168 L600 262 L612 352" fill="none" stroke="#f3e1d4" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M418 160 Q414 150 440 146 L560 146 Q586 150 582 160 L570 250 L566 340 L434 340 L430 250 Z" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<rect x="484" y="112" width="32" height="40" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<circle cx="500" cy="78" r="42" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<circle cx="500" cy="66" r="16" fill="#e2463a" opacity="0.28"/><circle cx="500" cy="66" r="6" fill="#e2463a"/>
+<circle cx="500" cy="136" r="16" fill="#e2463a" opacity="0.28"/><circle cx="500" cy="136" r="6" fill="#e2463a"/>
+<circle cx="566" cy="160" r="16" fill="#e2463a" opacity="0.28"/><circle cx="566" cy="160" r="6" fill="#e2463a"/>
+<circle cx="522" cy="200" r="16" fill="#e2463a" opacity="0.28"/><circle cx="522" cy="200" r="6" fill="#e2463a"/>
+<circle cx="490" cy="262" r="16" fill="#e2463a" opacity="0.28"/><circle cx="490" cy="262" r="6" fill="#e2463a"/>
+<circle cx="500" cy="318" r="16" fill="#e2463a" opacity="0.28"/><circle cx="500" cy="318" r="6" fill="#e2463a"/>
+<circle cx="388" cy="350" r="16" fill="#e2463a" opacity="0.28"/><circle cx="388" cy="350" r="6" fill="#e2463a"/>
+<circle cx="460" cy="460" r="16" fill="#e2463a" opacity="0.28"/><circle cx="460" cy="460" r="6" fill="#e2463a"/>
+<circle cx="542" cy="582" r="16" fill="#e2463a" opacity="0.28"/><circle cx="542" cy="582" r="6" fill="#e2463a"/>
+<path d="M492 66 L330 70 L300 70" fill="none" stroke="#1a1a1a" stroke-width="1.3"/>
+<text x="290" y="68" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="17" font-weight="700" fill="#1a1a1a">머리</text>
+<text x="290" y="90" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">두통 · 어지럼 · 귀울림</text>
+<path d="M492 136 L330 150 L300 150" fill="none" stroke="#1a1a1a" stroke-width="1.3"/>
+<text x="290" y="148" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="17" font-weight="700" fill="#1a1a1a">목</text>
+<text x="290" y="170" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">통증 · 뻐근함 · 잘 안 돌아감</text>
+<path d="M482 262 L330 262 L300 262" fill="none" stroke="#1a1a1a" stroke-width="1.3"/>
+<text x="290" y="260" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="17" font-weight="700" fill="#1a1a1a">속</text>
+<text x="290" y="282" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">메스꺼움 · 소화불량</text>
+<path d="M380 350 L330 352 L300 352" fill="none" stroke="#1a1a1a" stroke-width="1.3"/>
+<text x="290" y="350" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="17" font-weight="700" fill="#1a1a1a">손목 · 팔</text>
+<text x="290" y="372" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">운전대를 잡고 버틴 충격</text>
+<path d="M452 460 L330 462 L300 462" fill="none" stroke="#1a1a1a" stroke-width="1.3"/>
+<text x="290" y="460" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="17" font-weight="700" fill="#1a1a1a">무릎</text>
+<text x="290" y="482" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">부딪히거나 버틴 충격</text>
+<path d="M574 160 L670 150 L700 150" fill="none" stroke="#1a1a1a" stroke-width="1.3"/>
+<text x="710" y="148" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="17" font-weight="700" fill="#1a1a1a">어깨 · 등</text>
+<text x="710" y="170" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">결림 · 담 결린 느낌</text>
+<path d="M530 200 L670 212 L700 212" fill="none" stroke="#1a1a1a" stroke-width="1.3"/>
+<text x="710" y="210" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="17" font-weight="700" fill="#1a1a1a">가슴</text>
+<text x="710" y="232" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">두근거림 · 답답함</text>
+<path d="M508 318 L670 318 L700 318" fill="none" stroke="#1a1a1a" stroke-width="1.3"/>
+<text x="710" y="316" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="17" font-weight="700" fill="#1a1a1a">허리</text>
+<text x="710" y="338" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">통증 · 앉고 일어날 때 불편</text>
+<path d="M550 582 L670 560 L700 560" fill="none" stroke="#1a1a1a" stroke-width="1.3"/>
+<text x="710" y="558" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="17" font-weight="700" fill="#1a1a1a">발목</text>
+<text x="710" y="580" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">브레이크를 밟고 버틴 충격</text>
+<rect x="220" y="604" width="560" height="30" fill="#f2f2f2"/>
+<text x="500" y="625" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="500" fill="#1a1a1a">심리상태 · 수면: 놀람, 불안, 잠들기 어려움, 운전이 두려움</text>
+</svg>

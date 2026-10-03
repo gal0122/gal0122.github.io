@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="500" viewBox="0 0 1100 500">
+<rect width="1100" height="500" fill="#ffffff"/>
+<defs><radialGradient id="heat" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ff7a3d" stop-opacity="0.85"/><stop offset="100%" stop-color="#ffb04a" stop-opacity="0"/></radialGradient><radialGradient id="infl" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#e2463a" stop-opacity="0.55"/><stop offset="100%" stop-color="#e2463a" stop-opacity="0"/></radialGradient><marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1a1a1a"/></marker></defs>
+<rect x="15" y="20" width="520" height="410" fill="#fbfbfb"/>
+<path d="M151.0 150 Q135.0 250 171.0 318 L379.0 318 Q415.0 250 399.0 150" fill="none" stroke="#9a9a9a" stroke-width="1.6" stroke-dasharray="6 5"/>
+<rect x="345.0" y="298" width="22" height="110" rx="9" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/>
+<path d="M173.0 252 Q167.0 274 195.0 292 Q225.0 304 231.0 336 L233.0 410 L317.0 410 L319.0 336 Q325.0 304 355.0 292 Q383.0 274 377.0 252 Q275.0 240 173.0 252 Z" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/>
+<path d="M229.0 40 L229.0 128 Q223.0 158 179.0 178 Q161.0 200 179.0 216 Q215.0 232 263.0 218 Q275.0 212 287.0 218 Q335.0 232 371.0 216 Q389.0 200 371.0 178 Q327.0 158 321.0 128 L321.0 40 Z" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/>
+<path d="M171.0 208 Q211.0 236 263.0 222 Q275.0 218 287.0 222 Q339.0 236 379.0 208" fill="none" stroke="#9cc3e3" stroke-width="8" stroke-linecap="round"/>
+<path d="M177.0 249 Q275.0 237 373.0 249" fill="none" stroke="#9cc3e3" stroke-width="8" stroke-linecap="round"/>
+<path d="M167.0 236 L219.0 242 L167.0 250 Z" fill="#7fa7c9"/>
+<path d="M383.0 236 L331.0 242 L383.0 250 Z" fill="#7fa7c9"/>
+<path d="M175.0 172 L179.0 298" stroke="#e8b46a" stroke-width="9" stroke-linecap="round"/>
+<path d="M375.0 172 L357.0 304" stroke="#e8b46a" stroke-width="9" stroke-linecap="round"/>
+<path d="M245.0 90 L115.0 70" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="245.0" cy="90" r="3" fill="#1a1a1a"/>
+<text x="109.0" y="74" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#8a6a5a">넙다리뼈</text>
+<path d="M215.0 228 L115.0 150" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="215.0" cy="228" r="3" fill="#1a1a1a"/>
+<text x="109.0" y="154" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#8a6a5a">연골</text>
+<path d="M185.0 243 L115.0 236" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="185.0" cy="243" r="3" fill="#1a1a1a"/>
+<text x="109.0" y="240" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#8a6a5a">반월상연골판</text>
+<path d="M255.0 360 L115.0 370" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="255.0" cy="360" r="3" fill="#1a1a1a"/>
+<text x="109.0" y="374" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#8a6a5a">정강이뼈</text>
+<path d="M374.0 200 L435.0 150" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="374.0" cy="200" r="3" fill="#1a1a1a"/>
+<text x="441.0" y="154" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#8a6a5a">인대</text>
+<path d="M403.0 260 L435.0 236" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="403.0" cy="260" r="3" fill="#1a1a1a"/>
+<text x="441.0" y="240" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#8a6a5a">관절낭</text>
+<path d="M356.0 370 L435.0 370" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="356.0" cy="370" r="3" fill="#1a1a1a"/>
+<text x="441.0" y="374" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#8a6a5a">종아리뼈</text>
+<rect x="15" y="20" width="520" height="410" fill="none" stroke="#cfcfcf" stroke-width="1.5"/>
+<text x="275.0" y="462" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="19" font-weight="700" fill="#1a1a1a">건강한 무릎</text>
+<text x="275.0" y="488" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">연골이 뼈끝을 감싸고 반월상연골판이 충격을 나눠 받습니다</text>
+<rect x="565" y="20" width="520" height="410" fill="#fbfbfb"/>
+<path d="M701.0 150 Q685.0 250 721.0 318 L929.0 318 Q965.0 250 949.0 150" fill="none" stroke="#9a9a9a" stroke-width="1.6" stroke-dasharray="6 5"/>
+<rect x="895.0" y="284" width="22" height="124" rx="9" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/>
+<path d="M723.0 238 Q717.0 260 745.0 278 Q775.0 290 781.0 322 L783.0 410 L867.0 410 L869.0 322 Q875.0 290 905.0 278 Q933.0 260 927.0 238 Q825.0 226 723.0 238 Z" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/>
+<path d="M779.0 40 L779.0 128 Q773.0 158 729.0 178 Q711.0 200 729.0 216 Q765.0 232 813.0 218 Q825.0 212 837.0 218 Q885.0 232 921.0 216 Q939.0 200 921.0 178 Q877.0 158 871.0 128 L871.0 40 Z" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/>
+<path d="M725.0 212 Q745.0 226 767.0 228" fill="none" stroke="#9cc3e3" stroke-width="3" stroke-linecap="round"/>
+<path d="M865.0 226 Q895.0 228 923.0 214" fill="none" stroke="#9cc3e3" stroke-width="3" stroke-linecap="round"/>
+<path d="M729.0 236 Q755.0 230 785.0 229" fill="none" stroke="#9cc3e3" stroke-width="3" stroke-linecap="round"/>
+<path d="M875.0 229 Q901.0 231 921.0 236" fill="none" stroke="#9cc3e3" stroke-width="3" stroke-linecap="round"/>
+<path d="M721.0 200 L707.0 206 L721.0 212 Z" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/>
+<path d="M929.0 200 L943.0 206 L929.0 212 Z" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/>
+<path d="M721.0 236 L707.0 242 L721.0 248 Z" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/>
+<path d="M929.0 236 L943.0 242 L929.0 248 Z" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/>
+<ellipse cx="825.0" cy="230.0" rx="120" ry="44" fill="url(#infl)"/>
+<path d="M721.0 228 L751.0 230 L721.0 236 Z" fill="#7fa7c9" opacity="0.8"/>
+<path d="M929.0 228 L901.0 230 L929.0 236 Z" fill="#7fa7c9" opacity="0.8"/>
+<path d="M725.0 172 L729.0 284" stroke="#e8b46a" stroke-width="9" stroke-linecap="round"/>
+<path d="M925.0 172 L907.0 290" stroke="#e8b46a" stroke-width="9" stroke-linecap="round"/>
+<path d="M755.0 226 L665.0 150" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="755.0" cy="226" r="3" fill="#1a1a1a"/>
+<text x="659.0" y="154" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#e2463a">닳은 연골</text>
+<path d="M825.0 232.0 L665.0 290" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="825.0" cy="232.0" r="3" fill="#1a1a1a"/>
+<text x="659.0" y="294" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#e2463a">좁아진 관절 사이</text>
+<path d="M937.0 206 L985.0 150" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="937.0" cy="206" r="3" fill="#1a1a1a"/>
+<text x="991.0" y="154" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#e2463a">자라난 뼈</text>
+<rect x="565" y="20" width="520" height="410" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<text x="825.0" y="462" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="19" font-weight="700" fill="#1a1a1a">퇴행성 관절염</text>
+<text x="825.0" y="488" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">연골이 닳아 관절 사이가 좁아지고 뼈끝이 자라납니다</text>
+</svg>

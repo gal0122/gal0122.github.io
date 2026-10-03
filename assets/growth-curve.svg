@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+<rect width="1200" height="520" fill="#ffffff"/>
+<defs><radialGradient id="heat" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ff7a3d" stop-opacity="0.85"/><stop offset="100%" stop-color="#ffb04a" stop-opacity="0"/></radialGradient><radialGradient id="infl" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#e2463a" stop-opacity="0.55"/><stop offset="100%" stop-color="#e2463a" stop-opacity="0"/></radialGradient><marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1a1a1a"/></marker></defs>
+<rect x="20" y="20" width="790" height="440" fill="#fbfbfb"/>
+<line x1="90" y1="400" x2="780" y2="400" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="90" y1="60" x2="90" y2="400" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="90.0" y1="400" x2="90.0" y2="406" stroke="#1a1a1a"/>
+<text x="90.0" y="424" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">0</text>
+<line x1="162.63157894736844" y1="400" x2="162.63157894736844" y2="406" stroke="#1a1a1a"/>
+<text x="162.63157894736844" y="424" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">2</text>
+<line x1="235.26315789473685" y1="400" x2="235.26315789473685" y2="406" stroke="#1a1a1a"/>
+<text x="235.26315789473685" y="424" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">4</text>
+<line x1="307.89473684210526" y1="400" x2="307.89473684210526" y2="406" stroke="#1a1a1a"/>
+<text x="307.89473684210526" y="424" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">6</text>
+<line x1="380.5263157894737" y1="400" x2="380.5263157894737" y2="406" stroke="#1a1a1a"/>
+<text x="380.5263157894737" y="424" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">8</text>
+<line x1="453.1578947368421" y1="400" x2="453.1578947368421" y2="406" stroke="#1a1a1a"/>
+<text x="453.1578947368421" y="424" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">10</text>
+<line x1="525.7894736842105" y1="400" x2="525.7894736842105" y2="406" stroke="#1a1a1a"/>
+<text x="525.7894736842105" y="424" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">12</text>
+<line x1="598.421052631579" y1="400" x2="598.421052631579" y2="406" stroke="#1a1a1a"/>
+<text x="598.421052631579" y="424" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">14</text>
+<line x1="671.0526315789474" y1="400" x2="671.0526315789474" y2="406" stroke="#1a1a1a"/>
+<text x="671.0526315789474" y="424" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">16</text>
+<line x1="743.6842105263158" y1="400" x2="743.6842105263158" y2="406" stroke="#1a1a1a"/>
+<text x="743.6842105263158" y="424" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">18</text>
+<text x="435.0" y="450" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#555555">나이 (세)</text>
+<text x="60" y="230.0" transform="rotate(-90 60 230.0)" text-anchor="middle" font-family="'Noto Sans KR',sans-serif" font-size="13" font-weight="500" fill="#555555">1년 동안 자라는 키</text>
+<rect x="90.0" y="60" width="90.78947368421052" height="340" fill="#fdf1e8" opacity="0.9"/>
+<text x="135.39473684210526" y="80" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#8a6a5a">영유아기</text>
+<rect x="180.78947368421052" y="60" width="254.21052631578948" height="340" fill="#ffffff" opacity="0.9"/>
+<text x="307.89473684210526" y="80" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#8a6a5a">아동기</text>
+<rect x="435.0" y="60" width="236.0526315789474" height="340" fill="#eef5ee" opacity="0.9"/>
+<text x="553.0263157894738" y="80" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#8a6a5a">사춘기 (급성장기)</text>
+<path d="M90.0 100.0 C93.0 114.0 102.1 160.0 108.2 184.0 C114.2 208.0 117.2 226.0 126.3 244.0 C135.4 262.0 150.5 281.0 162.6 292.0 C174.7 303.0 180.8 304.6 198.9 310.0 C217.1 315.4 247.4 320.8 271.6 324.4 C295.8 328.0 320.0 329.6 344.2 331.6 C368.4 333.6 392.6 335.0 416.8 336.4 C441.1 337.8 470.1 342.6 489.5 340.0 C508.8 337.4 517.9 329.8 533.1 320.8 C548.2 311.8 564.5 285.2 580.3 286.0 C596.0 286.8 612.3 311.8 627.5 325.6 C642.6 339.4 654.7 357.6 671.1 368.8 C687.4 380.0 710.4 387.8 725.5 392.8 C740.7 397.8 755.8 397.8 761.8 398.8" fill="none" stroke="#3d7cc9" stroke-width="3.5"/>
+<path d="M90.0 112.0 C93.0 125.0 102.1 167.0 108.2 190.0 C114.2 213.0 117.2 232.4 126.3 250.0 C135.4 267.6 150.5 285.2 162.6 295.6 C174.7 306.0 180.8 307.6 198.9 312.4 C217.1 317.2 247.4 321.2 271.6 324.4 C295.8 327.6 323.0 329.8 344.2 331.6 C365.4 333.4 382.3 336.4 398.7 335.2 C415.0 334.0 425.9 330.6 442.3 324.4 C458.6 318.2 479.8 295.8 496.7 298.0 C513.7 300.2 528.8 324.8 543.9 337.6 C559.1 350.4 572.4 365.4 587.5 374.8 C602.7 384.2 617.8 390.0 634.7 394.0 C651.7 398.0 680.1 398.0 689.2 398.8" fill="none" stroke="#d9677a" stroke-width="3.5" stroke-dasharray="9 6"/>
+<circle cx="580.2631578947369" cy="286.0" r="6" fill="#3d7cc9"/>
+<circle cx="496.7368421052631" cy="298.0" r="6" fill="#d9677a"/>
+<text x="592.2631578947369" y="276.0" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="700" fill="#3d7cc9">남아</text>
+<text x="484.7368421052631" y="288.0" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="700" fill="#d9677a">여아</text>
+<text x="122.68421052631578" y="172.0" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#555555">가장 빠르게 자람</text>
+<text x="307.89473684210526" y="310.0" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#555555">꾸준히 자람</text>
+<path d="M700.1052631578947 334.0 L700.1052631578947 383.2" stroke="#1a1a1a" stroke-width="1.5" marker-end="url(#arr)"/>
+<text x="700.1052631578947" y="326.0" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#555555">성장판이 닫히며 멈춤</text>
+<path d="M630 440 L660 440" stroke="#3d7cc9" stroke-width="3.5"/>
+<text x="668" y="445" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">남아</text>
+<path d="M710 440 L740 440" stroke="#d9677a" stroke-width="3.5" stroke-dasharray="9 6"/>
+<text x="748" y="445" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">여아</text>
+<rect x="840" y="20" width="340" height="440" fill="#fbfbfb"/>
+<path d="M980 50 L980 150 Q974 176 942 190 Q930 206 944 214 L1076 214 Q1090 206 1078 190 Q1046 176 1040 150 L1040 50 Z" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/>
+<path d="M944 214 Q936 236 960 244 Q1010 252 1060 244 Q1084 236 1076 214" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/>
+<path d="M940 214 L1080 214" stroke="#e2463a" stroke-width="7" stroke-linecap="round" opacity="0.85"/>
+<path d="M946 270 Q1010 262 1074 270 L1076 290 L944 290 Z" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/>
+<path d="M944 290 Q946 310 970 318 Q980 330 982 360 L984 430 L1036 430 L1038 360 Q1040 330 1050 318 Q1074 310 1076 290 Z" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/>
+<path d="M942 290 L1078 290" stroke="#e2463a" stroke-width="7" stroke-linecap="round" opacity="0.85"/>
+<path d="M1084 214 L1120 214" stroke="#1a1a1a" stroke-width="1.2"/>
+<text x="1124" y="219" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="700" fill="#e2463a">성장판</text>
+<path d="M1084 290 L1120 290" stroke="#1a1a1a" stroke-width="1.2"/>
+<text x="1124" y="295" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="700" fill="#e2463a">성장판</text>
+<path d="M910 250 L910 120" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M910 254 L910 400" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arr)"/>
+<text x="898" y="260" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#555555">뼈가</text>
+<text x="898" y="280" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#555555">길어짐</text>
+<text x="1010" y="492" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" font-weight="700" fill="#1a1a1a">무릎 주변 뼈의 성장판</text>
+<text x="415" y="492" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" font-weight="700" fill="#1a1a1a">나이에 따른 키 성장 속도 (대략적인 흐름)</text>
+<text x="600.0" y="514" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="12" font-weight="400" fill="#8a8a8a">시기와 정도는 사람마다 다릅니다</text>
+</svg>

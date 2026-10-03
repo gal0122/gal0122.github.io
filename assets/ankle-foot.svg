@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="470" viewBox="0 0 1100 470">
+<rect width="1100" height="470" fill="#ffffff"/>
+<defs><radialGradient id="heat" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ff7a3d" stop-opacity="0.85"/><stop offset="100%" stop-color="#ffb04a" stop-opacity="0"/></radialGradient><radialGradient id="infl" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#e2463a" stop-opacity="0.55"/><stop offset="100%" stop-color="#e2463a" stop-opacity="0"/></radialGradient><marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1a1a1a"/></marker></defs>
+<rect x="20" y="20" width="640" height="410" fill="#fbfbfb"/>
+<path d="M180 30 Q150 120 196 200 Q212 236 206 270 Q170 300 172 344 Q178 380 220 384 L560 388 Q610 390 624 368 Q630 350 600 340 L470 300 Q420 270 396 240 Q384 200 388 30 Z" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<rect x="300" y="30" width="58" height="210" rx="12" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/>
+<rect x="270" y="40" width="22" height="226" rx="9" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/>
+<ellipse cx="320" cy="270" rx="46" ry="30" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/>
+<path d="M206 300 Q214 280 270 284 L330 296 Q350 320 330 350 L240 366 Q204 360 206 300 Z" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/>
+<path d="M356 298 L586 350" stroke="#b9a48c" stroke-width="9" stroke-linecap="round"/>
+<path d="M356 298 L586 350" stroke="#f1e7da" stroke-width="6" stroke-linecap="round"/>
+<path d="M362 308 L578 356" stroke="#b9a48c" stroke-width="9" stroke-linecap="round"/>
+<path d="M362 308 L578 356" stroke="#f1e7da" stroke-width="6" stroke-linecap="round"/>
+<path d="M368 318 L570 362" stroke="#b9a48c" stroke-width="9" stroke-linecap="round"/>
+<path d="M368 318 L570 362" stroke="#f1e7da" stroke-width="6" stroke-linecap="round"/>
+<path d="M374 328 L562 368" stroke="#b9a48c" stroke-width="9" stroke-linecap="round"/>
+<path d="M374 328 L562 368" stroke="#f1e7da" stroke-width="6" stroke-linecap="round"/>
+<path d="M226 110 Q206 200 216 296" fill="none" stroke="#c48a45" stroke-width="18" stroke-linecap="round"/>
+<path d="M226 110 Q206 200 216 296" fill="none" stroke="#e9b77a" stroke-width="14" stroke-linecap="round"/>
+<ellipse cx="214" cy="240" rx="30" ry="40" fill="url(#infl)"/>
+<path d="M230 372 Q400 386 572 370" fill="none" stroke="#c48a45" stroke-width="10" stroke-linecap="round"/>
+<path d="M230 372 Q400 386 572 370" fill="none" stroke="#e9b77a" stroke-width="7" stroke-linecap="round"/>
+<ellipse cx="244" cy="372" rx="34" ry="20" fill="url(#infl)"/>
+<path d="M284 262 L352 290" stroke="#c48a45" stroke-width="12" stroke-linecap="round"/>
+<path d="M284 262 L352 290" stroke="#e9b77a" stroke-width="8" stroke-linecap="round"/>
+<ellipse cx="318" cy="276" rx="30" ry="22" fill="url(#infl)"/>
+<circle cx="372" cy="262" r="13" fill="#1a1a1a"/><text x="372" y="267" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="700" fill="#ffffff">1</text>
+<circle cx="178" cy="220" r="13" fill="#1a1a1a"/><text x="178" y="225" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="700" fill="#ffffff">2</text>
+<circle cx="250" cy="410" r="13" fill="#1a1a1a"/><text x="250" y="415" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="700" fill="#ffffff">3</text>
+<text x="560" y="60" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#8a6a5a">정강이뼈</text>
+<path d="M358 80 L520 60" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="358" cy="80" r="3" fill="#1a1a1a"/>
+<text x="110" y="420" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="12" font-weight="500" fill="#555555">← 발뒤꿈치</text>
+<circle cx="710" cy="100" r="13" fill="#1a1a1a"/><text x="710" y="105" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="700" fill="#ffffff">1</text>
+<text x="734" y="106" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">발목 염좌</text>
+<text x="734" y="132" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">바깥쪽 발목 인대가 늘어나거나 찢어짐</text>
+<circle cx="710" cy="200" r="13" fill="#1a1a1a"/><text x="710" y="205" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="700" fill="#ffffff">2</text>
+<text x="734" y="206" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">아킬레스건 질환</text>
+<text x="734" y="232" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">종아리와 발뒤꿈치를 잇는 힘줄의 염증 · 손상</text>
+<circle cx="710" cy="300" r="13" fill="#1a1a1a"/><text x="710" y="305" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="700" fill="#ffffff">3</text>
+<text x="734" y="306" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">족저근막염</text>
+<text x="734" y="332" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">발바닥을 받치는 막에 염증이 생김</text>
+<text x="340" y="460" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" font-weight="700" fill="#1a1a1a">발목과 발을 바깥쪽에서 본 모습</text>
+</svg>

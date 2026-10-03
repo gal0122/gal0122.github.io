@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="640" viewBox="0 0 1100 640">
+<rect width="1100" height="640" fill="#ffffff"/>
+<defs><radialGradient id="heat" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ff7a3d" stop-opacity="0.85"/><stop offset="100%" stop-color="#ffb04a" stop-opacity="0"/></radialGradient><radialGradient id="infl" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#e2463a" stop-opacity="0.55"/><stop offset="100%" stop-color="#e2463a" stop-opacity="0"/></radialGradient><marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1a1a1a"/></marker></defs>
+<path d="M516 330 L510 460 L508 585" fill="none" stroke="#c9a48e" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/><path d="M516 330 L510 460 L508 585" fill="none" stroke="#f3e1d4" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M584 330 L590 460 L592 585" fill="none" stroke="#c9a48e" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/><path d="M584 330 L590 460 L592 585" fill="none" stroke="#f3e1d4" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M472 168 L450 262 L438 352" fill="none" stroke="#c9a48e" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/><path d="M472 168 L450 262 L438 352" fill="none" stroke="#f3e1d4" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M628 168 L650 262 L662 352" fill="none" stroke="#c9a48e" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/><path d="M628 168 L650 262 L662 352" fill="none" stroke="#f3e1d4" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M468 160 Q464 150 490 146 L610 146 Q636 150 632 160 L620 250 L616 340 L484 340 L480 250 Z" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<rect x="534" y="112" width="32" height="40" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<circle cx="550" cy="78" r="42" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<circle cx="476" cy="164" r="18" fill="#e2463a" opacity="0.25"/><circle cx="476" cy="164" r="7" fill="#e2463a"/>
+<circle cx="650" cy="262" r="18" fill="#e2463a" opacity="0.25"/><circle cx="650" cy="262" r="7" fill="#e2463a"/>
+<circle cx="438" cy="352" r="18" fill="#e2463a" opacity="0.25"/><circle cx="438" cy="352" r="7" fill="#e2463a"/>
+<circle cx="510" cy="460" r="18" fill="#e2463a" opacity="0.25"/><circle cx="510" cy="460" r="7" fill="#e2463a"/>
+<circle cx="592" cy="584" r="18" fill="#e2463a" opacity="0.25"/><circle cx="592" cy="584" r="7" fill="#e2463a"/>
+<path d="M466 164 L410 150 L390 150" fill="none" stroke="#1a1a1a" stroke-width="1.3"/>
+<text x="380" y="148" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="17" font-weight="700" fill="#1a1a1a">어깨</text>
+<text x="380" y="170" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">오십견 · 회전근개 손상 · 석회성 건염 · 충돌증후군</text>
+<path d="M428 352 L410 352 L390 352" fill="none" stroke="#1a1a1a" stroke-width="1.3"/>
+<text x="380" y="350" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="17" font-weight="700" fill="#1a1a1a">손목 · 손</text>
+<text x="380" y="372" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">손목터널증후군 · 손목 건초염 · 방아쇠수지</text>
+<path d="M500 460 L410 470 L390 470" fill="none" stroke="#1a1a1a" stroke-width="1.3"/>
+<text x="380" y="468" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="17" font-weight="700" fill="#1a1a1a">무릎</text>
+<text x="380" y="490" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">퇴행성 관절염 · 반월상연골판 손상 · 슬개골 연골연화증</text>
+<path d="M660 262 L690 250 L710 250" fill="none" stroke="#1a1a1a" stroke-width="1.3"/>
+<text x="720" y="248" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="17" font-weight="700" fill="#1a1a1a">팔꿈치</text>
+<text x="720" y="270" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">테니스 엘보 · 골프 엘보</text>
+<path d="M602 584 L690 560 L710 560" fill="none" stroke="#1a1a1a" stroke-width="1.3"/>
+<text x="720" y="558" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="17" font-weight="700" fill="#1a1a1a">발목 · 발</text>
+<text x="720" y="580" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">발목 염좌 · 아킬레스건 질환 · 족저근막염</text>
+</svg>
