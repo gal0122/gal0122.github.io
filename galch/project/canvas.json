@@ -184,7 +184,7 @@
     },
     "Popup.dc.html": {
       "expand": "fill",
-      "h": 820,
+      "h": 909,
       "is_interactive": true,
       "title": "01-1 홈 · 첫 화면 팝업",
       "w": 1280,
@@ -220,7 +220,7 @@
     },
     "Schedule.dc.html": {
       "expand": "fill",
-      "h": 4074,
+      "h": 4102,
       "is_interactive": true,
       "title": "05 병원소개 · 진료시간 및 오시는길",
       "w": 1280,

@@ -367,7 +367,7 @@ if os.path.exists(f'{G}/project/Popup.dc.html'):
     POPUP_CSS = '\n'.join(keep) + '''
 .pop-overlay{position:fixed;top:0;left:0;right:0;bottom:0;z-index:100;display:flex;justify-content:center;align-items:flex-start;padding:110px 20px 40px;box-sizing:border-box;overflow-y:auto;background:rgba(36,48,42,.55);font-family:'Pretendard','Pretendard Variable',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;color:#24302a;line-height:1.6}
 .pop-overlay[hidden]{display:none}
-@media (max-width:640px){.pop-overlay{align-items:center;padding:24px 16px 84px}.pop-layer{width:100%}.pop{flex:0 1 auto;width:100%;max-width:380px}.pop-body{padding:24px 22px 20px}.pop-date{font-size:30px}.pop-title{font-size:20px!important}}'''
+@media (max-width:640px){.pop-overlay{align-items:flex-start;padding:16px 16px 76px}.pop-layer{width:100%;margin:auto 0}.pop-cal td{height:36px}.pop-body{gap:12px}.pop-reasons li{padding:9px 14px}.pop-open{padding:11px 14px}.pop{flex:0 1 auto;width:100%;max-width:380px}.pop-body{padding:24px 22px 20px}.pop-date{font-size:30px}.pop-title{font-size:20px!important}}'''
 
 POPUP_JS = '''<script>
 (function () {
