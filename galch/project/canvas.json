@@ -1,0 +1,339 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "About.dc.html": {
+      "expand": "fill",
+      "h": 4580,
+      "is_interactive": true,
+      "title": "02 병원소개 · 갈창림한의원 소개",
+      "w": 1280,
+      "x": 2720,
+      "y": 0
+    },
+    "Acne.dc.html": {
+      "expand": "fill",
+      "h": 7640,
+      "is_interactive": true,
+      "title": "17 피부미용 · 여드름 · 여드름",
+      "w": 1280,
+      "x": 23120,
+      "y": 0
+    },
+    "AcneRed.dc.html": {
+      "expand": "fill",
+      "h": 7320,
+      "is_interactive": true,
+      "title": "18 피부미용 · 여드름 · 여드름 붉은자국",
+      "w": 1280,
+      "x": 24480,
+      "y": 0
+    },
+    "AcneScar.dc.html": {
+      "expand": "fill",
+      "h": 7750,
+      "is_interactive": true,
+      "title": "19 피부미용 · 여드름 · 여드름 흉터",
+      "w": 1280,
+      "x": 25840,
+      "y": 0
+    },
+    "BoosterAltcore.dc.html": {
+      "expand": "fill",
+      "h": 5250,
+      "is_interactive": true,
+      "title": "12 피부미용 · 스킨부스터 · 알트코어",
+      "w": 1280,
+      "x": 16320,
+      "y": 0
+    },
+    "BoosterECM.dc.html": {
+      "expand": "fill",
+      "h": 5120,
+      "is_interactive": true,
+      "title": "13 피부미용 · 스킨부스터 · ECM",
+      "w": 1280,
+      "x": 17680,
+      "y": 0
+    },
+    "BoosterKeratin.dc.html": {
+      "expand": "fill",
+      "h": 5140,
+      "is_interactive": true,
+      "title": "11 피부미용 · 스킨부스터 · 케라틴",
+      "w": 1280,
+      "x": 14960,
+      "y": 0
+    },
+    "BoosterPDRN.dc.html": {
+      "expand": "fill",
+      "h": 5460,
+      "is_interactive": true,
+      "title": "09 피부미용 · 스킨부스터 · PDRN·엑소좀",
+      "w": 1280,
+      "x": 12240,
+      "y": 0
+    },
+    "BoosterPLLA.dc.html": {
+      "expand": "fill",
+      "h": 5340,
+      "is_interactive": true,
+      "title": "10 피부미용 · 스킨부스터 · PLLA",
+      "w": 1280,
+      "x": 13600,
+      "y": 0
+    },
+    "DesignLifting.dc.html": {
+      "expand": "fill",
+      "h": 6590,
+      "is_interactive": true,
+      "title": "07 피부미용 · 리프팅 · 디자인리프팅",
+      "w": 1280,
+      "x": 9520,
+      "y": 0
+    },
+    "Diet.dc.html": {
+      "expand": "fill",
+      "h": 7070,
+      "is_interactive": true,
+      "title": "26 다이어트",
+      "w": 1280,
+      "x": 35360,
+      "y": 0
+    },
+    "Doctors.dc.html": {
+      "expand": "fill",
+      "h": 2940,
+      "is_interactive": true,
+      "title": "03 병원소개 · 의료진 소개",
+      "w": 1280,
+      "x": 4080,
+      "y": 0
+    },
+    "Equipment.dc.html": {
+      "expand": "fill",
+      "h": 5870,
+      "is_interactive": true,
+      "title": "04 병원소개 · 보유장비",
+      "w": 1280,
+      "x": 5440,
+      "y": 0
+    },
+    "Growth.dc.html": {
+      "expand": "fill",
+      "h": 6370,
+      "is_interactive": true,
+      "title": "27 소아·여성 · 소아 성장",
+      "w": 1280,
+      "x": 36720,
+      "y": 0
+    },
+    "HairRemoval.dc.html": {
+      "expand": "fill",
+      "h": 7230,
+      "is_interactive": true,
+      "title": "14 피부미용 · 제모",
+      "w": 1280,
+      "x": 19040,
+      "y": 0
+    },
+    "Main.dc.html": {
+      "expand": "fill",
+      "h": 3290,
+      "is_interactive": true,
+      "title": "01 홈",
+      "w": 1280,
+      "x": 0,
+      "y": 0
+    },
+    "Mole.dc.html": {
+      "expand": "fill",
+      "h": 8000,
+      "is_interactive": true,
+      "title": "16 피부미용 · 색소 · 점·쥐젖·편평사마귀",
+      "w": 1280,
+      "x": 21760,
+      "y": 0
+    },
+    "PainJoint.dc.html": {
+      "expand": "fill",
+      "h": 8000,
+      "is_interactive": true,
+      "title": "25 통증 · 관절 질환",
+      "w": 1280,
+      "x": 34000,
+      "y": 0
+    },
+    "PainSpine.dc.html": {
+      "expand": "fill",
+      "h": 8000,
+      "is_interactive": true,
+      "title": "24 통증 · 척추 질환",
+      "w": 1280,
+      "x": 32640,
+      "y": 0
+    },
+    "Pigment.dc.html": {
+      "expand": "fill",
+      "h": 6800,
+      "is_interactive": true,
+      "title": "15 피부미용 · 색소 · 기미·흑자·잡티·색소",
+      "w": 1280,
+      "x": 20400,
+      "y": 0
+    },
+    "Popup.dc.html": {
+      "expand": "fill",
+      "h": 820,
+      "is_interactive": true,
+      "title": "01-1 홈 · 첫 화면 팝업",
+      "w": 1280,
+      "x": 1360,
+      "y": 0
+    },
+    "Pore.dc.html": {
+      "expand": "fill",
+      "h": 7660,
+      "is_interactive": true,
+      "title": "20 피부미용 · 모공",
+      "w": 1280,
+      "x": 27200,
+      "y": 0
+    },
+    "Price.dc.html": {
+      "expand": "fill",
+      "h": 3840,
+      "is_interactive": true,
+      "title": "29 가격표",
+      "w": 1280,
+      "x": 39440,
+      "y": 0
+    },
+    "Privacy.dc.html": {
+      "expand": "fill",
+      "h": 7638,
+      "is_interactive": true,
+      "title": "30 개인정보처리방침",
+      "w": 1280,
+      "x": 40800,
+      "y": 0
+    },
+    "Schedule.dc.html": {
+      "expand": "fill",
+      "h": 4074,
+      "is_interactive": true,
+      "title": "05 병원소개 · 진료시간 및 오시는길",
+      "w": 1280,
+      "x": 6800,
+      "y": 0
+    },
+    "Skin.dc.html": {
+      "expand": "fill",
+      "h": 3670,
+      "is_interactive": true,
+      "title": "06 피부미용",
+      "w": 1280,
+      "x": 8160,
+      "y": 0
+    },
+    "Terms.dc.html": {
+      "expand": "fill",
+      "h": 3600,
+      "is_interactive": true,
+      "title": "31 이용약관",
+      "w": 1280,
+      "x": 42160,
+      "y": 0
+    },
+    "ThreadLifting.dc.html": {
+      "expand": "fill",
+      "h": 5690,
+      "is_interactive": true,
+      "title": "08 피부미용 · 리프팅 · 맞춤형실리프팅",
+      "w": 1280,
+      "x": 10880,
+      "y": 0
+    },
+    "Traffic.dc.html": {
+      "expand": "fill",
+      "h": 5800,
+      "is_interactive": true,
+      "title": "21 교통사고 · 교통사고 후유증",
+      "w": 1280,
+      "x": 28560,
+      "y": 0
+    },
+    "TrafficProcess.dc.html": {
+      "expand": "fill",
+      "h": 5530,
+      "is_interactive": true,
+      "title": "22 교통사고 · 치료 과정",
+      "w": 1280,
+      "x": 29920,
+      "y": 0
+    },
+    "TrafficTreat.dc.html": {
+      "expand": "fill",
+      "h": 5380,
+      "is_interactive": true,
+      "title": "23 교통사고 · 치료 방법",
+      "w": 1280,
+      "x": 31280,
+      "y": 0
+    },
+    "Women.dc.html": {
+      "expand": "fill",
+      "h": 5690,
+      "is_interactive": true,
+      "title": "28 소아·여성 · 여성 질환",
+      "w": 1280,
+      "x": 38080,
+      "y": 0
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-10-02T00:30:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {},
+  "order": [
+    "Main.dc.html",
+    "Popup.dc.html",
+    "About.dc.html",
+    "Doctors.dc.html",
+    "Equipment.dc.html",
+    "Schedule.dc.html",
+    "Skin.dc.html",
+    "DesignLifting.dc.html",
+    "ThreadLifting.dc.html",
+    "BoosterPDRN.dc.html",
+    "BoosterPLLA.dc.html",
+    "BoosterKeratin.dc.html",
+    "BoosterAltcore.dc.html",
+    "BoosterECM.dc.html",
+    "HairRemoval.dc.html",
+    "Pigment.dc.html",
+    "Mole.dc.html",
+    "Acne.dc.html",
+    "AcneRed.dc.html",
+    "AcneScar.dc.html",
+    "Pore.dc.html",
+    "Traffic.dc.html",
+    "TrafficProcess.dc.html",
+    "TrafficTreat.dc.html",
+    "PainSpine.dc.html",
+    "PainJoint.dc.html",
+    "Diet.dc.html",
+    "Growth.dc.html",
+    "Women.dc.html",
+    "Price.dc.html",
+    "Privacy.dc.html",
+    "Terms.dc.html"
+  ],
+  "pages": [],
+  "title": "갈창림한의원 홈페이지"
+}

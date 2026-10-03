@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" viewBox="0 0 1000 520">
+<rect width="1000" height="520" fill="#ffffff"/>
+<defs><radialGradient id="heat" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ff7a3d" stop-opacity="0.85"/><stop offset="100%" stop-color="#ffb04a" stop-opacity="0"/></radialGradient><radialGradient id="infl" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#e2463a" stop-opacity="0.55"/><stop offset="100%" stop-color="#e2463a" stop-opacity="0"/></radialGradient><marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1a1a1a"/></marker></defs>
+<defs><clipPath id="ldhifu"><rect x="110" y="120" width="360" height="300"/></clipPath></defs><g clip-path="url(#ldhifu)">
+<rect x="110" y="120" width="360" height="12" fill="#f7e6da"/>
+<rect x="110" y="132" width="360" height="68" fill="#f5d6d4"/>
+<rect x="110" y="200" width="360" height="90" fill="#fcf2d2"/>
+<rect x="110" y="290" width="360" height="26" fill="#e9c6c0"/>
+<rect x="110" y="316" width="360" height="104" fill="#f3e6dc"/>
+<circle cx="128" cy="222" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="147" cy="266" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="166" cy="222" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="185" cy="266" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="204" cy="222" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="223" cy="266" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="242" cy="222" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="261" cy="266" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="280" cy="222" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="299" cy="266" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="318" cy="222" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="337" cy="266" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="356" cy="222" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="375" cy="266" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="394" cy="222" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="413" cy="266" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="432" cy="222" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="451" cy="266" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="470" cy="222" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="489" cy="266" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+</g>
+<line x1="110" y1="132" x2="470" y2="132" stroke="#d9b6a0" stroke-width="1.2" stroke-dasharray="4 4"/>
+<line x1="110" y1="200" x2="470" y2="200" stroke="#d9b6a0" stroke-width="1.2" stroke-dasharray="4 4"/>
+<line x1="110" y1="290" x2="470" y2="290" stroke="#d9b6a0" stroke-width="1.2" stroke-dasharray="4 4"/>
+<line x1="110" y1="316" x2="470" y2="316" stroke="#d9b6a0" stroke-width="1.2" stroke-dasharray="4 4"/>
+<rect x="210.0" y="68" width="160" height="40" rx="6" fill="#dcdcdc" stroke="#9a9a9a"/>
+<ellipse cx="190.0" cy="200" rx="9" ry="5" fill="#ff7a3d" opacity="0.9"/>
+<ellipse cx="240.0" cy="200" rx="9" ry="5" fill="#ff7a3d" opacity="0.9"/>
+<ellipse cx="290.0" cy="200" rx="9" ry="5" fill="#ff7a3d" opacity="0.9"/>
+<ellipse cx="340.0" cy="200" rx="9" ry="5" fill="#ff7a3d" opacity="0.9"/>
+<ellipse cx="390.0" cy="200" rx="9" ry="5" fill="#ff7a3d" opacity="0.9"/>
+<text x="480" y="205" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#555555">2.0mm</text>
+<ellipse cx="190.0" cy="240" rx="9" ry="5" fill="#ff7a3d" opacity="0.9"/>
+<ellipse cx="240.0" cy="240" rx="9" ry="5" fill="#ff7a3d" opacity="0.9"/>
+<ellipse cx="290.0" cy="240" rx="9" ry="5" fill="#ff7a3d" opacity="0.9"/>
+<ellipse cx="340.0" cy="240" rx="9" ry="5" fill="#ff7a3d" opacity="0.9"/>
+<ellipse cx="390.0" cy="240" rx="9" ry="5" fill="#ff7a3d" opacity="0.9"/>
+<text x="480" y="245" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#555555">3.0mm</text>
+<ellipse cx="190.0" cy="303" rx="9" ry="5" fill="#ff7a3d" opacity="0.9"/>
+<ellipse cx="240.0" cy="303" rx="9" ry="5" fill="#ff7a3d" opacity="0.9"/>
+<ellipse cx="290.0" cy="303" rx="9" ry="5" fill="#ff7a3d" opacity="0.9"/>
+<ellipse cx="340.0" cy="303" rx="9" ry="5" fill="#ff7a3d" opacity="0.9"/>
+<ellipse cx="390.0" cy="303" rx="9" ry="5" fill="#ff7a3d" opacity="0.9"/>
+<text x="480" y="308" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#555555">4.5mm</text>
+<ellipse cx="190.0" cy="365" rx="9" ry="5" fill="#ff7a3d" opacity="0.9"/>
+<ellipse cx="240.0" cy="365" rx="9" ry="5" fill="#ff7a3d" opacity="0.9"/>
+<ellipse cx="290.0" cy="365" rx="9" ry="5" fill="#ff7a3d" opacity="0.9"/>
+<ellipse cx="340.0" cy="365" rx="9" ry="5" fill="#ff7a3d" opacity="0.9"/>
+<ellipse cx="390.0" cy="365" rx="9" ry="5" fill="#ff7a3d" opacity="0.9"/>
+<text x="480" y="370" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#555555">6.0mm</text>
+<path d="M176.0 120 L190.0 365 L204.0 120" fill="none" stroke="#ff7a3d" stroke-width="1" opacity="0.5"/>
+<path d="M226.0 120 L240.0 365 L254.0 120" fill="none" stroke="#ff7a3d" stroke-width="1" opacity="0.5"/>
+<path d="M276.0 120 L290.0 365 L304.0 120" fill="none" stroke="#ff7a3d" stroke-width="1" opacity="0.5"/>
+<path d="M326.0 120 L340.0 365 L354.0 120" fill="none" stroke="#ff7a3d" stroke-width="1" opacity="0.5"/>
+<path d="M376.0 120 L390.0 365 L404.0 120" fill="none" stroke="#ff7a3d" stroke-width="1" opacity="0.5"/>
+<rect x="110" y="120" width="360" height="300" fill="none" stroke="#cfcfcf" stroke-width="1.5"/>
+<text x="290.0" y="40" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="19" font-weight="700" fill="#1a1a1a">리니어펌 · 초음파(HIFU)</text>
+<text x="290.0" y="456" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" font-weight="500" fill="#444444">정해진 깊이에 점처럼 모아 전달</text>
+<defs><clipPath id="ldrf"><rect x="560" y="120" width="360" height="300"/></clipPath></defs><g clip-path="url(#ldrf)">
+<rect x="560" y="120" width="360" height="12" fill="#f7e6da"/>
+<rect x="560" y="132" width="360" height="68" fill="#f5d6d4"/>
+<rect x="560" y="200" width="360" height="90" fill="#fcf2d2"/>
+<rect x="560" y="290" width="360" height="26" fill="#e9c6c0"/>
+<rect x="560" y="316" width="360" height="104" fill="#f3e6dc"/>
+<circle cx="578" cy="222" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="597" cy="266" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="616" cy="222" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="635" cy="266" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="654" cy="222" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="673" cy="266" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="692" cy="222" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="711" cy="266" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="730" cy="222" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="749" cy="266" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="768" cy="222" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="787" cy="266" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="806" cy="222" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="825" cy="266" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="844" cy="222" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="863" cy="266" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="882" cy="222" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="901" cy="266" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="920" cy="222" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+<circle cx="939" cy="266" r="15" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.2"/>
+</g>
+<line x1="560" y1="132" x2="920" y2="132" stroke="#d9b6a0" stroke-width="1.2" stroke-dasharray="4 4"/>
+<line x1="560" y1="200" x2="920" y2="200" stroke="#d9b6a0" stroke-width="1.2" stroke-dasharray="4 4"/>
+<line x1="560" y1="290" x2="920" y2="290" stroke="#d9b6a0" stroke-width="1.2" stroke-dasharray="4 4"/>
+<line x1="560" y1="316" x2="920" y2="316" stroke="#d9b6a0" stroke-width="1.2" stroke-dasharray="4 4"/>
+<rect x="660.0" y="68" width="160" height="40" rx="6" fill="#dcdcdc" stroke="#9a9a9a"/>
+<ellipse cx="740.0" cy="210" rx="190" ry="90" fill="url(#heat)"/>
+<rect x="560" y="120" width="360" height="300" fill="none" stroke="#cfcfcf" stroke-width="1.5"/>
+<text x="740.0" y="40" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="19" font-weight="700" fill="#1a1a1a">볼뉴머 · 고주파(RF)</text>
+<text x="740.0" y="456" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" font-weight="500" fill="#444444">진피와 피하지방을 넓고 고르게 데움</text>
+<text x="100" y="131.0" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#555555">표피</text>
+<text x="100" y="171.0" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#555555">진피</text>
+<text x="100" y="250.0" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#555555">피하지방</text>
+<text x="100" y="308.0" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#555555">근막(SMAS)</text>
+<text x="100" y="373.0" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#555555">깊은 층</text>
+<text x="500.0" y="506" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#777777">실제 피부 두께는 사람·부위마다 다릅니다</text>
+</svg>

@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>교통사고 후유증</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+@font-face{font-family:'Pretendard';src:url('/_blob/8c366efa542f5b0811a2487191ba3cc9') format('woff2');font-weight:45 920;font-style:normal;font-display:swap}
+body{margin:0;-webkit-text-size-adjust:100%}
+a{color:#24302a}a:hover{color:#2f5241}
+h1,h2,h3{letter-spacing:-0.02em;word-break:keep-all}
+p,li,dd,td,figcaption{word-break:keep-all}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #2f5241;outline-offset:2px}
+.gnb>a:hover,.gnb-item:hover>a{color:#2f5241}
+.gnb-sub{display:none}
+.gnb-item:hover .gnb-sub,.gnb-item:focus-within .gnb-sub{display:flex}
+.gnb-sub a:hover{background:#f1ede3}
+.gnb-sub2{display:none}
+.gnb-sub-item:hover>.gnb-sub2,.gnb-sub-item:focus-within>.gnb-sub2{display:flex}
+.gnb-sub-item:hover>a{background:#f1ede3}
+.gnb-sub,.gnb-sub2{border-radius:14px;box-shadow:0 14px 34px rgba(36,48,42,.12)}
+.hd-call:hover{background:#2f5241;color:#ffffff}
+.m-menu{display:none}
+.m-menu summary{list-style:none;cursor:pointer}
+.m-menu summary::-webkit-details-marker{display:none}
+.m-menu[open] .ic-open,.m-menu:not([open]) .ic-close{display:none}
+.qn a:hover{background:#f1ede3}
+.qn .qn-call:hover{background:#24402f}
+footer a:hover{color:#d7c9a7}
+.svc{transition:transform .2s ease,box-shadow .2s ease}
+.svc:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(36,48,42,.10)}
+.btn-fill:hover{background:#24402f;color:#ffffff}
+.btn-line:hover{background:#f1ede3}
+main [style*="border: 1px solid #e2dccd"]:not(tr):not(th):not(td):not(table):not(span){border-radius:18px;background-color:#ffffff}
+main [style*="min-height: 48px; padding: 0 24px"],main [style*="min-height: 44px; padding: 0 18px"],main li[style*="padding: 8px 16px"],main li[style*="padding: 8px 12px"]{border-radius:999px}
+main button[style*="width: 48px; height: 48px"]{border-radius:50%}
+main figure img,main img[style*="width: 100%"]{border-radius:16px}
+main>section[style*="background: #f1ede3"]{border-top-color:transparent!important;border-bottom-color:transparent!important}
+main>section[style*="border-top: 1px solid #e2dccd"]{border-top-color:transparent!important}
+.eq-track{scrollbar-width:thin;scrollbar-color:#c9c0a8 transparent}
+.eq-track::-webkit-scrollbar{height:6px}
+.eq-track::-webkit-scrollbar-thumb{background:#c9c0a8;border-radius:3px}
+@media (max-width:960px){.gnb{display:none!important}.m-menu{display:block}.hd-in{gap:10px!important}.hd-call{margin-left:auto;width:44px;padding:0!important;justify-content:center}.hd-call-txt{display:none}}
+@media (max-width:640px){
+h1{font-size:30px!important;line-height:1.35!important}
+h2{font-size:24px!important;line-height:1.4!important}
+h3{font-size:19px!important}
+.hd-logo{height:36px!important}
+[style*="max-width: 1240px"]{padding-left:16px!important;padding-right:16px!important}
+[style*="padding: 88px 24px"],[style*="padding: 96px 24px"],[style*="padding: 104px 24px"],[style*="padding: 80px 24px"],[style*="padding: 72px 24px"],[style*="padding: 64px 24px"]{padding-top:52px!important;padding-bottom:52px!important}
+[style*="padding: 56px 24px 0"]{padding-top:32px!important}
+[style*="minmax(3"],[style*="minmax(4"]{grid-template-columns:minmax(0,1fr)!important}
+.eq-track>*{max-width:84vw}
+.stack-m{flex-direction:column!important;align-items:stretch!important}
+.full-m{flex:0 0 auto!important;width:100%!important;max-width:100%!important}
+.hero-art{height:260px!important}
+.br-d{display:none}
+.map-box{min-height:240px!important}
+.qn{top:auto!important;bottom:0!important;left:0!important;right:0!important;transform:none!important;flex-direction:row!important;width:auto!important;border-radius:0!important}
+.qn a{flex:1 1 0!important;height:58px!important;flex-direction:row!important;gap:6px!important;font-size:14px!important;border-bottom:0!important}
+footer{padding-bottom:58px}
+}
+.eq-track{scrollbar-width:thin;scrollbar-color:#c9c0a8 #ede9dd}
+.eq-track::-webkit-scrollbar{height:6px}
+.eq-track::-webkit-scrollbar-track{background:#ede9dd}
+.eq-track::-webkit-scrollbar-thumb{background:#c9c0a8}
+.faq summary{list-style:none;cursor:pointer}
+.faq summary::-webkit-details-marker{display:none}
+.faq details[open] .faq-icon{transform:rotate(45deg)}
+</style>
+</helmet>
+<div style="font-family: 'Pretendard', 'Pretendard Variable', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; color: #24302a; background: #faf7f0; line-height: 1.6; min-height: 100vh">
+
+<header class="site-hd" style="position: sticky; top: 0; z-index: 30; background: #faf7f0; border-bottom: 1px solid #e2dccd">
+<div class="hd-in" style="max-width: 1240px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; gap: 40px">
+<a href="Main.dc.html" aria-label="갈창림한의원 홈" style="flex: 0 0 auto; display: inline-flex; align-items: center; text-decoration: none"><img class="hd-logo" src="/_blob/aa7a2a00288ecf879a5acf4665e97aa0" alt="갈창림한의원" style="display: block; height: 44px; width: auto"></a>
+<nav class="gnb" aria-label="메인 메뉴" style="flex: 1 1 auto; display: flex; align-items: center; gap: 30px; font-size: 16px; font-weight: 600; white-space: nowrap">
+<div class="gnb-item" style="position: relative">
+<a href="About.dc.html" aria-haspopup="true" style="display: block; text-decoration: none; padding: 10px 0">병원소개</a>
+<div class="gnb-sub" style="position: absolute; top: 100%; left: -20px; z-index: 20; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd; font-size: 15px; font-weight: 400">
+<a href="About.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">갈창림한의원 소개</a>
+<a href="Doctors.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">의료진 소개</a>
+<a href="Equipment.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">보유장비</a>
+<a href="Schedule.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">진료시간 및 오시는길</a>
+</div>
+</div>
+<div class="gnb-item" style="position: relative">
+<a href="Skin.dc.html" aria-haspopup="true" style="display: block; text-decoration: none; padding: 10px 0">피부미용</a>
+<div class="gnb-sub" style="position: absolute; top: 100%; left: -20px; z-index: 20; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd; font-size: 15px; font-weight: 400">
+<div class="gnb-sub-item" style="position: relative">
+<a href="Skin.dc.html#lifting" aria-haspopup="true" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 10px 20px; text-decoration: none; white-space: nowrap">리프팅<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></a>
+<div class="gnb-sub2" style="position: absolute; top: -9px; left: 100%; z-index: 21; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd">
+<a href="DesignLifting.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">디자인리프팅</a>
+<a href="ThreadLifting.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">맞춤형실리프팅</a>
+</div>
+</div>
+<div class="gnb-sub-item" style="position: relative">
+<a href="Skin.dc.html#booster" aria-haspopup="true" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 10px 20px; text-decoration: none; white-space: nowrap">스킨부스터<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></a>
+<div class="gnb-sub2" style="position: absolute; top: -9px; left: 100%; z-index: 21; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd">
+<a href="BoosterPDRN.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">PDRN·엑소좀</a>
+<a href="BoosterPLLA.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">PLLA</a>
+<a href="BoosterKeratin.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">케라틴</a>
+<a href="BoosterAltcore.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">알트코어</a>
+<a href="BoosterECM.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">ECM</a>
+</div>
+</div>
+<a href="HairRemoval.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">제모</a>
+<div class="gnb-sub-item" style="position: relative">
+<a href="Skin.dc.html#pigment" aria-haspopup="true" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 10px 20px; text-decoration: none; white-space: nowrap">색소<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></a>
+<div class="gnb-sub2" style="position: absolute; top: -9px; left: 100%; z-index: 21; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd">
+<a href="Pigment.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">기미·흑자·잡티·색소</a>
+<a href="Mole.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">점·쥐젖·편평사마귀</a>
+</div>
+</div>
+<div class="gnb-sub-item" style="position: relative">
+<a href="Skin.dc.html#acne" aria-haspopup="true" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 10px 20px; text-decoration: none; white-space: nowrap">여드름<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></a>
+<div class="gnb-sub2" style="position: absolute; top: -9px; left: 100%; z-index: 21; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd">
+<a href="Acne.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">여드름</a>
+<a href="AcneRed.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">여드름 붉은자국</a>
+<a href="AcneScar.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">여드름 흉터</a>
+</div>
+</div>
+<a href="Pore.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">모공</a>
+</div>
+</div>
+<div class="gnb-item" style="position: relative">
+<a href="Traffic.dc.html" aria-haspopup="true" style="display: block; text-decoration: none; padding: 10px 0">교통사고</a>
+<div class="gnb-sub" style="position: absolute; top: 100%; left: -20px; z-index: 20; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd; font-size: 15px; font-weight: 400">
+<a href="Traffic.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">교통사고 후유증</a>
+<a href="TrafficProcess.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">치료 과정</a>
+<a href="TrafficTreat.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">치료 방법</a>
+</div>
+</div>
+<div class="gnb-item" style="position: relative">
+<a href="PainSpine.dc.html" aria-haspopup="true" style="display: block; text-decoration: none; padding: 10px 0">통증</a>
+<div class="gnb-sub" style="position: absolute; top: 100%; left: -20px; z-index: 20; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd; font-size: 15px; font-weight: 400">
+<a href="PainSpine.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">척추 질환</a>
+<a href="PainJoint.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">관절 질환</a>
+</div>
+</div>
+<a href="Diet.dc.html" style="text-decoration: none; padding: 10px 0">다이어트</a>
+<div class="gnb-item" style="position: relative">
+<a href="Growth.dc.html" aria-haspopup="true" style="display: block; text-decoration: none; padding: 10px 0">소아·여성</a>
+<div class="gnb-sub" style="position: absolute; top: 100%; left: -20px; z-index: 20; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd; font-size: 15px; font-weight: 400">
+<a href="Growth.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">소아 성장</a>
+<a href="Women.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">여성 질환</a>
+</div>
+</div>
+<a href="Price.dc.html" style="text-decoration: none; padding: 10px 0">가격표</a>
+</nav>
+<a class="hd-call" href="tel:053-851-0122" aria-label="전화 053-851-0122" style="flex: 0 0 auto; display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 18px; box-sizing: border-box; border-radius: 999px; border: 1px solid #2f5241; color: #2f5241; font-size: 15px; font-weight: 700; text-decoration: none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg><span class="hd-call-txt">053-851-0122</span></a>
+<details class="m-menu">
+<summary aria-label="전체 메뉴" style="width: 44px; height: 44px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border-radius: 12px; background: #2f5241; color: #ffffff"><svg class="ic-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg><svg class="ic-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></summary>
+<nav aria-label="전체 메뉴" style="position: absolute; top: 100%; left: 0; right: 0; max-height: calc(100vh - 72px); overflow-y: auto; padding: 4px 20px 28px; background: #faf7f0; border-bottom: 1px solid #e2dccd; box-shadow: 0 20px 30px rgba(36,48,42,0.10)">
+<div style="padding: 14px 0; border-bottom: 1px solid #ebe6da">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">병원소개</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="About.dc.html" style="padding: 8px 0; text-decoration: none">갈창림한의원 소개</a>
+<a href="Doctors.dc.html" style="padding: 8px 0; text-decoration: none">의료진 소개</a>
+<a href="Equipment.dc.html" style="padding: 8px 0; text-decoration: none">보유장비</a>
+<a href="Schedule.dc.html" style="padding: 8px 0; text-decoration: none">진료시간 및 오시는길</a>
+</div>
+</div>
+<div style="padding: 14px 0; border-bottom: 1px solid #ebe6da">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">피부미용</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="Skin.dc.html" style="padding: 8px 0; text-decoration: none">피부미용 한눈에 보기</a>
+<a href="DesignLifting.dc.html" style="padding: 8px 0; text-decoration: none">디자인리프팅</a>
+<a href="ThreadLifting.dc.html" style="padding: 8px 0; text-decoration: none">맞춤형실리프팅</a>
+<a href="BoosterPDRN.dc.html" style="padding: 8px 0; text-decoration: none">PDRN·엑소좀</a>
+<a href="BoosterPLLA.dc.html" style="padding: 8px 0; text-decoration: none">PLLA</a>
+<a href="BoosterKeratin.dc.html" style="padding: 8px 0; text-decoration: none">케라틴</a>
+<a href="BoosterAltcore.dc.html" style="padding: 8px 0; text-decoration: none">알트코어</a>
+<a href="BoosterECM.dc.html" style="padding: 8px 0; text-decoration: none">ECM</a>
+<a href="HairRemoval.dc.html" style="padding: 8px 0; text-decoration: none">제모</a>
+<a href="Pigment.dc.html" style="padding: 8px 0; text-decoration: none">기미·흑자·잡티·색소</a>
+<a href="Mole.dc.html" style="padding: 8px 0; text-decoration: none">점·쥐젖·편평사마귀</a>
+<a href="Acne.dc.html" style="padding: 8px 0; text-decoration: none">여드름</a>
+<a href="AcneRed.dc.html" style="padding: 8px 0; text-decoration: none">여드름 붉은자국</a>
+<a href="AcneScar.dc.html" style="padding: 8px 0; text-decoration: none">여드름 흉터</a>
+<a href="Pore.dc.html" style="padding: 8px 0; text-decoration: none">모공</a>
+</div>
+</div>
+<div style="padding: 14px 0; border-bottom: 1px solid #ebe6da">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">교통사고 · 통증</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="Traffic.dc.html" style="padding: 8px 0; text-decoration: none">교통사고 후유증</a>
+<a href="TrafficProcess.dc.html" style="padding: 8px 0; text-decoration: none">교통사고 치료 과정</a>
+<a href="TrafficTreat.dc.html" style="padding: 8px 0; text-decoration: none">교통사고 치료 방법</a>
+<a href="PainSpine.dc.html" style="padding: 8px 0; text-decoration: none">척추 질환</a>
+<a href="PainJoint.dc.html" style="padding: 8px 0; text-decoration: none">관절 질환</a>
+</div>
+</div>
+<div style="padding: 14px 0">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">다이어트 · 소아·여성</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="Diet.dc.html" style="padding: 8px 0; text-decoration: none">다이어트</a>
+<a href="Growth.dc.html" style="padding: 8px 0; text-decoration: none">소아 성장</a>
+<a href="Women.dc.html" style="padding: 8px 0; text-decoration: none">여성 질환</a>
+<a href="Price.dc.html" style="padding: 8px 0; text-decoration: none">가격표</a>
+</div>
+</div>
+</nav>
+</details>
+</div>
+</header>
+
+<main>
+
+<section style="background: #f1ede3; border-bottom: 1px solid #e2dccd">
+<div style="max-width: 1240px; margin: 0 auto; padding: 56px 24px 0; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 14px; color: #5d655f">홈 &gt; 교통사고 &gt; 교통사고 후유증</p>
+<h1 style="margin: 0; font-size: 40px; line-height: 1.3">교통사고 후유증</h1>
+<p style="margin: 0; font-size: 18px; color: #4d554f">검사에서 이상이 없어도, 아프다면 치료가 필요합니다</p>
+<nav aria-label="교통사고 하위 메뉴" class="eq-track" style="display: flex; gap: 0 32px; margin-top: 24px; font-size: 15px; overflow-x: auto; white-space: nowrap">
+<a href="Traffic.dc.html" aria-current="page" style="flex: 0 0 auto; padding: 14px 0; border-bottom: 3px solid #2f5241; font-weight: 700; text-decoration: none">교통사고 후유증</a>
+<a href="TrafficProcess.dc.html" style="flex: 0 0 auto; padding: 14px 0; border-bottom: 3px solid transparent; color: #5d655f; text-decoration: none">치료 과정</a>
+<a href="TrafficTreat.dc.html" style="flex: 0 0 auto; padding: 14px 0; border-bottom: 3px solid transparent; color: #5d655f; text-decoration: none">치료 방법</a>
+</nav>
+</div>
+</section>
+
+<section style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 820px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">TRAFFIC ACCIDENT</p>
+<h2 style="margin: 0; font-size: 32px; line-height: 1.4">사고 직후엔 괜찮다가<br>며칠 뒤 아파오는 이유</h2>
+<p style="margin: 0; font-size: 17px; color: #4d554f">교통사고는 아주 짧은 순간 몸 전체에 큰 충격이 전해지는 사고입니다. 사고 직후에는 놀라고 긴장한 탓에 통증을 잘 느끼지 못하다가, 며칠이 지나 목과 허리가 뻐근해지거나 두통과 어지럼이 나타나는 경우가 많습니다.</p>
+<p style="margin: 0; font-size: 17px; color: #4d554f">특히 뒤에서 부딪히면 머리가 뒤로 젖혀졌다가 곧바로 앞으로 꺾이면서, 목 주변 근육과 인대가 순간적으로 늘어나 손상되기 쉽습니다. 이런 손상은 엑스레이 같은 검사에서 잘 드러나지 않아, 이상이 없다는 결과를 받고도 통증이 이어질 수 있습니다.</p>
+<p style="margin: 0; font-size: 17px; color: #4d554f">갈창림한의원은 지금 느끼는 통증뿐 아니라 이후 남을 수 있는 후유증까지 살피며, <strong>침·약침, 추나, 한약, 뜸·부항·물리치료요법</strong>을 상태에 맞게 조합해 치료합니다.</p>
+<p style="margin: 8px 0 0; padding-left: 16px; border-left: 3px solid #2f5241; font-size: 17px; font-weight: 500">검사에서 이상이 없어도 통증이 있다면 치료가 필요합니다.</p>
+</div>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 12px">
+<div class="eq-track" style="overflow-x: auto"><img src="/_blob/a56c148750eadcbb51803800901d86dd" alt="자동차 좌석에 앉은 사람의 옆모습 그림 3장. 1 평소 자세, 2 뒤에서 충격을 받으면 몸이 앞으로 밀리며 머리가 뒤로 젖혀지고, 3 반동으로 머리가 앞으로 꺾이면서 목 주변이 손상된다" style="display: block; width: 100%; max-width: 1000px; min-width: 760px; height: auto"></div>
+<figcaption style="font-size: 14px; color: #5d655f">뒤에서 부딪힐 때 머리와 목이 앞뒤로 크게 흔들리며 목 주변 근육과 인대가 손상되기 쉽습니다.</figcaption>
+</figure>
+</section>
+
+<section style="background: #f1ede3; border-top: 1px solid #e2dccd; border-bottom: 1px solid #e2dccd">
+<div style="max-width: 1240px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">TIME</p>
+<h2 style="margin: 0; font-size: 28px">출근 전에도, 주말에도 치료받을 수 있습니다</h2>
+<p style="margin: 0; color: #4d554f; max-width: 760px">교통사고 치료는 꾸준히 받는 것이 중요합니다. 바쁜 일정 속에서도 치료를 이어갈 수 있도록 이른 아침과 토·일요일에도 진료합니다.</p>
+</div>
+<dl class="eq-track" style="margin: 0; display: flex; gap: 16px; overflow-x: auto; padding-bottom: 12px">
+<div style="flex: 1 0 220px; display: flex; flex-direction: column; gap: 6px; padding: 24px; background: #ffffff; border: 2px solid #2f5241">
+<dt style="font-size: 14px; color: #5d655f">평일 (월~금)</dt>
+<dd style="margin: 0; font-size: 20px; font-weight: 700">08:30 – 18:30<span style="display: block; margin-top: 4px; font-size: 14px; font-weight: 400; color: #5d655f">(아침 8시 30분부터 진료)</span></dd>
+</div>
+<div style="flex: 1 0 220px; display: flex; flex-direction: column; gap: 6px; padding: 24px; background: #ffffff; border: 2px solid #2f5241">
+<dt style="font-size: 14px; color: #5d655f">토·일요일</dt>
+<dd style="margin: 0; font-size: 20px; font-weight: 700">08:30 – 14:00<span style="display: block; margin-top: 4px; font-size: 14px; font-weight: 400; color: #5d655f">(주말은 점심시간 없이 진료)</span></dd>
+</div>
+<div style="flex: 1 0 220px; display: flex; flex-direction: column; gap: 6px; padding: 24px; background: #ffffff; border: 1px solid #e2dccd">
+<dt style="font-size: 14px; color: #5d655f">점심시간</dt>
+<dd style="margin: 0; font-size: 20px; font-weight: 700">13:00 – 14:00<span style="display: block; margin-top: 4px; font-size: 14px; font-weight: 400; color: #5d655f">(평일)</span></dd>
+</div>
+<div style="flex: 1 0 220px; display: flex; flex-direction: column; gap: 6px; padding: 24px; background: #ffffff; border: 1px solid #e2dccd">
+<dt style="font-size: 14px; color: #5d655f">공휴일</dt>
+<dd style="margin: 0; font-size: 20px; font-weight: 700">휴진</dd>
+</div>
+</dl>
+<a href="Schedule.dc.html" style="align-self: flex-start; font-size: 15px; font-weight: 500">이달의 진료 일정 보기 →</a>
+</div>
+</section>
+
+<section>
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">SYMPTOMS</p>
+<h2 style="margin: 0; font-size: 30px">교통사고 후 이런 증상이 나타날 수 있습니다</h2>
+<p style="margin: 0; color: #4d554f">통증은 부딪힌 곳뿐 아니라 버티느라 힘이 들어간 곳, 몸 안과 마음에도 나타납니다.</p>
+</div>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 12px">
+<div class="eq-track" style="overflow-x: auto"><img src="/_blob/9a9758f49d312213e6fcbde1bc216e6f" alt="사람 몸 앞모습 그림에 증상 위치를 표시. 머리는 두통·어지럼·귀울림, 목은 통증·뻐근함, 어깨·등은 결림, 가슴은 두근거림·답답함, 속은 메스꺼움·소화불량, 허리는 통증, 손목·팔과 무릎·발목은 운전대를 잡고 브레이크를 밟으며 버틴 충격으로 아플 수 있고, 심리상태·수면으로는 놀람·불안·잠들기 어려움·운전이 두려움이 나타날 수 있다" style="display: block; width: 100%; max-width: 1000px; min-width: 760px; height: auto"></div>
+<figcaption style="font-size: 14px; color: #5d655f">교통사고 후 불편함이 나타나기 쉬운 곳</figcaption>
+</figure>
+<div class="eq-track" role="region" aria-label="교통사고 후유증 증상 종류" tabindex="0" style="display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 12px">
+<article style="flex: 1 0 270px; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px; padding: 28px 24px; border: 1px solid #e2dccd">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">01</p>
+<h3 style="margin: 0; font-size: 21px">근골격계 증상</h3>
+<p style="margin: 0; color: #4d554f; font-size: 15px">몸이 순간적으로 흔들리며 근육과 인대가 늘어나거나 뭉쳐 생깁니다.</p>
+<p style="margin: auto 0 0; padding-top: 12px; border-top: 1px solid #e2dccd; font-size: 15px">목·어깨·등·허리 통증, 결림, 손목·무릎·발목 통증</p>
+</article>
+<article style="flex: 1 0 270px; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px; padding: 28px 24px; border: 1px solid #e2dccd">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">02</p>
+<h3 style="margin: 0; font-size: 21px">신경계 증상</h3>
+<p style="margin: 0; color: #4d554f; font-size: 15px">목 주변이 긴장하고 순환이 떨어지며 머리와 팔다리까지 불편함이 이어질 수 있습니다.</p>
+<p style="margin: auto 0 0; padding-top: 12px; border-top: 1px solid #e2dccd; font-size: 15px">두통, 어지럼, 팔다리 저림, 귀울림</p>
+</article>
+<article style="flex: 1 0 270px; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px; padding: 28px 24px; border: 1px solid #e2dccd">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">03</p>
+<h3 style="margin: 0; font-size: 21px">소화기 증상</h3>
+<p style="margin: 0; color: #4d554f; font-size: 15px">사고의 충격과 긴장으로 소화 기능이 떨어지기도 합니다.</p>
+<p style="margin: auto 0 0; padding-top: 12px; border-top: 1px solid #e2dccd; font-size: 15px">메스꺼움, 소화불량, 식욕 저하</p>
+</article>
+<article style="flex: 1 0 270px; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px; padding: 28px 24px; border: 1px solid #e2dccd">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">04</p>
+<h3 style="margin: 0; font-size: 21px">심리상태·수면 증상</h3>
+<p style="margin: 0; color: #4d554f; font-size: 15px">크게 놀란 마음이 쉽게 가라앉지 않아 불안과 불면으로 이어질 수 있습니다.</p>
+<p style="margin: auto 0 0; padding-top: 12px; border-top: 1px solid #e2dccd; font-size: 15px">놀람, 불안, 잠들기 어려움, 운전이 두려움</p>
+</article>
+</div>
+</div>
+</section>
+
+<section style="border-top: 1px solid #e2dccd">
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 48px; align-items: start">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">CHECK</p>
+<h2 style="margin: 0; font-size: 30px; line-height: 1.4">이런 경우는<br>특히 살펴봐야 합니다</h2>
+<p style="margin: 0; color: #4d554f">아래에 해당한다면 통증이 가볍더라도 진료를 받아 보시는 것이 좋습니다.</p>
+<a href="tel:053-851-0122" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; margin-top: 8px; background: #2f5241; color: #ffffff; text-decoration: none; font-weight: 500">상담 예약하기</a>
+</div>
+<ul style="list-style: none; margin: 0; padding: 0; border-top: 1px solid #2f5241; font-size: 17px">
+<li style="display: flex; gap: 12px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #e2dccd"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 4px"><path d="M20 6L9 17l-5-5"></path></svg>시간이 지날수록 통증이 더 심해지는 경우</li>
+<li style="display: flex; gap: 12px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #e2dccd"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 4px"><path d="M20 6L9 17l-5-5"></path></svg>나이가 많거나 평소 근력이 약한 경우</li>
+<li style="display: flex; gap: 12px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #e2dccd"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 4px"><path d="M20 6L9 17l-5-5"></path></svg>사고 전부터 목·허리 질환이 있었거나 다친 적이 있는 경우</li>
+<li style="display: flex; gap: 12px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #e2dccd"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 4px"><path d="M20 6L9 17l-5-5"></path></svg>걷다가, 또는 자전거·오토바이를 타다 사고가 난 경우</li>
+<li style="display: flex; gap: 12px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #e2dccd"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 4px"><path d="M20 6L9 17l-5-5"></path></svg>차가 크게 부서졌거나 여러 대가 함께 부딪힌 경우</li>
+<li style="display: flex; gap: 12px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #e2dccd"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 4px"><path d="M20 6L9 17l-5-5"></path></svg>신호 대기 중처럼 예상하지 못한 순간 충격을 받은 경우</li>
+</ul>
+</div>
+</section>
+
+<section style="background: #f1ede3; border-top: 1px solid #e2dccd; border-bottom: 1px solid #e2dccd">
+<div style="max-width: 1240px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 24px">
+<div class="eq-track" style="display: flex; gap: 24px; overflow-x: auto; padding-bottom: 12px">
+<div style="flex: 1 0 360px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; padding: 32px; background: #ffffff; border: 1px solid #e2dccd">
+<strong style="font-size: 20px">치료는 일찍 시작할수록 좋습니다</strong>
+<span style="color: #4d554f">사고 직후는 손상된 근육과 인대가 회복을 시작하는 시기입니다. 이때 무리하지 않고 치료를 시작하면 통증이 굳어 오래가는 것을 줄이는 데 도움이 됩니다.</span>
+<a href="TrafficProcess.dc.html" style="font-size: 15px; font-weight: 500">시기별 치료 과정 보기 →</a>
+</div>
+<div style="flex: 1 0 360px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; padding: 32px; background: #ffffff; border: 1px solid #e2dccd">
+<strong style="font-size: 20px">자동차보험으로 진료받을 수 있습니다</strong>
+<span style="color: #4d554f">보험사에 사고를 접수하고 받은 접수번호를 알려 주시면 자동차보험으로 진료받으실 수 있습니다.</span>
+<a href="TrafficProcess.dc.html#insurance" style="font-size: 15px; font-weight: 500">자동차보험 진료 안내 보기 →</a>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="faq" style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">FAQ</p>
+<h2 style="margin: 0; font-size: 30px">자주 묻는 질문</h2>
+</div>
+<div style="border-top: 1px solid #2f5241">
+<details style="border-bottom: 1px solid #e2dccd">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-size: 17px; font-weight: 500">Q. 가벼운 접촉 사고였는데도 치료가 필요한가요?<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 0 0 20px; color: #4d554f">가벼운 사고라도 몸이 순간적으로 흔들리며 근육과 인대가 놀랄 수 있습니다. 통증이나 불편함이 있다면 가벼울 때 진료를 받아 보시는 것이 좋습니다.</p>
+</details>
+<details style="border-bottom: 1px solid #e2dccd">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-size: 17px; font-weight: 500">Q. 사고 후 며칠이 지나서야 아프기 시작했어요.<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 0 0 20px; color: #4d554f">흔히 있는 일입니다. 사고 직후에는 긴장 때문에 통증을 잘 느끼지 못하다가 며칠 뒤 나타나는 경우가 많습니다. 통증이 시작되었다면 미루지 말고 진료를 받아 보세요.</p>
+</details>
+<details style="border-bottom: 1px solid #e2dccd">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-size: 17px; font-weight: 500">Q. 병원 검사에서는 이상이 없다고 했어요.<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 0 0 20px; color: #4d554f">근육과 인대의 손상이나 몸의 균형이 틀어진 상태는 검사로 확인하기 어려운 경우가 많습니다. 갈창림한의원은 지금 느끼는 증상을 중심으로 진찰하고 치료합니다.</p>
+</details>
+<details style="border-bottom: 1px solid #e2dccd">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-size: 17px; font-weight: 500">Q. 자동차보험으로 진료받을 수 있나요?<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 0 0 20px; color: #4d554f">네. 보험사에 사고를 접수하고 받은 접수번호를 알려 주시면 자동차보험으로 진료받으실 수 있습니다. 자세한 절차는 <a href="TrafficProcess.dc.html#insurance">자동차보험 진료 안내</a>에서 확인하실 수 있습니다.</p>
+</details>
+<details style="border-bottom: 1px solid #e2dccd">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-size: 17px; font-weight: 500">Q. 주말에도 치료받을 수 있나요?<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 0 0 20px; color: #4d554f">네. 토·일요일은 오전 8시 30분부터 오후 2시까지 점심시간 없이 진료합니다. 평일은 오전 8시 30분부터 오후 6시 30분까지 진료하며, 공휴일은 휴진합니다.</p>
+</details>
+</div>
+</div>
+</section>
+
+<section style="background: #f1ede3; border-top: 1px solid #e2dccd; border-bottom: 1px solid #e2dccd">
+<div style="max-width: 1240px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">NEXT</p>
+<h2 style="margin: 0; font-size: 28px">어떻게 치료하나요?</h2>
+</div>
+<div class="eq-track" role="region" aria-label="교통사고 관련 페이지" tabindex="0" style="display: flex; gap: 16px; overflow-x: auto; padding-bottom: 12px">
+<a href="TrafficProcess.dc.html" style="flex: 1 0 300px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px; padding: 28px 24px; background: #ffffff; border: 1px solid #e2dccd; text-decoration: none">
+<strong style="font-size: 20px">치료 과정</strong>
+<span style="color: #4d554f; font-size: 15px">사고 직후부터 회복까지 시기별 치료와 자동차보험 진료 절차를 안내합니다</span>
+<span style="margin-top: auto; padding-top: 8px; font-size: 14px; color: #5d655f">자세히 보기 →</span>
+</a>
+<a href="TrafficTreat.dc.html" style="flex: 1 0 300px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px; padding: 28px 24px; background: #ffffff; border: 1px solid #e2dccd; text-decoration: none">
+<strong style="font-size: 20px">치료 방법</strong>
+<span style="color: #4d554f; font-size: 15px">침·약침, 추나, 한약, 뜸·부항·물리치료요법으로 증상에 맞춰 치료합니다</span>
+<span style="margin-top: auto; padding-top: 8px; font-size: 14px; color: #5d655f">자세히 보기 →</span>
+</a>
+</div>
+</div>
+</section>
+
+<section>
+<div style="max-width: 1240px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center">
+<h2 style="margin: 0; font-size: 28px">사고 후 몸이 불편하다면</h2>
+<p style="margin: 0; color: #4d554f">증상이 가벼울 때 치료를 시작하는 것이 좋습니다. 상담으로 지금 상태를 확인해 보세요.</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 8px">
+<a href="https://talk.naver.com/W4F2TI" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border: 1px solid #2f5241; background: #ffffff; text-decoration: none; font-weight: 500">네이버상담</a>
+<a href="tel:053-851-0122" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; background: #2f5241; color: #ffffff; text-decoration: none; font-weight: 500">전화 상담</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer style="background: #24302a; color: #c9cfc6">
+<div style="max-width: 1240px; margin: 0 auto; padding: 56px 24px 64px; display: flex; flex-direction: column; gap: 14px; font-size: 14px">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px"><img src="/_blob/1bca22fc9730cca11fb19f0787b8b06c" alt="" aria-hidden="true" style="display: block; height: 32px; width: auto"><strong style="font-size: 20px; color: #ffffff">갈창림한의원</strong></div>
+<div class="eq-track" style="display: flex; gap: 0 20px; overflow-x: auto; white-space: nowrap">
+<span>상호 갈창림한의원</span>
+<span>대표자 갈창림</span>
+<span>사업자등록번호 732-20-02200</span>
+</div>
+<div class="eq-track" style="display: flex; gap: 0 20px; overflow-x: auto; white-space: nowrap">
+<span>주소 경북 경산시 하양읍 동서2길 43</span>
+<span>전화 <a href="tel:053-851-0122" style="color: #c9cfc6; text-decoration: none">053-851-0122</a></span>
+</div>
+<div class="eq-track" style="display: flex; gap: 0 20px; overflow-x: auto; white-space: nowrap; margin-top: 4px">
+<a href="Privacy.dc.html" style="color: #ffffff; font-weight: 700; text-decoration: none">개인정보처리방침</a>
+<a href="Terms.dc.html" style="color: #ffffff; text-decoration: none">이용약관</a>
+<a href="https://blog.naver.com/gal0122" target="_blank" rel="noopener" style="color: #ffffff; text-decoration: none">블로그</a>
+<a href="https://www.instagram.com/gal__clinic/" target="_blank" rel="noopener" style="color: #ffffff; text-decoration: none">인스타그램</a>
+</div>
+<p style="margin: 0; color: #8f978d">© 2026 갈창림한의원. All rights reserved.</p>
+</div>
+</footer>
+
+<nav class="qn" aria-label="바로가기" style="position: fixed; right: 20px; top: 50%; transform: translateY(-50%); z-index: 40; display: flex; flex-direction: column; overflow: hidden; width: 76px; border-radius: 20px; background: #ffffff; box-shadow: 0 12px 30px rgba(36,48,42,0.16)">
+<a href="https://blog.naver.com/gal0122" target="_blank" rel="noopener" style="height: 72px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; border-bottom: 1px solid #ebe6da; color: #2f5241; font-size: 12px; font-weight: 600; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"></path><path d="M13 7l4 4"></path></svg>블로그</a>
+<a href="https://talk.naver.com/W4F2TI" target="_blank" rel="noopener" style="height: 72px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; border-bottom: 1px solid #ebe6da; color: #2f5241; font-size: 12px; font-weight: 600; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.2 7.5L3 21l2-5.3A8.4 8.4 0 1 1 21 11.5z"></path></svg>톡톡상담</a>
+<a href="tel:053-851-0122" class="qn-call" style="height: 72px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; background: #2f5241; color: #ffffff; font-size: 12px; font-weight: 600; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg>전화</a>
+</nav>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":5800}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

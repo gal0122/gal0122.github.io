@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>디자인리프팅</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+@font-face{font-family:'Pretendard';src:url('/_blob/8c366efa542f5b0811a2487191ba3cc9') format('woff2');font-weight:45 920;font-style:normal;font-display:swap}
+body{margin:0;-webkit-text-size-adjust:100%}
+a{color:#24302a}a:hover{color:#2f5241}
+h1,h2,h3{letter-spacing:-0.02em;word-break:keep-all}
+p,li,dd,td,figcaption{word-break:keep-all}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #2f5241;outline-offset:2px}
+.gnb>a:hover,.gnb-item:hover>a{color:#2f5241}
+.gnb-sub{display:none}
+.gnb-item:hover .gnb-sub,.gnb-item:focus-within .gnb-sub{display:flex}
+.gnb-sub a:hover{background:#f1ede3}
+.gnb-sub2{display:none}
+.gnb-sub-item:hover>.gnb-sub2,.gnb-sub-item:focus-within>.gnb-sub2{display:flex}
+.gnb-sub-item:hover>a{background:#f1ede3}
+.gnb-sub,.gnb-sub2{border-radius:14px;box-shadow:0 14px 34px rgba(36,48,42,.12)}
+.hd-call:hover{background:#2f5241;color:#ffffff}
+.m-menu{display:none}
+.m-menu summary{list-style:none;cursor:pointer}
+.m-menu summary::-webkit-details-marker{display:none}
+.m-menu[open] .ic-open,.m-menu:not([open]) .ic-close{display:none}
+.qn a:hover{background:#f1ede3}
+.qn .qn-call:hover{background:#24402f}
+footer a:hover{color:#d7c9a7}
+.svc{transition:transform .2s ease,box-shadow .2s ease}
+.svc:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(36,48,42,.10)}
+.btn-fill:hover{background:#24402f;color:#ffffff}
+.btn-line:hover{background:#f1ede3}
+main [style*="border: 1px solid #e2dccd"]:not(tr):not(th):not(td):not(table):not(span){border-radius:18px;background-color:#ffffff}
+main [style*="min-height: 48px; padding: 0 24px"],main [style*="min-height: 44px; padding: 0 18px"],main li[style*="padding: 8px 16px"],main li[style*="padding: 8px 12px"]{border-radius:999px}
+main button[style*="width: 48px; height: 48px"]{border-radius:50%}
+main figure img,main img[style*="width: 100%"]{border-radius:16px}
+main>section[style*="background: #f1ede3"]{border-top-color:transparent!important;border-bottom-color:transparent!important}
+main>section[style*="border-top: 1px solid #e2dccd"]{border-top-color:transparent!important}
+.eq-track{scrollbar-width:thin;scrollbar-color:#c9c0a8 transparent}
+.eq-track::-webkit-scrollbar{height:6px}
+.eq-track::-webkit-scrollbar-thumb{background:#c9c0a8;border-radius:3px}
+@media (max-width:960px){.gnb{display:none!important}.m-menu{display:block}.hd-in{gap:10px!important}.hd-call{margin-left:auto;width:44px;padding:0!important;justify-content:center}.hd-call-txt{display:none}}
+@media (max-width:640px){
+h1{font-size:30px!important;line-height:1.35!important}
+h2{font-size:24px!important;line-height:1.4!important}
+h3{font-size:19px!important}
+.hd-logo{height:36px!important}
+[style*="max-width: 1240px"]{padding-left:16px!important;padding-right:16px!important}
+[style*="padding: 88px 24px"],[style*="padding: 96px 24px"],[style*="padding: 104px 24px"],[style*="padding: 80px 24px"],[style*="padding: 72px 24px"],[style*="padding: 64px 24px"]{padding-top:52px!important;padding-bottom:52px!important}
+[style*="padding: 56px 24px 0"]{padding-top:32px!important}
+[style*="minmax(3"],[style*="minmax(4"]{grid-template-columns:minmax(0,1fr)!important}
+.eq-track>*{max-width:84vw}
+.stack-m{flex-direction:column!important;align-items:stretch!important}
+.full-m{flex:0 0 auto!important;width:100%!important;max-width:100%!important}
+.hero-art{height:260px!important}
+.br-d{display:none}
+.map-box{min-height:240px!important}
+.qn{top:auto!important;bottom:0!important;left:0!important;right:0!important;transform:none!important;flex-direction:row!important;width:auto!important;border-radius:0!important}
+.qn a{flex:1 1 0!important;height:58px!important;flex-direction:row!important;gap:6px!important;font-size:14px!important;border-bottom:0!important}
+footer{padding-bottom:58px}
+}
+.eq-track{scrollbar-width:thin;scrollbar-color:#c9c0a8 #ede9dd}
+.eq-track::-webkit-scrollbar{height:6px}
+.eq-track::-webkit-scrollbar-track{background:#ede9dd}
+.eq-track::-webkit-scrollbar-thumb{background:#c9c0a8}
+.faq summary{list-style:none;cursor:pointer}
+.faq summary::-webkit-details-marker{display:none}
+.faq details[open] .faq-icon{transform:rotate(45deg)}
+</style>
+</helmet>
+<div style="font-family: 'Pretendard', 'Pretendard Variable', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; color: #24302a; background: #faf7f0; line-height: 1.6; min-height: 100vh">
+
+<header class="site-hd" style="position: sticky; top: 0; z-index: 30; background: #faf7f0; border-bottom: 1px solid #e2dccd">
+<div class="hd-in" style="max-width: 1240px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; gap: 40px">
+<a href="Main.dc.html" aria-label="갈창림한의원 홈" style="flex: 0 0 auto; display: inline-flex; align-items: center; text-decoration: none"><img class="hd-logo" src="/_blob/aa7a2a00288ecf879a5acf4665e97aa0" alt="갈창림한의원" style="display: block; height: 44px; width: auto"></a>
+<nav class="gnb" aria-label="메인 메뉴" style="flex: 1 1 auto; display: flex; align-items: center; gap: 30px; font-size: 16px; font-weight: 600; white-space: nowrap">
+<div class="gnb-item" style="position: relative">
+<a href="About.dc.html" aria-haspopup="true" style="display: block; text-decoration: none; padding: 10px 0">병원소개</a>
+<div class="gnb-sub" style="position: absolute; top: 100%; left: -20px; z-index: 20; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd; font-size: 15px; font-weight: 400">
+<a href="About.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">갈창림한의원 소개</a>
+<a href="Doctors.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">의료진 소개</a>
+<a href="Equipment.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">보유장비</a>
+<a href="Schedule.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">진료시간 및 오시는길</a>
+</div>
+</div>
+<div class="gnb-item" style="position: relative">
+<a href="Skin.dc.html" aria-haspopup="true" style="display: block; text-decoration: none; padding: 10px 0">피부미용</a>
+<div class="gnb-sub" style="position: absolute; top: 100%; left: -20px; z-index: 20; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd; font-size: 15px; font-weight: 400">
+<div class="gnb-sub-item" style="position: relative">
+<a href="Skin.dc.html#lifting" aria-haspopup="true" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 10px 20px; text-decoration: none; white-space: nowrap">리프팅<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></a>
+<div class="gnb-sub2" style="position: absolute; top: -9px; left: 100%; z-index: 21; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd">
+<a href="DesignLifting.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">디자인리프팅</a>
+<a href="ThreadLifting.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">맞춤형실리프팅</a>
+</div>
+</div>
+<div class="gnb-sub-item" style="position: relative">
+<a href="Skin.dc.html#booster" aria-haspopup="true" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 10px 20px; text-decoration: none; white-space: nowrap">스킨부스터<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></a>
+<div class="gnb-sub2" style="position: absolute; top: -9px; left: 100%; z-index: 21; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd">
+<a href="BoosterPDRN.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">PDRN·엑소좀</a>
+<a href="BoosterPLLA.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">PLLA</a>
+<a href="BoosterKeratin.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">케라틴</a>
+<a href="BoosterAltcore.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">알트코어</a>
+<a href="BoosterECM.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">ECM</a>
+</div>
+</div>
+<a href="HairRemoval.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">제모</a>
+<div class="gnb-sub-item" style="position: relative">
+<a href="Skin.dc.html#pigment" aria-haspopup="true" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 10px 20px; text-decoration: none; white-space: nowrap">색소<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></a>
+<div class="gnb-sub2" style="position: absolute; top: -9px; left: 100%; z-index: 21; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd">
+<a href="Pigment.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">기미·흑자·잡티·색소</a>
+<a href="Mole.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">점·쥐젖·편평사마귀</a>
+</div>
+</div>
+<div class="gnb-sub-item" style="position: relative">
+<a href="Skin.dc.html#acne" aria-haspopup="true" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 10px 20px; text-decoration: none; white-space: nowrap">여드름<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></a>
+<div class="gnb-sub2" style="position: absolute; top: -9px; left: 100%; z-index: 21; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd">
+<a href="Acne.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">여드름</a>
+<a href="AcneRed.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">여드름 붉은자국</a>
+<a href="AcneScar.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">여드름 흉터</a>
+</div>
+</div>
+<a href="Pore.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">모공</a>
+</div>
+</div>
+<div class="gnb-item" style="position: relative">
+<a href="Traffic.dc.html" aria-haspopup="true" style="display: block; text-decoration: none; padding: 10px 0">교통사고</a>
+<div class="gnb-sub" style="position: absolute; top: 100%; left: -20px; z-index: 20; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd; font-size: 15px; font-weight: 400">
+<a href="Traffic.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">교통사고 후유증</a>
+<a href="TrafficProcess.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">치료 과정</a>
+<a href="TrafficTreat.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">치료 방법</a>
+</div>
+</div>
+<div class="gnb-item" style="position: relative">
+<a href="PainSpine.dc.html" aria-haspopup="true" style="display: block; text-decoration: none; padding: 10px 0">통증</a>
+<div class="gnb-sub" style="position: absolute; top: 100%; left: -20px; z-index: 20; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd; font-size: 15px; font-weight: 400">
+<a href="PainSpine.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">척추 질환</a>
+<a href="PainJoint.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">관절 질환</a>
+</div>
+</div>
+<a href="Diet.dc.html" style="text-decoration: none; padding: 10px 0">다이어트</a>
+<div class="gnb-item" style="position: relative">
+<a href="Growth.dc.html" aria-haspopup="true" style="display: block; text-decoration: none; padding: 10px 0">소아·여성</a>
+<div class="gnb-sub" style="position: absolute; top: 100%; left: -20px; z-index: 20; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd; font-size: 15px; font-weight: 400">
+<a href="Growth.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">소아 성장</a>
+<a href="Women.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">여성 질환</a>
+</div>
+</div>
+<a href="Price.dc.html" style="text-decoration: none; padding: 10px 0">가격표</a>
+</nav>
+<a class="hd-call" href="tel:053-851-0122" aria-label="전화 053-851-0122" style="flex: 0 0 auto; display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 18px; box-sizing: border-box; border-radius: 999px; border: 1px solid #2f5241; color: #2f5241; font-size: 15px; font-weight: 700; text-decoration: none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg><span class="hd-call-txt">053-851-0122</span></a>
+<details class="m-menu">
+<summary aria-label="전체 메뉴" style="width: 44px; height: 44px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border-radius: 12px; background: #2f5241; color: #ffffff"><svg class="ic-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg><svg class="ic-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></summary>
+<nav aria-label="전체 메뉴" style="position: absolute; top: 100%; left: 0; right: 0; max-height: calc(100vh - 72px); overflow-y: auto; padding: 4px 20px 28px; background: #faf7f0; border-bottom: 1px solid #e2dccd; box-shadow: 0 20px 30px rgba(36,48,42,0.10)">
+<div style="padding: 14px 0; border-bottom: 1px solid #ebe6da">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">병원소개</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="About.dc.html" style="padding: 8px 0; text-decoration: none">갈창림한의원 소개</a>
+<a href="Doctors.dc.html" style="padding: 8px 0; text-decoration: none">의료진 소개</a>
+<a href="Equipment.dc.html" style="padding: 8px 0; text-decoration: none">보유장비</a>
+<a href="Schedule.dc.html" style="padding: 8px 0; text-decoration: none">진료시간 및 오시는길</a>
+</div>
+</div>
+<div style="padding: 14px 0; border-bottom: 1px solid #ebe6da">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">피부미용</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="Skin.dc.html" style="padding: 8px 0; text-decoration: none">피부미용 한눈에 보기</a>
+<a href="DesignLifting.dc.html" style="padding: 8px 0; text-decoration: none">디자인리프팅</a>
+<a href="ThreadLifting.dc.html" style="padding: 8px 0; text-decoration: none">맞춤형실리프팅</a>
+<a href="BoosterPDRN.dc.html" style="padding: 8px 0; text-decoration: none">PDRN·엑소좀</a>
+<a href="BoosterPLLA.dc.html" style="padding: 8px 0; text-decoration: none">PLLA</a>
+<a href="BoosterKeratin.dc.html" style="padding: 8px 0; text-decoration: none">케라틴</a>
+<a href="BoosterAltcore.dc.html" style="padding: 8px 0; text-decoration: none">알트코어</a>
+<a href="BoosterECM.dc.html" style="padding: 8px 0; text-decoration: none">ECM</a>
+<a href="HairRemoval.dc.html" style="padding: 8px 0; text-decoration: none">제모</a>
+<a href="Pigment.dc.html" style="padding: 8px 0; text-decoration: none">기미·흑자·잡티·색소</a>
+<a href="Mole.dc.html" style="padding: 8px 0; text-decoration: none">점·쥐젖·편평사마귀</a>
+<a href="Acne.dc.html" style="padding: 8px 0; text-decoration: none">여드름</a>
+<a href="AcneRed.dc.html" style="padding: 8px 0; text-decoration: none">여드름 붉은자국</a>
+<a href="AcneScar.dc.html" style="padding: 8px 0; text-decoration: none">여드름 흉터</a>
+<a href="Pore.dc.html" style="padding: 8px 0; text-decoration: none">모공</a>
+</div>
+</div>
+<div style="padding: 14px 0; border-bottom: 1px solid #ebe6da">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">교통사고 · 통증</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="Traffic.dc.html" style="padding: 8px 0; text-decoration: none">교통사고 후유증</a>
+<a href="TrafficProcess.dc.html" style="padding: 8px 0; text-decoration: none">교통사고 치료 과정</a>
+<a href="TrafficTreat.dc.html" style="padding: 8px 0; text-decoration: none">교통사고 치료 방법</a>
+<a href="PainSpine.dc.html" style="padding: 8px 0; text-decoration: none">척추 질환</a>
+<a href="PainJoint.dc.html" style="padding: 8px 0; text-decoration: none">관절 질환</a>
+</div>
+</div>
+<div style="padding: 14px 0">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">다이어트 · 소아·여성</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="Diet.dc.html" style="padding: 8px 0; text-decoration: none">다이어트</a>
+<a href="Growth.dc.html" style="padding: 8px 0; text-decoration: none">소아 성장</a>
+<a href="Women.dc.html" style="padding: 8px 0; text-decoration: none">여성 질환</a>
+<a href="Price.dc.html" style="padding: 8px 0; text-decoration: none">가격표</a>
+</div>
+</div>
+</nav>
+</details>
+</div>
+</header>
+
+<main>
+
+<section style="background: #f1ede3; border-bottom: 1px solid #e2dccd">
+<div style="max-width: 1240px; margin: 0 auto; padding: 56px 24px 0; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 14px; color: #5d655f">홈 &gt; 피부미용 &gt; 리프팅 &gt; 디자인리프팅</p>
+<h1 style="margin: 0; font-size: 40px; line-height: 1.3">디자인리프팅</h1>
+<p style="margin: 0; font-size: 18px; color: #4d554f">부위별로 설계하는 초음파·고주파 리프팅</p>
+<nav aria-label="리프팅 하위 메뉴" style="display: flex; flex-wrap: wrap; gap: 0 32px; margin-top: 24px; font-size: 15px">
+<a href="DesignLifting.dc.html" aria-current="page" style="padding: 14px 0; border-bottom: 3px solid #2f5241; font-weight: 700; text-decoration: none">디자인리프팅</a>
+<a href="ThreadLifting.dc.html" style="padding: 14px 0; border-bottom: 3px solid transparent; color: #5d655f; text-decoration: none">맞춤형실리프팅</a>
+</nav>
+</div>
+</section>
+
+<section style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 48px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">DESIGN LIFTING</p>
+<h2 style="margin: 0; font-size: 32px; line-height: 1.4">흐려진 얼굴 라인을<br>부위별로 설계해 끌어올립니다</h2>
+<p style="margin: 0; font-size: 17px; color: #4d554f">같은 리프팅 고민이라도 원인은 다릅니다. 피부 자체가 얇고 느슨해진 것인지, 깊은 조직이 아래로 처진 것인지에 따라 맞는 시술이 달라집니다. 디자인리프팅은 야누스프로 분석과 상담으로 이를 먼저 구분한 뒤, 고주파 리프팅 볼뉴머와 초음파 리프팅 리니어펌을 단독 또는 함께 설계하는 리프팅입니다.</p>
+<p style="margin: 0; font-size: 17px; color: #4d554f">얼굴 살이 적거나 볼이 꺼진 분은 깊은 초음파를 일률적으로 강하게 쓰면 얼굴이 더 말라 보일 수 있습니다. 그래서 얼굴 지방량과 피부 두께에 맞춰 에너지와 시술 깊이, 부위를 나누어 조절합니다.</p>
+<p style="margin: 8px 0 0; padding-left: 16px; border-left: 3px solid #2f5241; font-size: 17px; font-weight: 500">좋은 리프팅은 장비 이름이 아니라, 필요한 에너지를 필요한 깊이와 부위에 알맞게 나누는 설계에서 시작합니다.</p>
+</div>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 12px">
+<img src="/_blob/127ecf8e49b68e0a7e2553c13f5cb62b" alt="야누스프로 분석 화면 — 탄력, 턱선 각도, 좌우 균형" style="display: block; width: 100%; height: auto; border: 1px solid #e2dccd">
+<figcaption style="font-size: 14px; color: #5d655f">야누스프로 분석 화면. 탄력, 턱선 각도, 좌우 균형을 확인합니다.</figcaption>
+</figure>
+</section>
+
+<section style="background: #f1ede3; border-top: 1px solid #e2dccd; border-bottom: 1px solid #e2dccd">
+<div style="max-width: 1240px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 24px">
+<h2 style="margin: 0; font-size: 28px">시술 정보</h2>
+<dl class="eq-track" style="margin: 0; display: flex; gap: 16px; overflow-x: auto; padding-bottom: 12px">
+<div style="flex: 1 0 220px; display: flex; flex-direction: column; gap: 6px; padding: 24px; background: #ffffff; border: 1px solid #e2dccd">
+<dt style="font-size: 14px; color: #5d655f">시술 시간</dt>
+<dd style="margin: 0; font-size: 20px; font-weight: 700">약 20~30분</dd>
+</div>
+<div style="flex: 1 0 220px; display: flex; flex-direction: column; gap: 6px; padding: 24px; background: #ffffff; border: 1px solid #e2dccd">
+<dt style="font-size: 14px; color: #5d655f">마취</dt>
+<dd style="margin: 0; font-size: 20px; font-weight: 700">마취 크림 가능</dd>
+</div>
+<div style="flex: 1 0 220px; display: flex; flex-direction: column; gap: 6px; padding: 24px; background: #ffffff; border: 1px solid #e2dccd">
+<dt style="font-size: 14px; color: #5d655f">회복 기간</dt>
+<dd style="margin: 0; font-size: 20px; font-weight: 700">바로 일상생활 가능</dd>
+</div>
+<div style="flex: 2 0 360px; display: flex; flex-direction: column; gap: 6px; padding: 24px; background: #ffffff; border: 1px solid #e2dccd">
+<dt style="font-size: 14px; color: #5d655f">권장 주기</dt>
+<dd style="margin: 0; display: flex; flex-direction: column; gap: 4px; font-size: 16px">
+<span><strong>리니어펌</strong> 1달 간격 3회 시술 후, 6개월~1년마다</span>
+<span><strong>볼뉴머</strong> 1회 시술 후, 6개월~1년마다</span>
+</dd>
+</div>
+</dl>
+</div>
+</section>
+
+<section>
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">EQUIPMENT</p>
+<h2 style="margin: 0; font-size: 30px">디자인리프팅 장비</h2>
+<p style="margin: 0; color: #4d554f">초음파 리프팅과 고주파 리프팅, 두 가지 방식을 함께 사용합니다.</p>
+</div>
+<div class="eq-track" role="region" aria-label="디자인리프팅 장비" tabindex="0" style="display: flex; gap: 24px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 12px">
+<article style="flex: 1 0 320px; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px; padding: 28px; border: 1px solid #e2dccd">
+<img src="/_blob/077829036c9b3d1c225aca71512f443f" alt="리니어펌" style="display: block; width: 100%; height: 300px; object-fit: contain; background: #ffffff">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">초음파(HIFU) 리프팅</p>
+<h3 style="margin: 0; font-size: 26px">리니어펌</h3>
+<p style="margin: 0; color: #4d554f">돋보기로 햇빛을 한곳에 모으듯, 초음파 에너지를 피부 안쪽의 정해진 깊이에 집중시킵니다. 처진 볼과 입가, 흐려진 턱선, 이중턱처럼 얼굴 윤곽을 정돈하는 데 주로 사용합니다.</p>
+<ul style="margin: 0; padding-left: 18px; color: #4d554f; display: flex; flex-direction: column; gap: 4px">
+<li>집속형 초음파(HIFU) 방식</li>
+<li>2.0·3.0·4.5·6.0mm 카트리지로 깊이를 나누어 시술</li>
+<li>얕은 층은 탄력 보강, 깊은 층은 처진 윤곽 정돈</li>
+<li>라인형 카트리지로 촘촘하게 에너지 전달</li>
+</ul>
+</article>
+<article style="flex: 1 0 320px; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px; padding: 28px; border: 1px solid #e2dccd">
+<img src="/_blob/cb061705bdcaa41e90f9607e0c94e655" alt="볼뉴머" style="display: block; width: 100%; height: 300px; object-fit: contain; background: #ffffff">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">고주파(RF) 리프팅</p>
+<h3 style="margin: 0; font-size: 26px">볼뉴머</h3>
+<p style="margin: 0; color: #4d554f">모노폴라 고주파로 진피와 피하조직을 넓고 고르게 데워, 느슨해진 피부를 탄탄하게 정돈하는 타이트닝 시술입니다. 얼굴 살이 많지 않고 피부가 얇아진 분께도 활용하기 좋습니다.</p>
+<ul style="margin: 0; padding-left: 18px; color: #4d554f; display: flex; flex-direction: column; gap: 4px">
+<li>6.78MHz 모노폴라 고주파</li>
+<li>수냉식 쿨링과 진동 기능으로 열감을 조절하며 시술</li>
+<li>부위에 맞춘 4가지 크기의 팁</li>
+<li>클래시스 정품 볼뉴머와 정품 인증 팁 사용</li>
+</ul>
+</article>
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px">
+<h3 style="margin: 0; font-size: 22px">초음파와 고주파, 무엇이 다른가요?</h3>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 12px">
+<div class="eq-track" style="overflow-x: auto"><img src="/_blob/d42316f165cbb630924a6e6ff58fa62b" alt="피부 층별 단면 비교 그림. 리니어펌 초음파는 2.0, 3.0, 4.5, 6.0mm 깊이에 에너지를 점처럼 모아 전달하고, 볼뉴머 고주파는 진피와 피하지방을 넓고 고르게 데운다" style="display: block; width: 100%; max-width: 1000px; min-width: 760px; height: auto"></div>
+<figcaption style="font-size: 14px; color: #5d655f">초음파는 정해진 깊이에 모아서, 고주파는 넓게 퍼뜨려서 열을 전달합니다.</figcaption>
+</figure>
+<div class="eq-track" style="overflow-x: auto">
+<table style="width: 100%; min-width: 640px; border-collapse: collapse; font-size: 16px; border-top: 2px solid #2f5241">
+<thead>
+<tr style="background: #f1ede3; border-bottom: 1px solid #e2dccd">
+<th scope="col" style="text-align: left; padding: 14px 16px; width: 20%; font-weight: 500">구분</th>
+<th scope="col" style="text-align: left; padding: 14px 16px; width: 40%; font-weight: 700">초음파 · 리니어펌</th>
+<th scope="col" style="text-align: left; padding: 14px 16px; width: 40%; font-weight: 700">고주파 · 볼뉴머</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom: 1px solid #e2dccd">
+<th scope="row" style="text-align: left; padding: 14px 16px; font-weight: 500">에너지</th>
+<td style="padding: 14px 16px; color: #4d554f">집속형 초음파</td>
+<td style="padding: 14px 16px; color: #4d554f">모노폴라 고주파</td>
+</tr>
+<tr style="border-bottom: 1px solid #e2dccd">
+<th scope="row" style="text-align: left; padding: 14px 16px; font-weight: 500">열 전달</th>
+<td style="padding: 14px 16px; color: #4d554f">설정한 깊이에 집중</td>
+<td style="padding: 14px 16px; color: #4d554f">넓고 입체적으로</td>
+</tr>
+<tr style="border-bottom: 1px solid #e2dccd">
+<th scope="row" style="text-align: left; padding: 14px 16px; font-weight: 500">주된 목적</th>
+<td style="padding: 14px 16px; color: #4d554f">처진 윤곽과 턱선 정돈</td>
+<td style="padding: 14px 16px; color: #4d554f">피부 탄력과 타이트닝</td>
+</tr>
+<tr style="border-bottom: 1px solid #e2dccd">
+<th scope="row" style="text-align: left; padding: 14px 16px; font-weight: 500">이런 고민에</th>
+<td style="padding: 14px 16px; color: #4d554f">볼 처짐, 이중턱, 흐려진 턱선</td>
+<td style="padding: 14px 16px; color: #4d554f">잔주름, 모공, 느슨해진 피부</td>
+</tr>
+<tr style="border-bottom: 1px solid #e2dccd">
+<th scope="row" style="text-align: left; padding: 14px 16px; font-weight: 500">시술 느낌</th>
+<td style="padding: 14px 16px; color: #4d554f">깊은 곳의 찌릿함, 뻐근함</td>
+<td style="padding: 14px 16px; color: #4d554f">따뜻한 열감</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-top: 8px">
+<p style="margin: 0; padding: 20px 24px; background: #f1ede3; color: #4d554f">볼과 턱선이 아래로 처진 느낌이라면 <strong style="color: #24302a">리니어펌</strong>을, 피부가 얇고 느슨해진 느낌이라면 <strong style="color: #24302a">볼뉴머</strong>를 먼저 고려합니다.</p>
+<p style="margin: 0; padding: 20px 24px; background: #f1ede3; color: #4d554f">두 고민이 함께 있다면 볼뉴머로 피부 바탕을 탄탄하게 하고, 리니어펌으로 처진 부위를 정리하는 <strong style="color: #24302a">복합 시술</strong>을 설계합니다.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section style="border-top: 1px solid #e2dccd">
+<div data-eq-slider="true" style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">PROCESS</p>
+<h2 style="margin: 0; font-size: 30px">시술 과정</h2>
+</div>
+<div style="display: flex; gap: 8px; flex-shrink: 0">
+<button type="button" aria-label="이전 단계 보기" onClick="{{ prev }}" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; padding: 0; border: 1px solid #2f5241; background: #ffffff; color: #24302a; cursor: pointer"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg></button>
+<button type="button" aria-label="다음 단계 보기" onClick="{{ next }}" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; padding: 0; border: 1px solid #2f5241; background: #2f5241; color: #ffffff; cursor: pointer"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></button>
+</div>
+</div>
+<ol data-eq-track="true" class="eq-track" aria-label="디자인리프팅 시술 과정" tabindex="0" style="list-style: none; margin: 0; padding: 0 0 16px; display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth">
+<li style="flex: 0 0 260px; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; padding: 24px; background: #f1ede3">
+<span style="font-size: 14px; font-weight: 700">STEP 1</span>
+<strong style="font-size: 17px">피부 분석</strong>
+<span style="color: #4d554f; font-size: 15px">야누스프로로 탄력, 턱선 각도, 좌우 균형을 확인합니다.</span>
+</li>
+<li style="flex: 0 0 260px; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; padding: 24px; background: #f1ede3">
+<span style="font-size: 14px; font-weight: 700">STEP 2</span>
+<strong style="font-size: 17px">상담 · 디자인</strong>
+<span style="color: #4d554f; font-size: 15px">피부 두께, 얼굴 지방량, 처진 부위를 보고 장비와 에너지, 시술 부위를 정합니다.</span>
+</li>
+<li style="flex: 0 0 260px; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; padding: 24px; background: #f1ede3">
+<span style="font-size: 14px; font-weight: 700">STEP 3</span>
+<strong style="font-size: 17px">세안 · 준비</strong>
+<span style="color: #4d554f; font-size: 15px">세안 후 시술 부위를 표시하고 시술을 준비합니다.</span>
+</li>
+<li style="flex: 0 0 260px; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; padding: 24px; background: #f1ede3">
+<span style="font-size: 14px; font-weight: 700">STEP 4</span>
+<strong style="font-size: 17px">리프팅 시술</strong>
+<span style="color: #4d554f; font-size: 15px">리니어펌, 볼뉴머로 디자인한 부위를 시술합니다.</span>
+</li>
+<li style="flex: 0 0 260px; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; padding: 24px; background: #f1ede3">
+<span style="font-size: 14px; font-weight: 700">STEP 5</span>
+<strong style="font-size: 17px">마무리</strong>
+<span style="color: #4d554f; font-size: 15px">피부를 진정시키고 시술 후 주의사항을 안내합니다.</span>
+</li>
+</ol>
+</div>
+</section>
+
+<section style="border-top: 1px solid #e2dccd">
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 48px; align-items: start">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">RECOMMEND</p>
+<h2 style="margin: 0; font-size: 30px">이런 분께 추천합니다</h2>
+<a href="tel:053-851-0122" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; margin-top: 8px; background: #2f5241; color: #ffffff; text-decoration: none; font-weight: 500">상담 예약하기</a>
+</div>
+<ul style="list-style: none; margin: 0; padding: 0; border-top: 1px solid #2f5241; font-size: 17px">
+<li style="display: flex; gap: 12px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #e2dccd"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 4px"><path d="M20 6L9 17l-5-5"></path></svg>턱선이 흐려지고 볼과 입가가 아래로 처져 보이는 분</li>
+<li style="display: flex; gap: 12px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #e2dccd"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 4px"><path d="M20 6L9 17l-5-5"></path></svg>이중턱과 얼굴 아래쪽의 무게감이 고민인 분</li>
+<li style="display: flex; gap: 12px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #e2dccd"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 4px"><path d="M20 6L9 17l-5-5"></path></svg>피부가 얇아지고 잔주름이 늘어난 분</li>
+<li style="display: flex; gap: 12px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #e2dccd"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 4px"><path d="M20 6L9 17l-5-5"></path></svg>모공과 피부결까지 함께 관리하고 싶은 분</li>
+<li style="display: flex; gap: 12px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #e2dccd"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 4px"><path d="M20 6L9 17l-5-5"></path></svg>얼굴 살이 빠지는 시술이 부담스러운 분</li>
+<li style="display: flex; gap: 12px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #e2dccd"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 4px"><path d="M20 6L9 17l-5-5"></path></svg>바로 일상생활이 가능한 리프팅을 원하시는 분</li>
+</ul>
+</div>
+</section>
+
+<section style="border-top: 1px solid #e2dccd">
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">CAUTION</p>
+<h2 style="margin: 0; font-size: 30px">시술 후 주의사항</h2>
+</div>
+<ol style="margin: 0; padding: 0; list-style: none; border-top: 1px solid #2f5241; font-size: 16px">
+<li style="display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid #e2dccd"><strong style="flex-shrink: 0; width: 28px">01</strong><span style="color: #4d554f">시술 직후 세안과 메이크업이 가능합니다. 자극이 적은 제품을 사용해 주세요.</span></li>
+<li style="display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid #e2dccd"><strong style="flex-shrink: 0; width: 28px">02</strong><span style="color: #4d554f">시술 부위에 일시적인 붉음, 열감, 부기, 누르면 아픈 느낌이 생길 수 있으며 대부분 시간이 지나면서 가라앉습니다.</span></li>
+<li style="display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid #e2dccd"><strong style="flex-shrink: 0; width: 28px">03</strong><span style="color: #4d554f">시술 후 약 1주일간 사우나, 뜨거운 목욕, 과격한 운동, 과음, 강한 얼굴 마사지는 피해 주세요.</span></li>
+<li style="display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid #e2dccd"><strong style="flex-shrink: 0; width: 28px">04</strong><span style="color: #4d554f">시술 후 약 1주일간 스크럽, 필링 등 자극적인 관리는 피해 주세요.</span></li>
+<li style="display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid #e2dccd"><strong style="flex-shrink: 0; width: 28px">05</strong><span style="color: #4d554f">자외선 차단제와 보습제를 꼼꼼히 발라 주세요.</span></li>
+<li style="display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid #e2dccd"><strong style="flex-shrink: 0; width: 28px">06</strong><span style="color: #4d554f">불편감이 오래가거나 이상 증상이 있으면 바로 한의원으로 연락해 주세요.</span></li>
+</ol>
+<p style="margin: 0; font-size: 14px; color: #5d655f">※ 시술 효과와 유지 기간은 피부 상태, 에너지, 샷 수에 따라 개인차가 있습니다.</p>
+</div>
+</section>
+
+<section style="border-top: 1px solid #e2dccd">
+<div class="faq" style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">FAQ</p>
+<h2 style="margin: 0; font-size: 30px">자주 묻는 질문</h2>
+</div>
+<div style="border-top: 1px solid #2f5241">
+<details style="border-bottom: 1px solid #e2dccd">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-size: 17px; font-weight: 500">Q. 초음파 리프팅과 고주파 리프팅은 무엇이 다른가요?<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 0 0 20px; color: #4d554f">초음파(리니어펌)는 에너지를 설정한 깊이에 모아 처진 볼과 턱선 같은 얼굴 윤곽을 정돈하는 데, 고주파(볼뉴머)는 피부를 넓고 고르게 데워 탄력과 타이트닝에 주로 사용합니다. 어느 쪽이 더 좋다기보다, 고민이 피부 자체의 느슨함인지 깊은 조직의 처짐인지에 따라 알맞은 장비가 달라집니다.</p>
+</details>
+<details style="border-bottom: 1px solid #e2dccd">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-size: 17px; font-weight: 500">Q. 볼뉴머와 리니어펌을 같은 날 받을 수 있나요?<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 0 0 20px; color: #4d554f">피부 두께와 처짐 정도에 따라 같은 날 함께 시술할 수 있습니다. 다만 얼굴 살이 적거나 피부가 예민한 경우에는 에너지를 낮게 조절하거나 시술 간격을 두기도 합니다.</p>
+</details>
+<details style="border-bottom: 1px solid #e2dccd">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-size: 17px; font-weight: 500">Q. 시술 직후에도 달라진 게 느껴지나요?<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 0 0 20px; color: #4d554f">열에너지로 피부가 수축하면서 시술 직후 탄탄해진 느낌을 받을 수 있습니다. 이후 콜라겐이 새로 만들어지면서 수주에서 수개월에 걸쳐 서서히 변화가 나타나며, 정도에는 개인차가 있습니다.</p>
+</details>
+<details style="border-bottom: 1px solid #e2dccd">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-size: 17px; font-weight: 500">Q. 얼굴 살이 적은데 리프팅을 하면 더 꺼져 보이지 않을까요?<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 0 0 20px; color: #4d554f">얼굴 살이 적거나 볼이 꺼진 경우, 깊은 층까지 닿는 초음파를 모든 부위에 강하게 시술하면 얼굴이 더 말라 보일 수 있습니다. 그래서 디자인리프팅은 얼굴 지방량과 피부 두께를 먼저 확인하고, 볼륨을 지켜야 할 부위와 정돈할 부위를 나누어 시술 깊이를 다르게 조절합니다.</p>
+</details>
+<details style="border-bottom: 1px solid #e2dccd">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-size: 17px; font-weight: 500">Q. 볼뉴머를 받으면 얼굴 살이 빠지나요?<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 0 0 20px; color: #4d554f">볼뉴머는 얼굴 지방을 직접 없애는 시술이 아니라 고주파 열로 피부 탄력을 높이는 시술입니다. 다만 에너지를 지나치게 높이거나 한 부위에 몰아서 시술하면 원하지 않는 볼륨 변화가 생길 수 있어, 얼굴 살이 적은 분은 에너지를 세심하게 조절합니다.</p>
+</details>
+<details style="border-bottom: 1px solid #e2dccd">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-size: 17px; font-weight: 500">Q. 시술 후 바로 일상생활이 가능한가요?<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 0 0 20px; color: #4d554f">대부분 시술 직후 일상생활이 가능합니다. 일시적으로 붉음, 열감, 부기, 누르면 아픈 느낌이 생길 수 있으며 대개 시간이 지나면서 가라앉습니다.</p>
+</details>
+<details style="border-bottom: 1px solid #e2dccd">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-size: 17px; font-weight: 500">Q. 통증은 어느 정도인가요?<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 0 0 20px; color: #4d554f">볼뉴머는 따뜻한 열감이, 리니어펌은 깊은 곳의 찌릿함이나 뻐근함이 느껴질 수 있으며 정도는 부위와 피부 상태에 따라 다릅니다. 볼뉴머는 수냉식 쿨링과 진동 기능으로 열감을 조절하며 시술하고, 통증이 걱정되시면 마취 크림을 바른 뒤 시술할 수 있습니다.</p>
+</details>
+<details style="border-bottom: 1px solid #e2dccd">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-size: 17px; font-weight: 500">Q. 얼마나 자주 받아야 하나요?<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 0 0 20px; color: #4d554f">리니어펌은 1달 간격으로 3회 시술한 뒤 6개월~1년마다, 볼뉴머는 1회 시술 후 6개월~1년마다 받으시길 권합니다. 피부 상태에 따라 상담 시 조정해 드립니다.</p>
+</details>
+<details style="border-bottom: 1px solid #e2dccd">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-size: 17px; font-weight: 500">Q. 여름에도 시술할 수 있나요?<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 0 0 20px; color: #4d554f">계절과 관계없이 시술할 수 있습니다. 다만 시술 후에는 자외선 차단제를 꼼꼼히 발라 주세요.</p>
+</details>
+</div>
+</div>
+</section>
+
+<section style="background: #f1ede3; border-top: 1px solid #e2dccd">
+<div style="max-width: 1240px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center">
+<h2 style="margin: 0; font-size: 28px">나에게 맞는 리프팅이 궁금하다면</h2>
+<p style="margin: 0; color: #4d554f">야누스프로 피부 분석 후 상담을 통해 알맞은 리프팅을 안내해 드립니다.</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 8px">
+<a href="https://talk.naver.com/W4F2TI" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border: 1px solid #2f5241; background: #ffffff; text-decoration: none; font-weight: 500">네이버상담</a>
+<a href="tel:053-851-0122" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; background: #2f5241; color: #ffffff; text-decoration: none; font-weight: 500">전화 상담</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer style="background: #24302a; color: #c9cfc6">
+<div style="max-width: 1240px; margin: 0 auto; padding: 56px 24px 64px; display: flex; flex-direction: column; gap: 14px; font-size: 14px">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px"><img src="/_blob/1bca22fc9730cca11fb19f0787b8b06c" alt="" aria-hidden="true" style="display: block; height: 32px; width: auto"><strong style="font-size: 20px; color: #ffffff">갈창림한의원</strong></div>
+<div class="eq-track" style="display: flex; gap: 0 20px; overflow-x: auto; white-space: nowrap">
+<span>상호 갈창림한의원</span>
+<span>대표자 갈창림</span>
+<span>사업자등록번호 732-20-02200</span>
+</div>
+<div class="eq-track" style="display: flex; gap: 0 20px; overflow-x: auto; white-space: nowrap">
+<span>주소 경북 경산시 하양읍 동서2길 43</span>
+<span>전화 <a href="tel:053-851-0122" style="color: #c9cfc6; text-decoration: none">053-851-0122</a></span>
+</div>
+<div class="eq-track" style="display: flex; gap: 0 20px; overflow-x: auto; white-space: nowrap; margin-top: 4px">
+<a href="Privacy.dc.html" style="color: #ffffff; font-weight: 700; text-decoration: none">개인정보처리방침</a>
+<a href="Terms.dc.html" style="color: #ffffff; text-decoration: none">이용약관</a>
+<a href="https://blog.naver.com/gal0122" target="_blank" rel="noopener" style="color: #ffffff; text-decoration: none">블로그</a>
+<a href="https://www.instagram.com/gal__clinic/" target="_blank" rel="noopener" style="color: #ffffff; text-decoration: none">인스타그램</a>
+</div>
+<p style="margin: 0; color: #8f978d">© 2026 갈창림한의원. All rights reserved.</p>
+</div>
+</footer>
+
+<nav class="qn" aria-label="바로가기" style="position: fixed; right: 20px; top: 50%; transform: translateY(-50%); z-index: 40; display: flex; flex-direction: column; overflow: hidden; width: 76px; border-radius: 20px; background: #ffffff; box-shadow: 0 12px 30px rgba(36,48,42,0.16)">
+<a href="https://blog.naver.com/gal0122" target="_blank" rel="noopener" style="height: 72px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; border-bottom: 1px solid #ebe6da; color: #2f5241; font-size: 12px; font-weight: 600; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"></path><path d="M13 7l4 4"></path></svg>블로그</a>
+<a href="https://talk.naver.com/W4F2TI" target="_blank" rel="noopener" style="height: 72px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; border-bottom: 1px solid #ebe6da; color: #2f5241; font-size: 12px; font-weight: 600; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.2 7.5L3 21l2-5.3A8.4 8.4 0 1 1 21 11.5z"></path></svg>톡톡상담</a>
+<a href="tel:053-851-0122" class="qn-call" style="height: 72px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; background: #2f5241; color: #ffffff; font-size: 12px; font-weight: 600; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg>전화</a>
+</nav>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":6590}}'>
+class Component extends DCLogic {
+slide(e, dir) {
+const root = e.currentTarget.closest('[data-eq-slider]');
+const track = root ? root.querySelector('[data-eq-track]') : null;
+if (!track) return;
+const first = track.firstElementChild;
+const step = first ? first.getBoundingClientRect().width + 16 : 276;
+const visible = Math.max(1, Math.floor(track.clientWidth / step));
+track.scrollBy({ left: dir * step * visible, behavior: 'smooth' });
+}
+renderVals() {
+return {
+prev: (e) => this.slide(e, -1),
+next: (e) => this.slide(e, 1)
+};
+}
+}
+</script>
+</body>
+</html>

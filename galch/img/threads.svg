@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="470" viewBox="0 0 960 470">
+<rect width="960" height="470" fill="#ffffff"/>
+<rect x="150" y="34" width="40" height="64" rx="6" fill="#a9ddd6" stroke="#6fb3aa" stroke-width="2"/>
+<rect x="144" y="30" width="52" height="12" rx="4" fill="#bfe8e2" stroke="#6fb3aa" stroke-width="2"/>
+<rect x="159" y="96" width="22" height="20" rx="3" fill="#c9ece7" stroke="#6fb3aa" stroke-width="2"/>
+<path d="M165 116 L165 336 A5 5 0 0 0 175 336 L175 116 Z" fill="#d3d6db" stroke="#8d939b" stroke-width="1.8"/>
+<line x1="168.5" y1="120" x2="168.5" y2="334" stroke="#ffffff" stroke-width="1.6" opacity="0.8"/>
+<path d="M174 318 C230 300, 232 210, 214 150 S190 112, 184 104" fill="none" stroke="#4b5cc4" stroke-width="3" stroke-linecap="round"/>
+<rect x="460" y="34" width="40" height="64" rx="6" fill="#a9ddd6" stroke="#6fb3aa" stroke-width="2"/>
+<rect x="454" y="30" width="52" height="12" rx="4" fill="#bfe8e2" stroke="#6fb3aa" stroke-width="2"/>
+<rect x="469" y="96" width="22" height="20" rx="3" fill="#c9ece7" stroke="#6fb3aa" stroke-width="2"/>
+<path d="M475 116 L475 336 A5 5 0 0 0 485 336 L485 116 Z" fill="#d3d6db" stroke="#8d939b" stroke-width="1.8"/>
+<line x1="478.5" y1="120" x2="478.5" y2="334" stroke="#ffffff" stroke-width="1.6" opacity="0.8"/>
+<line x1="485" y1="322" x2="526" y2="128" stroke="#4b5cc4" stroke-width="3" stroke-linecap="round"/>
+<line x1="488.7" y1="304.4" x2="493.7" y2="314.6" stroke="#4b5cc4" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="492.5" y1="286.7" x2="483.7" y2="294.1" stroke="#4b5cc4" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="496.2" y1="269.1" x2="501.2" y2="279.3" stroke="#4b5cc4" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="499.9" y1="251.5" x2="491.2" y2="258.8" stroke="#4b5cc4" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="503.6" y1="233.8" x2="508.6" y2="244.1" stroke="#4b5cc4" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="507.4" y1="216.2" x2="498.7" y2="223.5" stroke="#4b5cc4" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="511.1" y1="198.5" x2="516.1" y2="208.8" stroke="#4b5cc4" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="514.8" y1="180.9" x2="506.1" y2="188.3" stroke="#4b5cc4" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="518.5" y1="163.3" x2="523.5" y2="173.5" stroke="#4b5cc4" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="522.3" y1="145.6" x2="513.6" y2="153.0" stroke="#4b5cc4" stroke-width="2.4" stroke-linecap="round"/>
+<rect x="770" y="34" width="40" height="64" rx="6" fill="#a9ddd6" stroke="#6fb3aa" stroke-width="2"/>
+<rect x="764" y="30" width="52" height="12" rx="4" fill="#bfe8e2" stroke="#6fb3aa" stroke-width="2"/>
+<rect x="779" y="96" width="22" height="20" rx="3" fill="#c9ece7" stroke="#6fb3aa" stroke-width="2"/>
+<path d="M785 116 L785 336 A5 5 0 0 0 795 336 L795 116 Z" fill="#d3d6db" stroke="#8d939b" stroke-width="1.8"/>
+<line x1="788.5" y1="120" x2="788.5" y2="334" stroke="#ffffff" stroke-width="1.6" opacity="0.8"/>
+<path d="M776 176 A14 4.5 0 0 0 804 176" fill="none" stroke="#9aa3e6" stroke-width="3"/>
+<path d="M776 186 A14 4.5 0 0 0 804 186" fill="none" stroke="#9aa3e6" stroke-width="3"/>
+<path d="M776 196 A14 4.5 0 0 0 804 196" fill="none" stroke="#9aa3e6" stroke-width="3"/>
+<path d="M776 206 A14 4.5 0 0 0 804 206" fill="none" stroke="#9aa3e6" stroke-width="3"/>
+<path d="M776 216 A14 4.5 0 0 0 804 216" fill="none" stroke="#9aa3e6" stroke-width="3"/>
+<path d="M776 226 A14 4.5 0 0 0 804 226" fill="none" stroke="#9aa3e6" stroke-width="3"/>
+<path d="M776 236 A14 4.5 0 0 0 804 236" fill="none" stroke="#9aa3e6" stroke-width="3"/>
+<path d="M776 246 A14 4.5 0 0 0 804 246" fill="none" stroke="#9aa3e6" stroke-width="3"/>
+<path d="M776 256 A14 4.5 0 0 0 804 256" fill="none" stroke="#9aa3e6" stroke-width="3"/>
+<path d="M776 266 A14 4.5 0 0 0 804 266" fill="none" stroke="#9aa3e6" stroke-width="3"/>
+<path d="M776 276 A14 4.5 0 0 0 804 276" fill="none" stroke="#9aa3e6" stroke-width="3"/>
+<path d="M776 286 A14 4.5 0 0 0 804 286" fill="none" stroke="#9aa3e6" stroke-width="3"/>
+<path d="M776 296 A14 4.5 0 0 0 804 296" fill="none" stroke="#9aa3e6" stroke-width="3"/>
+<path d="M776 306 A14 4.5 0 0 0 804 306" fill="none" stroke="#9aa3e6" stroke-width="3"/>
+<path d="M776 316 A14 4.5 0 0 0 804 316" fill="none" stroke="#9aa3e6" stroke-width="3"/>
+<path d="M776 176 A14 4.5 0 0 1 804 181" fill="none" stroke="#4b5cc4" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M776 186 A14 4.5 0 0 1 804 191" fill="none" stroke="#4b5cc4" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M776 196 A14 4.5 0 0 1 804 201" fill="none" stroke="#4b5cc4" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M776 206 A14 4.5 0 0 1 804 211" fill="none" stroke="#4b5cc4" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M776 216 A14 4.5 0 0 1 804 221" fill="none" stroke="#4b5cc4" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M776 226 A14 4.5 0 0 1 804 231" fill="none" stroke="#4b5cc4" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M776 236 A14 4.5 0 0 1 804 241" fill="none" stroke="#4b5cc4" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M776 246 A14 4.5 0 0 1 804 251" fill="none" stroke="#4b5cc4" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M776 256 A14 4.5 0 0 1 804 261" fill="none" stroke="#4b5cc4" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M776 266 A14 4.5 0 0 1 804 271" fill="none" stroke="#4b5cc4" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M776 276 A14 4.5 0 0 1 804 281" fill="none" stroke="#4b5cc4" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M776 286 A14 4.5 0 0 1 804 291" fill="none" stroke="#4b5cc4" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M776 296 A14 4.5 0 0 1 804 301" fill="none" stroke="#4b5cc4" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M776 306 A14 4.5 0 0 1 804 311" fill="none" stroke="#4b5cc4" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M776 316 A14 4.5 0 0 1 804 321" fill="none" stroke="#4b5cc4" stroke-width="3.4" stroke-linecap="round"/>
+<text x="170" y="398" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="24" font-weight="700" fill="#1a1a1a">모노실</text>
+<text x="170" y="430" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="16" fill="#555555">매끈한 실 · 탄력과 피부결</text>
+<text x="480" y="398" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="24" font-weight="700" fill="#1a1a1a">코그실</text>
+<text x="480" y="430" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="16" fill="#555555">돌기가 있는 실 · 처진 조직 리프팅</text>
+<text x="790" y="398" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="24" font-weight="700" fill="#1a1a1a">채움실 · 볼륨실</text>
+<text x="790" y="430" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="16" fill="#555555">스프링 형태 · 꺼진 부위 볼륨</text>
+</svg>

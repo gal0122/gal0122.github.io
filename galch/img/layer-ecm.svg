@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="440" viewBox="0 0 780 440">
+<rect width="780" height="440" fill="#ffffff"/>
+<defs><clipPath id="blk"><rect x="130" y="40" width="430" height="350"/></clipPath></defs>
+<g clip-path="url(#blk)">
+<g opacity="0.38"><rect x="130" y="40" width="430" height="72" fill="#f7e6da"/>
+<line x1="130" y1="46" x2="142" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="148" y1="46" x2="160" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="166" y1="46" x2="178" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="184" y1="46" x2="196" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="202" y1="46" x2="214" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="220" y1="46" x2="232" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="238" y1="46" x2="250" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="256" y1="46" x2="268" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="274" y1="46" x2="286" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="292" y1="46" x2="304" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="310" y1="46" x2="322" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="328" y1="46" x2="340" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="346" y1="46" x2="358" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="364" y1="46" x2="376" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="382" y1="46" x2="394" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="400" y1="46" x2="412" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="418" y1="46" x2="430" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="436" y1="46" x2="448" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="454" y1="46" x2="466" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="472" y1="46" x2="484" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="490" y1="46" x2="502" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="508" y1="46" x2="520" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="526" y1="46" x2="538" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+<line x1="544" y1="46" x2="556" y2="46" stroke="#e3c3ad" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g opacity="0.38"><rect x="130" y="112" width="430" height="20" fill="#f0cdb8"/>
+<ellipse cx="139" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+<ellipse cx="157" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+<ellipse cx="175" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+<ellipse cx="193" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+<ellipse cx="211" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+<ellipse cx="229" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+<ellipse cx="247" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+<ellipse cx="265" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+<ellipse cx="283" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+<ellipse cx="301" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+<ellipse cx="319" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+<ellipse cx="337" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+<ellipse cx="355" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+<ellipse cx="373" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+<ellipse cx="391" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+<ellipse cx="409" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+<ellipse cx="427" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+<ellipse cx="445" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+<ellipse cx="463" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+<ellipse cx="481" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+<ellipse cx="499" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+<ellipse cx="517" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+<ellipse cx="535" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+<ellipse cx="553" cy="122.0" rx="7.5" ry="8" fill="#e5a988" stroke="#c98463" stroke-width="1"/>
+</g>
+<g opacity="1"><rect x="130" y="132" width="430" height="168" fill="#f5d6d4"/>
+<path d="M130 154 Q160 144 190 154 Q220 164 250 154 Q280 144 310 154 Q340 164 370 154 Q400 144 430 154 Q460 164 490 154 Q520 144 550 154" fill="none" stroke="#e0a5a1" stroke-width="3" stroke-linecap="round"/>
+<path d="M130 180 Q160 170 190 180 Q220 190 250 180 Q280 170 310 180 Q340 190 370 180 Q400 170 430 180 Q460 190 490 180 Q520 170 550 180" fill="none" stroke="#e0a5a1" stroke-width="3" stroke-linecap="round"/>
+<path d="M130 206 Q160 196 190 206 Q220 216 250 206 Q280 196 310 206 Q340 216 370 206 Q400 196 430 206 Q460 216 490 206 Q520 196 550 206" fill="none" stroke="#e0a5a1" stroke-width="3" stroke-linecap="round"/>
+<path d="M130 232 Q160 222 190 232 Q220 242 250 232 Q280 222 310 232 Q340 242 370 232 Q400 222 430 232 Q460 242 490 232 Q520 222 550 232" fill="none" stroke="#e0a5a1" stroke-width="3" stroke-linecap="round"/>
+<path d="M130 258 Q160 248 190 258 Q220 268 250 258 Q280 248 310 258 Q340 268 370 258 Q400 248 430 258 Q460 268 490 258 Q520 248 550 258" fill="none" stroke="#e0a5a1" stroke-width="3" stroke-linecap="round"/>
+<path d="M130 284 Q160 274 190 284 Q220 294 250 284 Q280 274 310 284 Q340 294 370 284 Q400 274 430 284 Q460 294 490 284 Q520 274 550 284" fill="none" stroke="#e0a5a1" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g opacity="0.38"><rect x="130" y="300" width="430" height="90" fill="#fcf2d2"/>
+<circle cx="152" cy="324" r="17" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.5"/>
+<circle cx="172" cy="364" r="17" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.5"/>
+<circle cx="192" cy="324" r="17" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.5"/>
+<circle cx="212" cy="364" r="17" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.5"/>
+<circle cx="232" cy="324" r="17" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.5"/>
+<circle cx="252" cy="364" r="17" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.5"/>
+<circle cx="272" cy="324" r="17" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.5"/>
+<circle cx="292" cy="364" r="17" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.5"/>
+<circle cx="312" cy="324" r="17" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.5"/>
+<circle cx="332" cy="364" r="17" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.5"/>
+<circle cx="352" cy="324" r="17" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.5"/>
+<circle cx="372" cy="364" r="17" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.5"/>
+<circle cx="392" cy="324" r="17" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.5"/>
+<circle cx="412" cy="364" r="17" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.5"/>
+<circle cx="432" cy="324" r="17" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.5"/>
+<circle cx="452" cy="364" r="17" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.5"/>
+<circle cx="472" cy="324" r="17" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.5"/>
+<circle cx="492" cy="364" r="17" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.5"/>
+<circle cx="512" cy="324" r="17" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.5"/>
+<circle cx="532" cy="364" r="17" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.5"/>
+<circle cx="552" cy="324" r="17" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.5"/>
+<circle cx="572" cy="364" r="17" fill="#f6e3a6" stroke="#e5cd7d" stroke-width="1.5"/>
+</g>
+</g>
+<rect x="130" y="40" width="430" height="350" fill="none" stroke="#bdbdbd" stroke-width="1.5"/>
+<text x="116" y="82.0" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="16" font-weight="400" fill="#8a8a8a">표피</text>
+<text x="116" y="128.0" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="16" font-weight="400" fill="#8a8a8a">기저층</text>
+<text x="116" y="222.0" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="16" font-weight="700" fill="#1a1a1a">진피</text>
+<text x="116" y="351.0" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="16" font-weight="400" fill="#8a8a8a">피하지방</text>
+<path d="M160 138 C190 192, 130 242, 170 294" fill="none" stroke="#4b5cc4" stroke-width="2.4" opacity="0.85"/><path d="M208 138 C238 192, 178 242, 218 294" fill="none" stroke="#4b5cc4" stroke-width="2.4" opacity="0.85"/><path d="M256 138 C286 192, 226 242, 266 294" fill="none" stroke="#4b5cc4" stroke-width="2.4" opacity="0.85"/><path d="M304 138 C334 192, 274 242, 314 294" fill="none" stroke="#4b5cc4" stroke-width="2.4" opacity="0.85"/><path d="M352 138 C382 192, 322 242, 362 294" fill="none" stroke="#4b5cc4" stroke-width="2.4" opacity="0.85"/><path d="M400 138 C430 192, 370 242, 410 294" fill="none" stroke="#4b5cc4" stroke-width="2.4" opacity="0.85"/><path d="M448 138 C478 192, 418 242, 458 294" fill="none" stroke="#4b5cc4" stroke-width="2.4" opacity="0.85"/><path d="M496 138 C526 192, 466 242, 506 294" fill="none" stroke="#4b5cc4" stroke-width="2.4" opacity="0.85"/><path d="M544 138 C574 192, 514 242, 554 294" fill="none" stroke="#4b5cc4" stroke-width="2.4" opacity="0.85"/><path d="M574 132 h10 v168 h-10" fill="none" stroke="#1a1a1a" stroke-width="2.5"/><text x="594" y="212.0" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="17" font-weight="700" fill="#1a1a1a">진피 구조</text><text x="594" y="234.0" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" fill="#555555">골격 · 구조 강화</text><text x="345.0" y="420" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" fill="#555555">콜라겐·엘라스틴·GAGs로 진피의 골격과 구조를 채웁니다</text>
+</svg>

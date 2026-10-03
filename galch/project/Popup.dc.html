@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>홈 첫 화면 팝업</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+@font-face{font-family:'Pretendard';src:url('/_blob/8c366efa542f5b0811a2487191ba3cc9') format('woff2');font-weight:45 920;font-style:normal;font-display:swap}
+body{margin:0;-webkit-text-size-adjust:100%}
+.pop-stage{min-height:100vh;box-sizing:border-box;padding:72px 24px;background:#848a83;font-family:'Pretendard','Pretendard Variable',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;color:#24302a;line-height:1.6}
+.pop-layer{display:flex;justify-content:center;align-items:flex-start;gap:24px}
+.pop{flex:0 0 380px;width:380px;max-width:100%;box-sizing:border-box;overflow:hidden;border-radius:20px;background:#faf7f0;box-shadow:0 24px 60px rgba(20,28,24,.35);word-break:keep-all}
+.pop-body{display:flex;flex-direction:column;gap:14px;padding:30px 28px 26px}
+.pop-eyebrow{margin:0;font-size:13px;font-weight:700;letter-spacing:.04em;color:#7a6b42}
+.pop-date{margin:0;font-size:34px;line-height:1.15;font-weight:800;letter-spacing:-.02em;color:#2f5241}
+.pop-title{margin:0;font-size:22px;line-height:1.35;font-weight:700;letter-spacing:-.02em}
+.pop-list{margin:4px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.pop-list li{display:flex;align-items:center;gap:10px;padding:13px 16px;border-radius:14px;background:#ffffff;border:1px solid #e2dccd;font-size:16px;font-weight:700}
+.pop-list svg{flex:0 0 auto;color:#2f5241}
+.pop-text{margin:0;font-size:14px;color:#4d554f}
+.pop-link{align-self:flex-start;font-size:14px;font-weight:700;color:#2f5241;text-decoration:none}
+.pop-link:hover{text-decoration:underline}
+.pop-cal{width:100%;border-collapse:separate;border-spacing:4px;table-layout:fixed;margin:2px -4px 0;width:calc(100% + 8px)}
+.pop-cal caption{caption-side:top;text-align:left;padding:0 4px 4px;font-size:15px;font-weight:700}
+.pop-cal th{padding:2px 0;font-size:12px;font-weight:600;color:#5d655f}
+.pop-cal td{height:42px;padding:0;border-radius:10px;text-align:center;vertical-align:middle;font-size:14px;font-variant-numeric:tabular-nums;color:#4d554f}
+.pop-cal td b{display:block;font-weight:700;line-height:1.1}
+.pop-cal td span{display:block;margin-top:2px;font-size:10px;font-weight:700;line-height:1}
+.pop-cal td.off{background:#d7c9a7;color:#24302a}
+.pop-cal td.on{background:#2f5241;color:#ffffff}
+.pop-legend{display:flex;gap:16px;margin:0;font-size:12px;color:#5d655f}
+.pop-legend i{display:inline-block;width:10px;height:10px;margin-right:5px;border-radius:3px;vertical-align:-1px}
+.pop-open{display:flex;align-items:center;gap:10px;padding:13px 16px;border-radius:14px;background:#e4ece6;color:#2f5241;font-size:15px;font-weight:600}
+.pop-open strong{font-weight:800}
+.pop-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px 12px 20px;background:#24302a;color:#ffffff}
+.pop-check{display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer}
+.pop-check input{width:16px;height:16px;margin:0;accent-color:#d7c9a7;cursor:pointer}
+.pop-close{border:0;padding:8px 10px;background:transparent;color:#ffffff;font:inherit;font-size:14px;font-weight:700;cursor:pointer}
+.pop-close:hover{color:#d7c9a7}
+.pop-close:focus-visible,.pop-check input:focus-visible,.pop-link:focus-visible{outline:2px solid #d7c9a7;outline-offset:2px}
+</style>
+</helmet>
+<div class="pop-stage">
+<div class="pop-layer" data-popups>
+
+<div class="pop" data-pop="event-end-2026" data-until="2026-12-31" role="dialog" aria-labelledby="pop-event-title">
+<div class="pop-body">
+<p class="pop-eyebrow">이벤트 종료 안내</p>
+<p class="pop-date">2026. 12. 31</p>
+<h2 class="pop-title" id="pop-event-title">아래 이벤트가 종료됩니다</h2>
+<ul class="pop-list">
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>인중 제모 체험가 500원 이벤트</li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>제모 1년·평생 무제한 이벤트</li>
+</ul>
+<p class="pop-text">2027년 1월 1일부터는 위 이벤트가 적용되지 않습니다. 자세한 내용은 전화나 톡톡 상담으로 문의해 주세요.</p>
+<a class="pop-link" href="Price.dc.html">가격표 보기 →</a>
+</div>
+<div class="pop-foot">
+<label class="pop-check"><input type="checkbox">24시간 동안 다시 보지 않기</label>
+<button type="button" class="pop-close">닫기</button>
+</div>
+</div>
+
+<div class="pop" data-pop="closed-2026-10" data-until="2026-10-18" role="dialog" aria-labelledby="pop-closed-title">
+<div class="pop-body">
+<p class="pop-eyebrow">휴진 안내</p>
+<h2 class="pop-title" id="pop-closed-title">10월 휴진일 안내</h2>
+<table class="pop-cal">
+<caption>2026년 10월</caption>
+<thead><tr><th scope="col">일</th><th scope="col">월</th><th scope="col">화</th><th scope="col">수</th><th scope="col">목</th><th scope="col">금</th><th scope="col">토</th></tr></thead>
+<tbody>
+<tr><td></td><td></td><td></td><td></td><td><b>1</b></td><td><b>2</b></td><td class="off"><b>3</b><span>휴진</span></td></tr>
+<tr><td class="off"><b>4</b><span>휴진</span></td><td class="off"><b>5</b><span>휴진</span></td><td><b>6</b></td><td><b>7</b></td><td><b>8</b></td><td class="on"><b>9</b><span>진료</span></td><td><b>10</b></td></tr>
+<tr><td><b>11</b></td><td><b>12</b></td><td><b>13</b></td><td><b>14</b></td><td><b>15</b></td><td class="off"><b>16</b><span>휴진</span></td><td class="off"><b>17</b><span>휴진</span></td></tr>
+<tr><td class="off"><b>18</b><span>휴진</span></td><td><b>19</b></td><td><b>20</b></td><td><b>21</b></td><td><b>22</b></td><td><b>23</b></td><td><b>24</b></td></tr>
+<tr><td><b>25</b></td><td><b>26</b></td><td><b>27</b></td><td><b>28</b></td><td><b>29</b></td><td><b>30</b></td><td><b>31</b></td></tr>
+</tbody>
+</table>
+<p class="pop-legend"><span><i style="background: #d7c9a7"></i>휴진</span><span><i style="background: #2f5241"></i>정상 진료</span></p>
+<p class="pop-open"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg><span>10월 9일(금) 한글날은 <strong>정상 진료</strong>합니다</span></p>
+<p class="pop-text">휴진일: 10월 3일(토)·4일(일)·5일(월)<br>16일(금)·17일(토)·18일(일)</p>
+</div>
+<div class="pop-foot">
+<label class="pop-check"><input type="checkbox">24시간 동안 다시 보지 않기</label>
+<button type="button" class="pop-close">닫기</button>
+</div>
+</div>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":820}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

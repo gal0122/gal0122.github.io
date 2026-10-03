@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+<rect width="1200" height="400" fill="#ffffff"/>
+<defs><radialGradient id="heat" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ff7a3d" stop-opacity="0.85"/><stop offset="100%" stop-color="#ffb04a" stop-opacity="0"/></radialGradient><radialGradient id="infl" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#e2463a" stop-opacity="0.55"/><stop offset="100%" stop-color="#e2463a" stop-opacity="0"/></radialGradient><marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1a1a1a"/></marker></defs>
+<rect x="22" y="20" width="270" height="270" fill="#fbfbfb" stroke="#cfcfcf" stroke-width="1.5"/>
+<text x="36" y="46" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" font-weight="700" fill="#1a1a1a">1</text>
+<rect x="101.0" y="76" width="112" height="148" rx="8" fill="#ffffff" stroke="#9a9a9a" stroke-width="2"/>
+<rect x="133.0" y="66" width="48" height="20" rx="5" fill="#9a9a9a"/>
+<path d="M119.0 112 L195.0 112" stroke="#bdbdbd" stroke-width="4" stroke-linecap="round"/>
+<path d="M119.0 134 L177.0 134" stroke="#bdbdbd" stroke-width="4" stroke-linecap="round"/>
+<path d="M119.0 156 L195.0 156" stroke="#bdbdbd" stroke-width="4" stroke-linecap="round"/>
+<path d="M119.0 178 L177.0 178" stroke="#bdbdbd" stroke-width="4" stroke-linecap="round"/>
+<path d="M119.0 200 L195.0 200" stroke="#bdbdbd" stroke-width="4" stroke-linecap="round"/>
+<path d="M177.0 190 l10 10 l20 -24" fill="none" stroke="#e2463a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="157.0" y="330" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="19" font-weight="700" fill="#1a1a1a">진찰</text>
+<text x="157.0" y="358" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">체질 · 체력 · 생활습관 확인</text>
+<path d="M299.0 145 L313.0 155 L299.0 165" fill="none" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="322" y="20" width="270" height="270" fill="#fbfbfb" stroke="#cfcfcf" stroke-width="1.5"/>
+<text x="336" y="46" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" font-weight="700" fill="#1a1a1a">2</text>
+<path d="M367.0 180 L547.0 180 L527.0 210 L387.0 210 Z" fill="#f4ecdc" stroke="#cdbb98" stroke-width="2"/>
+<ellipse cx="407.0" cy="164" rx="18" ry="9" fill="#a0703f"/>
+<ellipse cx="443.0" cy="158" rx="16" ry="10" fill="#c99a5b"/>
+<ellipse cx="479.0" cy="162" rx="18" ry="8" fill="#8c5a3c"/>
+<ellipse cx="511.0" cy="166" rx="14" ry="8" fill="#b8864e"/>
+<ellipse cx="427.0" cy="144" rx="14" ry="7" fill="#d6b27a"/>
+<ellipse cx="467.0" cy="140" rx="15" ry="7" fill="#7a9a5a"/>
+<ellipse cx="497.0" cy="148" rx="12" ry="7" fill="#a0703f"/>
+<path d="M451.0 110 q10 -30 34 -36" fill="none" stroke="#7a9a5a" stroke-width="4" stroke-linecap="round"/>
+<ellipse cx="487.0" cy="74" rx="16" ry="8" fill="#7a9a5a" transform="rotate(-30 487.0 74)"/>
+<text x="457.0" y="330" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="19" font-weight="700" fill="#1a1a1a">맞춤 처방</text>
+<text x="457.0" y="358" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">한 분을 위한 처방 구성</text>
+<path d="M599.0 145 L613.0 155 L599.0 165" fill="none" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="622" y="20" width="270" height="270" fill="#fbfbfb" stroke="#cfcfcf" stroke-width="1.5"/>
+<text x="636" y="46" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" font-weight="700" fill="#1a1a1a">3</text>
+<path d="M727.0 90 q-10 -14 0 -28 q10 -14 0 -28" fill="none" stroke="#b5b5b5" stroke-width="3" stroke-linecap="round"/>
+<path d="M757.0 90 q-10 -14 0 -28 q10 -14 0 -28" fill="none" stroke="#b5b5b5" stroke-width="3" stroke-linecap="round"/>
+<path d="M787.0 90 q-10 -14 0 -28 q10 -14 0 -28" fill="none" stroke="#b5b5b5" stroke-width="3" stroke-linecap="round"/>
+<path d="M677.0 120 L837.0 120 L827.0 210 Q757.0 230 687.0 210 Z" fill="#6b4a33" stroke="#4e3524" stroke-width="2"/>
+<rect x="667.0" y="108" width="180" height="16" rx="8" fill="#4e3524"/>
+<ellipse cx="717.0" cy="160" rx="10" ry="18" fill="#ffffff" opacity="0.12"/>
+<text x="757.0" y="330" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="19" font-weight="700" fill="#1a1a1a">탕약 달이기</text>
+<text x="757.0" y="358" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">처방대로 정성껏 달임</text>
+<path d="M899.0 145 L913.0 155 L899.0 165" fill="none" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="922" y="20" width="270" height="270" fill="#fbfbfb" stroke="#cfcfcf" stroke-width="1.5"/>
+<text x="936" y="46" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" font-weight="700" fill="#1a1a1a">4</text>
+<path d="M987.0 90 L1039.0 90 L1039.0 206 Q1013.0 216 987.0 206 Z" fill="#ffffff" stroke="#9a9a9a" stroke-width="2"/>
+<rect x="993.0" y="130" width="40" height="60" rx="6" fill="#7a5638" opacity="0.85"/>
+<path d="M987.0 100 L1039.0 100" stroke="#bdbdbd" stroke-width="2"/>
+<path d="M1033.0 90 L1085.0 90 L1085.0 206 Q1059.0 216 1033.0 206 Z" fill="#ffffff" stroke="#9a9a9a" stroke-width="2"/>
+<rect x="1039.0" y="130" width="40" height="60" rx="6" fill="#7a5638" opacity="0.85"/>
+<path d="M1033.0 100 L1085.0 100" stroke="#bdbdbd" stroke-width="2"/>
+<path d="M1079.0 90 L1131.0 90 L1131.0 206 Q1105.0 216 1079.0 206 Z" fill="#ffffff" stroke="#9a9a9a" stroke-width="2"/>
+<rect x="1085.0" y="130" width="40" height="60" rx="6" fill="#7a5638" opacity="0.85"/>
+<path d="M1079.0 100 L1131.0 100" stroke="#bdbdbd" stroke-width="2"/>
+<text x="1057.0" y="330" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="19" font-weight="700" fill="#1a1a1a">복용 · 조절</text>
+<text x="1057.0" y="358" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">경과를 보며 처방 조절</text>
+</svg>

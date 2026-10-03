@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="720" viewBox="0 0 1100 720">
+<rect width="1100" height="720" fill="#ffffff"/>
+<defs><radialGradient id="heat" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ff7a3d" stop-opacity="0.85"/><stop offset="100%" stop-color="#ffb04a" stop-opacity="0"/></radialGradient><radialGradient id="infl" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#e2463a" stop-opacity="0.55"/><stop offset="100%" stop-color="#e2463a" stop-opacity="0"/></radialGradient><marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1a1a1a"/></marker></defs>
+<rect x="400" y="37.798148437500004" width="250" height="130.1539140625" rx="10" fill="#e2463a" opacity="0.07"/>
+<rect x="400" y="389.427734375" width="250" height="148.1385742187499" rx="10" fill="#e2463a" opacity="0.07"/>
+<g transform="translate(531.3 58.5) rotate(-13.3)"><rect x="-17.0" y="-3.5" width="34" height="7" rx="2" fill="#c7d9e8"/></g>
+<g transform="translate(536.2 75.7) rotate(-11.7)"><rect x="-17.0" y="-3.5" width="34" height="7" rx="2" fill="#c7d9e8"/></g>
+<g transform="translate(540.3 94.0) rotate(-8.0)"><rect x="-17.0" y="-3.5" width="34" height="7" rx="2" fill="#c7d9e8"/></g>
+<g transform="translate(542.0 111.7) rotate(-0.1)"><rect x="-17.0" y="-3.5" width="34" height="7" rx="2" fill="#c7d9e8"/></g>
+<g transform="translate(540.5 129.6) rotate(7.7)"><rect x="-17.0" y="-3.5" width="34" height="7" rx="2" fill="#c7d9e8"/></g>
+<g transform="translate(536.5 147.0) rotate(12.2)"><rect x="-17.0" y="-3.5" width="34" height="7" rx="2" fill="#c7d9e8"/></g>
+<g transform="translate(531.7 163.9) rotate(12.4)"><rect x="-17.0" y="-3.5" width="34" height="7" rx="2" fill="#c7d9e8"/></g>
+<g transform="translate(526.7 182.9) rotate(12.6)"><rect x="-22.0" y="-3.3" width="44" height="6.6" rx="2" fill="#c7d9e8"/></g>
+<g transform="translate(520.7 201.8) rotate(15.0)"><rect x="-22.0" y="-3.3" width="44" height="6.6" rx="2" fill="#c7d9e8"/></g>
+<g transform="translate(514.4 219.9) rotate(15.3)"><rect x="-22.0" y="-3.3" width="44" height="6.6" rx="2" fill="#c7d9e8"/></g>
+<g transform="translate(507.9 239.0) rotate(14.5)"><rect x="-22.0" y="-3.3" width="44" height="6.6" rx="2" fill="#c7d9e8"/></g>
+<g transform="translate(501.9 258.6) rotate(12.6)"><rect x="-22.0" y="-3.3" width="44" height="6.6" rx="2" fill="#c7d9e8"/></g>
+<g transform="translate(497.4 276.5) rotate(9.6)"><rect x="-22.0" y="-3.3" width="44" height="6.6" rx="2" fill="#c7d9e8"/></g>
+<g transform="translate(494.2 297.0) rotate(4.1)"><rect x="-22.0" y="-3.3" width="44" height="6.6" rx="2" fill="#c7d9e8"/></g>
+<g transform="translate(493.7 315.4) rotate(-1.1)"><rect x="-22.0" y="-3.3" width="44" height="6.6" rx="2" fill="#c7d9e8"/></g>
+<g transform="translate(495.1 335.8) rotate(-5.1)"><rect x="-22.0" y="-3.3" width="44" height="6.6" rx="2" fill="#c7d9e8"/></g>
+<g transform="translate(497.8 354.8) rotate(-7.7)"><rect x="-22.0" y="-3.3" width="44" height="6.6" rx="2" fill="#c7d9e8"/></g>
+<g transform="translate(501.4 373.4) rotate(-9.4)"><rect x="-22.0" y="-3.3" width="44" height="6.6" rx="2" fill="#c7d9e8"/></g>
+<g transform="translate(505.7 392.9) rotate(-10.4)"><rect x="-22.0" y="-3.3" width="44" height="6.6" rx="2" fill="#c7d9e8"/></g>
+<g transform="translate(512.3 421.2) rotate(-10.6)"><rect x="-29.0" y="-4.25" width="58" height="8.5" rx="2" fill="#c7d9e8"/></g>
+<g transform="translate(521.2 448.6) rotate(-17.8)"><rect x="-29.0" y="-4.25" width="58" height="8.5" rx="2" fill="#c7d9e8"/></g>
+<g transform="translate(532.7 476.5) rotate(-15.5)"><rect x="-29.0" y="-4.25" width="58" height="8.5" rx="2" fill="#c7d9e8"/></g>
+<g transform="translate(538.3 505.5) rotate(-0.9)"><rect x="-29.0" y="-4.25" width="58" height="8.5" rx="2" fill="#c7d9e8"/></g>
+<g transform="translate(528.9 50.3) rotate(-13.3)"><rect x="-40.0" y="-3.5" width="24" height="6" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-20.0" y="-6.5" width="40" height="13" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<g transform="translate(534.1 67.8) rotate(-12.6)"><rect x="-40.0" y="-3.5" width="24" height="6" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-20.0" y="-6.5" width="40" height="13" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<g transform="translate(538.5 84.9) rotate(-10.1)"><rect x="-40.0" y="-3.5" width="24" height="6" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-20.0" y="-6.5" width="40" height="13" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<g transform="translate(541.5 102.8) rotate(-4.8)"><rect x="-40.0" y="-3.5" width="24" height="6" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-20.0" y="-6.5" width="40" height="13" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<g transform="translate(541.7 120.6) rotate(3.8)"><rect x="-40.0" y="-3.5" width="24" height="6" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-20.0" y="-6.5" width="40" height="13" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<g transform="translate(538.7 138.5) rotate(10.7)"><rect x="-40.0" y="-3.5" width="24" height="6" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-20.0" y="-6.5" width="40" height="13" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<g transform="translate(534.1 155.5) rotate(12.6)"><rect x="-40.0" y="-3.5" width="24" height="6" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-20.0" y="-6.5" width="40" height="13" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<g transform="translate(529.2 173.4) rotate(11.7)"><rect x="-45.0" y="-4.5" width="24" height="8" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-25.0" y="-7.5" width="50" height="15" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<g transform="translate(523.5 193.4) rotate(14.3)"><rect x="-45.0" y="-4.5" width="24" height="8" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-25.0" y="-7.5" width="50" height="15" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<g transform="translate(517.6 210.7) rotate(15.3)"><rect x="-45.0" y="-4.5" width="24" height="8" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-25.0" y="-7.5" width="50" height="15" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<g transform="translate(511.2 229.3) rotate(15.1)"><rect x="-45.0" y="-4.5" width="24" height="8" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-25.0" y="-7.5" width="50" height="15" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<g transform="translate(504.8 248.8) rotate(13.7)"><rect x="-45.0" y="-4.5" width="24" height="8" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-25.0" y="-7.5" width="50" height="15" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<g transform="translate(499.7 266.7) rotate(11.4)"><rect x="-45.0" y="-4.5" width="24" height="8" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-25.0" y="-7.5" width="50" height="15" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<g transform="translate(495.6 286.1) rotate(7.4)"><rect x="-45.0" y="-4.5" width="24" height="8" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-25.0" y="-7.5" width="50" height="15" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<g transform="translate(493.7 306.1) rotate(1.3)"><rect x="-45.0" y="-4.5" width="24" height="8" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-25.0" y="-7.5" width="50" height="15" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<g transform="translate(494.3 326.3) rotate(-3.4)"><rect x="-45.0" y="-4.5" width="24" height="8" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-25.0" y="-7.5" width="50" height="15" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<g transform="translate(496.4 345.3) rotate(-6.5)"><rect x="-45.0" y="-4.5" width="24" height="8" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-25.0" y="-7.5" width="50" height="15" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<g transform="translate(499.5 364.2) rotate(-8.7)"><rect x="-45.0" y="-4.5" width="24" height="8" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-25.0" y="-7.5" width="50" height="15" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<g transform="translate(503.7 384.0) rotate(-10.1)"><rect x="-45.0" y="-4.5" width="24" height="8" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-25.0" y="-7.5" width="50" height="15" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<g transform="translate(509.0 406.9) rotate(-10.5)"><rect x="-52.0" y="-8.5" width="24" height="16" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-32.0" y="-11.5" width="64" height="23" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<g transform="translate(516.2 435.2) rotate(-14.6)"><rect x="-52.0" y="-8.5" width="24" height="16" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-32.0" y="-11.5" width="64" height="23" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<g transform="translate(527.3 462.8) rotate(-18.5)"><rect x="-52.0" y="-8.5" width="24" height="16" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-32.0" y="-11.5" width="64" height="23" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<g transform="translate(536.7 490.8) rotate(-8.9)"><rect x="-52.0" y="-8.5" width="24" height="16" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-32.0" y="-11.5" width="64" height="23" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<g transform="translate(537.7 520.1) rotate(3.7)"><rect x="-52.0" y="-8.5" width="24" height="16" rx="4" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/><rect x="-32.0" y="-11.5" width="64" height="23" rx="5" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/></g>
+<path d="M500.946640625 538.22109375 L570.946640625 538.22109375 Q564.946640625 596.22109375 530.946640625 638.22109375 Q506.946640625 604.22109375 500.946640625 538.22109375 Z" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/>
+<path d="M512.946640625 558.22109375 L556.946640625 558.22109375" stroke="#b9a48c" stroke-width="1.2"/>
+<path d="M516.946640625 577.22109375 L553.946640625 577.22109375" stroke="#b9a48c" stroke-width="1.2"/>
+<path d="M520.946640625 596.22109375 L550.946640625 596.22109375" stroke="#b9a48c" stroke-width="1.2"/>
+<path d="M524.946640625 615.22109375 L547.946640625 615.22109375" stroke="#b9a48c" stroke-width="1.2"/>
+<path d="M340 45.798148437500004 L330 45.798148437500004 L330 159.9520625 L340 159.9520625" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+<text x="316" y="104.87510546875001" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="17" font-weight="700" fill="#1a1a1a">경추 (목뼈)</text>
+<text x="316" y="126.87510546875001" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">7개</text>
+<path d="M340 167.884 L330 167.884 L330 389.53285937500004 L340 389.53285937500004" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+<text x="316" y="280.70842968750003" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="17" font-weight="700" fill="#1a1a1a">흉추 (등뼈)</text>
+<text x="316" y="302.70842968750003" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">12개</text>
+<path d="M340 397.427734375 L330 397.427734375 L330 529.5663085937499 L340 529.5663085937499" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+<text x="316" y="465.49702148437495" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="17" font-weight="700" fill="#1a1a1a">요추 (허리뼈)</text>
+<text x="316" y="487.49702148437495" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#555555">5개</text>
+<path d="M340 540.22109375 L330 540.22109375 L330 640.22109375 L340 640.22109375" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+<text x="316" y="592.22109375" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="17" font-weight="700" fill="#1a1a1a">천추 (엉치뼈)</text>
+<path d="M670 37.798148437500004 L680 37.798148437500004 L680 167.9520625 L670 167.9520625" fill="none" stroke="#e2463a" stroke-width="2"/>
+<text x="702" y="66.87510546875001" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">목 통증</text>
+<text x="702" y="94.87510546875001" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">목디스크</text>
+<text x="702" y="118.87510546875001" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">일자목 · 거북목</text>
+<text x="702" y="142.87510546875" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">목 염좌 (담 결림)</text>
+<path d="M670 389.427734375 L680 389.427734375 L680 537.5663085937499 L670 537.5663085937499" fill="none" stroke="#e2463a" stroke-width="2"/>
+<text x="702" y="415.49702148437495" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">허리 통증</text>
+<text x="702" y="443.49702148437495" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">허리디스크</text>
+<text x="702" y="467.49702148437495" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">척추관협착증</text>
+<text x="702" y="491.49702148437495" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">허리 염좌 (허리 삐끗)</text>
+<text x="702" y="515.497021484375" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">척추전방전위증</text>
+<path d="M564.271728515625 505.51513671875 L640 668" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="564.271728515625" cy="505.51513671875" r="3" fill="#1a1a1a"/>
+<text x="646" y="673" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#1a1a1a">디스크 (뼈와 뼈 사이 쿠션)</text>
+<text x="370" y="706" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="12" font-weight="500" fill="#555555">← 등 쪽</text>
+<text x="640" y="706" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="12" font-weight="500" fill="#555555">배 쪽 →</text>
+</svg>

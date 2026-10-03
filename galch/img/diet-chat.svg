@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="640" viewBox="0 0 1100 640">
+<rect width="1100" height="640" fill="#ffffff"/>
+<defs><radialGradient id="heat" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ff7a3d" stop-opacity="0.85"/><stop offset="100%" stop-color="#ffb04a" stop-opacity="0"/></radialGradient><radialGradient id="infl" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#e2463a" stop-opacity="0.55"/><stop offset="100%" stop-color="#e2463a" stop-opacity="0"/></radialGradient><marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1a1a1a"/></marker></defs>
+<rect x="380" y="20" width="340" height="600" rx="36" fill="#2b2b2b"/>
+<rect x="392" y="32" width="316" height="576" rx="26" fill="#eef1f4"/>
+<rect x="392" y="32" width="316" height="54" rx="26" fill="#ffffff"/>
+<rect x="392" y="60" width="316" height="26" fill="#ffffff"/>
+<text x="550.0" y="67" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" font-weight="700" fill="#1a1a1a">갈창림한의원 식단 관리</text>
+<line x1="392" y1="86" x2="708" y2="86" stroke="#d3d9e0"/>
+<rect x="528" y="104" width="166" height="112" rx="12" fill="#ffffff" stroke="#d3d9e0"/>
+<rect x="541.0" y="114.0" width="140.0" height="92.0" rx="10.0" fill="#f4f1ea" stroke="#d6cfc0" stroke-width="1.5"/>
+<circle cx="575.0" cy="172.0" r="24.0" fill="#ffffff" stroke="#d6cfc0" stroke-width="1.5"/>
+<ellipse cx="575.0" cy="170.0" rx="15.0" ry="11.0" fill="#fbfaf6" stroke="#e2dccd" stroke-width="1"/>
+<circle cx="641.0" cy="174.0" r="22.0" fill="#ffffff" stroke="#d6cfc0" stroke-width="1.5"/>
+<ellipse cx="633.0" cy="170.0" rx="7.0" ry="4.0" fill="#7fb069"/>
+<ellipse cx="645.0" cy="166.0" rx="7.0" ry="4.0" fill="#7fb069"/>
+<ellipse cx="651.0" cy="180.0" rx="7.0" ry="4.0" fill="#7fb069"/>
+<ellipse cx="637.0" cy="182.0" rx="7.0" ry="4.0" fill="#7fb069"/>
+<ellipse cx="641.0" cy="174.0" rx="7.0" ry="4.0" fill="#7fb069"/>
+<rect x="549.0" y="122.0" width="36.0" height="20.0" rx="4.0" fill="#ffffff" stroke="#d6cfc0"/>
+<ellipse cx="567.0" cy="132.0" rx="12.0" ry="6.0" fill="#e8a87c"/>
+<rect x="593.0" y="122.0" width="36.0" height="20.0" rx="4.0" fill="#ffffff" stroke="#d6cfc0"/>
+<ellipse cx="611.0" cy="132.0" rx="12.0" ry="6.0" fill="#7fb069"/>
+<rect x="637.0" y="122.0" width="36.0" height="20.0" rx="4.0" fill="#ffffff" stroke="#d6cfc0"/>
+<ellipse cx="655.0" cy="132.0" rx="12.0" ry="6.0" fill="#d9c27a"/>
+<text x="522" y="212" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="11" font-weight="400" fill="#8a8a8a">12:31</text>
+<rect x="542" y="224" width="152" height="40" rx="14" fill="#dfe8f1" stroke="#d3d9e0" stroke-width="1"/>
+<text x="556" y="251" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#1a1a1a">오늘 점심이에요</text>
+<text x="406" y="290" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="12" font-weight="700" fill="#555555">갈창림 원장</text>
+<rect x="406" y="298" width="250" height="84" rx="14" fill="#ffffff" stroke="#d3d9e0" stroke-width="1"/>
+<text x="420" y="325" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#1a1a1a">단백질 반찬 잘 챙기셨네요!</text>
+<text x="420" y="347" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#1a1a1a">밥은 지금처럼 반 공기로</text>
+<text x="420" y="369" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#1a1a1a">유지해 주세요.</text>
+<text x="662" y="382" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="11" font-weight="400" fill="#8a8a8a">12:40</text>
+<rect x="528" y="396" width="166" height="112" rx="12" fill="#ffffff" stroke="#d3d9e0"/>
+<rect x="541.0" y="406.0" width="140.0" height="92.0" rx="10.0" fill="#f4f1ea" stroke="#d6cfc0" stroke-width="1.5"/>
+<circle cx="575.0" cy="464.0" r="24.0" fill="#ffffff" stroke="#d6cfc0" stroke-width="1.5"/>
+<ellipse cx="575.0" cy="462.0" rx="15.0" ry="11.0" fill="#fbfaf6" stroke="#e2dccd" stroke-width="1"/>
+<circle cx="641.0" cy="466.0" r="22.0" fill="#ffffff" stroke="#d6cfc0" stroke-width="1.5"/>
+<path d="M627.0 470.0 q14.0 -16.0 28.0 0 z" fill="#d79a6a"/>
+<ellipse cx="641.0" cy="458.0" rx="9.0" ry="5.0" fill="#7fb069"/>
+<rect x="549.0" y="414.0" width="36.0" height="20.0" rx="4.0" fill="#ffffff" stroke="#d6cfc0"/>
+<ellipse cx="567.0" cy="424.0" rx="12.0" ry="6.0" fill="#e8a87c"/>
+<rect x="593.0" y="414.0" width="36.0" height="20.0" rx="4.0" fill="#ffffff" stroke="#d6cfc0"/>
+<ellipse cx="611.0" cy="424.0" rx="12.0" ry="6.0" fill="#7fb069"/>
+<rect x="637.0" y="414.0" width="36.0" height="20.0" rx="4.0" fill="#ffffff" stroke="#d6cfc0"/>
+<ellipse cx="655.0" cy="424.0" rx="12.0" ry="6.0" fill="#d9c27a"/>
+<rect x="524" y="516" width="170" height="40" rx="14" fill="#dfe8f1" stroke="#d3d9e0" stroke-width="1"/>
+<text x="538" y="543" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#1a1a1a">저녁은 이렇게 먹었어요</text>
+<circle cx="790" cy="120" r="20" fill="#1a1a1a"/>
+<text x="790" y="126" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="16" font-weight="700" fill="#ffffff">1</text>
+<text x="824" y="126" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="19" font-weight="700" fill="#1a1a1a">식사 사진 보내기</text>
+<text x="824" y="154" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">매일 먹은 식사를</text>
+<text x="824" y="176" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">사진으로 보내 주세요</text>
+<path d="M790 148 L790 252" stroke="#cfcfcf" stroke-width="2" stroke-dasharray="4 5"/>
+<circle cx="790" cy="280" r="20" fill="#1a1a1a"/>
+<text x="790" y="286" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="16" font-weight="700" fill="#ffffff">2</text>
+<text x="824" y="286" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="19" font-weight="700" fill="#1a1a1a">원장 직접 확인 · 답장</text>
+<text x="824" y="314" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">식사량과 구성, 시간을</text>
+<text x="824" y="336" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">원장이 직접 보고 답해 드립니다</text>
+<path d="M790 308 L790 412" stroke="#cfcfcf" stroke-width="2" stroke-dasharray="4 5"/>
+<circle cx="790" cy="440" r="20" fill="#1a1a1a"/>
+<text x="790" y="446" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="16" font-weight="700" fill="#ffffff">3</text>
+<text x="824" y="446" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="19" font-weight="700" fill="#1a1a1a">진료에 반영</text>
+<text x="824" y="474" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">식단 기록을 보며</text>
+<text x="824" y="496" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">처방과 계획을 조절합니다</text>
+<text x="330" y="250" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">혼자 하는 다이어트에서</text>
+<text x="330" y="278" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">흔들리기 쉬운 매일의 식사를</text>
+<text x="330" y="306" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="18" font-weight="700" fill="#1a1a1a">함께 확인합니다</text>
+</svg>

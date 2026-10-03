@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="500" viewBox="0 0 1100 500">
+<rect width="1100" height="500" fill="#ffffff"/>
+<defs><radialGradient id="heat" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ff7a3d" stop-opacity="0.85"/><stop offset="100%" stop-color="#ffb04a" stop-opacity="0"/></radialGradient><radialGradient id="infl" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#e2463a" stop-opacity="0.55"/><stop offset="100%" stop-color="#e2463a" stop-opacity="0"/></radialGradient><marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1a1a1a"/></marker></defs>
+<rect x="495.0" y="314.0" width="110" height="66.0" fill="#c9d3dc" stroke="#ffffff" stroke-width="2"/>
+<text x="550" y="352.0" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#1a1a1a">뼈 · 수분 등</text>
+<rect x="495.0" y="209.5" width="110" height="104.50000000000001" fill="#d9776b" stroke="#ffffff" stroke-width="2"/>
+<text x="550" y="266.75" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#1a1a1a">근육</text>
+<rect x="495.0" y="82.99999999999999" width="110" height="126.50000000000001" fill="#f2c94c" stroke="#ffffff" stroke-width="2"/>
+<text x="550" y="151.25" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#1a1a1a">체지방</text>
+<rect x="125.0" y="318.4" width="110" height="61.60000000000001" fill="#c9d3dc" stroke="#ffffff" stroke-width="2"/>
+<text x="180" y="354.2" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#1a1a1a">뼈 · 수분 등</text>
+<rect x="125.0" y="246.89999999999998" width="110" height="71.5" fill="#d9776b" stroke="#ffffff" stroke-width="2"/>
+<text x="180" y="287.65" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#1a1a1a">근육</text>
+<rect x="125.0" y="142.39999999999998" width="110" height="104.50000000000001" fill="#f2c94c" stroke="#ffffff" stroke-width="2"/>
+<text x="180" y="199.64999999999998" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#1a1a1a">체지방</text>
+<rect x="865.0" y="315.1" width="110" height="64.9" fill="#c9d3dc" stroke="#ffffff" stroke-width="2"/>
+<text x="920" y="352.55" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#1a1a1a">뼈 · 수분 등</text>
+<rect x="865.0" y="212.8" width="110" height="102.30000000000001" fill="#d9776b" stroke="#ffffff" stroke-width="2"/>
+<text x="920" y="268.95000000000005" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#1a1a1a">근육</text>
+<rect x="865.0" y="135.8" width="110" height="77.0" fill="#f2c94c" stroke="#ffffff" stroke-width="2"/>
+<text x="920" y="179.3" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#1a1a1a">체지방</text>
+<text x="550" y="414" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="20" font-weight="700" fill="#1a1a1a">시작</text>
+<text x="180" y="414" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="19" font-weight="700" fill="#1a1a1a">무리한 감량</text>
+<text x="180" y="442" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">근육이 함께 줄어</text>
+<text x="180" y="464" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">기초대사량이 떨어지기 쉬움</text>
+<text x="920" y="414" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="19" font-weight="700" fill="#1a1a1a">건강한 감량</text>
+<text x="920" y="442" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">체지방 위주로 줄고</text>
+<text x="920" y="464" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">근육은 지켜 유지가 쉬움</text>
+<line x1="60" y1="380" x2="1040" y2="380" stroke="#1a1a1a" stroke-width="1.5"/>
+<path d="M480 230 L260 230" stroke="#e2463a" stroke-width="3" marker-end="url(#arr)"/>
+<text x="370" y="214" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" font-weight="700" fill="#e2463a">무리하게 굶으면</text>
+<path d="M620 230 L840 230" stroke="#1a1a1a" stroke-width="3" marker-end="url(#arr)"/>
+<text x="730" y="214" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" font-weight="700" fill="#1a1a1a">체질에 맞게 관리하면</text>
+<rect x="110" y="98.39999999999998" width="140" height="30" rx="15" fill="#e2463a"/>
+<text x="180" y="119.39999999999998" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="700" fill="#ffffff">요요 주의</text>
+<rect x="850" y="91.80000000000001" width="140" height="30" rx="15" fill="#1a1a1a"/>
+<text x="920" y="112.80000000000001" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="700" fill="#ffffff">유지하기 쉬움</text>
+</svg>

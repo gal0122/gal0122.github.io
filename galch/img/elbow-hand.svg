@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470">
+<rect width="1200" height="470" fill="#ffffff"/>
+<defs><radialGradient id="heat" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ff7a3d" stop-opacity="0.85"/><stop offset="100%" stop-color="#ffb04a" stop-opacity="0"/></radialGradient><radialGradient id="infl" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#e2463a" stop-opacity="0.55"/><stop offset="100%" stop-color="#e2463a" stop-opacity="0"/></radialGradient><marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1a1a1a"/></marker></defs>
+<rect x="15" y="20" width="370" height="350" fill="#fbfbfb"/>
+<path d="M178.0 40 L222.0 40 L226.0 150 Q274.0 168 276.0 196 Q240.0 214 200.0 210 Q160.0 214 124.0 196 Q126.0 168 174.0 150 Z" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/>
+<rect x="156.0" y="218" width="28" height="140" rx="10" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/>
+<rect x="212.0" y="218" width="28" height="140" rx="10" fill="#f1e7da" stroke="#b9a48c" stroke-width="2"/>
+<path d="M126.0 196 Q120.0 260 138.0 350" fill="none" stroke="#c48a45" stroke-width="16" stroke-linecap="round"/>
+<path d="M126.0 196 Q120.0 260 138.0 350" fill="none" stroke="#e9b77a" stroke-width="12" stroke-linecap="round"/>
+<ellipse cx="126.0" cy="194" rx="30" ry="26" fill="url(#infl)"/>
+<path d="M274.0 196 Q280.0 260 262.0 350" fill="none" stroke="#c48a45" stroke-width="16" stroke-linecap="round"/>
+<path d="M274.0 196 Q280.0 260 262.0 350" fill="none" stroke="#e9b77a" stroke-width="12" stroke-linecap="round"/>
+<ellipse cx="274.0" cy="194" rx="30" ry="26" fill="url(#infl)"/>
+<text x="104.0" y="150" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="700" fill="#e2463a">바깥쪽</text>
+<text x="104.0" y="168" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#555555">테니스 엘보</text>
+<text x="296.0" y="150" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="700" fill="#e2463a">안쪽</text>
+<text x="296.0" y="168" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="500" fill="#555555">골프 엘보</text>
+<path d="M270.0 300 L320.0 320" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="270.0" cy="300" r="3" fill="#1a1a1a"/>
+<text x="324.0" y="324" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#8a6a5a">힘줄</text>
+<rect x="15" y="20" width="370" height="350" fill="none" stroke="#cfcfcf" stroke-width="1.5"/>
+<text x="200.0" y="410" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="19" font-weight="700" fill="#1a1a1a">팔꿈치</text>
+<text x="200.0" y="436" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">바깥쪽은 테니스 엘보, 안쪽은 골프 엘보</text>
+<rect x="415" y="20" width="370" height="350" fill="#fbfbfb"/>
+<rect x="538.0" y="70" width="28" height="130" rx="14" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<rect x="570.0" y="56" width="28" height="144" rx="14" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<rect x="602.0" y="62" width="28" height="138" rx="14" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<rect x="632.0" y="84" width="28" height="116" rx="14" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<rect x="534.0" y="170" width="128" height="130" rx="30" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<rect x="508.0" y="172" width="30" height="96" rx="15" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2" transform="rotate(-32 523.0 262)"/>
+<rect x="554.0" y="290" width="92" height="76" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<rect x="542.0" y="76" width="20" height="60" rx="10" fill="#e2463a" opacity="0.18"/>
+<rect x="574.0" y="62" width="20" height="60" rx="10" fill="#e2463a" opacity="0.18"/>
+<rect x="606.0" y="68" width="20" height="60" rx="10" fill="#e2463a" opacity="0.18"/>
+<path d="M600.0 366 L600.0 250 M600.0 250 L552.0 140 M600.0 250 L584.0 120 M600.0 250 L616.0 128 M600.0 262 L500.0 212" fill="none" stroke="#cfa53a" stroke-width="6" stroke-linecap="round"/>
+<path d="M600.0 366 L600.0 250 M600.0 250 L552.0 140 M600.0 250 L584.0 120 M600.0 250 L616.0 128 M600.0 262 L500.0 212" fill="none" stroke="#f6d77a" stroke-width="3.5" stroke-linecap="round"/>
+<rect x="560.0" y="292" width="80" height="16" rx="4" fill="#e9b77a" stroke="#c48a45" stroke-width="1.5"/>
+<ellipse cx="600.0" cy="300" rx="46" ry="24" fill="url(#infl)"/>
+<circle cx="556.0" cy="330" r="16" fill="none" stroke="#e2463a" stroke-width="2.5" stroke-dasharray="4 3"/>
+<path d="M636.0 300 L710.0 280" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="636.0" cy="300" r="3" fill="#1a1a1a"/>
+<text x="714.0" y="276" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#e2463a">손목터널</text>
+<text x="714.0" y="294" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="12" font-weight="500" fill="#555555">신경이 눌림</text>
+<path d="M540.0 334 L480.0 350" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="540.0" cy="334" r="3" fill="#1a1a1a"/>
+<text x="476.0" y="346" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#e2463a">손목 건초염</text>
+<text x="476.0" y="362" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="12" font-weight="500" fill="#555555">(엄지 쪽)</text>
+<text x="700.0" y="90" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#e2463a">저린 손가락</text>
+<path d="M696.0 92 L630.0 100" stroke="#e2463a" stroke-width="1.2"/>
+<rect x="415" y="20" width="370" height="350" fill="none" stroke="#cfcfcf" stroke-width="1.5"/>
+<text x="600.0" y="410" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="19" font-weight="700" fill="#1a1a1a">손목</text>
+<text x="600.0" y="436" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">손목터널에서 신경이 눌리거나 엄지 쪽 힘줄에 염증</text>
+<rect x="815" y="20" width="370" height="350" fill="#fbfbfb"/>
+<path d="M840.0 150 L1120.0 166 Q1160.0 172 1160.0 196 Q1158.0 222 1120.0 226 L840.0 248 Z" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<path d="M840.0 232 L1130.0 214" stroke="#c48a45" stroke-width="9" stroke-linecap="round"/>
+<path d="M840.0 232 L1130.0 214" stroke="#e9b77a" stroke-width="6" stroke-linecap="round"/>
+<ellipse cx="930.0" cy="226" rx="17" ry="9" fill="#e9b77a" stroke="#c48a45" stroke-width="2"/>
+<rect x="954.0" y="212" width="14" height="26" rx="3" fill="#7a6a5a"/>
+<ellipse cx="944.0" cy="226" rx="40" ry="26" fill="url(#infl)"/>
+<path d="M930.0 232 L890.0 300" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="930.0" cy="232" r="3" fill="#1a1a1a"/>
+<text x="886.0" y="306" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#e2463a">두꺼워진 힘줄</text>
+<path d="M961.0 238 L1010.0 300" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="961.0" cy="238" r="3" fill="#1a1a1a"/>
+<text x="1014.0" y="306" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="700" fill="#8a6a5a">힘줄을 감싼 고리</text>
+<text x="1040.0" y="120" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="700" fill="#e2463a">펼 때 딸깍 걸림</text>
+<path d="M1040.0 128 Q1060.0 150 1090.0 160" fill="none" stroke="#e2463a" stroke-width="2" marker-end="url(#arr)"/>
+<text x="829" y="360" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="12" font-weight="500" fill="#555555">← 손바닥 쪽</text>
+<rect x="815" y="20" width="370" height="350" fill="none" stroke="#cfcfcf" stroke-width="1.5"/>
+<text x="1000.0" y="410" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="19" font-weight="700" fill="#1a1a1a">손가락</text>
+<text x="1000.0" y="436" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">두꺼워진 힘줄이 고리에 걸리는 방아쇠수지</text>
+</svg>
