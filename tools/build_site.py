@@ -288,6 +288,25 @@ document.addEventListener('click', function (e) {
   var a = e.target.closest('a[href="#"]');
   if (a) e.preventDefault();
 });
+// mobile full menu: end just above the bottom quick bar / browser toolbar so the last items stay reachable
+(function () {
+  var d = document.querySelector('.m-menu');
+  var nav = d && d.querySelector('nav');
+  if (!nav) return;
+  var hd = document.querySelector('.site-hd'), qn = document.querySelector('.qn');
+  function fit() {
+    if (!d.open) return;
+    var top = hd ? hd.getBoundingClientRect().bottom : 72, bottom = window.innerHeight;
+    if (qn) {
+      var r = qn.getBoundingClientRect();
+      if (r.width > window.innerWidth / 2 && r.top > window.innerHeight / 2) bottom = r.top;  // bar along the bottom (phones)
+    }
+    nav.style.boxSizing = 'border-box';
+    nav.style.maxHeight = Math.max(160, Math.ceil(bottom - top) + 2) + 'px';  // tuck 2px under the bar: no gap
+  }
+  d.addEventListener('toggle', fit);
+  window.addEventListener('resize', fit);
+})();
 </script>'''
 
 MAP_JS = f'''<script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId={NAVER_KEY}"></script>
