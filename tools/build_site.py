@@ -299,13 +299,34 @@ document.addEventListener('click', function (e) {
     var top = hd ? hd.getBoundingClientRect().bottom : 72, bottom = window.innerHeight;
     if (qn) {
       var r = qn.getBoundingClientRect();
-      if (r.width > window.innerWidth / 2 && r.top > window.innerHeight / 2) bottom = r.top;  // bar along the bottom (phones)
+      // bar along the bottom (phones), or its folded tab in the bottom-right corner
+      if (r.height && r.top > window.innerHeight / 2 && (r.width > window.innerWidth / 2 || qn.classList.contains('qn-min')))
+        bottom = Math.min(bottom, r.top);
     }
     nav.style.boxSizing = 'border-box';
     nav.style.maxHeight = Math.max(160, Math.ceil(bottom - top) + 2) + 'px';  // tuck 2px under the bar: no gap
   }
   d.addEventListener('toggle', fit);
   window.addEventListener('resize', fit);
+  window.addEventListener('qn-change', fit);
+})();
+// quick bar (블로그 · 톡톡상담 · 전화): fold / unfold, remembered on this device while browsing
+(function () {
+  var qn = document.querySelector('.qn'), tg = qn && qn.querySelector('.qn-tg');
+  if (!tg) return;
+  var KEY = 'galclinic-qn-min', txt = tg.querySelector('.qn-tg-txt');
+  function set(min, save) {
+    qn.classList.toggle('qn-min', min);
+    tg.setAttribute('aria-expanded', String(!min));
+    tg.setAttribute('aria-label', min ? '바로가기 펼치기' : '바로가기 접기');
+    if (txt) txt.textContent = min ? '펼치기' : '접기';
+    if (save) { try { if (min) localStorage.setItem(KEY, '1'); else localStorage.removeItem(KEY); } catch (e) {} }
+    window.dispatchEvent(new Event('qn-change'));
+  }
+  var min = false;
+  try { min = localStorage.getItem(KEY) === '1'; } catch (e) {}
+  if (min) set(true, false);
+  tg.addEventListener('click', function () { set(!qn.classList.contains('qn-min'), true); });
 })();
 </script>'''
 
