@@ -415,34 +415,33 @@ document.addEventListener('click', function (e) {
 });
 </script>
 
-<script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=uikplmnw9s&submodules=geocoder"></script>
+<script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=uikplmnw9s"></script>
 <script>
 (function () {
   var boxes = document.querySelectorAll('[data-naver-map]');
-  if (!boxes.length || !window.naver || !naver.maps || !naver.maps.Service) return;
+  if (!boxes.length || !window.naver || !naver.maps) return;
   window.navermap_authFailure = function () {
     document.querySelectorAll('[data-naver-map] > .nmap').forEach(function (el) { el.remove(); });
   };
   var pin = '<div style="transform:translate(-50%,calc(-100% - 8px));display:flex;flex-direction:column;align-items:center">'
     + '<div style="white-space:nowrap;padding:8px 14px;border-radius:999px;background:#2f5241;color:#ffffff;font:700 13px Pretendard,sans-serif;box-shadow:0 6px 16px rgba(36,48,42,.25)">갈창림한의원</div>'
     + '<div style="width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-top:8px solid #2f5241"></div></div>';
-  naver.maps.Service.geocode({ query: '경상북도 경산시 하양읍 동서2길 43' }, function (status, res) {
-    if (status !== naver.maps.Service.Status.OK) return;
-    var a = res && res.v2 && res.v2.addresses && res.v2.addresses[0];
-    if (!a) return;
-    var pos = new naver.maps.LatLng(Number(a.y), Number(a.x));
-    boxes.forEach(function (box) {
-      var el = document.createElement('div');
-      el.className = 'nmap';
-      el.style.cssText = 'position:absolute;top:0;left:0;right:0;bottom:0';
-      box.appendChild(el);
-      var map = new naver.maps.Map(el, {
-        center: pos, zoom: 17, scrollWheel: false,
-        zoomControl: true,
-        zoomControlOptions: { position: naver.maps.Position.TOP_RIGHT, style: naver.maps.ZoomControlStyle.SMALL }
-      });
-      new naver.maps.Marker({ position: pos, map: map, icon: { content: pin, anchor: new naver.maps.Point(0, 0) } });
+  // 경상북도 경산시 하양읍 동서2길 43 (checked on the map: next to 베네치아아파트 103동, 동서2길 35)
+  var pos = new naver.maps.LatLng(35.9174389, 128.8238134);
+  boxes.forEach(function (box) {
+    var wrap = document.createElement('div');
+    wrap.className = 'nmap';
+    wrap.style.cssText = 'position:absolute;top:0;left:0;right:0;bottom:0';
+    var el = document.createElement('div');
+    el.style.cssText = 'width:100%;height:100%';
+    wrap.appendChild(el);
+    box.appendChild(wrap);
+    var map = new naver.maps.Map(el, {
+      center: pos, zoom: 17, scrollWheel: false,
+      zoomControl: true,
+      zoomControlOptions: { position: naver.maps.Position.TOP_RIGHT, style: naver.maps.ZoomControlStyle.SMALL }
     });
+    new naver.maps.Marker({ position: pos, map: map, icon: { content: pin, anchor: new naver.maps.Point(0, 0) } });
   });
 })();
 </script>
