@@ -220,13 +220,23 @@ footer{padding-bottom:58px}
 <a href="pain-joint.html" style="padding: 8px 0; text-decoration: none">관절 질환</a>
 </div>
 </div>
-<div style="padding: 14px 0">
+<div style="padding: 14px 0; border-bottom: 1px solid #ebe6da">
 <p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">다이어트 · 소아·여성</p>
 <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
 <a href="diet.html" style="padding: 8px 0; text-decoration: none">다이어트</a>
 <a href="growth.html" style="padding: 8px 0; text-decoration: none">소아 성장</a>
 <a href="women.html" style="padding: 8px 0; text-decoration: none">여성 질환</a>
-<a href="price.html" style="padding: 8px 0; text-decoration: none">가격표</a>
+</div>
+</div>
+<div style="padding: 14px 0">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">가격표</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="price.html" style="padding: 8px 0; text-decoration: none">전체 가격표</a>
+<a href="price.html#price-lifting" style="padding: 8px 0; text-decoration: none">리프팅</a>
+<a href="price.html#price-pigment" style="padding: 8px 0; text-decoration: none">색소·토닝</a>
+<a href="price.html#price-acne" style="padding: 8px 0; text-decoration: none">여드름·흉터·모공</a>
+<a href="price.html#price-booster" style="padding: 8px 0; text-decoration: none">스킨부스터</a>
+<a href="price.html#price-hair" style="padding: 8px 0; text-decoration: none">제모</a>
 </div>
 </div>
 </nav>
@@ -449,6 +459,25 @@ document.addEventListener('click', function (e) {
   var a = e.target.closest('a[href="#"]');
   if (a) e.preventDefault();
 });
+// mobile full menu: end just above the bottom quick bar / browser toolbar so the last items stay reachable
+(function () {
+  var d = document.querySelector('.m-menu');
+  var nav = d && d.querySelector('nav');
+  if (!nav) return;
+  var hd = document.querySelector('.site-hd'), qn = document.querySelector('.qn');
+  function fit() {
+    if (!d.open) return;
+    var top = hd ? hd.getBoundingClientRect().bottom : 72, bottom = window.innerHeight;
+    if (qn) {
+      var r = qn.getBoundingClientRect();
+      if (r.width > window.innerWidth / 2 && r.top > window.innerHeight / 2) bottom = r.top;  // bar along the bottom (phones)
+    }
+    nav.style.boxSizing = 'border-box';
+    nav.style.maxHeight = Math.max(160, Math.ceil(bottom - top) + 2) + 'px';  // tuck 2px under the bar: no gap
+  }
+  d.addEventListener('toggle', fit);
+  window.addEventListener('resize', fit);
+})();
 </script>
 
 
