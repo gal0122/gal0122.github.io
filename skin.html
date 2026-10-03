@@ -57,6 +57,14 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #2f
 .m-menu[open] .ic-open,.m-menu:not([open]) .ic-close{display:none}
 .qn a:hover{background:#f1ede3}
 .qn .qn-call:hover{background:#24402f}
+.qn-tg{display:flex;align-items:center;justify-content:center;gap:3px;width:100%;height:34px;padding:0;border:0;background:#ffffff;color:#5d655f;font:inherit;font-size:11px;font-weight:600;line-height:1;cursor:pointer}
+@media (hover:hover){.qn-tg:hover{background:#f1ede3}}
+.qn-tg:focus-visible{outline:2px solid #2f5241;outline-offset:-2px}
+.qn-tg .ic-chat{display:none}
+.qn-min a{display:none!important}
+.qn-min .qn-tg{height:62px;flex-direction:column;gap:5px;color:#2f5241}
+.qn-min .qn-tg .ic-chat{display:block}
+.qn-min .qn-tg .qn-chev{display:none}
 footer a:hover{color:#d7c9a7}
 .svc{transition:transform .2s ease,box-shadow .2s ease}
 .svc:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(36,48,42,.10)}
@@ -89,6 +97,11 @@ h3{font-size:19px!important}
 .map-box{min-height:240px!important}
 .qn{top:auto!important;bottom:0!important;left:0!important;right:0!important;transform:none!important;flex-direction:row!important;width:auto!important;border-radius:0!important}
 .qn a{flex:1 1 0!important;height:58px!important;flex-direction:row!important;gap:6px!important;font-size:14px!important;border-bottom:0!important}
+.qn-tg{flex:0 0 44px;width:44px;height:58px}
+.qn-tg .qn-chev{transform:rotate(90deg)}
+.qn:not(.qn-min) .qn-tg-txt{display:none}
+.qn.qn-min{left:auto!important;width:auto!important;border-radius:14px 0 0 0!important;box-shadow:0 -4px 18px rgba(36,48,42,.18)!important}
+.qn.qn-min .qn-tg{flex:0 0 64px;width:64px;height:54px}
 footer{padding-bottom:58px}
 }
 .eq-track{scrollbar-width:thin;scrollbar-color:#c9c0a8 #ede9dd}
@@ -441,6 +454,7 @@ footer{padding-bottom:58px}
 <a href="https://blog.naver.com/gal0122" target="_blank" rel="noopener" style="height: 72px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; border-bottom: 1px solid #ebe6da; color: #2f5241; font-size: 12px; font-weight: 600; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"></path><path d="M13 7l4 4"></path></svg>블로그</a>
 <a href="https://talk.naver.com/W4F2TI" target="_blank" rel="noopener" style="height: 72px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; border-bottom: 1px solid #ebe6da; color: #2f5241; font-size: 12px; font-weight: 600; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.2 7.5L3 21l2-5.3A8.4 8.4 0 1 1 21 11.5z"></path></svg>톡톡상담</a>
 <a href="tel:053-851-0122" class="qn-call" style="height: 72px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; background: #2f5241; color: #ffffff; font-size: 12px; font-weight: 600; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg>전화</a>
+<button type="button" class="qn-tg" aria-expanded="true" aria-label="바로가기 접기"><svg class="qn-chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg><svg class="ic-chat" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.2 7.5L3 21l2-5.3A8.4 8.4 0 1 1 21 11.5z"></path></svg><span class="qn-tg-txt">접기</span></button>
 </nav>
 
 </div>
@@ -470,13 +484,34 @@ document.addEventListener('click', function (e) {
     var top = hd ? hd.getBoundingClientRect().bottom : 72, bottom = window.innerHeight;
     if (qn) {
       var r = qn.getBoundingClientRect();
-      if (r.width > window.innerWidth / 2 && r.top > window.innerHeight / 2) bottom = r.top;  // bar along the bottom (phones)
+      // bar along the bottom (phones), or its folded tab in the bottom-right corner
+      if (r.height && r.top > window.innerHeight / 2 && (r.width > window.innerWidth / 2 || qn.classList.contains('qn-min')))
+        bottom = Math.min(bottom, r.top);
     }
     nav.style.boxSizing = 'border-box';
     nav.style.maxHeight = Math.max(160, Math.ceil(bottom - top) + 2) + 'px';  // tuck 2px under the bar: no gap
   }
   d.addEventListener('toggle', fit);
   window.addEventListener('resize', fit);
+  window.addEventListener('qn-change', fit);
+})();
+// quick bar (블로그 · 톡톡상담 · 전화): fold / unfold, remembered on this device while browsing
+(function () {
+  var qn = document.querySelector('.qn'), tg = qn && qn.querySelector('.qn-tg');
+  if (!tg) return;
+  var KEY = 'galclinic-qn-min', txt = tg.querySelector('.qn-tg-txt');
+  function set(min, save) {
+    qn.classList.toggle('qn-min', min);
+    tg.setAttribute('aria-expanded', String(!min));
+    tg.setAttribute('aria-label', min ? '바로가기 펼치기' : '바로가기 접기');
+    if (txt) txt.textContent = min ? '펼치기' : '접기';
+    if (save) { try { if (min) localStorage.setItem(KEY, '1'); else localStorage.removeItem(KEY); } catch (e) {} }
+    window.dispatchEvent(new Event('qn-change'));
+  }
+  var min = false;
+  try { min = localStorage.getItem(KEY) === '1'; } catch (e) {}
+  if (min) set(true, false);
+  tg.addEventListener('click', function () { set(!qn.classList.contains('qn-min'), true); });
 })();
 </script>
 
