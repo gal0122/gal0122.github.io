@@ -118,6 +118,9 @@ footer{padding-bottom:58px}
 .pop-legend i{display:inline-block;width:10px;height:10px;margin-right:5px;border-radius:3px;vertical-align:-1px}
 .pop-open{display:flex;align-items:center;gap:10px;padding:13px 16px;border-radius:14px;background:#e4ece6;color:#2f5241;font-size:15px;font-weight:600}
 .pop-open strong{font-weight:800}
+.pop-reasons{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.pop-reasons li{padding:11px 16px;border-radius:14px;background:#ffffff;border:1px solid #e2dccd;font-size:14px;line-height:1.5;color:#4d554f}
+.pop-reasons b{display:block;margin-bottom:2px;font-size:15px;font-weight:700;color:#24302a}
 .pop-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px 12px 20px;background:#24302a;color:#ffffff}
 .pop-check{display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer}
 .pop-check input{width:16px;height:16px;margin:0;accent-color:#d7c9a7;cursor:pointer}
@@ -126,7 +129,7 @@ footer{padding-bottom:58px}
 .pop-close:focus-visible,.pop-check input:focus-visible,.pop-link:focus-visible{outline:2px solid #d7c9a7;outline-offset:2px}
 .pop-overlay{position:fixed;top:0;left:0;right:0;bottom:0;z-index:100;display:flex;justify-content:center;align-items:flex-start;padding:110px 20px 40px;box-sizing:border-box;overflow-y:auto;background:rgba(36,48,42,.55);font-family:'Pretendard','Pretendard Variable',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;color:#24302a;line-height:1.6}
 .pop-overlay[hidden]{display:none}
-@media (max-width:640px){.pop-overlay{align-items:center;padding:24px 16px 84px}.pop-layer{width:100%}.pop{flex:0 1 auto;width:100%;max-width:380px}.pop-body{padding:24px 22px 20px}.pop-date{font-size:30px}.pop-title{font-size:20px!important}}
+@media (max-width:640px){.pop-overlay{align-items:flex-start;padding:16px 16px 76px}.pop-layer{width:100%;margin:auto 0}.pop-cal td{height:36px}.pop-body{gap:12px}.pop-reasons li{padding:9px 14px}.pop-open{padding:11px 14px}.pop{flex:0 1 auto;width:100%;max-width:380px}.pop-body{padding:24px 22px 20px}.pop-date{font-size:30px}.pop-title{font-size:20px!important}}
 </style>
 </head>
 <body>
@@ -485,7 +488,10 @@ footer{padding-bottom:58px}
 </table>
 <p class="pop-legend"><span><i style="background: #d7c9a7"></i>휴진</span><span><i style="background: #2f5241"></i>정상 진료</span></p>
 <p class="pop-open"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg><span>10월 9일(금) 한글날은 <strong>정상 진료</strong>합니다</span></p>
-<p class="pop-text">휴진일: 10월 3일(토)·4일(일)·5일(월)<br>16일(금)·17일(토)·18일(일)</p>
+<ul class="pop-reasons">
+<li><b>10월 3일(토) ~ 5일(월)</b>개천절 및 대체공휴일로 휴진합니다.</li>
+<li><b>10월 16일(금) ~ 18일(일)</b>대한통합레이저의학회 강사 출강으로 휴진합니다.</li>
+</ul>
 </div>
 <div class="pop-foot">
 <label class="pop-check"><input type="checkbox">24시간 동안 다시 보지 않기</label>
