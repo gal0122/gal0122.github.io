@@ -2,6 +2,20 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J8PBY1YVS7"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-J8PBY1YVS7', { allow_google_signals: false, allow_ad_personalization_signals: false });
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href]');
+  if (!a) return;
+  var h = a.getAttribute('href') || '';
+  if (h.indexOf('tel:') === 0) gtag('event', 'call_click', { link_text: (a.textContent || '').trim().slice(0, 40) });
+  else if (h.indexOf('talk.naver.com') > -1) gtag('event', 'talk_click', { link_text: (a.textContent || '').trim().slice(0, 40) });
+});
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>교통사고 치료 과정 | 경산 하양 갈창림한의원</title>
 <meta name="description" content="사고 직후부터 회복까지, 시기에 맞춰 치료합니다. 경산 하양 갈창림한의원 교통사고 진료 과정 안내.">

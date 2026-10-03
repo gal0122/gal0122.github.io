@@ -2,6 +2,20 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J8PBY1YVS7"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-J8PBY1YVS7', { allow_google_signals: false, allow_ad_personalization_signals: false });
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href]');
+  if (!a) return;
+  var h = a.getAttribute('href') || '';
+  if (h.indexOf('tel:') === 0) gtag('event', 'call_click', { link_text: (a.textContent || '').trim().slice(0, 40) });
+  else if (h.indexOf('talk.naver.com') > -1) gtag('event', 'talk_click', { link_text: (a.textContent || '').trim().slice(0, 40) });
+});
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>진료시간·오시는길 | 경산 하양 갈창림한의원</title>
 <meta name="description" content="경북 경산시 하양읍 동서2길 43. 평일 08:30–18:30(점심 13:00–14:00), 토·일 08:30–14:00, 공휴일 휴진. 전화 053-851-0122.">

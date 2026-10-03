@@ -2,6 +2,20 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J8PBY1YVS7"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-J8PBY1YVS7', { allow_google_signals: false, allow_ad_personalization_signals: false });
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href]');
+  if (!a) return;
+  var h = a.getAttribute('href') || '';
+  if (h.indexOf('tel:') === 0) gtag('event', 'call_click', { link_text: (a.textContent || '').trim().slice(0, 40) });
+  else if (h.indexOf('talk.naver.com') > -1) gtag('event', 'talk_click', { link_text: (a.textContent || '').trim().slice(0, 40) });
+});
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>개인정보처리방침 | 갈창림한의원</title>
 <meta name="description" content="갈창림한의원 홈페이지 개인정보처리방침.">
@@ -451,14 +465,29 @@ footer{padding-bottom:58px}
 <section id="pv10" aria-labelledby="pv10-h">
 <h2 id="pv10-h" style="margin: 0 0 16px; padding-bottom: 12px; border-bottom: 1px solid #e2dccd; font-size: 22px; line-height: 1.4; color: #24302a">제10조 (개인정보 자동 수집 장치의 설치·운영 및 거부)</h2>
 <p style="margin: 0 0 8px">① 한의원 홈페이지에는 회원가입, 로그인, 상담 신청 등 개인정보를 직접 입력하는 기능이 없습니다.</p>
-<p style="margin: 0 0 8px">② 홈페이지를 원활하게 표시하고 방문 통계를 확인하기 위하여 쿠키(cookie)가 사용될 수 있으며, 한의원은 맞춤형 광고를 위한 행태정보를 수집하지 않습니다.</p>
-<p style="margin: 0 0 8px">③ 이용자는 웹 브라우저 설정에서 쿠키 저장을 거부하거나 삭제할 수 있습니다. 예) 크롬 ‘설정 › 개인 정보 보호 및 보안’, 엣지 ‘설정 › 쿠키 및 사이트 권한’, 아이폰 사파리 ‘설정 › Safari’</p>
-<p style="margin: 0">④ 쿠키 저장을 거부하더라도 홈페이지의 정보를 보는 데에는 제한이 없습니다.</p>
+<p style="margin: 0 0 8px">② 한의원은 홈페이지 방문 통계(방문자 수, 머문 시간, 많이 본 페이지, 유입 경로 등)를 확인하기 위하여 Google LLC의 웹 분석 서비스인 Google Analytics를 이용하며, 이를 위해 쿠키(cookie)를 사용합니다. 이 과정에서 쿠키 식별자, 접속 기기·브라우저 정보, 방문한 페이지와 방문 일시, 대략적인 접속 지역 등이 수집되며, 이름·연락처 등 이용자를 직접 알아볼 수 있는 정보는 수집하지 않습니다.</p>
+<p style="margin: 0 0 8px">③ 한의원은 맞춤형 광고를 위한 행태정보를 수집하거나 제3자에게 제공하지 않으며, Google Analytics의 광고 관련 기능을 사용하지 않습니다.</p>
+<p style="margin: 0 0 8px">④ 이용자는 웹 브라우저 설정에서 쿠키 저장을 거부하거나 삭제할 수 있습니다. 예) 크롬 ‘설정 › 개인 정보 보호 및 보안’, 엣지 ‘설정 › 쿠키 및 사이트 권한’, 아이폰 사파리 ‘설정 › Safari’. 또한 Google이 제공하는 Google Analytics 차단 브라우저 부가 기능(tools.google.com/dlpage/gaoptout)을 설치하여 수집을 거부할 수 있습니다.</p>
+<p style="margin: 0">⑤ 쿠키 저장이나 방문 통계 수집을 거부하더라도 홈페이지의 정보를 보는 데에는 제한이 없습니다.</p>
 </section>
 
 <section id="pv11" aria-labelledby="pv11-h">
 <h2 id="pv11-h" style="margin: 0 0 16px; padding-bottom: 12px; border-bottom: 1px solid #e2dccd; font-size: 22px; line-height: 1.4; color: #24302a">제11조 (국외 이전, 가명정보 및 자동화된 결정)</h2>
-<p style="margin: 0">한의원은 개인정보를 국외로 이전하지 않으며, 가명정보를 처리하지 않습니다. 또한 완전히 자동화된 시스템만으로 개인정보를 처리하여 정보주체의 권리나 의무에 중대한 영향을 미치는 결정을 하지 않습니다.</p>
+<p style="margin: 0 0 8px">① 한의원은 진료와 관련된 개인정보를 국외로 이전하지 않습니다. 다만 제10조에 따른 홈페이지 방문 통계 확인을 위하여 아래와 같이 정보가 국외에서 처리될 수 있습니다.</p>
+<div class="eq-track" role="region" aria-label="개인정보 국외 이전 표" tabindex="0" style="overflow-x: auto; margin: 0 0 16px">
+<table style="width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.7; text-align: left; border-top: 2px solid #2f5241">
+<tbody>
+<tr><th scope="row" style="width: 150px; padding: 12px 14px; background: #f1ede3; border-bottom: 1px solid #e2dccd; font-weight: 500; vertical-align: top">이전받는 자</th><td style="padding: 12px 14px; border-bottom: 1px solid #ebe6da">Google LLC (개인정보 관련 문의: policies.google.com/privacy 의 문의 안내)</td></tr>
+<tr><th scope="row" style="width: 150px; padding: 12px 14px; background: #f1ede3; border-bottom: 1px solid #e2dccd; font-weight: 500; vertical-align: top">이전 국가</th><td style="padding: 12px 14px; border-bottom: 1px solid #ebe6da">미국 등 Google의 데이터 센터가 있는 국가</td></tr>
+<tr><th scope="row" style="width: 150px; padding: 12px 14px; background: #f1ede3; border-bottom: 1px solid #e2dccd; font-weight: 500; vertical-align: top">이전 일시·방법</th><td style="padding: 12px 14px; border-bottom: 1px solid #ebe6da">홈페이지에 접속할 때 정보통신망을 통해 전송</td></tr>
+<tr><th scope="row" style="width: 150px; padding: 12px 14px; background: #f1ede3; border-bottom: 1px solid #e2dccd; font-weight: 500; vertical-align: top">이전 항목</th><td style="padding: 12px 14px; border-bottom: 1px solid #ebe6da">쿠키 식별자, 접속 기기·브라우저 정보, 방문한 페이지와 방문 일시, 대략적인 접속 지역</td></tr>
+<tr><th scope="row" style="width: 150px; padding: 12px 14px; background: #f1ede3; border-bottom: 1px solid #e2dccd; font-weight: 500; vertical-align: top">이전 목적</th><td style="padding: 12px 14px; border-bottom: 1px solid #ebe6da">홈페이지 방문 통계 분석</td></tr>
+<tr><th scope="row" style="width: 150px; padding: 12px 14px; background: #f1ede3; border-bottom: 1px solid #e2dccd; font-weight: 500; vertical-align: top">보유·이용 기간</th><td style="padding: 12px 14px; border-bottom: 1px solid #ebe6da">수집일로부터 최대 14개월 (Google Analytics 데이터 보관 기간 설정에 따름)</td></tr>
+<tr><th scope="row" style="width: 150px; padding: 12px 14px; background: #f1ede3; border-bottom: 1px solid #e2dccd; font-weight: 500; vertical-align: top">거부 방법 및 효과</th><td style="padding: 12px 14px; border-bottom: 1px solid #ebe6da">제10조 제④항의 방법으로 거부할 수 있으며, 거부하더라도 홈페이지 이용에는 제한이 없습니다.</td></tr>
+</tbody>
+</table>
+</div>
+<p style="margin: 0">② 한의원은 가명정보를 처리하지 않으며, 완전히 자동화된 시스템만으로 개인정보를 처리하여 정보주체의 권리나 의무에 중대한 영향을 미치는 결정을 하지 않습니다.</p>
 </section>
 
 <section id="pv12" aria-labelledby="pv12-h">
