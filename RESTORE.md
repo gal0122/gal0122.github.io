@@ -15,3 +15,7 @@
 3. `cp fonts/PretendardVariable.ttf /root/.fonts/` (공유 이미지 생성용)
 4. `python3 build_site.py` → `/home/claude/site`
 5. main 브랜치에 `/home/claude/site` 내용을 복사해 커밋·푸시 (작성자 gal0122 <gal0122@naver.com>). 사이트 주소: https://galclinic.co.kr (가비아 DNS → GitHub Pages, CNAME 파일)
+
+## 글꼴 줄이기 (2026-10-07~)
+- build_site.py 마지막에 fontTools로 Pretendard를 사이트에 쓰인 글자만 남겨 저장 (2MB → 약 0.2MB).
+- 필요: `pip install fonttools` (이미 있으면 생략). brotli 모듈이 설치 안 되는 환경이면 `tools/pyshim/brotli.py`를 작업 폴더 `pyshim/`에 두면 Node의 zlib로 대신 압축함.

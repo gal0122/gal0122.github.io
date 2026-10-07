@@ -567,6 +567,76 @@ for name, slugs in GROUPS:
 llms += ['## Optional', '', f'- [개인정보처리방침]({SITE}/privacy.html)', f'- [이용약관]({SITE}/terms.html)', '']
 open(f'{OUT}/llms.txt', 'w', encoding='utf-8').write('\n'.join(llms))
 
+# 404.html — GitHub Pages serves it for any unknown address, at that address, so every path is absolute
+NOT_FOUND = f'''<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+{GA_HEAD}<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>페이지를 찾을 수 없습니다 | 갈창림한의원</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<style>
+@font-face{{font-family:'Pretendard';src:url('/assets/PretendardVariable.woff2') format('woff2');font-weight:45 920;font-display:swap}}
+*{{box-sizing:border-box}}
+body{{margin:0;min-height:100vh;display:flex;flex-direction:column;background:#faf7f0;color:#24302a;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;line-height:1.6;word-break:keep-all;-webkit-text-size-adjust:100%}}
+header{{border-bottom:1px solid #e2dccd}}
+.wrap{{max-width:1240px;margin:0 auto;padding:0 24px}}
+header .wrap{{height:72px;display:flex;align-items:center}}
+header img{{height:40px;width:auto;display:block}}
+main{{flex:1;display:flex;align-items:center}}
+.box{{max-width:560px;padding:72px 0}}
+.code{{margin:0;font-size:14px;font-weight:700;letter-spacing:.06em;color:#7a6b42}}
+h1{{margin:10px 0 12px;font-size:34px;line-height:1.3;letter-spacing:-.02em}}
+p.lead{{margin:0;font-size:17px;color:#4d554f}}
+.btns{{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}}
+.btns a{{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:999px;border:1px solid #2f5241;color:#2f5241;background:#fff;font-weight:600;text-decoration:none}}
+.btns a.primary{{background:#2f5241;color:#fff}}
+.btns a:hover{{background:#f1ede3}}
+.btns a.primary:hover{{background:#24402f}}
+.btns a:focus-visible{{outline:2px solid #2f5241;outline-offset:2px}}
+footer{{background:#24302a;color:#c9cfc6;font-size:14px}}
+footer .wrap{{padding:28px 24px}}
+footer a{{color:#fff;text-decoration:none;white-space:nowrap}}
+@media (max-width:640px){{h1{{font-size:27px}}.box{{padding:56px 0}}.btns a{{flex:1 1 calc(50% - 5px);justify-content:center;padding:0 12px}}}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a href="/" aria-label="갈창림한의원 홈"><img src="/assets/logo-horizontal.webp" alt="갈창림한의원" width="190" height="40"></a></div></header>
+<main><div class="wrap"><div class="box">
+<p class="code">404</p>
+<h1>페이지를 찾을 수 없어요</h1>
+<p class="lead">주소가 바뀌었거나 잘못 입력되었을 수 있어요. 아래에서 원하시는 곳으로 이동해 주세요.</p>
+<nav class="btns" aria-label="바로가기">
+<a class="primary" href="/">홈으로</a>
+<a href="/schedule.html">진료시간·오시는길</a>
+<a href="/price.html">가격표</a>
+<a href="tel:053-851-0122">전화 053-851-0122</a>
+</nav>
+</div></div></main>
+<footer><div class="wrap">갈창림한의원 · 경북 경산시 하양읍 동서2길 43 · <a href="tel:053-851-0122">053-851-0122</a></div></footer>
+</body>
+</html>
+'''
+open(f'{OUT}/404.html', 'w', encoding='utf-8').write(NOT_FOUND)
+
+# Font: keep only the characters the site uses (2 MB → ~0.2 MB). Rebuilt every time, so new text is always covered.
+# The `brotli` module can't be pip-installed here; pyshim/brotli.py hands WOFF2 compression to Node's zlib.
+import sys, glob
+sys.path.insert(0, f'{S}/pyshim')
+from fontTools import subset as ftsubset
+from fontTools.ttLib import TTFont
+chars = set()
+for fp in glob.glob(f'{OUT}/*.html'):
+    chars |= set(open(fp, encoding='utf-8').read())
+chars |= {chr(c) for c in range(0x20, 0x7f)} | set('‘’“”·–—…→←↑↓※✓•°×₩～⋅「」『』《》〈〉')
+chars = {c for c in chars if ord(c) >= 0x20}
+fopts = ftsubset.Options(); fopts.flavor = 'woff2'; fopts.layout_features = ['*']; fopts.name_IDs = ['*']; fopts.notdef_outline = True
+ffont = TTFont(f'{S}/fonts/PretendardVariable.woff2')
+fsub = ftsubset.Subsetter(fopts); fsub.populate(text=''.join(chars)); fsub.subset(ffont)
+ffont.flavor = 'woff2'; ffont.save(f'{OUT}/assets/PretendardVariable.woff2')
+print('font subset:', len(chars), 'chars,', os.path.getsize(f'{OUT}/assets/PretendardVariable.woff2') // 1024, 'KB')
+
 total = sum(os.path.getsize(os.path.join(d, x)) for d, _, fs in os.walk(OUT) for x in fs)
 for r in report:
     print(f'{r[0]:24s} {r[1]:4d} KB' + ('  [map]' if r[2] else '') + (f'  faq={r[3]}' if r[3] else ''))
