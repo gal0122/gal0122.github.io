@@ -11,7 +11,8 @@ OUT = '/home/claude/site'
 NAVER_KEY = 'uikplmnw9s'
 ADDRESS = '경상북도 경산시 하양읍 동서2길 43'
 LAT, LNG = 35.9174389, 128.8238134   # from Google plus code 8Q7CWR8F+XGGCJVH, checked on Naver map
-SITE = 'https://gal0122.github.io'
+DOMAIN = 'galclinic.co.kr'            # custom domain (가비아) → GitHub Pages; old gal0122.github.io redirects here
+SITE = 'https://' + DOMAIN
 LASTMOD = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime('%Y-%m-%d')
 GA_ID = 'G-J8PBY1YVS7'   # Google Analytics 4 measurement ID (방문 통계)
 INDEXNOW_KEY ='2f452286a2a2029189ac09582bdfdcaa'   # served at /<key>.txt (Bing, Naver, Yandex … via IndexNow)
@@ -536,6 +537,7 @@ robots = ('User-agent: *\nAllow: /\n\n'
           f'Sitemap: {SITE}/sitemap.xml\n')
 open(f'{OUT}/robots.txt', 'w', encoding='utf-8').write(robots)
 open(f'{OUT}/{INDEXNOW_KEY}.txt', 'w', encoding='utf-8').write(INDEXNOW_KEY)
+open(f'{OUT}/CNAME', 'w', encoding='utf-8').write(DOMAIN + '\n')   # GitHub Pages custom domain
 
 # llms.txt — plain-language summary for AI assistants (https://llmstxt.org)
 GROUPS = [('병원 안내', ['about.html', 'doctors.html', 'equipment.html', 'schedule.html', 'price.html']),

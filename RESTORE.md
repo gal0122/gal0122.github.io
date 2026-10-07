@@ -14,4 +14,4 @@
 2. `build_site.py` 의 `S = …` 와 `measure.js`/`sitecheck.js` 안의 경로를 새 작업 폴더로 바꾸기
 3. `cp fonts/PretendardVariable.ttf /root/.fonts/` (공유 이미지 생성용)
 4. `python3 build_site.py` → `/home/claude/site`
-5. main 브랜치에 `/home/claude/site` 내용을 복사해 커밋·푸시 (작성자 gal0122 <gal0122@naver.com>)
+5. main 브랜치에 `/home/claude/site` 내용을 복사해 커밋·푸시 (작성자 gal0122 <gal0122@naver.com>). 사이트 주소: https://galclinic.co.kr (가비아 DNS → GitHub Pages, CNAME 파일)
