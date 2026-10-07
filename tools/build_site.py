@@ -8,7 +8,7 @@ from PIL import Image
 S = '/tmp/claude-0/-home-claude/68b4eec7-1c3c-57e2-af39-86fe64cf79a4/scratchpad'
 G = f'{S}/galch'
 OUT = '/home/claude/site'
-NAVER_KEY = 'uikplmnw9s'
+NAVER_KEY = 'ga0nqeox26'   # NCP Maps app d1 (Web URL: https://galclinic.co.kr); old app 'gal' = uikplmnw9s
 ADDRESS = '경상북도 경산시 하양읍 동서2길 43'
 LAT, LNG = 35.9174389, 128.8238134   # from Google plus code 8Q7CWR8F+XGGCJVH, checked on Naver map
 DOMAIN = 'galclinic.co.kr'            # custom domain (가비아) → GitHub Pages; old gal0122.github.io redirects here
