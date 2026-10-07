@@ -16,7 +16,7 @@ SITE = 'https://' + DOMAIN
 LASTMOD = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime('%Y-%m-%d')
 GA_ID = 'G-J8PBY1YVS7'   # Google Analytics 4 measurement ID (방문 통계)
 INDEXNOW_KEY ='2f452286a2a2029189ac09582bdfdcaa'   # served at /<key>.txt (Bing, Naver, Yandex … via IndexNow)
-NAVER_VERIFY = '71001f44f4ad926173e972d1f742bd136d79665f'    # content of <meta name="naver-site-verification"> from Naver Search Advisor
+NAVER_VERIFY = ['849e986ffddc741f0bba21c98f16c7d7777531d6', '71001f44f4ad926173e972d1f742bd136d79665f']  # galclinic.co.kr, old gal0122.github.io    # content of <meta name="naver-site-verification"> from Naver Search Advisor
 GOOGLE_VERIFY = 'J8QaDGTCXl33x5qhQ0BFwqwJQ9_kGM2WzyDeolMWfLE'   # content of <meta name="google-site-verification"> from Google Search Console
 
 # search title / description per page (keywords: 경산 한의원, 경산 레이저제모)
@@ -476,8 +476,8 @@ for f in pages:
     url = SITE + '/' + ('' if SLUG[f] == 'index.html' else SLUG[f])
     extra_head = ''
     if is_home:
-        if NAVER_VERIFY:
-            extra_head += f'<meta name="naver-site-verification" content="{NAVER_VERIFY}">\n'
+        for v in ([NAVER_VERIFY] if isinstance(NAVER_VERIFY, str) else NAVER_VERIFY):
+            extra_head += f'<meta name="naver-site-verification" content="{v}">\n'
         if GOOGLE_VERIFY:
             extra_head += f'<meta name="google-site-verification" content="{GOOGLE_VERIFY}">\n'
     ld, n_faq = page_ld(SLUG[f], title, desc, url, body)
