@@ -19,4 +19,4 @@ User-agent: Yeti
 User-agent: Daumoa
 Allow: /
 
-Sitemap: https://gal0122.github.io/sitemap.xml
+Sitemap: https://galclinic.co.kr/sitemap.xml
