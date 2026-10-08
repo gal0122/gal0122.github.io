@@ -103,7 +103,7 @@
     },
     "Doctors.dc.html": {
       "expand": "fill",
-      "h": 2940,
+      "h": 2899,
       "is_interactive": true,
       "title": "03 병원소개 · 의료진 소개",
       "w": 1280,
@@ -112,7 +112,7 @@
     },
     "Equipment.dc.html": {
       "expand": "fill",
-      "h": 5870,
+      "h": 5866,
       "is_interactive": true,
       "title": "04 병원소개 · 보유장비",
       "w": 1280,
@@ -139,7 +139,7 @@
     },
     "Main.dc.html": {
       "expand": "fill",
-      "h": 3290,
+      "h": 3283,
       "is_interactive": true,
       "title": "01 홈",
       "w": 1280,
@@ -175,7 +175,7 @@
     },
     "Pigment.dc.html": {
       "expand": "fill",
-      "h": 6800,
+      "h": 6761,
       "is_interactive": true,
       "title": "15 피부미용 · 색소 · 기미·흑자·잡티·색소",
       "w": 1280,
