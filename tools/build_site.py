@@ -9,11 +9,12 @@ S = '/tmp/claude-0/-home-claude/68b4eec7-1c3c-57e2-af39-86fe64cf79a4/scratchpad'
 G = f'{S}/galch'
 OUT = '/home/claude/site'
 NAVER_KEY = 'ga0nqeox26'   # NCP Maps app d1 (Web URL: https://galclinic.co.kr); old app 'gal' = uikplmnw9s
-ADDRESS = '경상북도 경산시 하양읍 동서2길 43'
+ADDRESS = '경상북도 경산시 하양읍 동서2길 43, 3층'
 LAT, LNG = 35.9174389, 128.8238134   # from Google plus code 8Q7CWR8F+XGGCJVH, checked on Naver map
 DOMAIN = 'galclinic.co.kr'            # custom domain (가비아) → GitHub Pages; old gal0122.github.io redirects here
 SITE = 'https://' + DOMAIN
 LASTMOD = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime('%Y-%m-%d')
+REVIEWED = '2026-10-08'   # 시술 페이지 '최종 검토' 날짜 (작성·검토 표시와 같이 바꿀 것)
 GA_ID = 'G-J8PBY1YVS7'   # Google Analytics 4 measurement ID (방문 통계)
 INDEXNOW_KEY ='2f452286a2a2029189ac09582bdfdcaa'   # served at /<key>.txt (Bing, Naver, Yandex … via IndexNow)
 NAVER_VERIFY = ['849e986ffddc741f0bba21c98f16c7d7777531d6', '71001f44f4ad926173e972d1f742bd136d79665f']  # galclinic.co.kr, old gal0122.github.io    # content of <meta name="naver-site-verification"> from Naver Search Advisor
@@ -30,7 +31,7 @@ SEO = {
  'equipment.html': ('보유장비 | 경산 하양 갈창림한의원',
    '악센토N 레이저제모, 리니어펌·볼뉴머 리프팅, 큐마스터플러스, 실펌X 등 경산 하양 갈창림한의원의 보유 장비를 소개합니다.'),
  'schedule.html': ('진료시간·오시는길 | 경산 하양 갈창림한의원',
-   '경북 경산시 하양읍 동서2길 43. 평일 08:30–18:30(점심 13:00–14:00), 토·일 08:30–14:00, 공휴일 휴진. 전화 053-851-0122.'),
+   '경북 경산시 하양읍 동서2길 43, 3층. 평일 08:30–18:30(점심 13:00–14:00), 토·일 08:30–14:00, 공휴일 휴진. 전화 053-851-0122.'),
  'skin.html': ('경산 피부미용 | 갈창림한의원',
    '리프팅, 스킨부스터, 레이저제모, 기미·잡티, 여드름, 모공까지 — 경산 하양 갈창림한의원의 피부미용 진료를 한눈에 안내합니다.'),
  'design-lifting.html': ('경산 리프팅 · 디자인리프팅 | 갈창림한의원',
@@ -78,7 +79,7 @@ SEO = {
  'women.html': ('경산 여성 질환 한의원 | 갈창림한의원',
    '생리통부터 산후 회복, 갱년기까지 여성의 몸을 살핍니다. 경산 하양 갈창림한의원 여성 질환 진료.'),
  'price.html': ('가격표 · 레이저제모 비용 | 경산 갈창림한의원',
-   '레이저제모 부위별 비용, 리니어펌·볼뉴머·실리프팅, 토닝, 여드름 시술 비용 안내(부가세 포함). 경산 하양 갈창림한의원.'),
+   '레이저제모 부위별 비용, 리니어펌·볼뉴머·실리프팅, 토닝, 필링·여드름, 라디쥬 등 스킨부스터, 패키지 비용 안내(부가세 포함). 경산 하양 갈창림한의원.'),
  'privacy.html': ('개인정보처리방침 | 갈창림한의원', '갈창림한의원 홈페이지 개인정보처리방침.'),
  'terms.html': ('이용약관 | 갈창림한의원', '갈창림한의원 홈페이지 이용약관.'),
 }
@@ -113,7 +114,7 @@ LD_CLINIC = {
  'description': SEO['index.html'][1],
  'url': SITE + '/', 'telephone': '+82-53-851-0122',
  'image': SITE + '/assets/og-image.png', 'logo': SITE + '/assets/favicon.png',
- 'address': {'@type': 'PostalAddress', 'streetAddress': '하양읍 동서2길 43', 'addressLocality': '경산시',
+ 'address': {'@type': 'PostalAddress', 'streetAddress': '하양읍 동서2길 43, 3층', 'addressLocality': '경산시',
              'addressRegion': '경상북도', 'addressCountry': 'KR'},
  'geo': {'@type': 'GeoCoordinates', 'latitude': LAT, 'longitude': LNG},
  'openingHoursSpecification': [
@@ -161,6 +162,10 @@ def page_ld(slug_, title, desc, url, body):
     wp = {'@type': 'WebPage' if slug_ in NON_MEDICAL else 'MedicalWebPage', '@id': url + '#webpage',
           'url': url, 'name': title, 'description': desc, 'inLanguage': 'ko-KR',
           'isPartOf': {'@id': SITE_ID}, 'about': {'@id': CLINIC_ID}, 'dateModified': LASTMOD}
+    if wp['@type'] == 'MedicalWebPage':     # matches the visible "작성·검토 갈창림 대표원장(한의사) · 최종 검토" line
+        reviewer = {'@type': 'Person', '@id': SITE + '/doctors.html#director', 'name': '갈창림',
+                    'jobTitle': '대표원장 (한의사)', 'url': SITE + '/doctors.html'}
+        wp.update({'author': reviewer, 'reviewedBy': reviewer, 'lastReviewed': REVIEWED})
     m = re.search(r'<p style="margin: 0; font-size: 14px; color: #5d655f">(홈 &gt;.*?)</p>', body)
     if m:
         labels = [plain(x) for x in m.group(1).split('&gt;')]
@@ -257,7 +262,7 @@ line = '경산 하양 한의원 · 토·일요일 진료'
 fnt = font(40, 600)
 w = d.textlength(line, font=fnt)
 d.text(((1200 - w) / 2, 400), line, font=fnt, fill='#4d554f')
-foot = '경북 경산시 하양읍 동서2길 43  ·  053-851-0122'
+foot = '경북 경산시 하양읍 동서2길 43, 3층  ·  053-851-0122'
 fnt2 = font(28, 500)
 w2 = d.textlength(foot, font=fnt2)
 d.text(((1200 - w2) / 2, 580), foot, font=fnt2, fill='#ffffff')
@@ -552,7 +557,7 @@ grouped = {s for _, ss in GROUPS for s in ss}
 assert grouped | {'index.html', 'privacy.html', 'terms.html'} == set(SLUG.values()), set(SLUG.values()) - grouped
 seo_of = lambda s: SEO.get(s, (s, ''))
 llms = ['# 갈창림한의원', '',
-        '> 경상북도 경산시 하양읍 동서2길 43에 있는 한의원입니다. 평일(월~금) 08:30–18:30(점심 13:00–14:00), '
+        '> 경상북도 경산시 하양읍 동서2길 43, 3층에 있는 한의원입니다. 평일(월~금) 08:30–18:30(점심 13:00–14:00), '
         '토·일요일 08:30–14:00(점심시간 없음) 진료하며 공휴일은 휴진합니다. 전화 053-851-0122.', '',
         '대표원장 갈창림(대구한의대학교 한의과대학 졸업)이 직접 진찰하고 치료합니다. 레이저제모·리프팅·색소·여드름·모공·스킨부스터 등 '
         '피부미용, 교통사고 후유증(자동차보험 진료), 척추·관절 통증, 다이어트, 소아 성장, 여성 질환을 진료합니다. '
@@ -614,7 +619,7 @@ footer a{{color:#fff;text-decoration:none;white-space:nowrap}}
 <a href="tel:053-851-0122">전화 053-851-0122</a>
 </nav>
 </div></div></main>
-<footer><div class="wrap">갈창림한의원 · 경북 경산시 하양읍 동서2길 43 · <a href="tel:053-851-0122">053-851-0122</a></div></footer>
+<footer><div class="wrap">갈창림한의원 · 경북 경산시 하양읍 동서2길 43, 3층 · <a href="tel:053-851-0122">053-851-0122</a></div></footer>
 </body>
 </html>
 '''

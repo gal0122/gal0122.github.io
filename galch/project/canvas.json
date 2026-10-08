@@ -4,7 +4,7 @@
   "boards": {
     "About.dc.html": {
       "expand": "fill",
-      "h": 4580,
+      "h": 4578,
       "is_interactive": true,
       "title": "02 병원소개 · 갈창림한의원 소개",
       "w": 1280,
@@ -13,7 +13,7 @@
     },
     "Acne.dc.html": {
       "expand": "fill",
-      "h": 7640,
+      "h": 7698,
       "is_interactive": true,
       "title": "17 피부미용 · 여드름 · 여드름",
       "w": 1280,
@@ -22,7 +22,7 @@
     },
     "AcneRed.dc.html": {
       "expand": "fill",
-      "h": 7320,
+      "h": 7380,
       "is_interactive": true,
       "title": "18 피부미용 · 여드름 · 여드름 붉은자국",
       "w": 1280,
@@ -31,7 +31,7 @@
     },
     "AcneScar.dc.html": {
       "expand": "fill",
-      "h": 7750,
+      "h": 7805,
       "is_interactive": true,
       "title": "19 피부미용 · 여드름 · 여드름 흉터",
       "w": 1280,
@@ -40,7 +40,7 @@
     },
     "BoosterAltcore.dc.html": {
       "expand": "fill",
-      "h": 5250,
+      "h": 5312,
       "is_interactive": true,
       "title": "12 피부미용 · 스킨부스터 · 알트코어",
       "w": 1280,
@@ -49,7 +49,7 @@
     },
     "BoosterECM.dc.html": {
       "expand": "fill",
-      "h": 5120,
+      "h": 5178,
       "is_interactive": true,
       "title": "13 피부미용 · 스킨부스터 · ECM",
       "w": 1280,
@@ -58,7 +58,7 @@
     },
     "BoosterKeratin.dc.html": {
       "expand": "fill",
-      "h": 5140,
+      "h": 5203,
       "is_interactive": true,
       "title": "11 피부미용 · 스킨부스터 · 케라틴",
       "w": 1280,
@@ -67,7 +67,7 @@
     },
     "BoosterPDRN.dc.html": {
       "expand": "fill",
-      "h": 5460,
+      "h": 5521,
       "is_interactive": true,
       "title": "09 피부미용 · 스킨부스터 · PDRN·엑소좀",
       "w": 1280,
@@ -76,7 +76,7 @@
     },
     "BoosterPLLA.dc.html": {
       "expand": "fill",
-      "h": 5340,
+      "h": 5401,
       "is_interactive": true,
       "title": "10 피부미용 · 스킨부스터 · PLLA",
       "w": 1280,
@@ -85,7 +85,7 @@
     },
     "DesignLifting.dc.html": {
       "expand": "fill",
-      "h": 6590,
+      "h": 6652,
       "is_interactive": true,
       "title": "07 피부미용 · 리프팅 · 디자인리프팅",
       "w": 1280,
@@ -94,7 +94,7 @@
     },
     "Diet.dc.html": {
       "expand": "fill",
-      "h": 7070,
+      "h": 7124,
       "is_interactive": true,
       "title": "26 다이어트",
       "w": 1280,
@@ -121,7 +121,7 @@
     },
     "Growth.dc.html": {
       "expand": "fill",
-      "h": 6370,
+      "h": 6434,
       "is_interactive": true,
       "title": "27 소아·여성 · 소아 성장",
       "w": 1280,
@@ -130,7 +130,7 @@
     },
     "HairRemoval.dc.html": {
       "expand": "fill",
-      "h": 7230,
+      "h": 7287,
       "is_interactive": true,
       "title": "14 피부미용 · 제모",
       "w": 1280,
@@ -175,7 +175,7 @@
     },
     "Pigment.dc.html": {
       "expand": "fill",
-      "h": 6761,
+      "h": 7098,
       "is_interactive": true,
       "title": "15 피부미용 · 색소 · 기미·흑자·잡티·색소",
       "w": 1280,
@@ -193,7 +193,7 @@
     },
     "Pore.dc.html": {
       "expand": "fill",
-      "h": 7660,
+      "h": 7718,
       "is_interactive": true,
       "title": "20 피부미용 · 모공",
       "w": 1280,
@@ -202,7 +202,7 @@
     },
     "Price.dc.html": {
       "expand": "fill",
-      "h": 3840,
+      "h": 5170,
       "is_interactive": true,
       "title": "29 가격표",
       "w": 1280,
@@ -229,7 +229,7 @@
     },
     "Skin.dc.html": {
       "expand": "fill",
-      "h": 3670,
+      "h": 3730,
       "is_interactive": true,
       "title": "06 피부미용",
       "w": 1280,
@@ -238,7 +238,7 @@
     },
     "Terms.dc.html": {
       "expand": "fill",
-      "h": 3600,
+      "h": 3591,
       "is_interactive": true,
       "title": "31 이용약관",
       "w": 1280,
@@ -247,7 +247,7 @@
     },
     "ThreadLifting.dc.html": {
       "expand": "fill",
-      "h": 5690,
+      "h": 5750,
       "is_interactive": true,
       "title": "08 피부미용 · 리프팅 · 맞춤형실리프팅",
       "w": 1280,
@@ -256,7 +256,7 @@
     },
     "Traffic.dc.html": {
       "expand": "fill",
-      "h": 5800,
+      "h": 5859,
       "is_interactive": true,
       "title": "21 교통사고 · 교통사고 후유증",
       "w": 1280,
@@ -265,7 +265,7 @@
     },
     "TrafficProcess.dc.html": {
       "expand": "fill",
-      "h": 5530,
+      "h": 5590,
       "is_interactive": true,
       "title": "22 교통사고 · 치료 과정",
       "w": 1280,
@@ -274,7 +274,7 @@
     },
     "TrafficTreat.dc.html": {
       "expand": "fill",
-      "h": 5380,
+      "h": 5438,
       "is_interactive": true,
       "title": "23 교통사고 · 치료 방법",
       "w": 1280,
@@ -283,7 +283,7 @@
     },
     "Women.dc.html": {
       "expand": "fill",
-      "h": 5690,
+      "h": 5744,
       "is_interactive": true,
       "title": "28 소아·여성 · 여성 질환",
       "w": 1280,
