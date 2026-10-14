@@ -55,11 +55,12 @@ def load_posts(folder):
             href, label = (x.strip() for x in part.split('|', 1))
             related.append((href, label))
         meta.update(body_md=body.strip(), faq=faq, related=related, cat_key=CAT_KEY[meta['category']],
-                    file=f"column-{meta['slug']}.html")
+                    file=f"column-{meta['slug']}.html", src=os.path.basename(fp))
         assert meta['slug'] not in CAT_NAME, (fp, 'slug clashes with a category page')
         posts.append(meta)
     assert len({p['slug'] for p in posts}) == len(posts), 'duplicate slug'
-    posts.sort(key=lambda p: (p['date'], p['slug']), reverse=True)
+    # newest first; posts of the same day by file name (2026-10-14b-… comes before 2026-10-14-…)
+    posts.sort(key=lambda p: (p['date'], p['src']), reverse=True)
     return posts
 
 

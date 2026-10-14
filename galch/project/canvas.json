@@ -292,7 +292,7 @@
     },
     "Column.dc.html": {
       "expand": "fill",
-      "h": 1842,
+      "h": 2051,
       "is_interactive": true,
       "title": "29 원장 칼럼 · 목록",
       "w": 1280,
@@ -301,7 +301,7 @@
     },
     "ColumnPost.dc.html": {
       "expand": "fill",
-      "h": 3840,
+      "h": 4864,
       "is_interactive": true,
       "title": "29-1 원장 칼럼 · 글 (템플릿)",
       "w": 1280,
