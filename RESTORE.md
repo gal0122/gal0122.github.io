@@ -19,3 +19,12 @@
 ## 글꼴 줄이기 (2026-10-07~)
 - build_site.py 마지막에 fontTools로 Pretendard를 사이트에 쓰인 글자만 남겨 저장 (2MB → 약 0.2MB).
 - 필요: `pip install fonttools` (이미 있으면 생략). brotli 모듈이 설치 안 되는 환경이면 `tools/pyshim/brotli.py`를 작업 폴더 `pyshim/`에 두면 Node의 zlib로 대신 압축함.
+
+## 원장 칼럼 (2026-10-14~)
+- 글 원본: `galch/columns/YYYY-MM-DD-<slug>.md` (머리말: title, slug, category, date, reviewed, description, summary, related).
+  - category: 피부미용 / 교통사고·통증 / 다이어트 / 소아·여성 / 건강 상식. 글이 하나도 없는 분류는 메뉴·버튼·페이지가 자동으로 숨겨짐.
+  - 본문 끝 `## 자주 묻는 질문` + `Q.` / `A.` 줄 → 접이식 FAQ와 FAQPage 구조화 데이터.
+  - 의료 내용은 원장 확인 후 올리기. 최신·최고·유일·전문, 비교, 후기, 전후 사진 금지, 개인차 문구.
+- `tools/columns.py`: 글 읽기·목록·분류 페이지·검색 색인. `tools/make_column_boards.py`: 캔버스 아트보드(Column, ColumnPost) 다시 만들기(글 추가 후 실행).
+- 빌드 결과: `column.html`(전체), `column-<분류>.html`(skin, traffic, diet, kids-women, health), `column-<slug>.html`(글), `column-search.json`(검색 색인; ?q=단어 로 검색 결과 열림).
+- 글 추가 순서: md 작성 → `python3 make_column_boards.py` → `python3 build_site.py` → 캔버스 게시(Column/ColumnPost) → main 푸시.

@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>홈 시안 C</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:inherit}
+.nav a:hover{color:#4f7fa8}
+.svc{transition:background .2s ease,box-shadow .2s ease,transform .2s ease}
+.svc:hover{background:#ffffff;box-shadow:0 14px 32px rgba(53,95,134,.12);transform:translateY(-4px)}
+.btn-fill:hover{background:#2c5072}
+.btn-line:hover{background:#f4f8fc}
+.qn a:hover{transform:scale(1.05)}
+.eq-track{scrollbar-width:thin;scrollbar-color:#c9dbea transparent}
+.eq-track::-webkit-scrollbar{height:6px}
+.eq-track::-webkit-scrollbar-thumb{background:#c9dbea;border-radius:3px}
+</style>
+</helmet>
+<div style="font-family: 'Noto Sans KR', sans-serif; color: #26303b; background: #ffffff; line-height: 1.7; min-height: 100vh">
+
+<header style="background: #ffffff">
+<div style="max-width: 1240px; margin: 0 auto; padding: 18px 24px; display: flex; align-items: center; gap: 56px">
+<a href="Main.dc.html" aria-label="갈창림한의원 홈" style="flex: 0 0 auto; display: inline-flex; text-decoration: none"><img src="/_blob/aa7a2a00288ecf879a5acf4665e97aa0" alt="갈창림한의원" style="display: block; height: 46px; width: auto"></a>
+<nav class="nav" aria-label="메인 메뉴" style="flex: 1 1 auto; display: flex; justify-content: flex-end; gap: 34px; font-size: 16px; font-weight: 500; white-space: nowrap">
+<a href="About.dc.html" style="padding: 8px 0; text-decoration: none">병원소개</a>
+<a href="Skin.dc.html" style="padding: 8px 0; text-decoration: none">피부미용</a>
+<a href="Traffic.dc.html" style="padding: 8px 0; text-decoration: none">교통사고</a>
+<a href="PainSpine.dc.html" style="padding: 8px 0; text-decoration: none">통증</a>
+<a href="Diet.dc.html" style="padding: 8px 0; text-decoration: none">다이어트</a>
+<a href="Growth.dc.html" style="padding: 8px 0; text-decoration: none">소아·여성</a>
+<a href="#" style="padding: 8px 0; text-decoration: none">가격표</a>
+</nav>
+</div>
+</header>
+
+<main>
+
+<section style="padding: 8px 24px 0">
+<div style="position: relative; overflow: hidden; max-width: 1392px; margin: 0 auto; border-radius: 40px; background: linear-gradient(120deg, #e6f1f9 0%, #efeef9 55%, #f9e9f0 100%)">
+<div style="max-width: 1240px; margin: 0 auto; padding: 96px 56px 104px; box-sizing: border-box; display: flex; align-items: center; gap: 48px">
+<div style="flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 26px">
+<p style="margin: 0; display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 700; color: #4f7fa8"><span aria-hidden="true" style="width: 24px; height: 2px; background: #4f7fa8"></span>경산 하양 · 갈창림한의원</p>
+<h1 style="margin: 0; font-size: 54px; line-height: 1.3; font-weight: 800; letter-spacing: -0.03em; color: #26303b">충분히 듣고,<br>꼭 필요한 치료를<br><span style="color: #4f7fa8">정직하게</span></h1>
+<p style="margin: 0; max-width: 500px; font-size: 18px; color: #5b6673">통증과 교통사고 후유증부터 다이어트, 소아 성장, 여성 질환, 피부미용까지. 한 분 한 분의 상태를 살펴 나에게 맞는 치료를 설계합니다.</p>
+<div style="display: flex; gap: 12px; margin-top: 6px">
+<a href="https://talk.naver.com/W4F2TI" target="_blank" rel="noopener" class="btn-fill" style="display: inline-flex; align-items: center; gap: 8px; min-height: 56px; padding: 0 30px; border-radius: 16px; background: #355f86; color: #ffffff; font-weight: 700; text-decoration: none"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.2 7.5L3 21l2-5.3A8.4 8.4 0 1 1 21 11.5z"></path></svg>네이버 톡톡 상담</a>
+<a href="tel:053-851-0122" class="btn-line" style="display: inline-flex; align-items: center; gap: 8px; min-height: 56px; padding: 0 30px; border-radius: 16px; background: #ffffff; color: #355f86; font-weight: 700; text-decoration: none"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg>053-851-0122</a>
+</div>
+</div>
+<div style="flex: 0 0 440px; position: relative; height: 440px">
+<span aria-hidden="true" style="position: absolute; left: 50%; top: 50%; width: 180px; height: 180px; margin: -90px 0 0 -90px; border-radius: 50%; background: rgba(255,255,255,0.85); box-shadow: 0 20px 50px rgba(53,95,134,0.12)"></span>
+<span aria-hidden="true" style="position: absolute; left: 50%; top: 50%; width: 290px; height: 290px; margin: -145px 0 0 -145px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,0.95)"></span>
+<span aria-hidden="true" style="position: absolute; left: 50%; top: 50%; width: 400px; height: 400px; margin: -200px 0 0 -200px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,0.7)"></span>
+<img src="/_blob/1bca22fc9730cca11fb19f0787b8b06c" alt="" aria-hidden="true" style="position: absolute; left: 50%; top: 50%; height: 92px; width: auto; transform: translate(-50%, -50%)">
+<span style="position: absolute; left: -6px; top: 70px; padding: 10px 18px; border-radius: 999px; background: #ffffff; box-shadow: 0 10px 24px rgba(53,95,134,0.12); font-size: 14px; font-weight: 700; color: #355f86">대표원장 직접 진료</span>
+<span style="position: absolute; right: -4px; top: 196px; padding: 10px 18px; border-radius: 999px; background: #ffffff; box-shadow: 0 10px 24px rgba(53,95,134,0.12); font-size: 14px; font-weight: 700; color: #b9658c">토·일요일 진료</span>
+<span style="position: absolute; left: 34px; bottom: 50px; padding: 10px 18px; border-radius: 999px; background: #ffffff; box-shadow: 0 10px 24px rgba(53,95,134,0.12); font-size: 14px; font-weight: 700; color: #6b67a8">추나 건강보험 적용</span>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div style="max-width: 1240px; margin: 0 auto; padding: 104px 24px 96px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 15px; font-weight: 700; color: #4f7fa8">진료 시간</p>
+<h2 style="margin: 0; font-size: 38px; line-height: 1.35; font-weight: 800; letter-spacing: -0.02em">출근 전에도, 주말에도</h2>
+</div>
+<a href="Schedule.dc.html" style="flex: 0 0 auto; font-size: 15px; font-weight: 700; color: #355f86">이달의 진료 일정 보기 →</a>
+</div>
+<div class="eq-track" role="region" aria-label="진료 시간표" tabindex="0" style="overflow-x: auto; border-radius: 28px; background: #f4f8fc">
+<div style="min-width: 900px; padding: 40px 44px 32px; display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; align-items: center; gap: 28px">
+<div style="flex: 0 0 150px; display: flex; flex-direction: column; line-height: 1.4"><strong style="font-size: 20px">평일</strong><span style="font-size: 14px; color: #5b6673">월 – 금</span></div>
+<div style="flex: 1 1 auto; position: relative; height: 56px; border-radius: 999px; background: #ffffff">
+<span style="position: absolute; left: 4.55%; width: 40.9%; top: 4px; bottom: 4px; border-radius: 999px; background: linear-gradient(90deg, #8fbadc, #5f8fb8); color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700">08:30 – 13:00</span>
+<span style="position: absolute; left: 45.45%; width: 9.1%; top: 0; bottom: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #8a94a0">점심</span>
+<span style="position: absolute; left: 54.55%; width: 40.9%; top: 4px; bottom: 4px; border-radius: 999px; background: linear-gradient(90deg, #8fbadc, #5f8fb8); color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700">14:00 – 18:30</span>
+</div>
+</div>
+<div style="display: flex; align-items: center; gap: 28px">
+<div style="flex: 0 0 150px; display: flex; flex-direction: column; line-height: 1.4"><strong style="font-size: 20px; color: #b9658c">주말</strong><span style="font-size: 14px; color: #5b6673">토 · 일</span></div>
+<div style="flex: 1 1 auto; position: relative; height: 56px; border-radius: 999px; background: #ffffff">
+<span style="position: absolute; left: 4.55%; width: 50%; top: 4px; bottom: 4px; border-radius: 999px; background: linear-gradient(90deg, #efb9cf, #d384a8); color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700">08:30 – 14:00 · 점심시간 없이 진료</span>
+</div>
+</div>
+<div style="display: flex; gap: 28px">
+<div style="flex: 0 0 150px"></div>
+<div style="flex: 1 1 auto; position: relative; height: 20px; font-size: 12px; color: #8a94a0">
+<span style="position: absolute; left: 0">08:00</span>
+<span style="position: absolute; left: 18.18%; transform: translateX(-50%)">10:00</span>
+<span style="position: absolute; left: 36.36%; transform: translateX(-50%)">12:00</span>
+<span style="position: absolute; left: 54.55%; transform: translateX(-50%)">14:00</span>
+<span style="position: absolute; left: 72.73%; transform: translateX(-50%)">16:00</span>
+<span style="position: absolute; left: 90.91%; transform: translateX(-50%)">18:00</span>
+</div>
+</div>
+</div>
+</div>
+<p style="margin: 0; display: flex; align-items: center; gap: 10px; font-size: 15px; color: #5b6673"><span style="padding: 4px 12px; border-radius: 999px; background: #f9e9f0; font-weight: 700; color: #b9658c">공휴일 휴진</span>휴진 일정은 이달의 진료 일정에서 확인하실 수 있습니다.</p>
+</div>
+</section>
+
+<section style="background: #f4f8fc">
+<div style="max-width: 1240px; margin: 0 auto; padding: 104px 24px; display: flex; align-items: center; gap: 72px">
+<div style="flex: 0 0 420px; box-sizing: border-box; position: relative; overflow: hidden; padding: 48px 44px; border-radius: 36px; background: linear-gradient(150deg, #f9e9f0 0%, #efeef9 60%, #e6f1f9 100%); display: flex; flex-direction: column; gap: 18px">
+<span aria-hidden="true" style="position: absolute; right: -60px; top: -60px; width: 220px; height: 220px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,0.9)"></span>
+<img src="/_blob/1bca22fc9730cca11fb19f0787b8b06c" alt="" aria-hidden="true" style="display: block; height: 52px; width: auto; align-self: flex-start">
+<p style="margin: 12px 0 0; font-size: 15px; font-weight: 700; color: #4f7fa8">대표원장</p>
+<p style="margin: -8px 0 0; font-size: 44px; line-height: 1.2; font-weight: 800; letter-spacing: 0.04em">갈창림</p>
+<p style="margin: 0; font-size: 16px; color: #5b6673">대구한의대학교 한의과대학 졸업</p>
+</div>
+<div style="flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-size: 15px; font-weight: 700; color: #4f7fa8">의료진 소개</p>
+<h2 style="margin: 0; font-size: 36px; line-height: 1.42; font-weight: 800; letter-spacing: -0.02em">환자 한 분 한 분의 고민을 충분히 듣고,<br>꼭 필요한 치료를 정직하게 제안합니다</h2>
+<p style="margin: 0; font-size: 17px; color: #5b6673">통증과 내과적 불편부터 피부·미용 고민까지, 일상에서 겪는 다양한 문제를 한곳에서 편하게 상담하고 치료받으실 수 있도록 대표원장이 직접 진찰하고 치료합니다.</p>
+<ul class="eq-track" aria-label="학회 및 활동" style="list-style: none; margin: 4px 0 0; padding: 0 0 6px; display: flex; gap: 8px; overflow-x: auto; font-size: 14px; font-weight: 500">
+<li style="flex: 0 0 auto; padding: 8px 14px; border-radius: 999px; background: #ffffff; color: #355f86">대한통합레이저의학회 정회원·교육위원</li>
+<li style="flex: 0 0 auto; padding: 8px 14px; border-radius: 999px; background: #ffffff; color: #355f86">국제레이저미용피부과학회 정회원</li>
+<li style="flex: 0 0 auto; padding: 8px 14px; border-radius: 999px; background: #ffffff; color: #355f86">큐마스터플러스 Key Doctor</li>
+<li style="flex: 0 0 auto; padding: 8px 14px; border-radius: 999px; background: #ffffff; color: #355f86">RMSK 초음파 자격</li>
+</ul>
+<a href="Doctors.dc.html" class="btn-fill" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; margin-top: 6px; border-radius: 16px; background: #355f86; color: #ffffff; font-weight: 700; text-decoration: none">의료진 소개 보기 →</a>
+</div>
+</div>
+</section>
+
+<section>
+<div style="max-width: 1240px; margin: 0 auto; padding: 104px 24px 96px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 15px; font-weight: 700; color: #4f7fa8">진료 분야</p>
+<h2 style="margin: 0; font-size: 38px; line-height: 1.35; font-weight: 800; letter-spacing: -0.02em">나에게 필요한 진료를 찾아보세요</h2>
+</div>
+<div class="eq-track" role="region" aria-label="진료 분야 목록" tabindex="0" style="display: flex; gap: 14px; overflow-x: auto; padding: 6px 4px 18px">
+<a href="Skin.dc.html" class="svc" style="flex: 1 0 150px; box-sizing: border-box; padding: 28px 20px 24px; border-radius: 24px; background: #f4f8fc; display: flex; flex-direction: column; gap: 10px; text-decoration: none">
+<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#4f7fa8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3l1.9 4.6L17.5 9.5l-4.6 1.9L11 16l-1.9-4.6L4.5 9.5l4.6-1.9z"></path><path d="M18.5 14.5l.9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9z"></path></svg>
+<strong style="font-size: 19px; font-weight: 800; margin-top: 10px">피부미용</strong>
+<span style="font-size: 14px; line-height: 1.55; color: #5b6673">리프팅 · 색소<br>여드름 · 모공</span>
+</a>
+<a href="Traffic.dc.html" class="svc" style="flex: 1 0 150px; box-sizing: border-box; padding: 28px 20px 24px; border-radius: 24px; background: #f4f8fc; display: flex; flex-direction: column; gap: 10px; text-decoration: none">
+<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#4f7fa8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16v-3l2.2-5h13.6l2.2 5v3"></path><path d="M3 16h18"></path><path d="M5 13h14"></path><circle cx="7" cy="17.5" r="2"></circle><circle cx="17" cy="17.5" r="2"></circle></svg>
+<strong style="font-size: 19px; font-weight: 800; margin-top: 10px">교통사고</strong>
+<span style="font-size: 14px; line-height: 1.55; color: #5b6673">자동차보험 진료<br>후유증 치료</span>
+</a>
+<a href="PainSpine.dc.html" class="svc" style="flex: 1 0 150px; box-sizing: border-box; padding: 28px 20px 24px; border-radius: 24px; background: #f4f8fc; display: flex; flex-direction: column; gap: 10px; text-decoration: none">
+<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#4f7fa8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="7" height="3.6" rx="1.2"></rect><rect x="8.5" y="7.2" width="7" height="3.6" rx="1.2"></rect><rect x="8.5" y="12.4" width="7" height="3.6" rx="1.2"></rect><rect x="9" y="17.6" width="7" height="3.6" rx="1.2"></rect><path d="M5 3.8h4M4.5 9h4M4.5 14.2h4M5 19.4h4"></path></svg>
+<strong style="font-size: 19px; font-weight: 800; margin-top: 10px">척추 질환</strong>
+<span style="font-size: 14px; line-height: 1.55; color: #5b6673">목·허리디스크<br>척추관협착증</span>
+</a>
+<a href="PainJoint.dc.html" class="svc" style="flex: 1 0 150px; box-sizing: border-box; padding: 28px 20px 24px; border-radius: 24px; background: #f4f8fc; display: flex; flex-direction: column; gap: 10px; text-decoration: none">
+<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#4f7fa8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v6.5c0 .8-.7 1.3-1.5 1.5-1.6.4-1.6 2.6 0 3h7c1.6-.4 1.6-2.6 0-3-.8-.2-1.5-.7-1.5-1.5V2"></path><path d="M9 15.5h6"></path><path d="M10 15.5V22M14 15.5V22"></path></svg>
+<strong style="font-size: 19px; font-weight: 800; margin-top: 10px">관절 질환</strong>
+<span style="font-size: 14px; line-height: 1.55; color: #5b6673">어깨 · 무릎<br>손목 · 발목</span>
+</a>
+<a href="Diet.dc.html" class="svc" style="flex: 1 0 150px; box-sizing: border-box; padding: 28px 20px 24px; border-radius: 24px; background: #f4f8fc; display: flex; flex-direction: column; gap: 10px; text-decoration: none">
+<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#4f7fa8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20c0-8.5 6-15 15-15 0 9-6.5 15-15 15z"></path><path d="M5 20l8.5-8.5"></path></svg>
+<strong style="font-size: 19px; font-weight: 800; margin-top: 10px">다이어트</strong>
+<span style="font-size: 14px; line-height: 1.55; color: #5b6673">맞춤 탕약<br>카카오톡 식단 관리</span>
+</a>
+<a href="Growth.dc.html" class="svc" style="flex: 1 0 150px; box-sizing: border-box; padding: 28px 20px 24px; border-radius: 24px; background: #f4f8fc; display: flex; flex-direction: column; gap: 10px; text-decoration: none">
+<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#4f7fa8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V4"></path><path d="M7 9l5-5 5 5"></path><path d="M4 21h16"></path><path d="M17 13h3M17 17h3"></path></svg>
+<strong style="font-size: 19px; font-weight: 800; margin-top: 10px">소아 성장</strong>
+<span style="font-size: 14px; line-height: 1.55; color: #5b6673">성장 한약<br>견인기 성장판 자극</span>
+</a>
+<a href="Women.dc.html" class="svc" style="flex: 1 0 150px; box-sizing: border-box; padding: 28px 20px 24px; border-radius: 24px; background: #f4f8fc; display: flex; flex-direction: column; gap: 10px; text-decoration: none">
+<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#4f7fa8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8.5" r="5.5"></circle><path d="M12 14v8M8.5 18.5h7"></path></svg>
+<strong style="font-size: 19px; font-weight: 800; margin-top: 10px">여성 질환</strong>
+<span style="font-size: 14px; line-height: 1.55; color: #5b6673">생리통 · 산후 관리<br>갱년기</span>
+</a>
+</div>
+</div>
+</section>
+
+<section style="background: #f4f8fc">
+<div style="max-width: 1240px; margin: 0 auto; padding: 104px 24px; display: flex; align-items: stretch; gap: 56px">
+<div style="flex: 1.15 1 0; min-width: 0; min-height: 480px; border-radius: 32px; background: #e6f1f9; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; color: #4f7fa8">
+<svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+<span style="font-size: 15px">네이버 지도 (추후 연결)</span>
+</div>
+<div style="flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 26px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 15px; font-weight: 700; color: #4f7fa8">오시는 길</p>
+<h2 style="margin: 0; font-size: 38px; line-height: 1.35; font-weight: 800; letter-spacing: -0.02em">하양읍 동서2길에서<br>기다리고 있습니다</h2>
+</div>
+<dl style="margin: 0; display: flex; flex-direction: column; gap: 18px; font-size: 16px">
+<div style="display: flex; align-items: flex-start; gap: 14px"><dt style="flex: 0 0 auto; width: 36px; height: 36px; border-radius: 12px; background: #ffffff; color: #4f7fa8; display: flex; align-items: center; justify-content: center"><svg aria-label="주소" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg></dt><dd style="margin: 0; padding-top: 4px">경북 경산시 하양읍 동서2길 43</dd></div>
+<div style="display: flex; align-items: flex-start; gap: 14px"><dt style="flex: 0 0 auto; width: 36px; height: 36px; border-radius: 12px; background: #ffffff; color: #4f7fa8; display: flex; align-items: center; justify-content: center"><svg aria-label="전화" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg></dt><dd style="margin: 0; padding-top: 4px"><a href="tel:053-851-0122" style="text-decoration: none">053-851-0122</a></dd></div>
+<div style="display: flex; align-items: flex-start; gap: 14px"><dt style="flex: 0 0 auto; width: 36px; height: 36px; border-radius: 12px; background: #ffffff; color: #4f7fa8; display: flex; align-items: center; justify-content: center"><svg aria-label="주차" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="4"></rect><path d="M10 16V8h3a2.5 2.5 0 0 1 0 5h-3"></path></svg></dt><dd style="margin: 0; padding-top: 4px">건물 주차장 및 이면도로 주차 가능</dd></div>
+</dl>
+<div class="eq-track" style="display: flex; gap: 10px; overflow-x: auto; padding-bottom: 4px">
+<a href="https://map.naver.com/p/search/%EA%B0%88%EC%B0%BD%EB%A6%BC%ED%95%9C%EC%9D%98%EC%9B%90" target="_blank" rel="noopener" class="btn-fill" style="flex: 0 0 auto; display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 14px; background: #355f86; color: #ffffff; font-size: 15px; font-weight: 700; text-decoration: none">네이버 지도</a>
+<a href="https://map.kakao.com/?q=%EA%B0%88%EC%B0%BD%EB%A6%BC%ED%95%9C%EC%9D%98%EC%9B%90" target="_blank" rel="noopener" class="btn-line" style="flex: 0 0 auto; display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 14px; background: #ffffff; color: #355f86; font-size: 15px; font-weight: 700; text-decoration: none">카카오맵</a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=%EA%B2%BD%EB%B6%81%20%EA%B2%BD%EC%82%B0%EC%8B%9C%20%ED%95%98%EC%96%91%EC%9D%8D%20%EB%8F%99%EC%84%9C2%EA%B8%B8%2043" target="_blank" rel="noopener" class="btn-line" style="flex: 0 0 auto; display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 14px; background: #ffffff; color: #355f86; font-size: 15px; font-weight: 700; text-decoration: none">구글 지도</a>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer style="background: #ffffff; border-top: 1px solid #e6edf3">
+<div style="max-width: 1240px; margin: 0 auto; padding: 52px 24px 64px; display: flex; flex-direction: column; gap: 14px; font-size: 14px; color: #5b6673">
+<img src="/_blob/aa7a2a00288ecf879a5acf4665e97aa0" alt="갈창림한의원" style="display: block; height: 38px; width: auto; align-self: flex-start">
+<div class="eq-track" style="display: flex; gap: 0 20px; overflow-x: auto; white-space: nowrap">
+<span>상호 갈창림한의원</span>
+<span>대표자 갈창림</span>
+<span>사업자등록번호 732-20-02200</span>
+</div>
+<div class="eq-track" style="display: flex; gap: 0 20px; overflow-x: auto; white-space: nowrap">
+<span>주소 경북 경산시 하양읍 동서2길 43</span>
+<span>전화 <a href="tel:053-851-0122" style="text-decoration: none">053-851-0122</a></span>
+</div>
+<div class="eq-track" style="display: flex; gap: 0 20px; overflow-x: auto; white-space: nowrap; color: #26303b">
+<a href="Privacy.dc.html" style="font-weight: 700; text-decoration: none">개인정보처리방침</a>
+<a href="Terms.dc.html" style="text-decoration: none">이용약관</a>
+<a href="https://blog.naver.com/gal0122" target="_blank" rel="noopener" style="text-decoration: none">블로그</a>
+<a href="https://www.instagram.com/gal__clinic/" target="_blank" rel="noopener" style="text-decoration: none">인스타그램</a>
+</div>
+<p style="margin: 0; color: #9aa3ad">© 2026 갈창림한의원. All rights reserved.</p>
+</div>
+</footer>
+
+<nav class="qn" aria-label="바로가기" style="position: fixed; right: 24px; top: 50%; transform: translateY(-50%); z-index: 10; display: flex; flex-direction: column; gap: 10px">
+<a href="https://blog.naver.com/gal0122" target="_blank" rel="noopener" style="width: 68px; height: 68px; border-radius: 50%; background: #ffffff; color: #355f86; box-shadow: 0 8px 22px rgba(53,95,134,0.16); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; font-size: 12px; font-weight: 700; text-decoration: none; transition: transform .15s ease"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"></path><path d="M13 7l4 4"></path></svg>블로그</a>
+<a href="https://talk.naver.com/W4F2TI" target="_blank" rel="noopener" style="width: 68px; height: 68px; border-radius: 50%; background: #ffffff; color: #355f86; box-shadow: 0 8px 22px rgba(53,95,134,0.16); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; font-size: 12px; font-weight: 700; text-decoration: none; transition: transform .15s ease"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.2 7.5L3 21l2-5.3A8.4 8.4 0 1 1 21 11.5z"></path></svg>톡톡상담</a>
+<a href="tel:053-851-0122" style="width: 68px; height: 68px; border-radius: 50%; background: #355f86; color: #ffffff; box-shadow: 0 8px 22px rgba(53,95,134,0.25); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; font-size: 12px; font-weight: 700; text-decoration: none; transition: transform .15s ease"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg>전화</a>
+</nav>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":3600}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

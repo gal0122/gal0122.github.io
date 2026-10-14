@@ -2,7 +2,7 @@
 
 Output: /home/claude/site/  (index.html + one .html per page, assets/, .nojekyll)
 """
-import re, json, os, shutil, html as htmlmod, datetime
+import re, json, os, sys, shutil, html as htmlmod, datetime
 from PIL import Image
 
 S = '/tmp/claude-0/-home-claude/68b4eec7-1c3c-57e2-af39-86fe64cf79a4/scratchpad'
@@ -80,6 +80,8 @@ SEO = {
    '생리통부터 산후 회복, 갱년기까지 여성의 몸을 살핍니다. 경산 하양 갈창림한의원 여성 질환 진료.'),
  'price.html': ('가격표 · 레이저제모 비용 | 경산 갈창림한의원',
    '레이저제모 부위별 비용, 리니어펌·볼뉴머·실리프팅, 토닝, 필링·여드름, 라디쥬 등 스킨부스터, 패키지 비용 안내(부가세 포함). 경산 하양 갈창림한의원.'),
+ 'column.html': ('원장 칼럼 – 피부미용·건강·질환 정보 | 경산 갈창림한의원',
+   '경산 하양 갈창림한의원 대표원장이 피부미용, 교통사고·통증, 다이어트, 소아·여성 건강에 대해 진료실에서 자주 받는 질문에 직접 답하는 칼럼입니다.'),
  'privacy.html': ('개인정보처리방침 | 갈창림한의원', '갈창림한의원 홈페이지 개인정보처리방침.'),
  'terms.html': ('이용약관 | 갈창림한의원', '갈창림한의원 홈페이지 이용약관.'),
 }
@@ -140,8 +142,8 @@ LD_CLINIC = {
 CRUMB = {'홈': '', '병원소개': 'about.html', '피부미용': 'skin.html', '리프팅': 'design-lifting.html',
          '스킨부스터': 'booster-pdrn.html', '제모': 'hair-removal.html', '색소': 'pigment.html',
          '여드름': 'acne.html', '모공': 'pore.html', '교통사고': 'traffic.html', '통증': 'pain-spine.html',
-         '다이어트': 'diet.html', '소아·여성': 'growth.html', '가격표': 'price.html'}
-NON_MEDICAL = {'index.html', 'about.html', 'doctors.html', 'equipment.html', 'schedule.html', 'price.html',
+         '다이어트': 'diet.html', '소아·여성': 'growth.html', '가격표': 'price.html', '원장 칼럼': 'column.html'}
+NON_MEDICAL = {'index.html', 'column.html', 'about.html', 'doctors.html', 'equipment.html', 'schedule.html', 'price.html',
                'privacy.html', 'terms.html'}
 
 
@@ -167,7 +169,7 @@ def page_ld(slug_, title, desc, url, body):
     graph = []
     if slug_ == 'index.html':
         graph += [LD_WEBSITE, dict(LD_CLINIC)]
-    wp = {'@type': 'WebPage' if slug_ in NON_MEDICAL else 'MedicalWebPage', '@id': url + '#webpage',
+    wp = {'@type': 'CollectionPage' if slug_ in COL_LISTS else 'WebPage' if slug_ in NON_MEDICAL else 'MedicalWebPage', '@id': url + '#webpage',
           'url': url, 'name': title, 'description': desc, 'inLanguage': 'ko-KR',
           'isPartOf': {'@id': SITE_ID}, 'about': {'@id': CLINIC_ID}, 'dateModified': LASTMOD}
     if wp['@type'] == 'MedicalWebPage':     # matches the visible "작성·검토 갈창림 대표원장(한의사) · 최종 검토" line
@@ -177,7 +179,11 @@ def page_ld(slug_, title, desc, url, body):
         reviewed = f'{rv.group(1)}-{int(rv.group(2)):02d}-{int(rv.group(3)):02d}' if rv else REVIEWED
         wp.update({'author': reviewer, 'reviewedBy': reviewer, 'lastReviewed': reviewed})
     m = re.search(r'<p style="margin: 0; font-size: 14px; color: #5d655f">(홈 &gt;.*?)</p>', body)
-    if m:
+    if slug_ in COL_CRUMBS:     # 원장 칼럼 pages: category names clash with section names (피부미용 -> skin.html)
+        graph.append({'@type': 'BreadcrumbList', '@id': url + '#breadcrumb', 'itemListElement': [
+            {'@type': 'ListItem', 'position': i + 1, 'name': n, 'item': u} for i, (n, u) in enumerate(COL_CRUMBS[slug_])]})
+        wp['breadcrumb'] = {'@id': url + '#breadcrumb'}
+    elif m:
         labels = [plain(x) for x in m.group(1).split('&gt;')]
         items, seen = [], set()
         for i, lab in enumerate(labels):
@@ -192,6 +198,14 @@ def page_ld(slug_, title, desc, url, body):
         graph.append({'@type': 'BreadcrumbList', '@id': url + '#breadcrumb', 'itemListElement': [
             {'@type': 'ListItem', 'position': i + 1, **it} for i, it in enumerate(items)]})
         wp['breadcrumb'] = {'@id': url + '#breadcrumb'}
+    if COL_LISTS.get(slug_):
+        graph.append({'@type': 'ItemList', '@id': url + '#posts', 'itemListElement': [
+            {'@type': 'ListItem', 'position': i + 1, 'url': f"{SITE}/{p['file']}", 'name': p['title']}
+            for i, p in enumerate(COL_LISTS[slug_])]})
+        wp['mainEntity'] = {'@id': url + '#posts'}
+    if slug_ in POST_META:
+        pm = POST_META[slug_]
+        wp.update({'headline': pm['title'], 'datePublished': pm['date'], 'dateModified': pm['reviewed']})
     if slug_ == 'doctors.html':
         wp['mainEntity'] = {'@id': DIRECTOR_ID}
         graph.append(LD_DIRECTOR)
@@ -210,7 +224,7 @@ BLOB = json.loads(re.search(r'const MAP = (\{.*?\});', open(f'{S}/measure.js', e
 
 canvas = json.load(open(f'{G}/project/canvas.json', encoding='utf-8'))
 order = canvas['order']
-NON_PAGES = {'Popup.dc.html'}          # design-only boards, not web pages
+NON_PAGES = {'Popup.dc.html', 'ColumnPost.dc.html'}          # design-only boards, not web pages
 pages = [f for f in order if f not in NON_PAGES]
 
 
@@ -222,6 +236,32 @@ def slug(dc):
 
 
 SLUG = {f: slug(f) for f in pages}
+SLUG['ColumnPost.dc.html'] = 'column.html'   # template board; sample links fall back to the list
+# ---- 원장 칼럼 posts (galch/columns/*.md) ----
+sys.path.insert(0, S)
+import columns
+POSTS = columns.load_posts(f'{G}/columns')
+POST_META = {p['file']: p for p in POSTS}
+CATS = columns.used_categories(POSTS)                 # categories with at least one post
+COL_LISTS = {columns.cat_file(k): ([p for p in POSTS if p['cat_key'] == k] if k != 'all' else POSTS)
+             for k in ['all'] + [k for k, _ in CATS]}  # list pages -> the posts they show
+HOME_C, COL_C = ('홈', SITE + '/'), ('원장 칼럼', SITE + '/column.html')
+COL_CRUMBS = {columns.cat_file(k): [HOME_C, COL_C, (n, f'{SITE}/{columns.cat_file(k)}')] for k, n in CATS}
+COL_CRUMBS.update({p['file']: [HOME_C, COL_C, (p['category'], f"{SITE}/{columns.cat_file(p['cat_key'])}"),
+                               (p['title'], f"{SITE}/{p['file']}")] for p in POSTS})
+
+for k, n in CATS:
+    SEO[columns.cat_file(k)] = (f'{n} 칼럼 | 원장 칼럼 · 경산 갈창림한의원', f'{columns.CAT_INTRO[k]} 경산 하양 갈창림한의원.')
+
+def col_links(body):
+    """Menu links 'column.html#skin' -> the category page; drop categories that have no post yet."""
+    have = {k for k, _ in CATS}
+    for k, _ in columns.CATEGORIES:
+        if k not in have:
+            body = re.sub(rf'<a href="column\.html#{k}"[^>]*>[^<]*</a>\n?', '', body)
+    body = re.sub(r'href="column\.html#([a-z-]+)"', lambda m: f'href="{columns.cat_file(m.group(1))}"', body)
+    assert 'column.html#' not in body
+    return body
 
 if os.path.isdir(OUT):
     shutil.rmtree(OUT)
@@ -283,11 +323,11 @@ og.save(f'{OUT}/assets/og-image.png', optimize=True)
 
 
 def fix_links(html):
-    def rep(m):
-        name, frag = m.group(1), m.group(2) or ''
+    def rep2(m):
+        name, frag = m.group(2), m.group(3) or ''
         target = SLUG[name + ".dc.html"]
-        return f'href="{"/" if target == "index.html" else target}{frag}"'
-    return re.sub(r'href="([A-Za-z]+)\.dc\.html(#[\w-]+)?"', rep, html)
+        return f'{m.group(1)}="{"/" if target == "index.html" else target}{frag}"'
+    return re.sub(r'(href|action)="([A-Za-z]+)\.dc\.html(#[\w-]+)?"', lambda m: rep2(m), html)
 
 
 def blobs(html):
@@ -506,8 +546,123 @@ document.addEventListener('click', function (e) {{
 </script>
 ''' if GA_ID else ''
 
+# 원장 칼럼 list pages (column.html, column-<category>.html): "더 보기" paging + full-text search.
+# The search index (column-search.json) is fetched on the first search; ?q=단어 opens with results.
+COLUMN_JS = r"""<script>
+(function () {
+  var box = document.querySelector('[data-column-list]');
+  if (!box) return;
+  var list = box.querySelector('.col-list'), res = box.querySelector('.col-results');
+  var moreWrap = box.querySelector('.col-more-wrap'), more = box.querySelector('.col-more');
+  var form = document.querySelector('.col-search'), q = form && form.querySelector('input');
+  var items = [].slice.call(list.querySelectorAll('.col-item'));
+  var PAGE = 10, shown = PAGE;
+  function paging() {
+    items.forEach(function (it, i) { it.hidden = i >= shown; });
+    moreWrap.hidden = items.length <= shown;
+    more.textContent = '칼럼 더 보기 (' + Math.max(0, items.length - shown) + ')';
+  }
+  more.addEventListener('click', function () {
+    var first = items[shown];
+    shown += PAGE; paging();
+    var a = first && first.querySelector('a');
+    if (a) a.focus({ preventScroll: true });
+  });
+  paging();
+  if (!q) return;
+
+  function norm(s) { return (s || '').toLowerCase().replace(/\s+/g, ''); }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function hl(s, re) {
+    var out = '', last = 0;
+    s.replace(re, function (m, off) { out += esc(s.slice(last, off)) + '<mark>' + esc(m) + '</mark>'; last = off + m.length; return m; });
+    return out + esc(s.slice(last));
+  }
+  var idx = null, wait = null;
+  function load() {
+    if (!wait) wait = fetch('column-search.json').then(function (r) { if (!r.ok) throw r.status; return r.json(); })
+      .catch(function () {          // index unreachable: search the titles and summaries on this page
+        return items.map(function (it) {
+          return { u: it.querySelector('a').getAttribute('href'), t: it.querySelector('h2').textContent,
+                   c: it.querySelector('.col-tag').textContent, d: it.querySelector('.col-date').textContent.split(' ')[0],
+                   s: it.querySelector('p').textContent, x: '' };
+        });
+      })
+      .then(function (d) {
+        idx = d.map(function (p) { p.n = [norm(p.t), norm(p.c), norm(p.s), norm(p.x)]; return p; });
+      });
+    return wait;
+  }
+  function snippet(p, terms) {        // a piece of the summary (or else the body) around the first word found
+    var src = [p.s, p.x];
+    for (var k = 0; k < 2; k++) {
+      var s = src[k], ls = s.toLowerCase(), at = -1;
+      for (var i = 0; i < terms.length && at < 0; i++) at = ls.indexOf(terms[i]);
+      if (at < 0) continue;
+      if (at < 50) return k ? s.slice(0, 150) + (s.length > 150 ? ' …' : '') : s;
+      var st = at - 24, sp = s.indexOf(' ', st);
+      if (sp > -1 && sp < at) st = sp + 1;
+      return '… ' + s.slice(st, st + 150) + (st + 150 < s.length ? ' …' : '');
+    }
+    return p.s;
+  }
+  function render(v) {
+    var terms = v.toLowerCase().split(/\s+/).filter(Boolean);
+    var re = new RegExp(terms.map(function (t) { return t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }).join('|'), 'gi');
+    var hits = [];
+    idx.forEach(function (p, i) {
+      var sc = 0;
+      for (var j = 0; j < terms.length; j++) {
+        var f = p.n.map(function (n) { return n.indexOf(terms[j]) > -1; });
+        if (!(f[0] || f[1] || f[2] || f[3])) return;      // every word has to appear somewhere in the post
+        sc += (f[0] ? 8 : 0) + (f[1] ? 4 : 0) + (f[2] ? 2 : 0) + (f[3] ? 1 : 0);
+      }
+      hits.push({ p: p, sc: sc, i: i });
+    });
+    hits.sort(function (a, b) { return b.sc - a.sc || a.i - b.i; });
+    var scope = /column-/.test(location.pathname) ? '전체 칼럼에서 ' : '';
+    var h = '<p class="col-count"><span>' + scope + '‘' + esc(v) + '’ 검색 결과 <strong>' + hits.length + '</strong>건</span>'
+          + '<button type="button" class="col-btn col-clear">검색 지우기</button></p>';
+    if (hits.length) {
+      h += '<div class="col-list">' + hits.map(function (x) {
+        var p = x.p;
+        return '<article class="col-item"><a href="' + esc(p.u) + '"><span class="col-tag">' + esc(p.c) + '</span>'
+             + '<h2>' + hl(p.t, re) + '</h2><p class="col-snip">' + hl(snippet(p, terms), re) + '</p>'
+             + '<span class="col-date">' + esc(p.d) + ' · 갈창림 대표원장</span></a></article>';
+      }).join('') + '</div>';
+    } else {
+      h += '<p class="col-empty">‘' + esc(v) + '’에 대한 칼럼은 아직 없습니다. 다른 단어로 찾아보시거나, 전화·네이버상담으로 물어보시면 답해 드립니다.</p>';
+    }
+    res.innerHTML = h;
+    res.hidden = false; list.hidden = true; moreWrap.hidden = true;
+  }
+  function reset() { res.hidden = true; res.innerHTML = ''; list.hidden = false; paging(); }
+  function sync(v) { try { history.replaceState(null, '', v ? '?q=' + encodeURIComponent(v) : location.pathname); } catch (e) {} }
+  var timer = 0;
+  function run(now) {
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      var v = q.value.trim();
+      sync(v);
+      if (!v) return reset();
+      load().then(function () { if (q.value.trim() === v) render(v); });
+    }, now ? 0 : 150);
+  }
+  q.addEventListener('input', function () { run(false); });
+  form.addEventListener('submit', function (e) { e.preventDefault(); run(true); q.blur(); });
+  res.addEventListener('click', function (e) {
+    if (e.target.closest('.col-clear')) { q.value = ''; run(true); q.focus(); }
+  });
+  var start = new URLSearchParams(location.search).get('q');
+  if (start) { q.value = start; run(true); }
+})();
+</script>"""
+
 report = []
-for f in pages:
+
+
+def build_page(f, out=None, transform=None, seo=None):
+    out = out or SLUG[f]
     src = open(f'{G}/project/{f}', encoding='utf-8').read()
     style = re.search(r'<style>(.*?)</style>', src, re.S).group(1)
     # extra helmet styles (e.g. Privacy/Terms media rule) live in the same <style>; also keep any 2nd style block
@@ -515,7 +670,9 @@ for f in pages:
     is_home = f == 'Main.dc.html'
     style = blobs('\n'.join([style] + extra + ([POPUP_CSS] if is_home and POPUP_HTML else [])))
     body = src.split('</helmet>', 1)[1].split('</x-dc>', 1)[0]
-    body = fix_links(body)
+    if transform:
+        body = transform(body)
+    body = col_links(fix_links(body))
     body = body.replace('onClick="{{ prev }}"', 'onclick="slide(this,-1)"').replace('onClick="{{ next }}"', 'onclick="slide(this,1)"')
     body = blobs(body)
     has_map = 'data-naver-map' in body
@@ -525,15 +682,15 @@ for f in pages:
 
     raw = re.sub(r'^\d+\s*', '', canvas['boards'][f]['title'])
     page = raw.split(' · ')[-1]
-    title, desc = SEO.get(SLUG[f], (f'{page} | 갈창림한의원', f'{raw} — 경산 하양 갈창림한의원'))
-    url = SITE + '/' + ('' if SLUG[f] == 'index.html' else SLUG[f])
+    title, desc = seo or SEO.get(out, (f'{page} | 갈창림한의원', f'{raw} — 경산 하양 갈창림한의원'))
+    url = SITE + '/' + ('' if out == 'index.html' else out)
     extra_head = ''
     if is_home:
         for v in ([NAVER_VERIFY] if isinstance(NAVER_VERIFY, str) else NAVER_VERIFY):
             extra_head += f'<meta name="naver-site-verification" content="{v}">\n'
         if GOOGLE_VERIFY:
             extra_head += f'<meta name="google-site-verification" content="{GOOGLE_VERIFY}">\n'
-    ld, n_faq = page_ld(SLUG[f], title, desc, url, body)
+    ld, n_faq = page_ld(out, title, desc, url, body)
     extra_head += ld
 
     html = f'''<!doctype html>
@@ -568,25 +725,47 @@ for f in pages:
 {BASE_JS}
 {POPUP_JS if is_home and POPUP_HTML else ''}
 {MAP_JS if has_map else ''}
+{COLUMN_JS if out in COL_LISTS else ''}
 </body>
 </html>
 '''
-    open(f'{OUT}/{SLUG[f]}', 'w', encoding='utf-8').write(html)
-    report.append((SLUG[f], len(html) // 1024, has_map, n_faq))
+    open(f'{OUT}/{out}', 'w', encoding='utf-8').write(html)
+    report.append((out, len(html) // 1024, has_map, n_faq))
+
+
+POST_LINK, CAT_LINK = (lambda p: p['file']), columns.cat_file
+
+
+def list_transform(key):
+    return lambda b: columns.fill(b, columns.list_regions(POSTS, key, POST_LINK, CAT_LINK))
+
+
+for f in pages:
+    build_page(f, transform=list_transform('all') if f == 'Column.dc.html' else None)
+for k, n in CATS:                                     # one list page per category: column-skin.html …
+    build_page('Column.dc.html', out=columns.cat_file(k), transform=list_transform(k))
+for p in POSTS:
+    build_page('ColumnPost.dc.html', out=p['file'],
+               transform=lambda b, p=p: columns.fill(b, columns.regions(p, POSTS, lambda h: h, POST_LINK, CAT_LINK)),
+               seo=(f"{p['title']} | 원장 칼럼 · 경산 갈창림한의원", p['description']))
+json.dump(columns.search_index(POSTS), open(f'{OUT}/column-search.json', 'w', encoding='utf-8'),
+          ensure_ascii=False, separators=(',', ':'))
 
 # sitemap.xml + robots.txt for Naver Search Advisor / Google Search Console
-urls = [SITE + '/' + ('' if SLUG[f] == 'index.html' else SLUG[f]) for f in pages]
+urls = [(SITE + '/' + ('' if SLUG[f] == 'index.html' else SLUG[f]), LASTMOD) for f in pages]
+urls += [(f'{SITE}/{columns.cat_file(k)}', max(p['reviewed'] for p in COL_LISTS[columns.cat_file(k)])) for k, _ in CATS]
+urls += [(f"{SITE}/{p['file']}", p['reviewed']) for p in POSTS]
 sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-for u in urls:
-    sm.append(f'  <url><loc>{u}</loc><lastmod>{LASTMOD}</lastmod></url>')
+for u, lm in urls:
+    sm.append(f'  <url><loc>{u}</loc><lastmod>{lm}</lastmod></url>')
 sm.append('</urlset>')
 open(f'{OUT}/sitemap.xml', 'w', encoding='utf-8').write('\n'.join(sm) + '\n')
 AI_BOTS = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-SearchBot', 'Claude-User',
            'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Applebot', 'Applebot-Extended',
            'Bingbot', 'Googlebot', 'Yeti', 'Daumoa']
-robots = ('User-agent: *\nAllow: /\n\n'
+robots = ('User-agent: *\nAllow: /\nDisallow: /column-search.json\n\n'
           '# Search engines and AI search / answer services are welcome to read this site\n'
-          + ''.join(f'User-agent: {b}\n' for b in AI_BOTS) + 'Allow: /\n\n'
+          + ''.join(f'User-agent: {b}\n' for b in AI_BOTS) + 'Allow: /\nDisallow: /column-search.json\n\n'
           f'Sitemap: {SITE}/sitemap.xml\n')
 open(f'{OUT}/robots.txt', 'w', encoding='utf-8').write(robots)
 open(f'{OUT}/{INDEXNOW_KEY}.txt', 'w', encoding='utf-8').write(INDEXNOW_KEY)
@@ -600,10 +779,11 @@ GROUPS = [('병원 안내', ['about.html', 'doctors.html', 'equipment.html', 'sc
                     'acne-scar.html', 'pore.html']),
           ('교통사고 · 통증', ['traffic.html', 'traffic-process.html', 'traffic-treat.html', 'pain-spine.html',
                          'pain-joint.html']),
-          ('다이어트 · 소아 · 여성', ['diet.html', 'growth.html', 'women.html'])]
+          ('다이어트 · 소아 · 여성', ['diet.html', 'growth.html', 'women.html']),
+          ('원장 칼럼', ['column.html'] + [columns.cat_file(k) for k, _ in CATS] + [p['file'] for p in POSTS])]
 grouped = {s for _, ss in GROUPS for s in ss}
-assert grouped | {'index.html', 'privacy.html', 'terms.html'} == set(SLUG.values()), set(SLUG.values()) - grouped
-seo_of = lambda s: SEO.get(s, (s, ''))
+assert set(SLUG.values()) <= grouped | {'index.html', 'privacy.html', 'terms.html'}, set(SLUG.values()) - grouped
+seo_of = lambda s: (POST_META[s]['title'] + ' | ', POST_META[s]['description']) if s in POST_META else SEO.get(s, (s, ''))
 llms = ['# 갈창림한의원', '',
         '> 경상북도 경산시 하양읍 동서2길 43, 3층에 있는 한의원입니다. 평일(월~금) 08:30–18:30(점심 13:00–14:00), '
         '토·일요일 08:30–14:00(점심시간 없음) 진료하며 공휴일은 휴진합니다. 전화 053-851-0122.', '',

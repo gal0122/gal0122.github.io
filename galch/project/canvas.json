@@ -204,18 +204,18 @@
       "expand": "fill",
       "h": 5162,
       "is_interactive": true,
-      "title": "29 가격표",
+      "title": "30 가격표",
       "w": 1280,
-      "x": 39440,
+      "x": 42160,
       "y": 0
     },
     "Privacy.dc.html": {
       "expand": "fill",
       "h": 7638,
       "is_interactive": true,
-      "title": "30 개인정보처리방침",
+      "title": "31 개인정보처리방침",
       "w": 1280,
-      "x": 40800,
+      "x": 43520,
       "y": 0
     },
     "Schedule.dc.html": {
@@ -240,9 +240,9 @@
       "expand": "fill",
       "h": 3591,
       "is_interactive": true,
-      "title": "31 이용약관",
+      "title": "32 이용약관",
       "w": 1280,
-      "x": 42160,
+      "x": 44880,
       "y": 0
     },
     "ThreadLifting.dc.html": {
@@ -289,6 +289,24 @@
       "w": 1280,
       "x": 38080,
       "y": 0
+    },
+    "Column.dc.html": {
+      "expand": "fill",
+      "h": 1842,
+      "is_interactive": true,
+      "title": "29 원장 칼럼 · 목록",
+      "w": 1280,
+      "x": 39440,
+      "y": 0
+    },
+    "ColumnPost.dc.html": {
+      "expand": "fill",
+      "h": 3840,
+      "is_interactive": true,
+      "title": "29-1 원장 칼럼 · 글 (템플릿)",
+      "w": 1280,
+      "x": 40800,
+      "y": 0
     }
   },
   "createdOnFiles": {
@@ -330,6 +348,8 @@
     "Diet.dc.html",
     "Growth.dc.html",
     "Women.dc.html",
+    "Column.dc.html",
+    "ColumnPost.dc.html",
     "Price.dc.html",
     "Privacy.dc.html",
     "Terms.dc.html"

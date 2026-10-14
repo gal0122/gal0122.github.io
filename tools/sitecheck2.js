@@ -11,7 +11,7 @@ const fs = require('fs');
     p.on('requestfailed', r => { if (!r.url().includes('naver.com')) fails.push(r.url()); });
     p.on('response', r => { if (r.status() >= 400) fails.push(r.status() + ' ' + r.url()); });
     p.on('pageerror', e => errs.push(e.message));
-    await p.goto('http://localhost:8790/' + f, { waitUntil: 'load' });
+    await p.goto('http://localhost:8794/' + f, { waitUntil: 'load' });
     await p.waitForTimeout(300);
     const info = await p.evaluate(async () => {
       await document.fonts.ready;
