@@ -87,6 +87,14 @@ SEO = {
 SAME_AS = ['https://blog.naver.com/gal0122', 'https://www.instagram.com/gal__clinic/']
 NAVER_LINK = 'https://map.naver.com/p/search/%EA%B0%88%EC%B0%BD%EB%A6%BC%ED%95%9C%EC%9D%98%EC%9B%90'
 CLINIC_ID, SITE_ID = SITE + '/#clinic', SITE + '/#website'
+DIRECTOR_ID = SITE + '/doctors.html#director'
+LD_DIRECTOR = {'@type': 'Person', '@id': DIRECTOR_ID, 'name': '갈창림', 'jobTitle': '대표원장 (한의사)',
+               'url': SITE + '/doctors.html', 'image': SITE + '/assets/director.webp',
+               'worksFor': {'@id': CLINIC_ID},
+               'alumniOf': {'@type': 'CollegeOrUniversity', 'name': '대구한의대학교 한의과대학'},
+               'memberOf': [{'@type': 'OrganizationRole', 'roleName': '정회원·교육위원', 'memberOf': {'@type': 'Organization', 'name': '대한통합레이저의학회'}},
+                            {'@type': 'OrganizationRole', 'roleName': '정회원', 'memberOf': {'@type': 'Organization', 'name': '국제레이저미용피부과학회'}}],
+               'hasCredential': {'@type': 'EducationalOccupationalCredential', 'name': 'RMSK (미국 근골격 초음파 자격)', 'credentialCategory': 'certification'}}
 # services offered (names as shown on the site) -> page
 SERVICES = [
  ('MedicalProcedure', '레이저제모', 'hair-removal.html'),
@@ -123,7 +131,7 @@ LD_CLINIC = {
  'medicalSpecialty': ['Dermatologic', 'Musculoskeletal'],
  'hasMap': NAVER_LINK,
  'areaServed': [{'@type': 'City', 'name': '경상북도 경산시'}],
- 'employee': {'@type': 'Person', 'name': '갈창림', 'jobTitle': '대표원장', 'url': SITE + '/doctors.html',
+ 'employee': {'@type': 'Person', '@id': SITE + '/doctors.html#director', 'name': '갈창림', 'jobTitle': '대표원장 (한의사)', 'url': SITE + '/doctors.html',
               'alumniOf': {'@type': 'CollegeOrUniversity', 'name': '대구한의대학교 한의과대학'}},
  'availableService': [{'@type': t, 'name': n, 'url': f'{SITE}/{u}'} for t, n, u in SERVICES],
  'sameAs': SAME_AS,
@@ -163,7 +171,7 @@ def page_ld(slug_, title, desc, url, body):
           'url': url, 'name': title, 'description': desc, 'inLanguage': 'ko-KR',
           'isPartOf': {'@id': SITE_ID}, 'about': {'@id': CLINIC_ID}, 'dateModified': LASTMOD}
     if wp['@type'] == 'MedicalWebPage':     # matches the visible "작성·검토 갈창림 대표원장(한의사) · 최종 검토" line
-        reviewer = {'@type': 'Person', '@id': SITE + '/doctors.html#director', 'name': '갈창림',
+        reviewer = {'@type': 'Person', '@id': DIRECTOR_ID, 'name': '갈창림',
                     'jobTitle': '대표원장 (한의사)', 'url': SITE + '/doctors.html'}
         wp.update({'author': reviewer, 'reviewedBy': reviewer, 'lastReviewed': REVIEWED})
     m = re.search(r'<p style="margin: 0; font-size: 14px; color: #5d655f">(홈 &gt;.*?)</p>', body)
@@ -182,6 +190,9 @@ def page_ld(slug_, title, desc, url, body):
         graph.append({'@type': 'BreadcrumbList', '@id': url + '#breadcrumb', 'itemListElement': [
             {'@type': 'ListItem', 'position': i + 1, **it} for i, it in enumerate(items)]})
         wp['breadcrumb'] = {'@id': url + '#breadcrumb'}
+    if slug_ == 'doctors.html':
+        wp['mainEntity'] = {'@id': DIRECTOR_ID}
+        graph.append(LD_DIRECTOR)
     graph.insert(0 if slug_ != 'index.html' else 2, wp)
     qa = faq_pairs(body)
     if qa:
@@ -272,7 +283,8 @@ og.save(f'{OUT}/assets/og-image.png', optimize=True)
 def fix_links(html):
     def rep(m):
         name, frag = m.group(1), m.group(2) or ''
-        return f'href="{SLUG[name + ".dc.html"]}{frag}"'
+        target = SLUG[name + ".dc.html"]
+        return f'href="{"/" if target == "index.html" else target}{frag}"'
     return re.sub(r'href="([A-Za-z]+)\.dc\.html(#[\w-]+)?"', rep, html)
 
 
