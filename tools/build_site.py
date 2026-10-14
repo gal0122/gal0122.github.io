@@ -171,7 +171,7 @@ def page_ld(slug_, title, desc, url, body):
         graph += [LD_WEBSITE, dict(LD_CLINIC)]
     wp = {'@type': 'CollectionPage' if slug_ in COL_LISTS else 'WebPage' if slug_ in NON_MEDICAL else 'MedicalWebPage', '@id': url + '#webpage',
           'url': url, 'name': title, 'description': desc, 'inLanguage': 'ko-KR',
-          'isPartOf': {'@id': SITE_ID}, 'about': {'@id': CLINIC_ID}, 'dateModified': LASTMOD}
+          'isPartOf': {'@id': SITE_ID}, 'about': {'@id': CLINIC_ID}, 'dateModified': PAGE_DATE.get(slug_, LASTMOD)}
     if wp['@type'] == 'MedicalWebPage':     # matches the visible "작성·검토 갈창림 대표원장(한의사) · 최종 검토" line
         reviewer = {'@type': 'Person', '@id': DIRECTOR_ID, 'name': '갈창림',
                     'jobTitle': '대표원장 (한의사)', 'url': SITE + '/doctors.html'}
@@ -660,6 +660,33 @@ COLUMN_JS = r"""<script>
 
 report = []
 
+# Per-page "last changed" date for sitemap lastmod and dateModified: only moves when the page's own
+# content (<main>) changes, so a rebuild doesn't make every page look new to search engines.
+import hashlib
+LASTMOD_DB = f'{G}/lastmod.json'
+_db_new = not os.path.exists(LASTMOD_DB)
+PAGE_DB = {} if _db_new else json.load(open(LASTMOD_DB, encoding='utf-8'))
+PAGE_DATE = {}
+SEED_DATE = '2026-10-14'      # first run: the last day the whole site really changed
+
+
+def page_date(out, body):
+    m = re.search(r'<main>(.*)</main>', body, re.S)
+    h = hashlib.sha1(re.sub(r'\s+', ' ', m.group(1) if m else body).encode('utf-8')).hexdigest()[:16]
+    old = PAGE_DB.get(out)
+    if old and old['h'] == h:
+        d = old['d']
+    elif out in POST_META:
+        d = POST_META[out]['reviewed']
+    elif not old and _db_new:
+        rv = re.search(r'최종 검토 (\d{4})년 (\d{1,2})월 (\d{1,2})일', body)
+        d = f'{rv.group(1)}-{int(rv.group(2)):02d}-{int(rv.group(3)):02d}' if rv else SEED_DATE
+    else:
+        d = LASTMOD
+    PAGE_DB[out] = {'h': h, 'd': d}
+    PAGE_DATE[out] = d
+    return d
+
 
 def build_page(f, out=None, transform=None, seo=None):
     out = out or SLUG[f]
@@ -690,6 +717,7 @@ def build_page(f, out=None, transform=None, seo=None):
             extra_head += f'<meta name="naver-site-verification" content="{v}">\n'
         if GOOGLE_VERIFY:
             extra_head += f'<meta name="google-site-verification" content="{GOOGLE_VERIFY}">\n'
+    page_date(out, body)
     ld, n_faq = page_ld(out, title, desc, url, body)
     extra_head += ld
 
@@ -752,9 +780,10 @@ json.dump(columns.search_index(POSTS), open(f'{OUT}/column-search.json', 'w', en
           ensure_ascii=False, separators=(',', ':'))
 
 # sitemap.xml + robots.txt for Naver Search Advisor / Google Search Console
-urls = [(SITE + '/' + ('' if SLUG[f] == 'index.html' else SLUG[f]), LASTMOD) for f in pages]
-urls += [(f'{SITE}/{columns.cat_file(k)}', max(p['reviewed'] for p in COL_LISTS[columns.cat_file(k)])) for k, _ in CATS]
-urls += [(f"{SITE}/{p['file']}", p['reviewed']) for p in POSTS]
+urls = [(SITE + '/' + ('' if SLUG[f] == 'index.html' else SLUG[f]), PAGE_DATE[SLUG[f]]) for f in pages]
+json.dump({k: PAGE_DB[k] for k in sorted(PAGE_DB)}, open(LASTMOD_DB, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+urls += [(f'{SITE}/{columns.cat_file(k)}', PAGE_DATE[columns.cat_file(k)]) for k, _ in CATS]
+urls += [(f"{SITE}/{p['file']}", PAGE_DATE[p['file']]) for p in POSTS]
 sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
 for u, lm in urls:
     sm.append(f'  <url><loc>{u}</loc><lastmod>{lm}</lastmod></url>')

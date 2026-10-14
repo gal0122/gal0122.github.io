@@ -29,3 +29,7 @@
 - 필요 패키지: `pip install markdown` (글 본문 변환).
 - 빌드 결과: `column.html`(전체), `column-<분류>.html`(skin, traffic, diet, kids-women, health), `column-<slug>.html`(글), `column-search.json`(검색 색인; ?q=단어 로 검색 결과 열림).
 - 글 추가 순서: md 작성 → `python3 make_column_boards.py` → `python3 build_site.py` → 캔버스 게시(Column/ColumnPost) → main 푸시.
+
+## 페이지 날짜 (2026-10-15~)
+- `galch/lastmod.json`: 페이지별 <main> 내용 해시와 마지막으로 바뀐 날짜. sitemap lastmod와 구조화 데이터 dateModified가 이 날짜를 씀.
+- 내용이 바뀐 페이지만 빌드한 날짜로 갱신되고, 다시 빌드해도 그대로 유지됨 (매일 색인 요청 작업이 이 날짜로 '바뀐 페이지'를 고름). 복구할 때 이 파일도 같이 복사할 것.
