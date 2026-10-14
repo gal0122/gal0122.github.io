@@ -408,48 +408,82 @@ if os.path.exists(f'{G}/project/Popup.dc.html'):
 .pop-overlay[hidden]{display:none}
 @media (max-width:640px){.pop-overlay{align-items:flex-start;padding:16px 16px 76px}.pop-layer{width:100%;margin:auto 0}.pop-cal td{height:36px}.pop-body{gap:12px}.pop-reasons li{padding:9px 14px}.pop-open{padding:11px 14px}.pop{flex:0 1 auto;width:100%;max-width:380px}.pop-body{padding:24px 22px 20px}.pop-date{font-size:30px}.pop-title{font-size:20px!important}}'''
 
+NOTICE_BAR = ('<div class="notice-bar" id="site-notice" role="region" aria-label="공지" hidden>'
+              '<button type="button" class="nb-open"><span class="nb-tag">공지</span><span class="nb-text"></span><span class="nb-more">보기 ›</span></button>'
+              '<button type="button" class="nb-x" aria-label="공지 24시간 동안 닫기">×</button></div>\n')
+POPUP_CSS += '''
+.notice-bar{display:none}
+@media (max-width:640px){
+.notice-bar:not([hidden]){display:flex;align-items:stretch;background:#2f5241;color:#ffffff;font-family:'Pretendard','Pretendard Variable',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Noto Sans KR',sans-serif}
+.notice-bar button{border:0;background:transparent;color:inherit;font:inherit;cursor:pointer}
+.nb-open{flex:1 1 auto;min-width:0;display:flex;align-items:center;gap:8px;min-height:42px;padding:0 4px 0 16px;text-align:left;font-size:13px;font-weight:600}
+.nb-tag{flex:0 0 auto;padding:2px 8px;border-radius:999px;background:#d7c9a7;color:#24302a;font-size:11px;font-weight:700}
+.nb-text{flex:1 1 auto;min-width:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.nb-more{flex:0 0 auto;font-size:12px;color:#d7c9a7}
+.nb-x{flex:0 0 44px;font-size:20px!important;line-height:1}
+.notice-bar button:focus-visible{outline:2px solid #d7c9a7;outline-offset:-2px}
+}'''
+
 POPUP_JS = '''<script>
 (function () {
   var overlay = document.getElementById('site-popups');
   if (!overlay) return;
   var layer = overlay.querySelector('.pop-layer');
-  var KEY = 'galclinic-popup-hide-';
+  var bar = document.getElementById('site-notice');
+  var KEY = 'galclinic-popup-hide-', BARKEY = 'galclinic-notice-hide';
   var DAY = 24 * 60 * 60 * 1000;
   var now = Date.now();
   function load(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
   function save(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
-  var pops = [].slice.call(overlay.querySelectorAll('.pop')).filter(function (p) {
+  // notices past their date are dropped for good
+  var all = [].slice.call(overlay.querySelectorAll('.pop')).filter(function (p) {
     var until = p.getAttribute('data-until');
     var expired = until && now > new Date(until + 'T23:59:59+09:00').getTime();
-    var snoozed = Number(load(KEY + p.getAttribute('data-pop')) || 0) > now;
-    if (expired || snoozed) { p.parentNode.removeChild(p); return false; }
+    if (expired) { p.parentNode.removeChild(p); return false; }
     return true;
   });
   var mq = window.matchMedia('(max-width: 640px)');
+  var open = [];
   function layout() {
-    pops.forEach(function (p, i) { p.style.display = (!mq.matches || i === 0) ? '' : 'none'; });
-    overlay.hidden = pops.length === 0;
-    document.documentElement.style.overflow = pops.length ? 'hidden' : '';
+    all.forEach(function (p) { p.style.display = 'none'; });
+    open.forEach(function (p, i) { p.style.display = (!mq.matches || i === 0) ? '' : 'none'; });
+    overlay.hidden = open.length === 0;
+    document.documentElement.style.overflow = open.length ? 'hidden' : '';
+  }
+  function show(list) {
+    open = list.slice(); layout();
+    if (open.length) { var c = open[0].querySelector('.pop-close'); if (c) c.focus({ preventScroll: true }); }
   }
   function closePop(p, remember) {
     if (remember) save(KEY + p.getAttribute('data-pop'), String(Date.now() + DAY));
-    if (p.parentNode) p.parentNode.removeChild(p);
-    pops = pops.filter(function (x) { return x !== p; });
+    open = open.filter(function (x) { return x !== p; });
     layout();
+    if (!open.length && bar && !bar.hidden) bar.querySelector('.nb-open').focus({ preventScroll: true });
   }
-  pops.forEach(function (p) {
+  all.forEach(function (p) {
     p.querySelector('.pop-close').addEventListener('click', function () {
       closePop(p, p.querySelector('.pop-check input').checked);
     });
   });
   overlay.addEventListener('click', function (e) {
-    if (e.target === overlay || e.target === layer) pops.slice().forEach(function (p) { closePop(p, false); });
+    if (e.target === overlay || e.target === layer) open.slice().forEach(function (p) { closePop(p, false); });
   });
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && pops.length) closePop(pops[0], false);
+    if (e.key === 'Escape' && open.length) closePop(open[0], false);
   });
+  // phones: a thin notice bar instead of popups covering the page; tapping it opens them
+  if (bar) {
+    var labels = all.map(function (p) { return p.getAttribute('data-label') || ''; }).filter(Boolean);
+    bar.querySelector('.nb-text').textContent = labels.join(' · ');
+    bar.hidden = !all.length || Number(load(BARKEY) || 0) > now;
+    bar.querySelector('.nb-open').addEventListener('click', function () { show(all); });
+    bar.querySelector('.nb-x').addEventListener('click', function () {
+      save(BARKEY, String(Date.now() + DAY)); bar.hidden = true;
+    });
+  }
   if (mq.addEventListener) mq.addEventListener('change', layout);
-  layout();
+  // computers: popups open on arrival as before (unless snoozed for 24 hours)
+  if (!mq.matches) show(all.filter(function (p) { return !(Number(load(KEY + p.getAttribute('data-pop')) || 0) > now); }));
 })();
 </script>'''
 
@@ -527,7 +561,7 @@ for f in pages:
 </style>
 </head>
 <body>
-{body.strip()}
+{NOTICE_BAR if is_home and POPUP_HTML else ''}{body.strip()}
 {POPUP_HTML if is_home else ''}
 {BASE_JS}
 {POPUP_JS if is_home and POPUP_HTML else ''}
