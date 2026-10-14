@@ -94,7 +94,7 @@
     },
     "Diet.dc.html": {
       "expand": "fill",
-      "h": 7124,
+      "h": 7261,
       "is_interactive": true,
       "title": "26 다이어트",
       "w": 1280,
@@ -121,7 +121,7 @@
     },
     "Growth.dc.html": {
       "expand": "fill",
-      "h": 6434,
+      "h": 6502,
       "is_interactive": true,
       "title": "27 소아·여성 · 소아 성장",
       "w": 1280,
@@ -130,7 +130,7 @@
     },
     "HairRemoval.dc.html": {
       "expand": "fill",
-      "h": 7287,
+      "h": 7355,
       "is_interactive": true,
       "title": "14 피부미용 · 제모",
       "w": 1280,
@@ -256,7 +256,7 @@
     },
     "Traffic.dc.html": {
       "expand": "fill",
-      "h": 5859,
+      "h": 5995,
       "is_interactive": true,
       "title": "21 교통사고 · 교통사고 후유증",
       "w": 1280,

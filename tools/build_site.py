@@ -173,7 +173,9 @@ def page_ld(slug_, title, desc, url, body):
     if wp['@type'] == 'MedicalWebPage':     # matches the visible "작성·검토 갈창림 대표원장(한의사) · 최종 검토" line
         reviewer = {'@type': 'Person', '@id': DIRECTOR_ID, 'name': '갈창림',
                     'jobTitle': '대표원장 (한의사)', 'url': SITE + '/doctors.html'}
-        wp.update({'author': reviewer, 'reviewedBy': reviewer, 'lastReviewed': REVIEWED})
+        rv = re.search(r'최종 검토 (\d{4})년 (\d{1,2})월 (\d{1,2})일', body)   # the page's own visible review date
+        reviewed = f'{rv.group(1)}-{int(rv.group(2)):02d}-{int(rv.group(3)):02d}' if rv else REVIEWED
+        wp.update({'author': reviewer, 'reviewedBy': reviewer, 'lastReviewed': reviewed})
     m = re.search(r'<p style="margin: 0; font-size: 14px; color: #5d655f">(홈 &gt;.*?)</p>', body)
     if m:
         labels = [plain(x) for x in m.group(1).split('&gt;')]
