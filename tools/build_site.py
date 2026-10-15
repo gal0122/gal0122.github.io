@@ -24,7 +24,7 @@ GOOGLE_VERIFY = 'J8QaDGTCXl33x5qhQ0BFwqwJQ9_kGM2WzyDeolMWfLE'   # content of <me
 # search title / description per page (keywords: 경산 한의원, 경산 레이저제모)
 SEO = {
  'index.html': ('경산 한의원 갈창림한의원 | 하양 · 토·일요일 진료',
-   '경북 경산시 하양읍 갈창림한의원. 평일 08:30–18:30, 토·일 08:30–14:00 진료. 레이저제모·리프팅·색소·여드름 피부미용, 교통사고 후유증, 척추·관절 통증, 다이어트, 소아 성장, 여성 질환 진료.'),
+   '경북 경산시 하양읍 갈창림한의원. 평일 08:30–18:30, 토·일 08:30–14:00 진료. 레이저제모·리프팅·색소·여드름 피부미용, 교통사고 후유증, 척추·관절 통증, 소화불량·두통·불면·비염 등 내과 질환, 다이어트, 소아 성장, 여성 질환 진료.'),
  'about.html': ('병원 소개 | 경산 한의원 갈창림한의원',
    '경산 하양 갈창림한의원 소개. 충분히 듣고, 꼭 필요한 치료를 정직하게 제안하는 한의원입니다.'),
  'doctors.html': ('의료진 소개 | 경산 한의원 갈창림한의원',
@@ -73,6 +73,14 @@ SEO = {
    '목부터 허리까지, 통증을 만든 원인을 찾아 치료합니다. 경산 하양 갈창림한의원 척추 질환 진료.'),
  'pain-joint.html': ('경산 어깨·무릎 관절 통증 한의원 | 갈창림한의원',
    '쓰는 만큼 지치는 관절, 아픈 이유부터 살핍니다. 경산 하양 갈창림한의원 관절 질환 진료.'),
+ 'internal-digestive.html': ('경산 소화불량·역류성 식도염 한의원 | 갈창림한의원',
+   '검사는 괜찮다는데 계속 불편한 속, 원인부터 살핍니다. 기능성 소화불량, 역류성 식도염, 과민성 대장 증후군 — 경산 하양 갈창림한의원 소화기 질환 진료.'),
+ 'internal-neuro.html': ('경산 두통·안면마비·손발 저림 한의원 | 갈창림한의원',
+   '반복되는 두통과 갑작스러운 안면마비, 손발 저림까지 원인을 살핍니다. 경산 하양 갈창림한의원 두통·신경 질환 진료.'),
+ 'internal-sleep.html': ('경산 불면증·화병 한의원 | 갈창림한의원',
+   '잠 못 드는 밤, 답답한 가슴, 풀리지 않는 피로를 함께 살핍니다. 경산 하양 갈창림한의원 불면·스트레스 진료.'),
+ 'internal-rhinitis.html': ('경산 비염·수족냉증 한의원 | 갈창림한의원',
+   '찬 공기와 찬 기운에 예민한 몸, 체질부터 살핍니다. 경산 하양 갈창림한의원 비염·수족냉증 진료.'),
  'diet.html': ('경산 한방 다이어트 | 갈창림한의원',
    '체중계 숫자보다 건강하게 유지할 수 있는 몸을 목표로 합니다. 경산 하양 갈창림한의원 한방 다이어트.'),
  'growth.html': ('경산 소아 성장 한의원 | 갈창림한의원',
@@ -82,7 +90,7 @@ SEO = {
  'price.html': ('가격표 · 레이저제모 비용 | 경산 갈창림한의원',
    '레이저제모 부위별 비용, 리니어펌·볼뉴머·실리프팅, 토닝, 필링·여드름, 라디쥬 등 스킨부스터, 패키지 비용 안내(부가세 포함). 경산 하양 갈창림한의원.'),
  'column.html': ('원장 칼럼 – 피부미용·건강·질환 정보 | 경산 갈창림한의원',
-   '경산 하양 갈창림한의원 대표원장이 피부미용, 교통사고·통증, 다이어트, 소아·여성 건강에 대해 진료실에서 자주 받는 질문에 직접 답하는 칼럼입니다.'),
+   '경산 하양 갈창림한의원 대표원장이 피부미용, 교통사고, 척추·관절 통증, 내과 질환, 다이어트, 소아·여성 건강에 대해 진료실에서 자주 받는 질문에 직접 답하는 칼럼입니다.'),
  'privacy.html': ('개인정보처리방침 | 갈창림한의원', '갈창림한의원 홈페이지 개인정보처리방침.'),
  'terms.html': ('이용약관 | 갈창림한의원', '갈창림한의원 홈페이지 이용약관.'),
 }
@@ -112,6 +120,10 @@ SERVICES = [
  ('MedicalTherapy', '교통사고 후유증 치료 (자동차보험 진료)', 'traffic.html'),
  ('MedicalTherapy', '척추 질환 치료', 'pain-spine.html'),
  ('MedicalTherapy', '관절 질환 치료', 'pain-joint.html'),
+ ('MedicalTherapy', '소화기 질환 치료 (기능성 소화불량·역류성 식도염·과민성 대장 증후군)', 'internal-digestive.html'),
+ ('MedicalTherapy', '두통·안면마비·손발 저림 치료', 'internal-neuro.html'),
+ ('MedicalTherapy', '불면증·화병·만성 피로 치료', 'internal-sleep.html'),
+ ('MedicalTherapy', '비염·수족냉증 치료', 'internal-rhinitis.html'),
  ('MedicalTherapy', '한방 다이어트', 'diet.html'),
  ('MedicalTherapy', '소아 성장 치료', 'growth.html'),
  ('MedicalTherapy', '여성 질환 치료', 'women.html'),
@@ -142,7 +154,7 @@ LD_CLINIC = {
 # breadcrumb label (as shown on each page) -> section page
 CRUMB = {'홈': '', '병원소개': 'about.html', '피부미용': 'skin.html', '리프팅': 'design-lifting.html',
          '스킨부스터': 'booster-pdrn.html', '제모': 'hair-removal.html', '색소': 'pigment.html',
-         '여드름': 'acne.html', '모공': 'pore.html', '교통사고': 'traffic.html', '통증': 'pain-spine.html',
+         '여드름': 'acne.html', '모공': 'pore.html', '교통사고': 'traffic.html', '통증': 'pain-spine.html', '내과 질환': 'internal-digestive.html',
          '다이어트': 'diet.html', '소아·여성': 'growth.html', '가격표': 'price.html', '원장 칼럼': 'column.html'}
 NON_MEDICAL = {'index.html', 'column.html', 'about.html', 'doctors.html', 'equipment.html', 'schedule.html', 'price.html',
                'privacy.html', 'terms.html'}
@@ -269,6 +281,11 @@ def col_links(body):
             body = re.sub(rf'<a href="column\.html#{k}"[^>]*>[^<]*</a>\n?', '', body)
     body = re.sub(r'href="column\.html#([a-z-]+)"', lambda m: f'href="{columns.cat_file(m.group(1))}"', body)
     assert 'column.html#' not in body
+    # links from service pages to a post (<a data-col="slug" …>): shown only once the post is published
+    live = {p['slug'] for p in POSTS}
+    body = re.sub(r'<p[^>]*>\s*<a data-col="([a-z0-9-]+)"[^>]*>[^<]*</a>\s*</p>\n?',
+                  lambda m: m.group(0).replace(f' data-col="{m.group(1)}"', '') if m.group(1) in live else '', body)
+    assert 'data-col=' not in body
     return body
 
 if os.path.isdir(OUT):
@@ -822,6 +839,7 @@ GROUPS = [('병원 안내', ['about.html', 'doctors.html', 'equipment.html', 'sc
                     'acne-scar.html', 'pore.html']),
           ('교통사고 · 통증', ['traffic.html', 'traffic-process.html', 'traffic-treat.html', 'pain-spine.html',
                          'pain-joint.html']),
+          ('내과 질환', ['internal-digestive.html', 'internal-neuro.html', 'internal-sleep.html', 'internal-rhinitis.html']),
           ('다이어트 · 소아 · 여성', ['diet.html', 'growth.html', 'women.html']),
           ('원장 칼럼', ['column.html'] + [columns.cat_file(k) for k, _ in CATS] + [p['file'] for p in POSTS])]
 grouped = {s for _, ss in GROUPS for s in ss}
@@ -831,7 +849,7 @@ llms = ['# 갈창림한의원', '',
         '> 경상북도 경산시 하양읍 동서2길 43, 3층에 있는 한의원입니다. 평일(월~금) 08:30–18:30(점심 13:00–14:00), '
         '토·일요일 08:30–14:00(점심시간 없음) 진료하며 공휴일은 휴진합니다. 전화 053-851-0122.', '',
         '대표원장 갈창림(대구한의대학교 한의과대학 졸업)이 직접 진찰하고 치료합니다. 레이저제모·리프팅·색소·여드름·모공·스킨부스터 등 '
-        '피부미용, 교통사고 후유증(자동차보험 진료), 척추·관절 통증, 다이어트, 소아 성장, 여성 질환을 진료합니다. '
+        '피부미용, 교통사고 후유증(자동차보험 진료), 척추·관절 통증, 소화불량·두통·불면·비염 같은 내과 질환, 다이어트, 소아 성장, 여성 질환을 진료합니다. '
         '하양역(대구도시철도 1호선·대구선)에서 걸어서 약 10~15분이며, 건물 주차장과 이면도로에 주차할 수 있습니다. '
         '상담·예약은 네이버 톡톡 또는 전화로 할 수 있습니다. 시술 결과와 필요한 횟수는 개인에 따라 차이가 있습니다.', '']
 for name, slugs in GROUPS:

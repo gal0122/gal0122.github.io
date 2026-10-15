@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="440" viewBox="0 0 1100 440">
+<rect width="1100" height="440" fill="#ffffff"/>
+<defs><radialGradient id="infl" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#e2463a" stop-opacity="0.55"/><stop offset="100%" stop-color="#e2463a" stop-opacity="0"/></radialGradient><radialGradient id="cold" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#3f86c9" stop-opacity="0.6"/><stop offset="100%" stop-color="#3f86c9" stop-opacity="0"/></radialGradient><marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1a1a1a"/></marker><marker id="arrR" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#e2463a"/></marker><marker id="arrB" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3f86c9"/></marker></defs>
+<rect x="15" y="30" width="520" height="316" fill="#fbfbfb" stroke="#cfcfcf" stroke-width="1.5"/>
+<rect x="55" y="56" width="440" height="40" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/>
+<rect x="55" y="282" width="440" height="40" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/>
+<path d="M55 96 L55.0 136.4 Q82.5 144.4 110.0 143.6 Q137.5 151.6 165.0 136.4 Q192.5 144.4 220.0 143.6 Q247.5 151.6 275.0 136.4 Q302.5 144.4 330.0 143.6 Q357.5 151.6 385.0 136.4 Q412.5 144.4 440.0 143.6 Q467.5 151.6 495.0 136.4 L495 96 Z" fill="#f6cfc8" stroke="#d99a8f" stroke-width="2"/>
+<path d="M55 282 L55.0 241.6 Q82.5 233.6 110.0 234.4 Q137.5 226.4 165.0 241.6 Q192.5 233.6 220.0 234.4 Q247.5 226.4 275.0 241.6 Q302.5 233.6 330.0 234.4 Q357.5 226.4 385.0 241.6 Q412.5 233.6 440.0 234.4 Q467.5 226.4 495.0 241.6 L495 282 Z" fill="#f6cfc8" stroke="#d99a8f" stroke-width="2"/>
+<path d="M75 172 L465 172" stroke="#3f86c9" stroke-width="3" marker-end="url(#arrB)"/>
+<path d="M75 190 L465 190" stroke="#3f86c9" stroke-width="3" marker-end="url(#arrB)"/>
+<path d="M75 208 L465 208" stroke="#3f86c9" stroke-width="3" marker-end="url(#arrB)"/>
+<text x="275" y="378" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="20" font-weight="700" fill="#1a1a1a">정상 코 점막</text>
+<text x="275" y="406" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14.5" font-weight="400" fill="#555555">숨길이 넓고 공기가 잘 지나갑니다</text>
+<text x="55" y="50" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="12.5" font-weight="500" fill="#888888">코 안쪽 숨길을 옆에서 본 모습</text>
+<rect x="565" y="30" width="520" height="316" fill="#fbfbfb" stroke="#cfcfcf" stroke-width="1.5"/>
+<rect x="605" y="56" width="440" height="40" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/>
+<rect x="605" y="282" width="440" height="40" fill="#f1e7da" stroke="#b9a48c" stroke-width="1.5"/>
+<path d="M605 96 L605.0 166.6 Q632.5 174.6 660.0 177.4 Q687.5 185.4 715.0 166.6 Q742.5 174.6 770.0 177.4 Q797.5 185.4 825.0 166.6 Q852.5 174.6 880.0 177.4 Q907.5 185.4 935.0 166.6 Q962.5 174.6 990.0 177.4 Q1017.5 185.4 1045.0 166.6 L1045 96 Z" fill="#f0a99f" stroke="#cf6f62" stroke-width="2"/>
+<path d="M605 282 L605.0 211.4 Q632.5 203.4 660.0 200.6 Q687.5 192.6 715.0 211.4 Q742.5 203.4 770.0 200.6 Q797.5 192.6 825.0 211.4 Q852.5 203.4 880.0 200.6 Q907.5 192.6 935.0 211.4 Q962.5 203.4 990.0 200.6 Q1017.5 192.6 1045.0 211.4 L1045 282 Z" fill="#f0a99f" stroke="#cf6f62" stroke-width="2"/>
+<path d="M625 189 L755 189" stroke="#3f86c9" stroke-width="3" marker-end="url(#arrB)"/>
+<path d="M765 156 q-6 10 0 14 q6 -4 0 -14" fill="#cfe4f5" stroke="#8fb7d9" stroke-width="1"/>
+<path d="M855 160 q-6 10 0 14 q6 -4 0 -14" fill="#cfe4f5" stroke="#8fb7d9" stroke-width="1"/>
+<path d="M935 152 q-6 10 0 14 q6 -4 0 -14" fill="#cfe4f5" stroke="#8fb7d9" stroke-width="1"/>
+<path d="M815 228 q-6 10 0 14 q6 -4 0 -14" fill="#cfe4f5" stroke="#8fb7d9" stroke-width="1"/>
+<path d="M905 224 q-6 10 0 14 q6 -4 0 -14" fill="#cfe4f5" stroke="#8fb7d9" stroke-width="1"/>
+<path d="M985 230 q-6 10 0 14 q6 -4 0 -14" fill="#cfe4f5" stroke="#8fb7d9" stroke-width="1"/>
+<circle cx="589" cy="120" r="4" fill="#c99a3a"/>
+<circle cx="601" cy="150" r="4" fill="#c99a3a"/>
+<circle cx="585" cy="230" r="4" fill="#c99a3a"/>
+<circle cx="605" cy="262" r="4" fill="#c99a3a"/>
+<circle cx="593" cy="200" r="4" fill="#c99a3a"/>
+<path d="M895 130 L985 48" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="895" cy="130" r="3" fill="#1a1a1a"/>
+<text x="1065" y="50" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13.5" font-weight="700" fill="#e2463a">점막이 붓고 예민해짐</text>
+<path d="M908 232 L985 330" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="908" cy="232" r="3" fill="#1a1a1a"/>
+<text x="1065" y="340" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13.5" font-weight="700" fill="#3f86c9">맑은 콧물</text>
+<text x="587" y="340" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="12.5" font-weight="700" fill="#9a7426">알레르기 물질·찬 공기</text>
+<text x="825" y="378" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="20" font-weight="700" fill="#1a1a1a">비염</text>
+<text x="825" y="406" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14.5" font-weight="400" fill="#555555">점막이 부어 숨길이 좁아지고 콧물·재채기가 납니다</text>
+<text x="605" y="50" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="12.5" font-weight="500" fill="#888888">코 안쪽 숨길을 옆에서 본 모습</text>
+<text x="575" y="433" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#777777">집먼지진드기·꽃가루 같은 알레르기 물질이나 찬 공기에 점막이 과민하게 반응합니다</text>
+</svg>

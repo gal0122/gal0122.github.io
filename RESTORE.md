@@ -44,3 +44,10 @@
 ## 질환 칼럼 (2026-10-15~)
 - 머리말에 `keyword: 경산 OO` 와 `condition: OO` 를 넣으면: 검색 제목이 "경산 OO | 글 제목 – 갈창림한의원"이 되고, 구조화 데이터에 about(MedicalCondition)·keywords가 붙고, 글 끝에 "경산·하양에서 OO 진료를 찾으신다면" 안내 칸(주소·진료시간·전화, columns.py의 regions에서 한 곳만 고치면 됨)이 자동으로 붙음.
 - 질환 칼럼 27편(원장 확인 완료, 턱관절·어지럼증 제외): 허리통증 10-15 발행, 나머지 26편은 10-16 ~ 11-10 하루 한 편씩 예약(피부미용 칼럼과 별도라 10-16 ~ 10-29는 하루 두 편). 원장 확인용 한 장짜리 HTML: `python3 tools/make_review.py` (작업 폴더의 prev/ 에 저장, 색소칼럼 검토본의 CSS를 씀).
+
+## 내과 질환 페이지 (2026-10-15~)
+- 아트보드 InternalDigestive(소화기 질환) · InternalNeuro(두통·신경 질환) · InternalSleep(불면·스트레스) · InternalRhinitis(비염·수족냉증) → internal-*.html. 메뉴 '내과 질환'(통증 다음), 홈 진료 분야 카드.
+- 만들기: `python3 tools/make_internal_pages.py` (내용은 tools/internal_content.py, 머리·꼬리는 PainSpine 아트보드에서 가져옴). 그림: `python3 tools/internal_svgs.py` → galch/img/*.svg (캔버스 자산으로 올린 blob id는 measure.js MAP).
+- 치료 방법은 원장님이 정해 준 것만: 소화기·불면·화병·만성피로·비염·안면마비 = 침·뜸·한약 / 두통 = 침·뜸·부항·약침·추나·한약 / 손발 저림 = 침·뜸·약침·한약 / 수족냉증 = 침·뜸·부항·한약.
+- 질환 카드의 "원장 칼럼에서 자세히 보기" 링크(<a data-col="slug">)는 그 칼럼이 발행된 날부터 자동으로 보임 (build_site.py col_links).
+- 961~1060px 화면에서는 메뉴 글자를 15px, 간격을 16px로 줄여 한 줄에 들어가게 함 (모든 아트보드 style).

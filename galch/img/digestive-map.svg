@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650">
+<rect width="1100" height="650" fill="#ffffff"/>
+<defs><radialGradient id="infl" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#e2463a" stop-opacity="0.55"/><stop offset="100%" stop-color="#e2463a" stop-opacity="0"/></radialGradient><radialGradient id="cold" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#3f86c9" stop-opacity="0.6"/><stop offset="100%" stop-color="#3f86c9" stop-opacity="0"/></radialGradient><marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1a1a1a"/></marker><marker id="arrR" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#e2463a"/></marker><marker id="arrB" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3f86c9"/></marker></defs>
+<circle cx="550" cy="64" r="44" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<rect x="530" y="100" width="40" height="52" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<path d="M420 176 Q420 150 454 146 L646 146 Q680 150 680 176 L668 400 Q674 520 690 606 L410 606 Q426 520 432 400 Z" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<rect x="529" y="128" width="42" height="26" fill="#f3e1d4"/>
+<path d="M488 568 L480 470 L484 418 Q490 404 510 406 L610 402 Q632 402 634 424 L636 540 Q634 584 590 582 Q560 580 554 596" fill="none" stroke="#c99a66" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M488 568 L480 470 L484 418 Q490 404 510 406 L610 402 Q632 402 634 424 L636 540 Q634 584 590 582 Q560 580 554 596" fill="none" stroke="#ecc9a0" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M466 430 q14 6 28 0" fill="none" stroke="#d3ab7d" stroke-width="1.5"/>
+<path d="M620 430 q14 6 28 0" fill="none" stroke="#d3ab7d" stroke-width="1.5"/>
+<path d="M466 452 q14 6 28 0" fill="none" stroke="#d3ab7d" stroke-width="1.5"/>
+<path d="M620 452 q14 6 28 0" fill="none" stroke="#d3ab7d" stroke-width="1.5"/>
+<path d="M466 474 q14 6 28 0" fill="none" stroke="#d3ab7d" stroke-width="1.5"/>
+<path d="M620 474 q14 6 28 0" fill="none" stroke="#d3ab7d" stroke-width="1.5"/>
+<path d="M466 496 q14 6 28 0" fill="none" stroke="#d3ab7d" stroke-width="1.5"/>
+<path d="M620 496 q14 6 28 0" fill="none" stroke="#d3ab7d" stroke-width="1.5"/>
+<path d="M466 518 q14 6 28 0" fill="none" stroke="#d3ab7d" stroke-width="1.5"/>
+<path d="M620 518 q14 6 28 0" fill="none" stroke="#d3ab7d" stroke-width="1.5"/>
+<path d="M466 540 q14 6 28 0" fill="none" stroke="#d3ab7d" stroke-width="1.5"/>
+<path d="M620 540 q14 6 28 0" fill="none" stroke="#d3ab7d" stroke-width="1.5"/>
+<path d="M514 440 q22 -14 44 0 t44 0 t20 18 q-22 14 -44 0 t-44 0 t-20 18 q22 14 44 0 t44 0 t20 18 q-22 14 -44 0 t-44 0 t-20 18 q22 14 44 0 t52 4" fill="none" stroke="#d9a593" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M514 440 q22 -14 44 0 t44 0 t20 18 q-22 14 -44 0 t-44 0 t-20 18 q22 14 44 0 t44 0 t20 18 q-22 14 -44 0 t-44 0 t-20 18 q22 14 44 0 t52 4" fill="none" stroke="#f5d3c6" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M550 112 C552 180 556 240 568 300" fill="none" stroke="#d99a88" stroke-width="20" stroke-linecap="round"/>
+<path d="M550 112 C552 180 556 240 568 300" fill="none" stroke="#f4c6b8" stroke-width="15" stroke-linecap="round"/>
+<path d="M560 296 Q574 284 606 286 Q652 292 650 336 Q648 380 606 394 Q560 404 522 386 L510 372 Q520 360 536 366 Q570 374 586 358 Q598 340 580 322 Q568 312 560 296 Z" fill="#f6d2c4" stroke="#d99a88" stroke-width="2.5"/>
+<path d="M562 300 L576 292" stroke="#b8604d" stroke-width="5" stroke-linecap="round"/>
+<path d="M514 380 Q500 404 510 438" fill="none" stroke="#d9a593" stroke-width="14" stroke-linecap="round"/>
+<path d="M514 380 Q500 404 510 438" fill="none" stroke="#f5d3c6" stroke-width="10" stroke-linecap="round"/>
+<circle cx="564" cy="274" r="34" fill="url(#infl)"/>
+<path d="M580 318 C576 300 570 286 564 262" fill="none" stroke="#e2463a" stroke-width="2.5" marker-end="url(#arrR)"/>
+<circle cx="612" cy="340" r="44" fill="url(#infl)"/>
+<circle cx="634" cy="500" r="44" fill="url(#infl)"/>
+<circle cx="484" cy="480" r="36" fill="url(#infl)"/>
+<text x="526" y="214" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="700" fill="#8a6a5a">식도</text>
+<text x="614" y="350" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" font-weight="700" fill="#8a6a5a">위</text>
+<text x="556" y="532" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="700" fill="#8a6a5a">소장</text>
+<text x="454" y="470" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="700" fill="#8a6a5a">대장</text>
+<path d="M564 286 L380 250" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="564" cy="286" r="3" fill="#1a1a1a"/>
+<text x="370" y="236" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="17" font-weight="700" fill="#1a1a1a">역류성 식도염</text><text x="370" y="258" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13.5" font-weight="400" fill="#555555">조임근이 느슨해져 위산이 식도로 올라옴</text>
+<path d="M626 330 L780 316" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="626" cy="330" r="3" fill="#1a1a1a"/>
+<text x="790" y="302" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="17" font-weight="700" fill="#1a1a1a">기능성 소화불량</text><text x="790" y="324" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13.5" font-weight="400" fill="#555555">위가 잘 늘어나지 않고 움직임이 둔해짐</text>
+<path d="M636 506 L780 500" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="636" cy="506" r="3" fill="#1a1a1a"/>
+<text x="790" y="486" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="17" font-weight="700" fill="#1a1a1a">과민성 대장 증후군</text><text x="790" y="508" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13.5" font-weight="400" fill="#555555">장이 예민해져 움직임이 불규칙함</text>
+<text x="550.0" y="636" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13" font-weight="400" fill="#777777">검사에서 뚜렷한 이상이 없어도 위장의 움직임과 예민함 때문에 불편이 반복될 수 있습니다</text>
+</svg>

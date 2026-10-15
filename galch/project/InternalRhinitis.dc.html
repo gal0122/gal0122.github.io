@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>비염·수족냉증</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+@font-face{font-family:'Pretendard';src:url('/_blob/8c366efa542f5b0811a2487191ba3cc9') format('woff2');font-weight:45 920;font-style:normal;font-display:swap}
+body{margin:0;-webkit-text-size-adjust:100%}
+a{color:#24302a}a:hover{color:#2f5241}
+h1,h2,h3{letter-spacing:-0.02em;word-break:keep-all}
+p,li,dd,td,figcaption{word-break:keep-all}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #2f5241;outline-offset:2px}
+.gnb>a:hover,.gnb-item:hover>a{color:#2f5241}
+.gnb-sub{display:none}
+.gnb-item:hover .gnb-sub,.gnb-item:focus-within .gnb-sub{display:flex}
+.gnb-sub a:hover{background:#f1ede3}
+.gnb-sub2{display:none}
+.gnb-sub-item:hover>.gnb-sub2,.gnb-sub-item:focus-within>.gnb-sub2{display:flex}
+.gnb-sub-item:hover>a{background:#f1ede3}
+.gnb-sub,.gnb-sub2{border-radius:14px;box-shadow:0 14px 34px rgba(36,48,42,.12)}
+.hd-call:hover{background:#2f5241;color:#ffffff}
+.m-menu{display:none}
+.m-menu summary{list-style:none;cursor:pointer}
+.m-menu summary::-webkit-details-marker{display:none}
+.m-menu[open] .ic-open,.m-menu:not([open]) .ic-close{display:none}
+.qn a:hover{background:#f1ede3}
+.qn .qn-call:hover{background:#24402f}
+.qn-tg{display:flex;align-items:center;justify-content:center;gap:3px;width:100%;height:34px;padding:0;border:0;background:#ffffff;color:#5d655f;font:inherit;font-size:11px;font-weight:600;line-height:1;cursor:pointer}
+@media (hover:hover){.qn-tg:hover{background:#f1ede3}}
+.qn-tg:focus-visible{outline:2px solid #2f5241;outline-offset:-2px}
+.qn-tg .ic-chat{display:none}
+.qn-min a{display:none!important}
+.qn-min .qn-tg{height:62px;flex-direction:column;gap:5px;color:#2f5241}
+.qn-min .qn-tg .ic-chat{display:block}
+.qn-min .qn-tg .qn-chev{display:none}
+footer a:hover{color:#d7c9a7}
+.svc{transition:transform .2s ease,box-shadow .2s ease}
+.svc:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(36,48,42,.10)}
+.btn-fill:hover{background:#24402f;color:#ffffff}
+.btn-line:hover{background:#f1ede3}
+main [style*="border: 1px solid #e2dccd"]:not(tr):not(th):not(td):not(table):not(span){border-radius:18px;background-color:#ffffff}
+main [style*="min-height: 48px; padding: 0 24px"],main [style*="min-height: 44px; padding: 0 18px"],main li[style*="padding: 8px 16px"],main li[style*="padding: 8px 12px"]{border-radius:999px}
+main button[style*="width: 48px; height: 48px"]{border-radius:50%}
+main figure img,main img[style*="width: 100%"]{border-radius:16px}
+main>section[style*="background: #f1ede3"]{border-top-color:transparent!important;border-bottom-color:transparent!important}
+main>section[style*="border-top: 1px solid #e2dccd"]{border-top-color:transparent!important}
+.eq-track{scrollbar-width:thin;scrollbar-color:#c9c0a8 transparent}
+.eq-track::-webkit-scrollbar{height:6px}
+.eq-track::-webkit-scrollbar-thumb{background:#c9c0a8;border-radius:3px}
+@media (max-width:960px){.gnb{display:none!important}.m-menu{display:block}.hd-in{gap:10px!important}.hd-call{margin-left:auto;width:44px;padding:0!important;justify-content:center}.hd-call-txt{display:none}}
+@media (max-width:640px){
+h1{font-size:30px!important;line-height:1.35!important}
+h2{font-size:24px!important;line-height:1.4!important}
+h3{font-size:19px!important}
+.hd-logo{height:36px!important}
+[style*="max-width: 1240px"]{padding-left:16px!important;padding-right:16px!important}
+[style*="padding: 88px 24px"],[style*="padding: 96px 24px"],[style*="padding: 104px 24px"],[style*="padding: 80px 24px"],[style*="padding: 72px 24px"],[style*="padding: 64px 24px"]{padding-top:52px!important;padding-bottom:52px!important}
+[style*="padding: 56px 24px 0"]{padding-top:32px!important}
+[style*="minmax(3"],[style*="minmax(4"]{grid-template-columns:minmax(0,1fr)!important}
+.eq-track>*{max-width:84vw}
+.stack-m{flex-direction:column!important;align-items:stretch!important}
+.full-m{flex:0 0 auto!important;width:100%!important;max-width:100%!important}
+.hero-art{height:260px!important}
+.br-d{display:none}
+.map-box{min-height:240px!important}
+.qn{top:auto!important;bottom:0!important;left:0!important;right:0!important;transform:none!important;flex-direction:row!important;width:auto!important;border-radius:0!important}
+.qn a{flex:1 1 0!important;height:58px!important;flex-direction:row!important;gap:6px!important;font-size:14px!important;border-bottom:0!important}
+.qn-tg{flex:0 0 44px;width:44px;height:58px}
+.qn-tg .qn-chev{transform:rotate(90deg)}
+.qn:not(.qn-min) .qn-tg-txt{display:none}
+.qn.qn-min{left:auto!important;width:auto!important;border-radius:14px 0 0 0!important;box-shadow:0 -4px 18px rgba(36,48,42,.18)!important}
+.qn.qn-min .qn-tg{flex:0 0 64px;width:64px;height:54px}
+footer{padding-bottom:58px}
+}
+.eq-track{scrollbar-width:thin;scrollbar-color:#c9c0a8 #ede9dd}
+.eq-track::-webkit-scrollbar{height:6px}
+.eq-track::-webkit-scrollbar-track{background:#ede9dd}
+.eq-track::-webkit-scrollbar-thumb{background:#c9c0a8}
+.faq summary{list-style:none;cursor:pointer}
+.faq summary::-webkit-details-marker{display:none}
+.faq details[open] .faq-icon{transform:rotate(45deg)}
+@media (min-width:961px) and (max-width:1180px){.hd-call-txt{display:none}.hd-call{width:44px;padding:0!important;justify-content:center}.gnb{gap:22px!important}}
+@media (min-width:961px) and (max-width:1060px){.hd-in{gap:24px!important}.gnb{gap:16px!important;font-size:15px!important}}
+</style>
+</helmet>
+<div style="font-family: 'Pretendard', 'Pretendard Variable', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; color: #24302a; background: #faf7f0; line-height: 1.6; min-height: 100vh">
+
+<header class="site-hd" style="position: sticky; top: 0; z-index: 30; background: #faf7f0; border-bottom: 1px solid #e2dccd">
+<div class="hd-in" style="max-width: 1240px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; gap: 40px">
+<a href="Main.dc.html" aria-label="갈창림한의원 홈" style="flex: 0 0 auto; display: inline-flex; align-items: center; text-decoration: none"><img class="hd-logo" src="/_blob/aa7a2a00288ecf879a5acf4665e97aa0" alt="갈창림한의원" style="display: block; height: 44px; width: auto"></a>
+<nav class="gnb" aria-label="메인 메뉴" style="flex: 1 1 auto; display: flex; align-items: center; gap: 30px; font-size: 16px; font-weight: 600; white-space: nowrap">
+<div class="gnb-item" style="position: relative">
+<a href="About.dc.html" aria-haspopup="true" style="display: block; text-decoration: none; padding: 10px 0">병원소개</a>
+<div class="gnb-sub" style="position: absolute; top: 100%; left: -20px; z-index: 20; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd; font-size: 15px; font-weight: 400">
+<a href="About.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">갈창림한의원 소개</a>
+<a href="Doctors.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">의료진 소개</a>
+<a href="Equipment.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">보유장비</a>
+<a href="Schedule.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">진료시간 및 오시는길</a>
+</div>
+</div>
+<div class="gnb-item" style="position: relative">
+<a href="Skin.dc.html" aria-haspopup="true" style="display: block; text-decoration: none; padding: 10px 0">피부미용</a>
+<div class="gnb-sub" style="position: absolute; top: 100%; left: -20px; z-index: 20; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd; font-size: 15px; font-weight: 400">
+<div class="gnb-sub-item" style="position: relative">
+<a href="Skin.dc.html#lifting" aria-haspopup="true" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 10px 20px; text-decoration: none; white-space: nowrap">리프팅<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></a>
+<div class="gnb-sub2" style="position: absolute; top: -9px; left: 100%; z-index: 21; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd">
+<a href="DesignLifting.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">디자인리프팅</a>
+<a href="ThreadLifting.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">맞춤형실리프팅</a>
+</div>
+</div>
+<div class="gnb-sub-item" style="position: relative">
+<a href="Skin.dc.html#booster" aria-haspopup="true" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 10px 20px; text-decoration: none; white-space: nowrap">스킨부스터<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></a>
+<div class="gnb-sub2" style="position: absolute; top: -9px; left: 100%; z-index: 21; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd">
+<a href="BoosterPDRN.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">PDRN·엑소좀</a>
+<a href="BoosterPLLA.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">PLLA</a>
+<a href="BoosterKeratin.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">케라틴</a>
+<a href="BoosterAltcore.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">알트코어</a>
+<a href="BoosterECM.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">ECM</a>
+</div>
+</div>
+<a href="HairRemoval.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">제모</a>
+<div class="gnb-sub-item" style="position: relative">
+<a href="Skin.dc.html#pigment" aria-haspopup="true" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 10px 20px; text-decoration: none; white-space: nowrap">색소<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></a>
+<div class="gnb-sub2" style="position: absolute; top: -9px; left: 100%; z-index: 21; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd">
+<a href="Pigment.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">기미·흑자·잡티·색소</a>
+<a href="Mole.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">점·쥐젖·편평사마귀</a>
+</div>
+</div>
+<div class="gnb-sub-item" style="position: relative">
+<a href="Skin.dc.html#acne" aria-haspopup="true" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 10px 20px; text-decoration: none; white-space: nowrap">여드름<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></a>
+<div class="gnb-sub2" style="position: absolute; top: -9px; left: 100%; z-index: 21; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd">
+<a href="Acne.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">여드름</a>
+<a href="AcneRed.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">여드름 붉은자국</a>
+<a href="AcneScar.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">여드름 흉터</a>
+</div>
+</div>
+<a href="Pore.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">모공</a>
+</div>
+</div>
+<div class="gnb-item" style="position: relative">
+<a href="Traffic.dc.html" aria-haspopup="true" style="display: block; text-decoration: none; padding: 10px 0">교통사고</a>
+<div class="gnb-sub" style="position: absolute; top: 100%; left: -20px; z-index: 20; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd; font-size: 15px; font-weight: 400">
+<a href="Traffic.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">교통사고 후유증</a>
+<a href="TrafficProcess.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">치료 과정</a>
+<a href="TrafficTreat.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">치료 방법</a>
+</div>
+</div>
+<div class="gnb-item" style="position: relative">
+<a href="PainSpine.dc.html" aria-haspopup="true" style="display: block; text-decoration: none; padding: 10px 0">통증</a>
+<div class="gnb-sub" style="position: absolute; top: 100%; left: -20px; z-index: 20; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd; font-size: 15px; font-weight: 400">
+<a href="PainSpine.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">척추 질환</a>
+<a href="PainJoint.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">관절 질환</a>
+</div>
+</div>
+<div class="gnb-item" style="position: relative">
+<a href="InternalDigestive.dc.html" aria-haspopup="true" style="display: block; text-decoration: none; padding: 10px 0">내과 질환</a>
+<div class="gnb-sub" style="position: absolute; top: 100%; left: -20px; z-index: 20; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd; font-size: 15px; font-weight: 400">
+<a href="InternalDigestive.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">소화기 질환</a>
+<a href="InternalNeuro.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">두통·신경 질환</a>
+<a href="InternalSleep.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">불면·스트레스</a>
+<a href="InternalRhinitis.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">비염·수족냉증</a>
+</div>
+</div>
+<a href="Diet.dc.html" style="text-decoration: none; padding: 10px 0">다이어트</a>
+<div class="gnb-item" style="position: relative">
+<a href="Growth.dc.html" aria-haspopup="true" style="display: block; text-decoration: none; padding: 10px 0">소아·여성</a>
+<div class="gnb-sub" style="position: absolute; top: 100%; left: -20px; z-index: 20; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd; font-size: 15px; font-weight: 400">
+<a href="Growth.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">소아 성장</a>
+<a href="Women.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">여성 질환</a>
+</div>
+</div>
+<a href="Column.dc.html" style="text-decoration: none; padding: 10px 0">원장 칼럼</a>
+<a href="Price.dc.html" style="text-decoration: none; padding: 10px 0">가격표</a>
+</nav>
+<a class="hd-call" href="tel:053-851-0122" aria-label="전화 053-851-0122" style="flex: 0 0 auto; display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 18px; box-sizing: border-box; border-radius: 999px; border: 1px solid #2f5241; color: #2f5241; font-size: 15px; font-weight: 700; text-decoration: none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg><span class="hd-call-txt">053-851-0122</span></a>
+<details class="m-menu">
+<summary aria-label="전체 메뉴" style="width: 44px; height: 44px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border-radius: 12px; background: #2f5241; color: #ffffff"><svg class="ic-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg><svg class="ic-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></summary>
+<nav aria-label="전체 메뉴" style="position: absolute; top: 100%; left: 0; right: 0; max-height: calc(100vh - 72px); overflow-y: auto; padding: 4px 20px 28px; background: #faf7f0; border-bottom: 1px solid #e2dccd; box-shadow: 0 20px 30px rgba(36,48,42,0.10)">
+<div style="padding: 14px 0; border-bottom: 1px solid #ebe6da">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">병원소개</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="About.dc.html" style="padding: 8px 0; text-decoration: none">갈창림한의원 소개</a>
+<a href="Doctors.dc.html" style="padding: 8px 0; text-decoration: none">의료진 소개</a>
+<a href="Equipment.dc.html" style="padding: 8px 0; text-decoration: none">보유장비</a>
+<a href="Schedule.dc.html" style="padding: 8px 0; text-decoration: none">진료시간 및 오시는길</a>
+</div>
+</div>
+<div style="padding: 14px 0; border-bottom: 1px solid #ebe6da">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">피부미용</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="Skin.dc.html" style="padding: 8px 0; text-decoration: none">피부미용 한눈에 보기</a>
+<a href="DesignLifting.dc.html" style="padding: 8px 0; text-decoration: none">디자인리프팅</a>
+<a href="ThreadLifting.dc.html" style="padding: 8px 0; text-decoration: none">맞춤형실리프팅</a>
+<a href="BoosterPDRN.dc.html" style="padding: 8px 0; text-decoration: none">PDRN·엑소좀</a>
+<a href="BoosterPLLA.dc.html" style="padding: 8px 0; text-decoration: none">PLLA</a>
+<a href="BoosterKeratin.dc.html" style="padding: 8px 0; text-decoration: none">케라틴</a>
+<a href="BoosterAltcore.dc.html" style="padding: 8px 0; text-decoration: none">알트코어</a>
+<a href="BoosterECM.dc.html" style="padding: 8px 0; text-decoration: none">ECM</a>
+<a href="HairRemoval.dc.html" style="padding: 8px 0; text-decoration: none">제모</a>
+<a href="Pigment.dc.html" style="padding: 8px 0; text-decoration: none">기미·흑자·잡티·색소</a>
+<a href="Mole.dc.html" style="padding: 8px 0; text-decoration: none">점·쥐젖·편평사마귀</a>
+<a href="Acne.dc.html" style="padding: 8px 0; text-decoration: none">여드름</a>
+<a href="AcneRed.dc.html" style="padding: 8px 0; text-decoration: none">여드름 붉은자국</a>
+<a href="AcneScar.dc.html" style="padding: 8px 0; text-decoration: none">여드름 흉터</a>
+<a href="Pore.dc.html" style="padding: 8px 0; text-decoration: none">모공</a>
+</div>
+</div>
+<div style="padding: 14px 0; border-bottom: 1px solid #ebe6da">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">교통사고 · 통증</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="Traffic.dc.html" style="padding: 8px 0; text-decoration: none">교통사고 후유증</a>
+<a href="TrafficProcess.dc.html" style="padding: 8px 0; text-decoration: none">교통사고 치료 과정</a>
+<a href="TrafficTreat.dc.html" style="padding: 8px 0; text-decoration: none">교통사고 치료 방법</a>
+<a href="PainSpine.dc.html" style="padding: 8px 0; text-decoration: none">척추 질환</a>
+<a href="PainJoint.dc.html" style="padding: 8px 0; text-decoration: none">관절 질환</a>
+</div>
+</div>
+<div style="padding: 14px 0; border-bottom: 1px solid #ebe6da">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">내과 질환</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="InternalDigestive.dc.html" style="padding: 8px 0; text-decoration: none">소화기 질환</a>
+<a href="InternalNeuro.dc.html" style="padding: 8px 0; text-decoration: none">두통·신경 질환</a>
+<a href="InternalSleep.dc.html" style="padding: 8px 0; text-decoration: none">불면·스트레스</a>
+<a href="InternalRhinitis.dc.html" style="padding: 8px 0; text-decoration: none">비염·수족냉증</a>
+</div>
+</div>
+<div style="padding: 14px 0; border-bottom: 1px solid #ebe6da">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">다이어트 · 소아·여성</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="Diet.dc.html" style="padding: 8px 0; text-decoration: none">다이어트</a>
+<a href="Growth.dc.html" style="padding: 8px 0; text-decoration: none">소아 성장</a>
+<a href="Women.dc.html" style="padding: 8px 0; text-decoration: none">여성 질환</a>
+</div>
+</div>
+<div style="padding: 14px 0; border-bottom: 1px solid #ebe6da">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">원장 칼럼</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="Column.dc.html" style="padding: 8px 0; text-decoration: none">전체 칼럼</a>
+<a href="Column.dc.html#skin" style="padding: 8px 0; text-decoration: none">피부미용</a>
+<a href="Column.dc.html#traffic" style="padding: 8px 0; text-decoration: none">교통사고</a>
+<a href="Column.dc.html#pain" style="padding: 8px 0; text-decoration: none">근골격계 통증</a>
+<a href="Column.dc.html#internal" style="padding: 8px 0; text-decoration: none">내과 질환</a>
+<a href="Column.dc.html#diet" style="padding: 8px 0; text-decoration: none">다이어트</a>
+<a href="Column.dc.html#kids-women" style="padding: 8px 0; text-decoration: none">소아·여성</a>
+</div>
+</div>
+<div style="padding: 14px 0">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">가격표</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="Price.dc.html" style="padding: 8px 0; text-decoration: none">전체 가격표</a>
+<a href="Price.dc.html#price-lifting" style="padding: 8px 0; text-decoration: none">리프팅</a>
+<a href="Price.dc.html#price-pigment" style="padding: 8px 0; text-decoration: none">색소·토닝</a>
+<a href="Price.dc.html#price-acne" style="padding: 8px 0; text-decoration: none">여드름·흉터·모공</a>
+<a href="Price.dc.html#price-booster" style="padding: 8px 0; text-decoration: none">스킨부스터</a>
+<a href="Price.dc.html#price-package" style="padding: 8px 0; text-decoration: none">패키지</a>
+<a href="Price.dc.html#price-hair" style="padding: 8px 0; text-decoration: none">제모</a>
+</div>
+</div>
+</nav>
+</details>
+</div>
+</header>
+
+<main>
+
+<section style="background: #f1ede3; border-bottom: 1px solid #e2dccd">
+<div style="max-width: 1240px; margin: 0 auto; padding: 56px 24px 0; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 14px; color: #5d655f">홈 &gt; 내과 질환 &gt; 비염·수족냉증</p>
+<h1 style="margin: 0; font-size: 40px; line-height: 1.3">비염·수족냉증</h1>
+<p style="margin: 0; font-size: 18px; color: #4d554f">찬 공기와 찬 기운에 예민한 몸, 체질부터 살핍니다</p>
+<nav aria-label="내과 질환 하위 메뉴" class="eq-track" style="display: flex; gap: 0 32px; margin-top: 24px; font-size: 15px; overflow-x: auto; white-space: nowrap">
+<a href="InternalDigestive.dc.html" style="flex: 0 0 auto; padding: 14px 0; border-bottom: 3px solid transparent; color: #5d655f; text-decoration: none">소화기 질환</a>
+<a href="InternalNeuro.dc.html" style="flex: 0 0 auto; padding: 14px 0; border-bottom: 3px solid transparent; color: #5d655f; text-decoration: none">두통·신경 질환</a>
+<a href="InternalSleep.dc.html" style="flex: 0 0 auto; padding: 14px 0; border-bottom: 3px solid transparent; color: #5d655f; text-decoration: none">불면·스트레스</a>
+<a href="InternalRhinitis.dc.html" aria-current="page" style="flex: 0 0 auto; padding: 14px 0; border-bottom: 3px solid #2f5241; font-weight: 700; text-decoration: none">비염·수족냉증</a>
+</nav>
+</div>
+</section>
+<section style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 820px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">RHINITIS &amp; COLD</p>
+<h2 style="margin: 0; font-size: 32px; line-height: 1.4">찬 기운에 유난히 예민하다면</h2>
+<p style="margin: 0; font-size: 17px; color: #4d554f">비염은 코 점막이 예민해져 집먼지진드기, 꽃가루 같은 알레르기 물질이나 찬 공기, 온도 변화에 재채기와 콧물, 코막힘이 반복되는 질환입니다. 코가 막혀 잠을 설치면 집중력과 컨디션까지 떨어집니다.</p>
+<p style="margin: 0; font-size: 17px; color: #4d554f">수족냉증은 다른 사람은 춥지 않은 온도에서도 손발이 유난히 차고 시린 상태입니다. 찬 공기와 찬 기운에 몸이 예민하게 반응한다는 점에서 두 가지가 함께 있는 분들도 있습니다.</p>
+<p style="margin: 8px 0 0; padding-left: 16px; border-left: 3px solid #2f5241; font-size: 17px; font-weight: 500">갈창림한의원은 증상과 함께 찬 기운에 예민한 체질과 생활 습관을 살펴 치료합니다.</p>
+</div>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 12px">
+<div class="eq-track" style="overflow-x: auto"><img src="/_blob/bab882a43d90bfdf0de24c740f8f53dd" alt="코 안쪽 숨길을 옆에서 본 그림 2장. 정상 코 점막은 숨길이 넓어 공기가 잘 지나간다. 비염은 알레르기 물질이나 찬 공기에 점막이 붓고 예민해져 숨길이 좁아지고 맑은 콧물이 생긴다" style="display: block; width: 100%; max-width: 1000px; min-width: 820px; height: auto"></div>
+<figcaption style="font-size: 14px; color: #5d655f">정상 코 점막과 비염</figcaption>
+</figure>
+</section>
+<section style="background: #f1ede3; border-top: 1px solid #e2dccd; border-bottom: 1px solid #e2dccd">
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">CONDITIONS</p>
+<h2 style="margin: 0; font-size: 30px">이런 증상을 치료합니다</h2>
+</div>
+<div style="display: flex; flex-direction: column; gap: 20px">
+<h3 style="margin: 0; font-size: 22px">비염</h3>
+<div class="eq-track" role="region" aria-label="비염" tabindex="0" style="display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 12px">
+<article style="flex: 1 0 300px; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px; padding: 28px 24px; background: #ffffff; border: 1px solid #e2dccd">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">01</p>
+<h4 style="margin: 0; font-size: 21px">알레르기 비염</h4>
+<p style="margin: 0; color: #4d554f; font-size: 15px">집먼지진드기, 꽃가루, 동물 털, 곰팡이 같은 물질에 코 점막이 과민하게 반응합니다. 가족 중 비염, 천식, 아토피가 있으면 더 잘 생깁니다.</p>
+<p style="margin: auto 0 0; padding-top: 12px; border-top: 1px solid #e2dccd; font-size: 15px"><strong>이런 증상</strong> · 아침 연속 재채기, 맑은 콧물, 코·눈 가려움</p>
+<p style="margin: 0; font-size: 15px; font-weight: 500"><a data-col="rhinitis" href="column-rhinitis.html">원장 칼럼에서 자세히 보기 →</a></p>
+</article>
+<article style="flex: 1 0 300px; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px; padding: 28px 24px; background: #ffffff; border: 1px solid #e2dccd">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">02</p>
+<h4 style="margin: 0; font-size: 21px">비알레르기 비염</h4>
+<p style="margin: 0; color: #4d554f; font-size: 15px">알레르기 원인이 없는데 찬 공기, 온도와 습도 변화, 담배 연기, 강한 냄새에 코가 반응합니다.</p>
+<p style="margin: auto 0 0; padding-top: 12px; border-top: 1px solid #e2dccd; font-size: 15px"><strong>이런 증상</strong> · 찬 공기에 콧물, 코막힘, 입으로 숨쉬기</p>
+</article>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 20px">
+<h3 style="margin: 0; font-size: 22px">수족냉증</h3>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 12px">
+<div class="eq-track" style="overflow-x: auto"><img src="/_blob/3a6d25e247cbd9749163e1df296445c8" alt="사람 몸 그림에서 손끝, 발끝, 아랫배, 무릎이 차갑게 표시되어 있다. 손끝은 혈관이 쉽게 수축해 차고 시리고, 발끝은 양말을 신어야 잠들 수 있으며, 아랫배는 늘 차고 생리통과 함께 오기도 하고, 무릎은 시리다" style="display: block; width: 100%; max-width: 900px; min-width: 760px; height: auto"></div>
+<figcaption style="font-size: 14px; color: #5d655f">수족냉증이 잘 나타나는 곳</figcaption>
+</figure>
+<div class="eq-track" role="region" aria-label="수족냉증" tabindex="0" style="display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 12px">
+<article style="flex: 1 0 100%; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px; padding: 28px 24px; background: #ffffff; border: 1px solid #e2dccd">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">03</p>
+<h4 style="margin: 0; font-size: 21px">수족냉증</h4>
+<p style="margin: 0; color: #4d554f; font-size: 15px">추위나 긴장에 손발 끝의 혈관이 쉽게 좁아져 피가 덜 가는 상태입니다. 근육량이 적거나, 스트레스와 무리한 다이어트, 흡연이 있으면 더 심해집니다.</p>
+<p style="margin: auto 0 0; padding-top: 12px; border-top: 1px solid #e2dccd; font-size: 15px"><strong>이런 증상</strong> · 손발이 차고 시림, 아랫배·무릎 냉감, 양말을 신어야 잠듦</p>
+<p style="margin: 0; font-size: 15px; font-weight: 500"><a data-col="cold-hands-feet" href="column-cold-hands-feet.html">원장 칼럼에서 자세히 보기 →</a></p>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 8px; max-width: 820px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">COMPARE</p>
+<h2 style="margin: 0; font-size: 30px">비염, 감기, 축농증은 어떻게 다를까요?</h2>
+<p style="margin: 0; color: #4d554f">콧물이 난다고 모두 같은 원인은 아닙니다. 콧물의 모양과 기간을 살펴보세요.</p>
+</div>
+<div class="eq-track" role="region" aria-label="비염 감기 축농증 비교 표" tabindex="0" style="overflow-x: auto; padding-bottom: 12px">
+<table style="width: 100%; min-width: 820px; border-collapse: collapse; font-size: 16px; text-align: left">
+<thead>
+<tr style="border-top: 2px solid #2f5241; border-bottom: 1px solid #2f5241">
+<th scope="col" style="width: 19%; padding: 16px 20px; font-size: 15px"></th>
+<th scope="col" style="padding: 16px 20px; font-size: 17px">비염</th>
+<th scope="col" style="padding: 16px 20px; font-size: 17px">감기</th>
+<th scope="col" style="padding: 16px 20px; font-size: 17px">축농증 (부비동염)</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom: 1px solid #e2dccd"><th scope="row" style="padding: 16px 20px; font-weight: 500">콧물</th><td style="padding: 16px 20px; color: #4d554f">맑은 콧물</td><td style="padding: 16px 20px; color: #4d554f">맑다가 누렇게 변함</td><td style="padding: 16px 20px; color: #4d554f">누렇고 끈적한 콧물</td></tr>
+<tr style="border-bottom: 1px solid #e2dccd"><th scope="row" style="padding: 16px 20px; font-weight: 500">기간</th><td style="padding: 16px 20px; color: #4d554f">계절마다, 몇 주 이상 반복</td><td style="padding: 16px 20px; color: #4d554f">1~2주 안에 좋아짐</td><td style="padding: 16px 20px; color: #4d554f">오래감</td></tr>
+<tr style="border-bottom: 1px solid #e2dccd"><th scope="row" style="padding: 16px 20px; font-weight: 500">함께 오는 증상</th><td style="padding: 16px 20px; color: #4d554f">재채기, 코·눈 가려움</td><td style="padding: 16px 20px; color: #4d554f">열, 몸살, 목 아픔</td><td style="padding: 16px 20px; color: #4d554f">얼굴·이마 통증, 냄새를 잘 못 맡음</td></tr>
+</tbody>
+</table>
+</div>
+<p style="margin: 0; font-size: 14px; color: #5d655f">※ 일반적인 경향이며 사람마다 다르게 나타날 수 있습니다.</p>
+</div>
+</section>
+<section style="border-top: 1px solid #e2dccd">
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 48px; align-items: start">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">CHECK</p>
+<h2 style="margin: 0; font-size: 30px; line-height: 1.4">이런 증상이 있다면<br>진료를 받아 보세요</h2>
+<p style="margin: 0; color: #4d554f">계절마다 반복되거나 일상이 불편할 만큼 찬 기운에 예민하다면 미루지 않는 것이 좋습니다.</p>
+<a href="tel:053-851-0122" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; margin-top: 8px; background: #2f5241; color: #ffffff; text-decoration: none; font-weight: 500">상담 예약하기</a>
+</div>
+<ul style="list-style: none; margin: 0; padding: 0; border-top: 1px solid #2f5241; font-size: 17px">
+<li style="display: flex; gap: 12px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #e2dccd"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 4px"><path d="M20 6L9 17l-5-5"></path></svg>아침에 일어나자마자 재채기가 연달아 나온다</li>
+<li style="display: flex; gap: 12px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #e2dccd"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 4px"><path d="M20 6L9 17l-5-5"></path></svg>맑은 콧물과 코막힘이 계절마다 반복된다</li>
+<li style="display: flex; gap: 12px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #e2dccd"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 4px"><path d="M20 6L9 17l-5-5"></path></svg>코가 막혀 입으로 숨 쉬고 잠을 설친다</li>
+<li style="display: flex; gap: 12px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #e2dccd"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 4px"><path d="M20 6L9 17l-5-5"></path></svg>찬 공기만 마셔도 콧물이 흐른다</li>
+<li style="display: flex; gap: 12px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #e2dccd"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 4px"><path d="M20 6L9 17l-5-5"></path></svg>한여름에도 손발이 차고 시리다</li>
+<li style="display: flex; gap: 12px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #e2dccd"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 4px"><path d="M20 6L9 17l-5-5"></path></svg>양말을 신어야 잠들 수 있다</li>
+</ul>
+</div>
+</section>
+<section style="border-top: 1px solid #e2dccd">
+<div data-eq-slider="true" style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 8px; max-width: 820px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">TREATMENT</p>
+<h2 style="margin: 0; font-size: 30px">비염·수족냉증 한방 치료</h2>
+<p style="margin: 0; color: #4d554f">증상에 맞춰 필요한 치료를 골라 함께 진행합니다.</p>
+</div>
+<div style="display: flex; gap: 8px; flex-shrink: 0">
+<button type="button" aria-label="이전 치료 보기" onClick="{{ prev }}" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; padding: 0; border: 1px solid #2f5241; background: #ffffff; color: #24302a; cursor: pointer"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg></button>
+<button type="button" aria-label="다음 치료 보기" onClick="{{ next }}" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; padding: 0; border: 1px solid #2f5241; background: #2f5241; color: #ffffff; cursor: pointer"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></button>
+</div>
+</div>
+<div data-eq-track="true" class="eq-track" role="region" aria-label="비염·수족냉증 치료 목록" tabindex="0" style="display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding-bottom: 12px">
+<article style="flex: 1 0 340px; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px; padding: 28px; border: 1px solid #e2dccd">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">01 · 순환</p>
+<h3 style="margin: 0; font-size: 26px">침</h3>
+<p style="margin: 0; font-weight: 500">코 주변과 몸의 순환을 돕습니다</p>
+<p style="margin: 0; color: #4d554f">비염에는 코 주변과 코 점막의 순환과 관련된 자리에, 수족냉증에는 손발과 몸의 순환과 관련된 자리에 침을 놓습니다.</p>
+<p style="margin: auto 0 0; padding-top: 12px; border-top: 1px solid #e2dccd; font-size: 15px"><strong>이런 분께</strong> · 비염, 수족냉증이 있는 분</p>
+</article>
+<article style="flex: 1 0 340px; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px; padding: 28px; border: 1px solid #e2dccd">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">02 · 따뜻하게</p>
+<h3 style="margin: 0; font-size: 26px">뜸</h3>
+<p style="margin: 0; font-weight: 500">찬 기운에 예민한 몸을 데웁니다</p>
+<p style="margin: 0; color: #4d554f">아랫배와 손발 등에 따뜻한 자극을 주어 차가워진 몸을 데우고 순환을 돕습니다.</p>
+<p style="margin: auto 0 0; padding-top: 12px; border-top: 1px solid #e2dccd; font-size: 15px"><strong>이런 분께</strong> · 찬 공기에 예민하고 몸이 찬 분</p>
+</article>
+<article style="flex: 1 0 340px; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px; padding: 28px; border: 1px solid #e2dccd">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">03 · 수족냉증 · 이완</p>
+<h3 style="margin: 0; font-size: 26px">부항</h3>
+<p style="margin: 0; font-weight: 500">뭉친 어깨와 등을 풀어 줍니다</p>
+<p style="margin: 0; color: #4d554f">수족냉증이 있는 분의 뭉친 어깨와 등, 허리의 긴장을 풀어 순환을 돕습니다.</p>
+<p style="margin: auto 0 0; padding-top: 12px; border-top: 1px solid #e2dccd; font-size: 15px"><strong>이런 분께</strong> · 손발이 차고 어깨·등이 굳은 분</p>
+</article>
+<article style="flex: 1 0 340px; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px; padding: 28px; border: 1px solid #e2dccd">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">04 · 몸 안쪽 회복</p>
+<h3 style="margin: 0; font-size: 26px">한약</h3>
+<p style="margin: 0; font-weight: 500">체질을 살펴 처방합니다</p>
+<p style="margin: 0; color: #4d554f">몸이 차고 찬 공기에 예민한지, 열이 많은지, 잦은 감기로 지쳐 있는지, 긴장으로 손발만 찬지 등 체질과 몸 상태를 살펴 처방합니다.</p>
+<p style="margin: auto 0 0; padding-top: 12px; border-top: 1px solid #e2dccd; font-size: 15px"><strong>이런 분께</strong> · 증상이 계절마다 반복되는 분</p>
+</article>
+</div>
+</div>
+</section>
+<section style="background: #f1ede3; border-top: 1px solid #e2dccd; border-bottom: 1px solid #e2dccd">
+<div data-eq-slider="true" style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">FLOW</p>
+<h2 style="margin: 0; font-size: 30px">내원하시면 이렇게 진행됩니다</h2>
+<p style="margin: 0; color: #4d554f">증상이 심해지는 때와 생활 습관을 살핀 뒤 치료를 진행합니다.</p>
+</div>
+<div style="display: flex; gap: 8px; flex-shrink: 0">
+<button type="button" aria-label="이전 단계 보기" onClick="{{ prev }}" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; padding: 0; border: 1px solid #2f5241; background: #ffffff; color: #24302a; cursor: pointer"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg></button>
+<button type="button" aria-label="다음 단계 보기" onClick="{{ next }}" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; padding: 0; border: 1px solid #2f5241; background: #2f5241; color: #ffffff; cursor: pointer"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></button>
+</div>
+</div>
+<ol data-eq-track="true" class="eq-track" aria-label="비염·수족냉증 치료 진행 순서" tabindex="0" style="list-style: none; margin: 0; padding: 0 0 16px; display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth">
+<li style="flex: 0 0 260px; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; padding: 24px; background: #ffffff"><span style="font-size: 14px; font-weight: 700">STEP 1</span><strong style="font-size: 17px">상담</strong><span style="color: #4d554f; font-size: 15px">증상이 심해지는 계절과 상황, 복용 중인 약과 코 스프레이 사용을 확인합니다.</span></li>
+<li style="flex: 0 0 260px; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; padding: 24px; background: #ffffff"><span style="font-size: 14px; font-weight: 700">STEP 2</span><strong style="font-size: 17px">진찰</strong><span style="color: #4d554f; font-size: 15px">체질과 몸의 냉감, 순환 상태를 살핍니다.</span></li>
+<li style="flex: 0 0 260px; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; padding: 24px; background: #ffffff"><span style="font-size: 14px; font-weight: 700">STEP 3</span><strong style="font-size: 17px">침 · 뜸</strong><span style="color: #4d554f; font-size: 15px">증상에 맞춰 침을 놓고, 뜸으로 몸을 따뜻하게 데웁니다.</span></li>
+<li style="flex: 0 0 260px; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; padding: 24px; background: #ffffff"><span style="font-size: 14px; font-weight: 700">STEP 4</span><strong style="font-size: 17px">부항</strong><span style="color: #4d554f; font-size: 15px">수족냉증이 있는 경우 뭉친 어깨와 등의 긴장을 풀어 줍니다.</span></li>
+<li style="flex: 0 0 260px; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; padding: 24px; background: #ffffff"><span style="font-size: 14px; font-weight: 700">STEP 5</span><strong style="font-size: 17px">한약 처방</strong><span style="color: #4d554f; font-size: 15px">필요하면 체질에 맞춰 한약을 처방합니다.</span></li>
+<li style="flex: 0 0 260px; scroll-snap-align: start; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; padding: 24px; background: #ffffff"><span style="font-size: 14px; font-weight: 700">STEP 6</span><strong style="font-size: 17px">생활 관리 안내</strong><span style="color: #4d554f; font-size: 15px">코 세척, 실내 습도, 운동과 옷차림처럼 생활 속 관리법을 함께 정합니다.</span></li>
+</ol>
+<p style="margin: 0; font-size: 14px; color: #5d655f">※ 그날의 몸 상태에 따라 일부 치료는 달라질 수 있습니다.</p>
+</div>
+</section>
+<section>
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 20px; padding: 40px; border: 2px solid #2f5241">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">CAUTION</p>
+<h2 style="margin: 0; font-size: 26px">이런 경우는 먼저 검사를 받아 보세요</h2>
+<p style="margin: 0; color: #4d554f">다른 질환이 원인일 수 있어, 해당 진료과에서 먼저 확인하는 것이 안전합니다.</p>
+</div>
+<ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 16px">
+<li>한쪽 코만 계속 막히거나, 콧물에 피가 자주 섞이는 경우 — 이비인후과 진료를 받아 보세요</li>
+<li>누런 콧물과 얼굴 통증이 10일 넘게 계속되는 경우</li>
+<li>쌕쌕거림, 숨참이 함께 있는 경우 — 천식일 수 있습니다</li>
+<li>추위나 긴장에 손가락 색이 하얗게, 파랗게 변했다가 붉어지는 경우 — 레이노 현상일 수 있어 류마티스 질환 등의 검사가 필요합니다</li>
+<li>한쪽 다리만 차고, 걸을 때 종아리가 아파 쉬어야 하는 경우 — 말초혈관 질환 검사가 필요할 수 있습니다</li>
+<li>추위를 많이 타면서 붓고 피곤하며 체중이 느는 경우 — 갑상선 기능 검사를 받아 보세요</li>
+<li>손발 끝에 상처가 잘 낫지 않거나 색이 검게 변하는 경우 — 바로 진료를 받아 주세요</li>
+</ul>
+</div>
+</div>
+</section>
+<section style="border-top: 1px solid #e2dccd">
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">CARE</p>
+<h2 style="margin: 0; font-size: 30px">찬 기운에 덜 예민해지는 생활 습관</h2>
+</div>
+<ol style="margin: 0; padding: 0; list-style: none; border-top: 1px solid #2f5241; font-size: 16px">
+<li style="display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid #e2dccd"><strong style="flex-shrink: 0; width: 28px">01</strong><span style="color: #4d554f">침구는 주 1회 이상 뜨거운 물로 세탁하고, 실내 습도는 40~50%로 유지해 주세요.</span></li>
+<li style="display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid #e2dccd"><strong style="flex-shrink: 0; width: 28px">02</strong><span style="color: #4d554f">아침 찬 공기에 대비해 외출할 때 마스크를 써 주세요.</span></li>
+<li style="display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid #e2dccd"><strong style="flex-shrink: 0; width: 28px">03</strong><span style="color: #4d554f">생리식염수 코 세척은 콧물과 알레르기 물질을 씻어 내는 데 도움이 됩니다.</span></li>
+<li style="display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid #e2dccd"><strong style="flex-shrink: 0; width: 28px">04</strong><span style="color: #4d554f">걷기, 계단 오르기, 스쿼트처럼 다리 근육을 키우는 운동을 꾸준히 해 주세요.</span></li>
+<li style="display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid #e2dccd"><strong style="flex-shrink: 0; width: 28px">05</strong><span style="color: #4d554f">목, 손목, 발목을 따뜻하게 하고, 꽉 끼는 옷과 신발은 피해 주세요.</span></li>
+<li style="display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid #e2dccd"><strong style="flex-shrink: 0; width: 28px">06</strong><span style="color: #4d554f">족욕은 약 40도 물에 10~15분이 좋습니다. 감각이 둔하다면 뜨거운 물과 핫팩에 화상을 입지 않도록 주의해 주세요.</span></li>
+</ol>
+<p style="margin: 0; font-size: 14px; color: #5d655f">※ 치료에 대한 반응과 회복 속도는 개인차가 있습니다.</p>
+</div>
+</section>
+<section style="border-top: 1px solid #e2dccd">
+<div class="faq" style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">FAQ</p>
+<h2 style="margin: 0; font-size: 30px">자주 묻는 질문</h2>
+</div>
+<div style="border-top: 1px solid #2f5241">
+<details style="border-bottom: 1px solid #e2dccd">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-size: 17px; font-weight: 500">Q. 아이 비염도 치료할 수 있나요?<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 0 0 20px; color: #4d554f">네. 비염으로 코가 막혀 잠을 설치면 성장과 집중력에도 영향을 줄 수 있습니다. 아이의 체질과 나이에 맞춰 진료합니다.</p>
+</details>
+<details style="border-bottom: 1px solid #e2dccd">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-size: 17px; font-weight: 500">Q. 코 스프레이를 계속 써도 괜찮을까요?<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 0 0 20px; color: #4d554f">병원에서 처방받은 스테로이드 코 스프레이는 지시에 따라 쓰시면 됩니다. 다만 약국에서 산 코막힘 스프레이(혈관수축제)는 오래 쓰면 오히려 코막힘이 심해질 수 있어 며칠 이상 쓰지 않는 것이 좋습니다.</p>
+</details>
+<details style="border-bottom: 1px solid #e2dccd">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-size: 17px; font-weight: 500">Q. 핫팩이나 전기장판을 계속 써도 되나요?<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 0 0 20px; color: #4d554f">잠깐 따뜻하게 하는 데는 도움이 되지만, 한곳에 오래 대고 있으면 낮은 온도에서도 화상을 입을 수 있습니다. 특히 감각이 둔한 손발에는 직접 오래 대지 마세요.</p>
+</details>
+<details style="border-bottom: 1px solid #e2dccd">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-size: 17px; font-weight: 500">Q. 여름에도 손발이 차가워요.<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 0 0 20px; color: #4d554f">에어컨 바람과 찬 음식, 얇은 옷차림 때문에 여름에 더 심해지는 분도 많습니다. 계절과 상관없이 손발이 차다면 원인을 함께 살펴보는 것이 좋습니다.</p>
+</details>
+<details style="border-bottom: 1px solid #e2dccd">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-size: 17px; font-weight: 500">Q. 얼마나 치료받아야 하나요?<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 0 0 20px; color: #4d554f">증상이 이어진 기간과 체질, 원인에 따라 다릅니다. 진찰 후 예상 기간을 안내해 드리며, 결과에는 개인차가 있습니다.</p>
+</details>
+</div>
+</div>
+</section>
+<section style="background: #f1ede3; border-top: 1px solid #e2dccd; border-bottom: 1px solid #e2dccd">
+<div style="max-width: 1240px; margin: 0 auto; padding: 56px 24px; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">TIME</p>
+<h2 style="margin: 0; font-size: 26px">출근 전에도, 주말에도 진료받을 수 있습니다</h2>
+</div>
+<dl class="eq-track" style="margin: 0; display: flex; gap: 0; overflow-x: auto; background: #ffffff; border: 1px solid #e2dccd">
+<div style="flex: 1 0 220px; display: flex; flex-direction: column; gap: 4px; padding: 20px 24px; border-right: 1px solid #e2dccd">
+<dt style="font-size: 14px; color: #5d655f">평일 (월~금)</dt>
+<dd style="margin: 0; font-size: 19px; font-weight: 700">08:30 – 18:30</dd>
+</div>
+<div style="flex: 1 0 220px; display: flex; flex-direction: column; gap: 4px; padding: 20px 24px; border-right: 1px solid #e2dccd">
+<dt style="font-size: 14px; color: #5d655f">토·일요일 (점심시간 없음)</dt>
+<dd style="margin: 0; font-size: 19px; font-weight: 700">08:30 – 14:00</dd>
+</div>
+<div style="flex: 1 0 220px; display: flex; flex-direction: column; gap: 4px; padding: 20px 24px; border-right: 1px solid #e2dccd">
+<dt style="font-size: 14px; color: #5d655f">평일 점심시간</dt>
+<dd style="margin: 0; font-size: 19px; font-weight: 700">13:00 – 14:00</dd>
+</div>
+<div style="flex: 1 0 220px; display: flex; flex-direction: column; gap: 4px; padding: 20px 24px">
+<dt style="font-size: 14px; color: #5d655f">공휴일</dt>
+<dd style="margin: 0; font-size: 19px; font-weight: 700">휴진</dd>
+</div>
+</dl>
+<a href="Schedule.dc.html" style="align-self: flex-start; font-size: 15px; font-weight: 500">이달의 진료 일정 보기 →</a>
+</div>
+</section>
+<section>
+<div style="max-width: 1240px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">NEXT</p>
+<h2 style="margin: 0; font-size: 28px">함께 보면 좋은 내용</h2>
+</div>
+<div class="eq-track" role="region" aria-label="관련 페이지" tabindex="0" style="display: flex; gap: 16px; overflow-x: auto; padding-bottom: 12px">
+<a href="Growth.dc.html" style="flex: 1 0 300px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px; padding: 28px 24px; background: #ffffff; border: 1px solid #e2dccd; text-decoration: none">
+<strong style="font-size: 20px">소아 성장</strong>
+<span style="color: #4d554f; font-size: 15px">잦은 감기와 비염으로 잠을 설치는 아이라면 성장 안내도 확인해 보세요</span>
+<span style="margin-top: auto; padding-top: 8px; font-size: 14px; color: #5d655f">자세히 보기 →</span>
+</a>
+<a href="Women.dc.html" style="flex: 1 0 300px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px; padding: 28px 24px; background: #ffffff; border: 1px solid #e2dccd; text-decoration: none">
+<strong style="font-size: 20px">여성 질환</strong>
+<span style="color: #4d554f; font-size: 15px">생리통과 냉증이 함께 있다면 여성 질환 안내를 확인해 보세요</span>
+<span style="margin-top: auto; padding-top: 8px; font-size: 14px; color: #5d655f">자세히 보기 →</span>
+</a>
+<a href="InternalNeuro.dc.html" style="flex: 1 0 300px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px; padding: 28px 24px; background: #ffffff; border: 1px solid #e2dccd; text-decoration: none">
+<strong style="font-size: 20px">두통·신경 질환</strong>
+<span style="color: #4d554f; font-size: 15px">손발이 차면서 저리다면 손발 저림 안내를 확인해 보세요</span>
+<span style="margin-top: auto; padding-top: 8px; font-size: 14px; color: #5d655f">자세히 보기 →</span>
+</a>
+</div>
+</div>
+</section>
+<section aria-label="작성 및 검토 정보">
+<div class="reviewed" style="max-width: 1240px; margin: 0 auto; padding: 0 24px">
+<p style="margin: 0; padding: 20px 0; border-top: 1px solid #e2dccd; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; font-size: 14px; color: #5d655f"><span style="display: inline-flex; align-items: center; gap: 6px; font-weight: 700; color: #2f5241"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>작성·검토</span><span><a href="Doctors.dc.html" style="color: #24302a; font-weight: 600; text-decoration: none">갈창림 대표원장</a> (한의사)</span><span>최종 검토 2026년 10월 15일</span></p>
+</div>
+</section>
+<section style="background: #f1ede3; border-top: 1px solid #e2dccd">
+<div style="max-width: 1240px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center">
+<h2 style="margin: 0; font-size: 28px">계절마다 반복된다면 체질부터 살펴보세요</h2>
+<p style="margin: 0; color: #4d554f">진찰로 지금 상태를 확인하고 생활 속 관리까지 함께 정해 보세요.</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 8px">
+<a href="https://talk.naver.com/W4F2TI" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border: 1px solid #2f5241; background: #ffffff; text-decoration: none; font-weight: 500">네이버상담</a>
+<a href="tel:053-851-0122" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; background: #2f5241; color: #ffffff; text-decoration: none; font-weight: 500">전화 상담</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer style="background: #24302a; color: #c9cfc6">
+<div style="max-width: 1240px; margin: 0 auto; padding: 56px 24px 64px; display: flex; flex-direction: column; gap: 14px; font-size: 14px">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px"><img src="/_blob/1bca22fc9730cca11fb19f0787b8b06c" alt="" aria-hidden="true" style="display: block; height: 32px; width: auto"><strong style="font-size: 20px; color: #ffffff">갈창림한의원</strong></div>
+<div class="eq-track" style="display: flex; gap: 0 20px; overflow-x: auto; white-space: nowrap">
+<span>상호 갈창림한의원</span>
+<span>대표자 갈창림</span>
+<span>사업자등록번호 732-20-02200</span>
+</div>
+<div class="eq-track" style="display: flex; gap: 0 20px; overflow-x: auto; white-space: nowrap">
+<span>주소 경북 경산시 하양읍 동서2길 43, 3층</span>
+<span>전화 <a href="tel:053-851-0122" style="color: #c9cfc6; text-decoration: none">053-851-0122</a></span>
+</div>
+<div class="eq-track" style="display: flex; gap: 0 20px; overflow-x: auto; white-space: nowrap; margin-top: 4px">
+<a href="Privacy.dc.html" style="color: #ffffff; font-weight: 700; text-decoration: none">개인정보처리방침</a>
+<a href="Terms.dc.html" style="color: #ffffff; text-decoration: none">이용약관</a>
+<a href="https://blog.naver.com/gal0122" target="_blank" rel="noopener" style="color: #ffffff; text-decoration: none">블로그</a>
+<a href="https://www.instagram.com/gal__clinic/" target="_blank" rel="noopener" style="color: #ffffff; text-decoration: none">인스타그램</a>
+</div>
+<p style="margin: 0; color: #8f978d">© 2026 갈창림한의원. All rights reserved.</p>
+</div>
+</footer>
+
+<nav class="qn" aria-label="바로가기" style="position: fixed; right: 20px; top: 50%; transform: translateY(-50%); z-index: 40; display: flex; flex-direction: column; overflow: hidden; width: 76px; border-radius: 20px; background: #ffffff; box-shadow: 0 12px 30px rgba(36,48,42,0.16)">
+<a href="https://blog.naver.com/gal0122" target="_blank" rel="noopener" style="height: 72px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; border-bottom: 1px solid #ebe6da; color: #2f5241; font-size: 12px; font-weight: 600; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"></path><path d="M13 7l4 4"></path></svg>블로그</a>
+<a href="https://talk.naver.com/W4F2TI" target="_blank" rel="noopener" style="height: 72px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; border-bottom: 1px solid #ebe6da; color: #2f5241; font-size: 12px; font-weight: 600; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.2 7.5L3 21l2-5.3A8.4 8.4 0 1 1 21 11.5z"></path></svg>톡톡상담</a>
+<a href="tel:053-851-0122" class="qn-call" style="height: 72px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; background: #2f5241; color: #ffffff; font-size: 12px; font-weight: 600; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg>전화</a>
+<button type="button" class="qn-tg" aria-expanded="true" aria-label="바로가기 접기"><svg class="qn-chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg><svg class="ic-chat" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.2 7.5L3 21l2-5.3A8.4 8.4 0 1 1 21 11.5z"></path></svg><span class="qn-tg-txt">접기</span></button>
+</nav>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":9360}}'>
+class Component extends DCLogic {
+slide(e, dir) {
+const root = e.currentTarget.closest('[data-eq-slider]');
+const track = root ? root.querySelector('[data-eq-track]') : null;
+if (!track) return;
+const first = track.firstElementChild;
+const step = first ? first.getBoundingClientRect().width + 16 : 276;
+const visible = Math.max(1, Math.floor(track.clientWidth / step));
+track.scrollBy({ left: dir * step * visible, behavior: 'smooth' });
+}
+renderVals() {
+return {
+prev: (e) => this.slide(e, -1),
+next: (e) => this.slide(e, 1)
+};
+}
+}
+</script>
+</body>
+</html>
