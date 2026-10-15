@@ -5,15 +5,16 @@ Output: /home/claude/site/  (index.html + one .html per page, assets/, .nojekyll
 import re, json, os, sys, shutil, html as htmlmod, datetime
 from PIL import Image
 
-S = '/tmp/claude-0/-home-claude/68b4eec7-1c3c-57e2-af39-86fe64cf79a4/scratchpad'
+# Work folder (build_site.py, columns.py, measure.js, galch/, fonts/, pyshim/). Any copy works: GAL_S or the script's folder.
+S = os.environ.get('GAL_S') or os.path.dirname(os.path.abspath(__file__))
 G = f'{S}/galch'
-OUT = '/home/claude/site'
+OUT = os.environ.get('GAL_OUT', '/home/claude/site')
 NAVER_KEY = 'ga0nqeox26'   # NCP Maps app d1 (Web URL: https://galclinic.co.kr); old app 'gal' = uikplmnw9s
 ADDRESS = '경상북도 경산시 하양읍 동서2길 43, 3층'
 LAT, LNG = 35.9174389, 128.8238134   # from Google plus code 8Q7CWR8F+XGGCJVH, checked on Naver map
 DOMAIN = 'galclinic.co.kr'            # custom domain (가비아) → GitHub Pages; old gal0122.github.io redirects here
 SITE = 'https://' + DOMAIN
-LASTMOD = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime('%Y-%m-%d')
+LASTMOD = os.environ.get('GAL_TODAY') or datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime('%Y-%m-%d')   # today in Korea
 REVIEWED = '2026-10-08'   # 시술 페이지 '최종 검토' 날짜 (작성·검토 표시와 같이 바꿀 것)
 GA_ID = 'G-J8PBY1YVS7'   # Google Analytics 4 measurement ID (방문 통계)
 INDEXNOW_KEY ='2f452286a2a2029189ac09582bdfdcaa'   # served at /<key>.txt (Bing, Naver, Yandex … via IndexNow)
@@ -205,7 +206,7 @@ def page_ld(slug_, title, desc, url, body):
         wp['mainEntity'] = {'@id': url + '#posts'}
     if slug_ in POST_META:
         pm = POST_META[slug_]
-        wp.update({'headline': pm['title'], 'datePublished': pm['date'], 'dateModified': pm['reviewed']})
+        wp.update({'headline': pm['title'], 'datePublished': pm['date'], 'dateModified': max(pm['date'], pm['reviewed'])})
     if slug_ == 'doctors.html':
         wp['mainEntity'] = {'@id': DIRECTOR_ID}
         graph.append(LD_DIRECTOR)
@@ -221,6 +222,7 @@ def page_ld(slug_, title, desc, url, body):
 
 # blob id -> local file (same map the measuring script uses)
 BLOB = json.loads(re.search(r'const MAP = (\{.*?\});', open(f'{S}/measure.js', encoding='utf-8').read()).group(1))
+BLOB = {k: S + v.split('/scratchpad', 1)[1] if '/scratchpad/' in v else v for k, v in BLOB.items()}   # MAP was written for the first work folder
 
 canvas = json.load(open(f'{G}/project/canvas.json', encoding='utf-8'))
 order = canvas['order']
@@ -240,7 +242,8 @@ SLUG['ColumnPost.dc.html'] = 'column.html'   # template board; sample links fall
 # ---- 원장 칼럼 posts (galch/columns/*.md) ----
 sys.path.insert(0, S)
 import columns
-POSTS = columns.load_posts(f'{G}/columns')
+ALL_POSTS = columns.load_posts(f'{G}/columns')
+POSTS = [p for p in ALL_POSTS if p['date'] <= LASTMOD]   # a post goes live on its date (예약 발행)
 POST_META = {p['file']: p for p in POSTS}
 CATS = columns.used_categories(POSTS)                 # categories with at least one post
 COL_LISTS = {columns.cat_file(k): ([p for p in POSTS if p['cat_key'] == k] if k != 'all' else POSTS)
@@ -677,7 +680,7 @@ def page_date(out, body):
     if old and old['h'] == h:
         d = old['d']
     elif out in POST_META:
-        d = POST_META[out]['reviewed']
+        d = max(POST_META[out]['date'], POST_META[out]['reviewed'])
     elif not old and _db_new:
         rv = re.search(r'최종 검토 (\d{4})년 (\d{1,2})월 (\d{1,2})일', body)
         d = f'{rv.group(1)}-{int(rv.group(2)):02d}-{int(rv.group(3)):02d}' if rv else SEED_DATE

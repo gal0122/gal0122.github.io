@@ -33,3 +33,10 @@
 ## 페이지 날짜 (2026-10-15~)
 - `galch/lastmod.json`: 페이지별 <main> 내용 해시와 마지막으로 바뀐 날짜. sitemap lastmod와 구조화 데이터 dateModified가 이 날짜를 씀.
 - 내용이 바뀐 페이지만 빌드한 날짜로 갱신되고, 다시 빌드해도 그대로 유지됨 (매일 색인 요청 작업이 이 날짜로 '바뀐 페이지'를 고름). 복구할 때 이 파일도 같이 복사할 것.
+
+## 예약 발행 (2026-10-15~)
+- 칼럼 md의 `date`가 오늘(한국 시간)보다 뒤면 그 글은 빌드에 들어가지 않음. 날짜가 되는 날 다시 빌드·푸시하면 그때 올라감.
+- `galch/drafts/`: 원장 확인 전 초안. 확인이 끝나면 `galch/columns/`로 옮기면 날짜에 맞춰 발행됨.
+- 빌드는 어느 폴더에서나 가능: 작업 폴더 W를 만들고 `cp -r galch fonts W/`, `cp tools/*.py tools/*.js W/`, `mkdir W/pyshim && cp tools/pyshim/brotli.py W/pyshim/` 후 `GAL_OUT=/어딘가/site python3 W/build_site.py` (작업 폴더는 build_site.py가 있는 곳으로 자동 인식, 또는 GAL_S로 지정). 필요 패키지: pillow fonttools markdown (brotli 없으면 pyshim이 node 사용). 공유 이미지용 글꼴: `cp fonts/PretendardVariable.ttf /root/.fonts/`.
+- 날짜 기록 `galch/lastmod.json`은 빌드할 때 갱신되므로, 빌드 뒤 이 브랜치에 다시 커밋할 것.
+- GAL_TODAY=YYYY-MM-DD 로 특정 날짜 기준 미리보기 가능 (이때는 lastmod.json을 커밋하지 말 것).

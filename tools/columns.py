@@ -10,7 +10,7 @@ Markdown body. A final "## 자주 묻는 질문" section with "Q. …" / "A. …
 import glob, html, os, re
 import markdown
 
-CATEGORIES = [('skin', '피부미용'), ('traffic', '교통사고·통증'), ('diet', '다이어트'),
+CATEGORIES = [('skin', '피부미용'), ('lesion', '색소·피부 질환'), ('traffic', '교통사고·통증'), ('diet', '다이어트'),
               ('kids-women', '소아·여성'), ('health', '건강 상식')]
 CAT_KEY = {name: key for key, name in CATEGORIES}
 CAT_NAME = dict(CATEGORIES)
@@ -18,6 +18,7 @@ CAT_NAME = dict(CATEGORIES)
 CAT_INTRO = {
     'all': '피부미용부터 교통사고·통증, 다이어트, 소아·여성 건강까지. 진료실에서 자주 받는 질문에 갈창림 대표원장이 직접 답합니다.',
     'skin': '레이저제모, 리프팅, 색소, 여드름, 모공, 스킨부스터까지. 피부 시술 전에 궁금한 점을 갈창림 대표원장이 정리했습니다.',
+    'lesion': '기미·흑자·주근깨 같은 색소부터 점, 검버섯, 쥐젖, 비립종, 한관종, 혈관종, 사마귀까지. 피부에 생기는 반점과 돌기를 갈창림 대표원장이 하나씩 정리했습니다.',
     'traffic': '교통사고 후유증과 자동차보험 진료, 목·허리·관절 통증에 대해 자주 받는 질문을 갈창림 대표원장이 정리했습니다.',
     'diet': '한약 다이어트와 체중 관리에 대해 자주 받는 질문을 갈창림 대표원장이 정리했습니다.',
     'kids-women': '아이 성장과 여성 건강에 대해 보호자와 환자분들이 자주 묻는 질문을 갈창림 대표원장이 정리했습니다.',
@@ -113,9 +114,12 @@ def list_regions(posts, key, post_link, cat_link):
 
 
 def others(p, posts, n=3):
-    """Other columns to read next: same category first, then the newest."""
+    """Other columns to read next: same category first (closest in date, i.e. the neighbours in a series), then the newest."""
+    import datetime
+    day = lambda q: datetime.date.fromisoformat(q['date'])
     rest = [q for q in posts if q is not p]
-    return ([q for q in rest if q['cat_key'] == p['cat_key']] + [q for q in rest if q['cat_key'] != p['cat_key']])[:n]
+    same = sorted((q for q in rest if q['cat_key'] == p['cat_key']), key=lambda q: (abs((day(q) - day(p)).days), q['date']))
+    return (same + [q for q in rest if q['cat_key'] != p['cat_key']])[:n]
 
 
 def regions(p, posts, page_link, post_link, cat_link):

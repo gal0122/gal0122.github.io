@@ -2,12 +2,13 @@
 Column.dc.html     – list page (sample list = current posts)
 ColumnPost.dc.html – post template (sample = newest post)
 Run again after editing posts to refresh the canvas samples. The site build does not depend on the samples."""
-import re, sys, json
-sys.path.insert(0, '/tmp/claude-0/-home-claude/68b4eec7-1c3c-57e2-af39-86fe64cf79a4/scratchpad')
+import re, sys, json, os
+S = os.environ.get('GAL_S') or os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, S)
 import columns
 
-P = '/tmp/claude-0/-home-claude/68b4eec7-1c3c-57e2-af39-86fe64cf79a4/scratchpad/galch/project/'
-C = '/tmp/claude-0/-home-claude/68b4eec7-1c3c-57e2-af39-86fe64cf79a4/scratchpad/galch/columns'
+P = S + '/galch/project/'
+C = S + '/galch/columns'
 src = open(P + 'Price.dc.html', encoding='utf-8').read()
 
 # header / footer from the price board, with "current page" moved to 원장 칼럼
@@ -111,7 +112,9 @@ def page(title, main, height):
     t = re.sub(r'"height":\d+', f'"height":{height}', tail, count=1)
     return h + '<main>\n' + main + '\n</main>' + t
 
-posts = columns.load_posts(C)
+import datetime
+TODAY = os.environ.get('GAL_TODAY') or datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime('%Y-%m-%d')
+posts = [p for p in columns.load_posts(C) if p['date'] <= TODAY]   # only posts that are live
 _order = json.load(open(P + 'canvas.json', encoding='utf-8'))['order']
 _rev = {('index.html' if b == 'Main.dc.html' else re.sub(r'(?<=[a-z])(?=[A-Z])', '-', b[:-8]).lower() + '.html'): b for b in _order}
 dc = lambda slug: _rev[slug]
