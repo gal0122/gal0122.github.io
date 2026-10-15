@@ -565,6 +565,33 @@ h1.hero-kw{font-size:14px!important;line-height:1.6!important}
 </div>
 </div>
 
+<div class="pop" data-pop="closed-2026-11" data-from="2026-10-19" data-until="2026-11-01" data-label="11월 1일(일) 휴진 안내" role="dialog" aria-labelledby="pop-closed-nov-title">
+<div class="pop-body">
+<p class="pop-eyebrow">휴진 안내</p>
+<h2 class="pop-title" id="pop-closed-nov-title">11월 1일(일)은 휴진합니다</h2>
+<table class="pop-cal">
+<caption>2026년 11월</caption>
+<thead><tr><th scope="col">일</th><th scope="col">월</th><th scope="col">화</th><th scope="col">수</th><th scope="col">목</th><th scope="col">금</th><th scope="col">토</th></tr></thead>
+<tbody>
+<tr><td class="off"><b>1</b><span>휴진</span></td><td><b>2</b></td><td><b>3</b></td><td><b>4</b></td><td><b>5</b></td><td><b>6</b></td><td><b>7</b></td></tr>
+<tr><td><b>8</b></td><td><b>9</b></td><td><b>10</b></td><td><b>11</b></td><td><b>12</b></td><td><b>13</b></td><td><b>14</b></td></tr>
+<tr><td><b>15</b></td><td><b>16</b></td><td><b>17</b></td><td><b>18</b></td><td><b>19</b></td><td><b>20</b></td><td><b>21</b></td></tr>
+<tr><td><b>22</b></td><td><b>23</b></td><td><b>24</b></td><td><b>25</b></td><td><b>26</b></td><td><b>27</b></td><td><b>28</b></td></tr>
+<tr><td><b>29</b></td><td><b>30</b></td><td></td><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+<p class="pop-legend"><span><i style="background: #d7c9a7"></i>휴진</span></p>
+<ul class="pop-reasons">
+<li><b>11월 1일(일)</b>미용 세미나 참석으로 휴진합니다.</li>
+</ul>
+<p class="pop-open"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg><span>11월 2일(월)부터 <strong>정상 진료</strong>합니다</span></p>
+</div>
+<div class="pop-foot">
+<label class="pop-check"><input type="checkbox">24시간 동안 다시 보지 않기</label>
+<button type="button" class="pop-close">닫기</button>
+</div>
+</div>
+
 </div>
 </div>
 <script>
@@ -633,11 +660,12 @@ document.addEventListener('click', function (e) {
   var now = Date.now();
   function load(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
   function save(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
-  // notices past their date are dropped for good
+  // notices outside their dates (data-from / data-until, Korean time) are not shown
   var all = [].slice.call(overlay.querySelectorAll('.pop')).filter(function (p) {
-    var until = p.getAttribute('data-until');
+    var from = p.getAttribute('data-from'), until = p.getAttribute('data-until');
+    var early = from && now < new Date(from + 'T00:00:00+09:00').getTime();
     var expired = until && now > new Date(until + 'T23:59:59+09:00').getTime();
-    if (expired) { p.parentNode.removeChild(p); return false; }
+    if (early || expired) { p.parentNode.removeChild(p); return false; }
     return true;
   });
   var mq = window.matchMedia('(max-width: 640px)');
