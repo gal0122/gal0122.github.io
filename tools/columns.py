@@ -11,7 +11,7 @@ import glob, html, os, re
 import markdown
 
 CATEGORIES = [('skin', '피부미용'), ('traffic', '교통사고·통증'), ('diet', '다이어트'),
-              ('kids-women', '소아·여성'), ('health', '건강 상식')]
+              ('kids-women', '소아·여성'), ('health', '질환·건강')]
 CAT_KEY = {name: key for key, name in CATEGORIES}
 CAT_NAME = dict(CATEGORIES)
 # hero text of each category page (column-<key>.html)
@@ -21,7 +21,7 @@ CAT_INTRO = {
     'traffic': '교통사고 후유증과 자동차보험 진료, 목·허리·관절 통증에 대해 자주 받는 질문을 갈창림 대표원장이 정리했습니다.',
     'diet': '한약 다이어트와 체중 관리에 대해 자주 받는 질문을 갈창림 대표원장이 정리했습니다.',
     'kids-women': '아이 성장과 여성 건강에 대해 보호자와 환자분들이 자주 묻는 질문을 갈창림 대표원장이 정리했습니다.',
-    'health': '생활 속 건강 관리와 한방 치료에 대해 알아 두시면 좋은 내용을 갈창림 대표원장이 정리했습니다.',
+    'health': '소화불량, 두통, 어지럼증, 불면, 비염, 아토피처럼 일상을 힘들게 하는 질환을 갈창림 대표원장이 하나씩 정리했습니다.',
 }
 
 FAQ_SUMMARY = ('<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; '
@@ -143,6 +143,16 @@ def regions(p, posts, page_link, post_link, cat_link):
         links = ''.join(f'<li><a href="{post_link(q)}"><span class="col-tag">{html.escape(q["category"])}</span>'
                         f'<span class="col-next-t">{html.escape(q["title"])}</span></a></li>\n' for q in others(p, posts))
         nxt = f'<nav class="col-next" aria-label="함께 읽으면 좋은 칼럼">\n<h2>함께 읽으면 좋은 칼럼</h2>\n<ul>\n{links}</ul>\n</nav>'
+    local = ''
+    if p.get('condition'):
+        c = html.escape(p['condition'])
+        local = (f'<section class="col-local" aria-label="경산·하양 진료 안내">\n<h2>경산·하양에서 {c} 진료를 찾으신다면</h2>\n'
+                 f'<p>갈창림한의원은 경상북도 경산시 하양읍 동서2길 43, 3층에 있습니다. 하양역에서 걸어서 약 10~15분 거리이며, '
+                 f'건물 주차장과 이면도로에 주차할 수 있습니다.</p>\n'
+                 f'<p>평일 08:30–18:30(점심 13:00–14:00), 토·일요일 08:30–14:00에 진료하며 공휴일은 휴진합니다. '
+                 f'{c} 증상이 오래가거나 자주 반복된다면 지금 상태를 확인하고 알맞은 치료를 안내해 드립니다.</p>\n'
+                 f'<p><a href="tel:053-851-0122">전화 053-851-0122</a> · <a href="https://talk.naver.com/W4F2TI" target="_blank" rel="noopener">네이버 톡톡 상담</a> · '
+                 f'<a href="{page_link("schedule.html")}">진료시간 및 오시는길</a></p>\n</section>')
     return {
         'crumb': f'홈 &gt; 원장 칼럼 &gt; {html.escape(p["category"])}',
         'cat': f'<a class="col-tag" href="{cat_link(p["cat_key"])}">{html.escape(p["category"])}</a>',
@@ -153,6 +163,7 @@ def regions(p, posts, page_link, post_link, cat_link):
         'faq': faq,
         'related': related,
         'next': nxt,
+        'local': local,
         'reviewed': f'최종 검토 {kdate(p["reviewed"], "")}',
     }
 

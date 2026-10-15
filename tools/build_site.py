@@ -206,6 +206,11 @@ def page_ld(slug_, title, desc, url, body):
         wp['mainEntity'] = {'@id': url + '#posts'}
     if slug_ in POST_META:
         pm = POST_META[slug_]
+        if pm.get('condition'):     # 질환 칼럼: the page is about this condition, written by the clinic
+            wp['about'] = {'@type': 'MedicalCondition', 'name': pm['condition']}
+            wp['mentions'] = {'@id': CLINIC_ID}
+        if pm.get('keyword'):
+            wp['keywords'] = pm['keyword']
         wp.update({'headline': pm['title'], 'datePublished': pm['date'], 'dateModified': max(pm['date'], pm['reviewed'])})
     if slug_ == 'doctors.html':
         wp['mainEntity'] = {'@id': DIRECTOR_ID}
@@ -778,7 +783,8 @@ for k, n in CATS:                                     # one list page per catego
 for p in POSTS:
     build_page('ColumnPost.dc.html', out=p['file'],
                transform=lambda b, p=p: columns.fill(b, columns.regions(p, POSTS, lambda h: h, POST_LINK, CAT_LINK)),
-               seo=(f"{p['title']} | 원장 칼럼 · 경산 갈창림한의원", p['description']))
+               seo=((f"{p['keyword']} | {p['title']} – 갈창림한의원" if p.get('keyword')
+                     else f"{p['title']} | 원장 칼럼 · 경산 갈창림한의원"), p['description']))
 json.dump(columns.search_index(POSTS), open(f'{OUT}/column-search.json', 'w', encoding='utf-8'),
           ensure_ascii=False, separators=(',', ':'))
 

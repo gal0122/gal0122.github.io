@@ -69,6 +69,10 @@ mark{background:#fbe9a8;color:inherit;border-radius:2px;padding:0 1px}
 .col-article table{width:100%;margin:8px 0 20px;border-collapse:collapse;font-size:15px;line-height:1.6}
 .col-article th,.col-article td{padding:12px 10px;border-bottom:1px solid #e2dccd;text-align:left;vertical-align:top}
 .col-article thead th{border-bottom:2px solid #2f5241;font-size:14px;color:#5d655f}
+.col-local{padding:22px 24px;border-radius:14px;background:#f1ede3}
+.col-local h2{margin:0 0 10px;font-size:20px;line-height:1.45}
+.col-local p{margin:0 0 8px;color:#4d554f}
+.col-local a{color:#2f5241;font-weight:600}
 .col-related h2{margin:0 0 12px;font-size:20px}
 .col-related ul{margin:0;padding:0;list-style:none;border-top:1px solid #e2dccd}
 .col-related li{border-bottom:1px solid #e2dccd}
@@ -165,6 +169,7 @@ post_main = f'''<section style="background: #f1ede3; border-bottom: 1px solid #e
 <div class="col-article">
 {v['body']}
 </div>
+{v['local']}
 {v['faq']}
 {v['related']}
 {v['next']}

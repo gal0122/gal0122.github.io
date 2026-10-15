@@ -22,7 +22,7 @@
 
 ## 원장 칼럼 (2026-10-14~)
 - 글 원본: `galch/columns/YYYY-MM-DD-<slug>.md` (머리말: title, slug, category, date, reviewed, description, summary, related).
-  - category: 피부미용 / 교통사고·통증 / 다이어트 / 소아·여성 / 건강 상식. 글이 하나도 없는 분류는 메뉴·버튼·페이지가 자동으로 숨겨짐.
+  - category: 피부미용 / 교통사고·통증 / 다이어트 / 소아·여성 / 질환·건강. 글이 하나도 없는 분류는 메뉴·버튼·페이지가 자동으로 숨겨짐.
   - 본문 끝 `## 자주 묻는 질문` + `Q.` / `A.` 줄 → 접이식 FAQ와 FAQPage 구조화 데이터.
   - 의료 내용은 원장 확인 후 올리기. 최신·최고·유일·전문, 비교, 후기, 전후 사진 금지, 개인차 문구.
 - `tools/columns.py`: 글 읽기·목록·분류 페이지·검색 색인. `tools/make_column_boards.py`: 캔버스 아트보드(Column, ColumnPost) 다시 만들기(글 추가 후 실행).
@@ -40,3 +40,7 @@
 - 빌드는 어느 폴더에서나 가능: 작업 폴더 W를 만들고 `cp -r galch fonts W/`, `cp tools/*.py tools/*.js W/`, `mkdir W/pyshim && cp tools/pyshim/brotli.py W/pyshim/` 후 `GAL_OUT=/어딘가/site python3 W/build_site.py` (작업 폴더는 build_site.py가 있는 곳으로 자동 인식, 또는 GAL_S로 지정). 필요 패키지: pillow fonttools markdown (brotli 없으면 pyshim이 node 사용). 공유 이미지용 글꼴: `cp fonts/PretendardVariable.ttf /root/.fonts/`.
 - 날짜 기록 `galch/lastmod.json`은 빌드할 때 갱신되므로, 빌드 뒤 이 브랜치에 다시 커밋할 것.
 - GAL_TODAY=YYYY-MM-DD 로 특정 날짜 기준 미리보기 가능 (이때는 lastmod.json을 커밋하지 말 것).
+
+## 질환 칼럼 (2026-10-15~)
+- 머리말에 `keyword: 경산 OO` 와 `condition: OO` 를 넣으면: 검색 제목이 "경산 OO | 글 제목 – 갈창림한의원"이 되고, 구조화 데이터에 about(MedicalCondition)·keywords가 붙고, 글 끝에 "경산·하양에서 OO 진료를 찾으신다면" 안내 칸(주소·진료시간·전화, columns.py의 regions에서 한 곳만 고치면 됨)이 자동으로 붙음.
+- 질환 초안 29편은 `galch/drafts/`(10-30 ~ 11-27). 원장 확인용 한 장짜리 HTML: `python3 tools/make_review.py` (작업 폴더의 prev/ 에 저장, 색소칼럼 검토본의 CSS를 씀).
