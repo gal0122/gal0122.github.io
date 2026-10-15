@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480">
+<rect width="1200" height="480" fill="#ffffff"/>
+<defs><radialGradient id="infl" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#e2463a" stop-opacity="0.55"/><stop offset="100%" stop-color="#e2463a" stop-opacity="0"/></radialGradient><radialGradient id="cold" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#3f86c9" stop-opacity="0.6"/><stop offset="100%" stop-color="#3f86c9" stop-opacity="0"/></radialGradient><marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1a1a1a"/></marker><marker id="arrR" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#e2463a"/></marker><marker id="arrB" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3f86c9"/></marker></defs>
+<rect x="15" y="30" width="370" height="344" fill="#fbfbfb" stroke="#cfcfcf" stroke-width="1.5"/>
+<path d="M169 318 Q167 280 201 268 L253 268 Q287 280 285 318" fill="none"/>
+<path d="M87 372 Q91 318 157 308 L201 288 L253 288 L297 308 Q363 318 367 372 Z" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<rect x="201" y="238" width="52" height="64" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<rect x="202" y="288" width="50" height="22" fill="#f3e1d4"/>
+<ellipse cx="151" cy="174" rx="12" ry="20" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<ellipse cx="303" cy="174" rx="12" ry="20" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<ellipse cx="227" cy="168" rx="76" ry="96" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<path d="M150 154 Q143 64 227 68 Q311 64 304 154 Q295 92 243 88 Q179 86 150 154 Z" fill="#5b4636"/>
+<path d="M227 170 L219 202 Q227 208 235 202" fill="none" stroke="#c9a48e" stroke-width="2" stroke-linecap="round"/>
+<path d="M211 146 Q195 138 179 146" fill="none" stroke="#5b4636" stroke-width="4" stroke-linecap="round"/>
+<ellipse cx="195" cy="166" rx="10" ry="5.5" fill="#1a1a1a"/>
+<path d="M243 146 Q259 138 275 146" fill="none" stroke="#5b4636" stroke-width="4" stroke-linecap="round"/>
+<ellipse cx="259" cy="166" rx="10" ry="5.5" fill="#1a1a1a"/>
+<path d="M203 226 Q227 234 251 226" fill="none" stroke="#b8604d" stroke-width="3.5" stroke-linecap="round"/>
+<ellipse cx="227" cy="128" rx="84" ry="26" fill="none" stroke="#e2463a" stroke-width="12" opacity="0.45"/>
+<path d="M101 128 L131 128" stroke="#e2463a" stroke-width="2.5" marker-end="url(#arrR)"/>
+<path d="M353 128 L323 128" stroke="#e2463a" stroke-width="2.5" marker-end="url(#arrR)"/>
+<circle cx="153" cy="318" r="30" fill="url(#infl)"/>
+<circle cx="301" cy="318" r="30" fill="url(#infl)"/>
+<path d="M153 318 L65 272" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="153" cy="318" r="3" fill="#1a1a1a"/>
+<text x="37" y="244" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="700" fill="#e2463a">굳은</text>
+<text x="37" y="264" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="700" fill="#e2463a">목·어깨</text>
+<text x="37" y="62" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="700" fill="#e2463a">조이는 느낌</text>
+<path d="M85 68 L167 110" stroke="#1a1a1a" stroke-width="1.2"/>
+<text x="200" y="412" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="20" font-weight="700" fill="#1a1a1a">긴장성 두통</text>
+<text x="200" y="440" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14.5" font-weight="400" fill="#555555">머리를 띠로 조이듯 뻐근하고, 목·어깨가 굳어 있음</text>
+<rect x="415" y="30" width="370" height="344" fill="#fbfbfb" stroke="#cfcfcf" stroke-width="1.5"/>
+<path d="M542 318 Q540 280 574 268 L626 268 Q660 280 658 318" fill="none"/>
+<path d="M460 372 Q464 318 530 308 L574 288 L626 288 L670 308 Q736 318 740 372 Z" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<rect x="574" y="238" width="52" height="64" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<rect x="575" y="288" width="50" height="22" fill="#f3e1d4"/>
+<ellipse cx="524" cy="174" rx="12" ry="20" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<ellipse cx="676" cy="174" rx="12" ry="20" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<ellipse cx="600" cy="168" rx="76" ry="96" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<path d="M523 154 Q516 64 600 68 Q684 64 677 154 Q668 92 616 88 Q552 86 523 154 Z" fill="#5b4636"/>
+<path d="M600 170 L592 202 Q600 208 608 202" fill="none" stroke="#c9a48e" stroke-width="2" stroke-linecap="round"/>
+<path d="M584 146 Q568 138 552 146" fill="none" stroke="#5b4636" stroke-width="4" stroke-linecap="round"/>
+<ellipse cx="568" cy="166" rx="10" ry="5.5" fill="#1a1a1a"/>
+<path d="M616 146 Q632 138 648 146" fill="none" stroke="#5b4636" stroke-width="4" stroke-linecap="round"/>
+<ellipse cx="632" cy="166" rx="10" ry="5.5" fill="#1a1a1a"/>
+<path d="M576 226 Q600 234 624 226" fill="none" stroke="#b8604d" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="666" cy="138" r="46" fill="url(#infl)"/>
+<path d="M693.0 117.2 A26 26 0 0 1 693.0 158.8" fill="none" stroke="#e2463a" stroke-width="2.5" opacity="0.9"/>
+<path d="M699.0 107.6 A38 38 0 0 1 699.0 168.4" fill="none" stroke="#e2463a" stroke-width="2.5" opacity="0.65"/>
+<path d="M705.0 98.0 A50 50 0 0 1 705.0 178.0" fill="none" stroke="#e2463a" stroke-width="2.5" opacity="0.4"/>
+<text x="763" y="62" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="700" fill="#e2463a">한쪽 관자놀이</text>
+<text x="763" y="82" text-anchor="end" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14" font-weight="400" fill="#555555">욱신욱신</text>
+<text x="600" y="412" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="20" font-weight="700" fill="#1a1a1a">편두통</text>
+<text x="600" y="440" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14.5" font-weight="400" fill="#555555">주로 한쪽이 욱신욱신, 빛과 소리에 예민해짐</text>
+<rect x="815" y="30" width="370" height="344" fill="#fbfbfb" stroke="#cfcfcf" stroke-width="1.5"/>
+<path d="M969 318 Q967 280 1001 268 L1053 268 Q1087 280 1085 318" fill="none"/>
+<path d="M887 372 Q891 318 957 308 L1001 288 L1053 288 L1097 308 Q1163 318 1167 372 Z" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<rect x="1001" y="238" width="52" height="64" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<rect x="1002" y="288" width="50" height="22" fill="#f3e1d4"/>
+<ellipse cx="951" cy="174" rx="12" ry="20" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<ellipse cx="1103" cy="174" rx="12" ry="20" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<ellipse cx="1027" cy="168" rx="76" ry="96" fill="#f3e1d4" stroke="#c9a48e" stroke-width="2"/>
+<path d="M950 154 Q943 64 1027 68 Q1111 64 1104 154 Q1095 92 1043 88 Q979 86 950 154 Z" fill="#5b4636"/>
+<path d="M1027 170 L1019 202 Q1027 208 1035 202" fill="none" stroke="#c9a48e" stroke-width="2" stroke-linecap="round"/>
+<path d="M1043 142 Q1059 132 1075 140" fill="none" stroke="#5b4636" stroke-width="4" stroke-linecap="round"/>
+<ellipse cx="1059" cy="164" rx="10" ry="4.5" fill="#1a1a1a"/>
+<path d="M1035 124 Q1057 120 1079 124" fill="none" stroke="#c9a48e" stroke-width="1.6"/>
+<path d="M1035 115 Q1057 111 1079 115" fill="none" stroke="#c9a48e" stroke-width="1.6"/>
+<path d="M1035 106 Q1057 102 1079 106" fill="none" stroke="#c9a48e" stroke-width="1.6"/>
+<path d="M979 152 Q995 150 1011 152" fill="none" stroke="#5b4636" stroke-width="4" stroke-linecap="round"/>
+<ellipse cx="995" cy="168" rx="11" ry="9" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.5"/>
+<circle cx="995" cy="169" r="5.5" fill="#1a1a1a"/>
+<path d="M989 182 q-3 8 0 12 q3 -4 0 -12" fill="#9fc6e8"/>
+<path d="M999 238 Q1021 230 1035 226 Q1047 222 1055 218" fill="none" stroke="#b8604d" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M1001 114 L845 74" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="1001" cy="114" r="3" fill="#1a1a1a"/>
+<text x="841" y="62" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13.5" font-weight="700" fill="#e2463a">이마 주름이 안 잡힘</text>
+<path d="M983 170 L885 190" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="983" cy="170" r="3" fill="#1a1a1a"/>
+<text x="835" y="204" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13.5" font-weight="700" fill="#e2463a">눈이 잘</text>
+<text x="835" y="222" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13.5" font-weight="700" fill="#e2463a">감기지 않음</text>
+<path d="M999 238 L885 268" stroke="#1a1a1a" stroke-width="1.2" fill="none"/><circle cx="999" cy="238" r="3" fill="#1a1a1a"/>
+<text x="835" y="284" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13.5" font-weight="700" fill="#e2463a">입꼬리</text>
+<text x="835" y="302" text-anchor="start" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="13.5" font-weight="700" fill="#e2463a">처짐</text>
+<text x="1000" y="412" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="20" font-weight="700" fill="#1a1a1a">안면마비 (벨마비)</text>
+<text x="1000" y="440" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="14.5" font-weight="400" fill="#555555">한쪽 얼굴 근육에 갑자기 힘이 빠짐</text>
+</svg>
