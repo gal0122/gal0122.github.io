@@ -1,7 +1,7 @@
 ---
 title: 발목을 삐었을 때, 처음 며칠이 습관성 염좌를 막습니다
 slug: ankle-sprain
-category: 교통사고·통증
+category: 근골격계 통증
 date: 2026-10-25
 reviewed: 2026-10-15
 keyword: 경산 발목염좌

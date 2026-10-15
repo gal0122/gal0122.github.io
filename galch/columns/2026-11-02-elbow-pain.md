@@ -1,7 +1,7 @@
 ---
 title: 운동 안 해도 생기는 테니스·골프 엘보, 팔꿈치 통증의 원인과 치료
 slug: elbow-pain
-category: 교통사고·통증
+category: 근골격계 통증
 date: 2026-11-02
 reviewed: 2026-10-15
 keyword: 경산 엘보

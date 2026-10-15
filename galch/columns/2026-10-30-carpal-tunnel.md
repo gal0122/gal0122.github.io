@@ -1,7 +1,7 @@
 ---
 title: 밤마다 손가락이 저리다면, 손목터널증후군을 의심해 보세요
 slug: carpal-tunnel
-category: 교통사고·통증
+category: 근골격계 통증
 date: 2026-10-30
 reviewed: 2026-10-15
 keyword: 경산 손목터널증후군

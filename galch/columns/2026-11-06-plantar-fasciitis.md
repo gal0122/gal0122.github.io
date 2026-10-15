@@ -1,7 +1,7 @@
 ---
 title: 아침 첫발이 찌릿한 발뒤꿈치 통증, 족저근막염 관리법
 slug: plantar-fasciitis
-category: 교통사고·통증
+category: 근골격계 통증
 date: 2026-11-06
 reviewed: 2026-10-15
 keyword: 경산 족저근막염

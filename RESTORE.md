@@ -22,12 +22,12 @@
 
 ## 원장 칼럼 (2026-10-14~)
 - 글 원본: `galch/columns/YYYY-MM-DD-<slug>.md` (머리말: title, slug, category, date, reviewed, description, summary, related).
-  - category: 피부미용 / 교통사고·통증 / 다이어트 / 소아·여성 / 질환·건강. 글이 하나도 없는 분류는 메뉴·버튼·페이지가 자동으로 숨겨짐.
+  - category: 피부미용 / 교통사고 / 근골격계 통증 / 내과 질환 / 다이어트 / 소아·여성 (2026-10-15 세분화; 페이지 column-skin, -traffic, -pain, -internal, -diet, -kids-women). 여성 질환은 소아·여성, 아토피·원형 탈모는 피부미용. 글이 하나도 없는 분류는 메뉴·버튼·페이지가 자동으로 숨겨짐.
   - 본문 끝 `## 자주 묻는 질문` + `Q.` / `A.` 줄 → 접이식 FAQ와 FAQPage 구조화 데이터.
   - 의료 내용은 원장 확인 후 올리기. 최신·최고·유일·전문, 비교, 후기, 전후 사진 금지, 개인차 문구.
 - `tools/columns.py`: 글 읽기·목록·분류 페이지·검색 색인. `tools/make_column_boards.py`: 캔버스 아트보드(Column, ColumnPost) 다시 만들기(글 추가 후 실행).
 - 필요 패키지: `pip install markdown` (글 본문 변환).
-- 빌드 결과: `column.html`(전체), `column-<분류>.html`(skin, traffic, diet, kids-women, health), `column-<slug>.html`(글), `column-search.json`(검색 색인; ?q=단어 로 검색 결과 열림).
+- 빌드 결과: `column.html`(전체), `column-<분류>.html`(skin, traffic, pain, internal, diet, kids-women), `column-<slug>.html`(글), `column-search.json`(검색 색인; ?q=단어 로 검색 결과 열림).
 - 글 추가 순서: md 작성 → `python3 make_column_boards.py` → `python3 build_site.py` → 캔버스 게시(Column/ColumnPost) → main 푸시.
 
 ## 페이지 날짜 (2026-10-15~)

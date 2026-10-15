@@ -1,7 +1,7 @@
 ---
 title: 팔을 들 때 어깨가 아프다면, 회전근개를 살펴봐야 합니다
 slug: shoulder-pain
-category: 교통사고·통증
+category: 근골격계 통증
 date: 2026-10-28
 reviewed: 2026-10-15
 keyword: 경산 어깨통증

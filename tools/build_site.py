@@ -560,6 +560,11 @@ COLUMN_JS = r"""<script>
 (function () {
   var box = document.querySelector('[data-column-list]');
   if (!box) return;
+  var on = document.querySelector('.col-chips .on');   // keep the current category chip in view on phones
+  if (on) {
+    var nav = on.parentNode;
+    nav.scrollLeft += on.getBoundingClientRect().left - nav.getBoundingClientRect().left - (nav.clientWidth - on.offsetWidth) / 2;
+  }
   var list = box.querySelector('.col-list'), res = box.querySelector('.col-results');
   var moreWrap = box.querySelector('.col-more-wrap'), more = box.querySelector('.col-more');
   var form = document.querySelector('.col-search'), q = form && form.querySelector('input');

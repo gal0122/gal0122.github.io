@@ -1,7 +1,7 @@
 ---
 title: 동전 모양으로 머리카락이 빠졌다면, 원형 탈모 바로 알기
 slug: alopecia-areata
-category: 질환·건강
+category: 피부미용
 date: 2026-11-10
 reviewed: 2026-10-15
 keyword: 경산 원형탈모

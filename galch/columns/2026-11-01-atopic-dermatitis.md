@@ -1,7 +1,7 @@
 ---
 title: 밤마다 긁게 되는 아토피 피부염, 피부 장벽부터 지켜야 합니다
 slug: atopic-dermatitis
-category: 질환·건강
+category: 피부미용
 date: 2026-11-01
 reviewed: 2026-10-15
 keyword: 경산 아토피
