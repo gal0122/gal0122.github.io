@@ -283,6 +283,11 @@ def col_links(body):
     assert 'column.html#' not in body
     # links from service pages to a post (<a data-col="slug" …>): shown only once the post is published
     live = {p['slug'] for p in POSTS}
+    def col_section(m):   # '원장 칼럼에서 더 알아보기' lists: published posts only; no section until one is out
+        sec = re.sub(r'<li[^>]*>\s*<a data-col="([a-z0-9-]+)"[^>]*>[^<]*</a>\s*</li>\n?',
+                     lambda x: x.group(0).replace(f' data-col="{x.group(1)}"', '') if x.group(1) in live else '', m.group(0))
+        return sec.replace(' data-col-section="true"', '') if '<li' in sec else ''
+    body = re.sub(r'<section data-col-section="true">.*?</section>\n*', col_section, body, flags=re.S)
     body = re.sub(r'<p[^>]*>\s*<a data-col="([a-z0-9-]+)"[^>]*>[^<]*</a>\s*</p>\n?',
                   lambda m: m.group(0).replace(f' data-col="{m.group(1)}"', '') if m.group(1) in live else '', body)
     assert 'data-col=' not in body
