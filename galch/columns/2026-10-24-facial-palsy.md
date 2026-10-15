@@ -2,7 +2,7 @@
 title: 갑자기 한쪽 얼굴이 마비됐다면, 안면마비(구안와사)의 원인과 치료 시기
 slug: facial-palsy
 category: 질환·건강
-date: 2026-11-11
+date: 2026-10-24
 reviewed: 2026-10-15
 keyword: 경산 안면마비
 condition: 안면마비

@@ -2,7 +2,7 @@
 title: 얼굴이 화끈 달아오르고 잠을 설친다면, 갱년기 증후군 다스리기
 slug: menopause
 category: 소아·여성
-date: 2026-11-24
+date: 2026-10-26
 reviewed: 2026-10-15
 keyword: 경산 갱년기
 condition: 갱년기 증후군

@@ -2,7 +2,7 @@
 title: 허리를 삐끗했을 때, 쉬어야 할까요 움직여야 할까요?
 slug: low-back-pain
 category: 교통사고·통증
-date: 2026-10-30
+date: 2026-10-15
 reviewed: 2026-10-15
 keyword: 경산 허리통증
 condition: 허리 통증

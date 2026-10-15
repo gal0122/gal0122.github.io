@@ -2,7 +2,7 @@
 title: 한여름에도 손발이 시리다면, 수족냉증은 순환부터 살펴야 합니다
 slug: cold-hands-feet
 category: 질환·건강
-date: 2026-11-26
+date: 2026-11-03
 reviewed: 2026-10-15
 keyword: 경산 수족냉증
 condition: 수족냉증

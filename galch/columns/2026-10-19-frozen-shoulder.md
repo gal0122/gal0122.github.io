@@ -2,7 +2,7 @@
 title: 팔이 안 올라가고 밤에 더 아픈 어깨, 오십견일까요?
 slug: frozen-shoulder
 category: 교통사고·통증
-date: 2026-11-03
+date: 2026-10-19
 reviewed: 2026-10-15
 keyword: 경산 오십견
 condition: 오십견

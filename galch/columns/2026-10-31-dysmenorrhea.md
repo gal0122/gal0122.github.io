@@ -2,7 +2,7 @@
 title: 진통제 없이는 힘든 생리통, 참지 말고 원인부터 살펴보세요
 slug: dysmenorrhea
 category: 소아·여성
-date: 2026-11-23
+date: 2026-10-31
 reviewed: 2026-10-15
 keyword: 경산 생리통
 condition: 생리통

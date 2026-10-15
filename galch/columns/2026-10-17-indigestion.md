@@ -2,7 +2,7 @@
 title: 검사는 정상인데 소화가 안 된다면, 기능성 소화불량
 slug: indigestion
 category: 질환·건강
-date: 2026-11-15
+date: 2026-10-17
 reviewed: 2026-10-15
 keyword: 경산 소화불량
 condition: 소화불량

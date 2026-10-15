@@ -2,7 +2,7 @@
 title: 쉬어도 풀리지 않는 피로, 만성 피로는 원인 확인부터
 slug: chronic-fatigue
 category: 질환·건강
-date: 2026-11-20
+date: 2026-11-09
 reviewed: 2026-10-15
 keyword: 경산 만성피로
 condition: 만성 피로

@@ -2,7 +2,7 @@
 title: 자고 일어났더니 목이 안 돌아가요, 담 결림은 왜 생길까요?
 slug: neck-shoulder-stiffness
 category: 교통사고·통증
-date: 2026-11-02
+date: 2026-10-23
 reviewed: 2026-10-15
 keyword: 경산 담결림
 condition: 담 결림

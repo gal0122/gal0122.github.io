@@ -2,7 +2,7 @@
 title: 허리디스크, 수술 없이 관리할 수 있을까요? 증상과 치료, 생활 습관
 slug: lumbar-disc
 category: 교통사고·통증
-date: 2026-10-31
+date: 2026-10-16
 reviewed: 2026-10-15
 keyword: 경산 허리디스크
 condition: 허리디스크
