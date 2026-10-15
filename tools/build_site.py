@@ -502,11 +502,12 @@ POPUP_JS = '''<script>
   var now = Date.now();
   function load(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
   function save(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
-  // notices past their date are dropped for good
+  // notices outside their dates (data-from / data-until, Korean time) are not shown
   var all = [].slice.call(overlay.querySelectorAll('.pop')).filter(function (p) {
-    var until = p.getAttribute('data-until');
+    var from = p.getAttribute('data-from'), until = p.getAttribute('data-until');
+    var early = from && now < new Date(from + 'T00:00:00+09:00').getTime();
     var expired = until && now > new Date(until + 'T23:59:59+09:00').getTime();
-    if (expired) { p.parentNode.removeChild(p); return false; }
+    if (early || expired) { p.parentNode.removeChild(p); return false; }
     return true;
   });
   var mq = window.matchMedia('(max-width: 640px)');
