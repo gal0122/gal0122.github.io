@@ -162,7 +162,6 @@ h1.hero-kw{font-size:14px!important;line-height:1.6!important}
 </style>
 </head>
 <body>
-<div class="notice-bar" id="site-notice" role="region" aria-label="공지" hidden><button type="button" class="nb-open"><span class="nb-tag">공지</span><span class="nb-text"></span><span class="nb-more">보기 ›</span></button><button type="button" class="nb-x" aria-label="공지 24시간 동안 닫기">×</button></div>
 <div style="font-family: 'Pretendard', 'Pretendard Variable', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; color: #24302a; background: #faf7f0; line-height: 1.6; min-height: 100vh">
 
 <header class="site-hd" style="position: sticky; top: 0; z-index: 30; background: #faf7f0; border-bottom: 1px solid #e2dccd">
@@ -716,19 +715,9 @@ document.addEventListener('click', function (e) {
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && open.length) closePop(open[0], false);
   });
-  // phones: a thin notice bar instead of popups covering the page; tapping it opens them
-  if (bar) {
-    var labels = all.map(function (p) { return p.getAttribute('data-label') || ''; }).filter(Boolean);
-    bar.querySelector('.nb-text').textContent = labels.join(' · ');
-    bar.hidden = !all.length || Number(load(BARKEY) || 0) > now;
-    bar.querySelector('.nb-open').addEventListener('click', function () { show(all); });
-    bar.querySelector('.nb-x').addEventListener('click', function () {
-      save(BARKEY, String(Date.now() + DAY)); bar.hidden = true;
-    });
-  }
   if (mq.addEventListener) mq.addEventListener('change', layout);
-  // computers: popups open on arrival as before (unless snoozed for 24 hours)
-  if (!mq.matches) show(all.filter(function (p) { return !(Number(load(KEY + p.getAttribute('data-pop')) || 0) > now); }));
+  // popups open on arrival on every device (phones show them one at a time), unless snoozed for 24 hours
+  show(all.filter(function (p) { return !(Number(load(KEY + p.getAttribute('data-pop')) || 0) > now); }));
 })();
 </script>
 <script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=ga0nqeox26"></script>
