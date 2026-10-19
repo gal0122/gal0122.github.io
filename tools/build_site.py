@@ -544,19 +544,9 @@ POPUP_JS = '''<script>
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && open.length) closePop(open[0], false);
   });
-  // phones: a thin notice bar instead of popups covering the page; tapping it opens them
-  if (bar) {
-    var labels = all.map(function (p) { return p.getAttribute('data-label') || ''; }).filter(Boolean);
-    bar.querySelector('.nb-text').textContent = labels.join(' · ');
-    bar.hidden = !all.length || Number(load(BARKEY) || 0) > now;
-    bar.querySelector('.nb-open').addEventListener('click', function () { show(all); });
-    bar.querySelector('.nb-x').addEventListener('click', function () {
-      save(BARKEY, String(Date.now() + DAY)); bar.hidden = true;
-    });
-  }
   if (mq.addEventListener) mq.addEventListener('change', layout);
-  // computers: popups open on arrival as before (unless snoozed for 24 hours)
-  if (!mq.matches) show(all.filter(function (p) { return !(Number(load(KEY + p.getAttribute('data-pop')) || 0) > now); }));
+  // popups open on arrival on every device (phones show them one at a time), unless snoozed for 24 hours
+  show(all.filter(function (p) { return !(Number(load(KEY + p.getAttribute('data-pop')) || 0) > now); }));
 })();
 </script>'''
 
@@ -784,7 +774,7 @@ def build_page(f, out=None, transform=None, seo=None):
 </style>
 </head>
 <body>
-{NOTICE_BAR if is_home and POPUP_HTML else ''}{body.strip()}
+{body.strip()}
 {POPUP_HTML if is_home else ''}
 {BASE_JS}
 {POPUP_JS if is_home and POPUP_HTML else ''}
