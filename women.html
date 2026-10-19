@@ -585,6 +585,26 @@ document.addEventListener('click', function (e) {
   var a = e.target.closest('a[href="#"]');
   if (a) e.preventDefault();
 });
+// calendars (진료 일정, 휴진 팝업): mark today's date in Korean time
+(function () {
+  var k = new Date(Date.now() + 9 * 3600 * 1000);
+  var y = k.getUTCFullYear(), m = k.getUTCMonth() + 1, d = String(k.getUTCDate());
+  [].forEach.call(document.querySelectorAll('table.cal, table.pop-cal'), function (t) {
+    var c = t.querySelector('caption'), mm = c && c.textContent.match(/(\d{4})년\s*(\d{1,2})월/);
+    if (!mm || +mm[1] !== y || +mm[2] !== m) return;
+    [].forEach.call(t.querySelectorAll('td'), function (td) {
+      var n = td.querySelector('strong, b');
+      if (!n || n.textContent.trim() !== d) return;
+      td.classList.add('is-today');
+      td.setAttribute('aria-current', 'date');
+      if (t.classList.contains('cal')) {
+        var s = document.createElement('span');
+        s.className = 'today-tag'; s.textContent = '오늘';
+        n.insertAdjacentElement('afterend', s);
+      }
+    });
+  });
+})();
 // mobile full menu: end just above the bottom quick bar / browser toolbar so the last items stay reachable
 (function () {
   var d = document.querySelector('.m-menu');
