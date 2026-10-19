@@ -79,6 +79,9 @@ footer{padding-bottom:58px}
 .cal td{height:64px!important;padding:4px!important;font-size:12px}
 }
 .cal td{vertical-align:top;height:92px;padding:8px;border:1px solid #e2dccd;box-sizing:border-box}
+.cal td.is-today{background:#2f5241!important;box-shadow:inset 0 0 0 3px #d7c9a7}
+.cal td.is-today,.cal td.is-today *{color:#ffffff!important}
+.cal td.is-today .today-tag{display:block;width:fit-content;margin:2px 0 0;padding:0 7px;border-radius:999px;background:#d7c9a7;color:#24302a!important;font-size:11px;font-weight:700;line-height:18px}
 .faq summary{list-style:none;cursor:pointer}
 .faq summary::-webkit-details-marker{display:none}
 .faq details[open] .faq-icon{transform:rotate(45deg)}
@@ -290,6 +293,7 @@ footer{padding-bottom:58px}
 <li style="display: flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 16px; height: 16px; border: 1px solid #e2dccd; background: #ffffff"></span>정상진료</li>
 <li style="display: flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 16px; height: 16px; background: #e3dccb"></span>휴진</li>
 <li style="display: flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 16px; height: 16px; border: 2px solid #2f5241; box-sizing: border-box"></span>공휴일 정상진료</li>
+<li style="display: flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 16px; height: 16px; background: #2f5241; box-shadow: inset 0 0 0 2px #d7c9a7"></span>오늘</li>
 </ul>
 </div>
 <table class="cal" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 15px">
