@@ -5,7 +5,7 @@
 <rect x="392" y="32" width="316" height="576" rx="26" fill="#eef1f4"/>
 <rect x="392" y="32" width="316" height="54" rx="26" fill="#ffffff"/>
 <rect x="392" y="60" width="316" height="26" fill="#ffffff"/>
-<text x="550.0" y="67" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" font-weight="700" fill="#1a1a1a">갈창림한의원 식단 관리</text>
+<text x="550.0" y="67" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" font-weight="700" fill="#1a1a1a">갈창림 한의원 식단 관리</text>
 <line x1="392" y1="86" x2="708" y2="86" stroke="#d3d9e0"/>
 <rect x="528" y="104" width="166" height="112" rx="12" fill="#ffffff" stroke="#d3d9e0"/>
 <rect x="541.0" y="114.0" width="140.0" height="92.0" rx="10.0" fill="#f4f1ea" stroke="#d6cfc0" stroke-width="1.5"/>
