@@ -153,7 +153,7 @@ def regions(p, posts, page_link, post_link, cat_link):
                  f'<p>평일 08:30–18:30(점심 13:00–14:00), 토·일요일 08:30–14:00에 진료하며 공휴일은 휴진합니다. '
                  f'{c} 증상이 오래가거나 자주 반복된다면 지금 상태를 확인하고 알맞은 치료를 안내해 드립니다.</p>\n'
                  f'<p><a href="tel:053-851-0122">전화 053-851-0122</a> · <a href="https://talk.naver.com/W4F2TI" target="_blank" rel="noopener">네이버 톡톡 상담</a> · '
-                 f'<a href="{page_link("schedule.html")}">진료시간 및 오시는길</a></p>\n</section>')
+                 f'<a href="{page_link("schedule.html")}">진료시간 및 오시는길</a></p>\n<p>톡톡 상담은 진료시간 중 최대한 빠르게 답해 드립니다.</p>\n</section>')
     return {
         'crumb': f'홈 &gt; 원장 칼럼 &gt; {html.escape(p["category"])}',
         'cat': f'<a class="col-tag" href="{cat_link(p["cat_key"])}">{html.escape(p["category"])}</a>',
