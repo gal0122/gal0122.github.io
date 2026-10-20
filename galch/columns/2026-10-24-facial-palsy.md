@@ -3,12 +3,13 @@ title: 갑자기 한쪽 얼굴이 마비됐다면, 안면마비(구안와사)의
 slug: facial-palsy
 category: 내과 질환
 date: 2026-10-24
-reviewed: 2026-10-15
+reviewed: 2026-10-20
 keyword: 경산 안면마비
 condition: 안면마비
 description: 갑자기 한쪽 얼굴이 마비되는 안면마비(구안와사, 벨마비)의 원인과 증상, 뇌졸중과 구별해야 하는 신호, 초기 약물 치료와 함께하는 침·뜸·한약 치료, 회복을 돕는 생활 관리를 경산 하양 갈창림한의원 대표원장이 정리했습니다.
 summary: 안면마비(구안와사)는 얼굴 근육을 움직이는 신경에 염증과 붓기가 생겨 갑자기 한쪽 눈이 감기지 않고 입이 돌아가는 질환으로, 대표적인 것이 벨마비입니다. 팔다리 힘 빠짐이나 말이 어눌해지는 증상이 함께 있으면 뇌졸중일 수 있어 즉시 응급실로 가야 하며, 발병 초기에는 병원의 약물 치료를 함께 받는 것이 좋습니다. 갈창림한의원은 침, 뜸, 한약으로 신경과 근육의 회복을 돕고, 회복 정도와 기간에는 개인차가 있습니다.
 related: internal-neuro.html | 두통·신경 질환 진료 안내; schedule.html | 진료시간 및 오시는길; doctors.html | 의료진 소개
+refs: 국가건강정보포털: 얼굴마비(말초성 마비) | https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=3790 ; 한의표준임상진료지침: 안면신경마비 | https://nikom.or.kr/nckm/module/practiceGuide/view.do?guide_idx=150
 ---
 
 ## 안면마비는 어떤 질환인가요?
@@ -21,6 +22,10 @@ related: internal-neuro.html | 두통·신경 질환 진료 안내; schedule.htm
 - 입꼬리가 처지고, 물을 마시면 한쪽으로 흘림
 - 한쪽 이마에 주름이 잡히지 않음
 - 귀 뒤 통증, 소리가 크게 울리는 느낌, 혀끝 맛이 둔해짐
+
+## 진료실에서 자주 보는 경우
+
+아침에 양치하다 물이 한쪽으로 새거나 눈이 잘 감기지 않아 놀라서 오시는 분이 많습니다. 며칠 전부터 귀 뒤가 아팠다고 말씀하시는 경우도 흔합니다.
 
 ## 이런 경우는 바로 응급실로 가세요
 

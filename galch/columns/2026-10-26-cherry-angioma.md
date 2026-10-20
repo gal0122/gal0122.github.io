@@ -3,10 +3,11 @@ title: 몸에 생긴 빨간 점, 체리혈관종은 괜찮을까요?
 slug: cherry-angioma
 category: 피부미용
 date: 2026-10-26
-reviewed: 2026-10-15
+reviewed: 2026-10-20
 description: 몸통과 팔에 생기는 선홍색 작은 점, 체리혈관종의 원인과 거미혈관종·점과 다른 점, 1064nm 롱펄스 레이저로 치료하는 방법, 피가 날 때 대처와 먼저 확인이 필요한 경우를 경산 하양 갈창림한의원 대표원장이 정리했습니다.
 summary: 체리혈관종은 작은 혈관이 늘어나 뭉쳐 생긴 선홍색의 작은 점으로, 30대 이후 몸통과 팔에 하나둘 늘어나는 흔한 양성 병변입니다. 피부암이 아니고 건강에 해롭지 않지만 긁히면 피가 날 수 있어, 보기 싫거나 자주 피가 나면 1064nm 롱펄스 레이저로 늘어난 혈관을 굳혀 옅어지게 할 수 있습니다. 모양이 갑자기 변하거나 다른 색이 섞이면 먼저 확인이 필요합니다. 시술 결과와 회복 기간에는 개인차가 있습니다.
 related: pigment.html | 기미·흑자·잡티·색소 진료 안내; mole.html | 점·쥐젖·편평사마귀 진료 안내
+refs: 국가건강정보포털: 혈관종 | https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=6317
 ---
 
 ## 체리혈관종은 어떤 점인가요?

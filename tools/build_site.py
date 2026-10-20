@@ -201,6 +201,9 @@ def page_ld(slug_, title, desc, url, body):
         rv = re.search(r'최종 검토 (\d{4})년 (\d{1,2})월 (\d{1,2})일', body)   # the page's own visible review date
         reviewed = f'{rv.group(1)}-{int(rv.group(2)):02d}-{int(rv.group(3)):02d}' if rv else REVIEWED
         wp.update({'author': reviewer, 'reviewedBy': reviewer, 'lastReviewed': reviewed})
+        rs = re.search(r'<section data-refs="true".*?</section>', body, re.S)
+        if rs:
+            wp['citation'] = [htmlmod.unescape(u) for u in re.findall(r'href="(https?://[^"]+)"', rs.group(0))]
     m = re.search(r'<p style="margin: 0; font-size: 14px; color: #5d655f">(홈 &gt;.*?)</p>', body)
     if slug_ in COL_CRUMBS:     # 원장 칼럼 pages: category names clash with section names (피부미용 -> skin.html)
         graph.append({'@type': 'BreadcrumbList', '@id': url + '#breadcrumb', 'itemListElement': [
@@ -244,7 +247,8 @@ def page_ld(slug_, title, desc, url, body):
                       'url': url, 'mainEntityOfPage': {'@id': url + '#webpage'}, 'inLanguage': 'ko-KR',
                       'image': f"{SITE}/{OG_IMG.get(slug_, 'assets/og-image.png')}",
                       'datePublished': pm['date'], 'dateModified': max(pm['date'], pm['reviewed']),
-                      'author': {'@id': DIRECTOR_ID}, 'publisher': {'@id': CLINIC_ID}, 'articleSection': pm['category']})
+                      'author': {'@id': DIRECTOR_ID}, 'publisher': {'@id': CLINIC_ID}, 'articleSection': pm['category'],
+                      **({'citation': [u for _, u in pm['refs']]} if pm.get('refs') else {})})
         wp['mainEntity'] = {'@id': url + '#article'}
     if slug_ == 'doctors.html':
         wp['mainEntity'] = {'@id': DIRECTOR_ID}

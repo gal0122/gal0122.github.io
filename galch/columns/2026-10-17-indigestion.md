@@ -3,12 +3,13 @@ title: 검사는 정상인데 소화가 안 된다면, 기능성 소화불량
 slug: indigestion
 category: 내과 질환
 date: 2026-10-17
-reviewed: 2026-10-15
+reviewed: 2026-10-20
 keyword: 경산 소화불량
 condition: 소화불량
 description: 내시경 검사는 정상인데 더부룩하고 쉽게 배부른 기능성 소화불량의 원인과 증상, 내시경을 먼저 받아야 하는 경우, 스트레스와 식사 습관의 영향, 침·뜸·한약 치료와 식사 관리를 경산 하양 갈창림한의원 대표원장이 정리했습니다.
 summary: 기능성 소화불량은 내시경 등 검사에서 뚜렷한 이상이 없는데도 식후 더부룩함, 조금만 먹어도 배부름, 명치 통증이 반복되는 상태입니다. 위가 음식을 받아들이고 내려보내는 움직임이 둔해지고 예민해진 것과 관련이 있습니다. 40세 이후 새로 생긴 증상이나 체중 감소, 검은 변, 삼킴 곤란이 있으면 내시경을 먼저 받아야 합니다. 갈창림한의원은 침, 뜸, 한약으로 위장의 움직임과 긴장을 관리하도록 돕고 식사 습관을 함께 살피며, 결과에는 개인차가 있습니다.
 related: internal-digestive.html | 소화기 질환 진료 안내; schedule.html | 진료시간 및 오시는길; diet.html | 식습관·체중 관리(다이어트) 진료 안내
+refs: 국가건강정보포털: 소화불량 | https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=6887 ; 한의표준임상진료지침: 기능성소화불량 | https://nikom.or.kr/nckm/module/practiceGuide/viewPDF.do?guide_idx=154
 ---
 
 ## 검사는 정상인데 왜 소화가 안 될까요?
@@ -21,6 +22,10 @@ related: internal-digestive.html | 소화기 질환 진료 안내; schedule.html
 - **조금만 먹어도 배가 부름**
 - 명치가 쓰리거나 아픔
 - 트림, 메스꺼움, 입맛 저하
+
+## 진료실에서 자주 보는 경우
+
+내시경에서 이상이 없다는 말을 듣고도 식후 더부룩함과 명치 답답함이 계속돼 오시는 분이 많습니다. 끼니를 거르거나 급하게 먹는 일이 잦고, 스트레스가 많은 시기에 심해졌다고 말씀하시는 경우가 흔합니다.
 
 ## 왜 생길까요?
 

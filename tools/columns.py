@@ -55,7 +55,11 @@ def load_posts(folder):
         for part in filter(None, (p.strip() for p in meta.get('related', '').split(';'))):
             href, label = (x.strip() for x in part.split('|', 1))
             related.append((href, label))
-        meta.update(body_md=body.strip(), faq=faq, related=related, cat_key=CAT_KEY[meta['category']],
+        refs = []      # 참고 자료 (원장 검토를 거친 공공기관·학회 자료): 'name | url ; name | url'
+        for part in filter(None, (p.strip() for p in meta.get('refs', '').split(' ; '))):
+            name, url = (x.strip() for x in part.split('|', 1))
+            refs.append((name, url))
+        meta.update(body_md=body.strip(), faq=faq, related=related, refs=refs, cat_key=CAT_KEY[meta['category']],
                     file=f"column-{meta['slug']}.html", src=os.path.basename(fp))
         assert meta['slug'] not in CAT_NAME, (fp, 'slug clashes with a category page')
         posts.append(meta)
@@ -154,6 +158,9 @@ def regions(p, posts, page_link, post_link, cat_link):
                  f'{c} 증상이 오래가거나 자주 반복된다면 지금 상태를 확인하고 알맞은 치료를 안내해 드립니다.</p>\n'
                  f'<p><a href="tel:053-851-0122">전화 053-851-0122</a> · <a href="https://talk.naver.com/W4F2TI" target="_blank" rel="noopener">네이버 톡톡 상담</a> · '
                  f'<a href="{page_link("schedule.html")}">진료시간 및 오시는길</a></p>\n<p>톡톡 상담은 진료시간 중 최대한 빠르게 답해 드립니다.</p>\n</section>')
+    if p.get('refs'):
+        items = ''.join(f'<li><a href="{html.escape(u)}" target="_blank" rel="noopener">{html.escape(n)}</a></li>\n' for n, u in p['refs'])
+        body += f'\n<h2>참고 자료</h2>\n<ul class="col-refs">\n{items}</ul>'
     return {
         'crumb': f'홈 &gt; 원장 칼럼 &gt; {html.escape(p["category"])}',
         'cat': f'<a class="col-tag" href="{cat_link(p["cat_key"])}">{html.escape(p["category"])}</a>',

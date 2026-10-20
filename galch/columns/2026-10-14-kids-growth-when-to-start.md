@@ -3,10 +3,11 @@ title: 아이 키 성장 치료, 언제 시작하면 좋을까요?
 slug: kids-growth-when-to-start
 category: 소아·여성
 date: 2026-10-14
-reviewed: 2026-10-14
+reviewed: 2026-10-20
 description: 아이 성장 치료를 초등학생 때, 2차 성징 전에 시작하기를 권하는 이유와 성장을 방해하는 요인, 소아청소년과 검사가 먼저 필요한 경우까지 경산 하양 갈창림한의원 대표원장이 정리했습니다.
 summary: 2차 성징이 나타나기 전, 초등학생 때 시작하시는 것이 좋습니다. 사춘기가 시작되면 성장판이 닫히기까지 남은 시간이 짧아지기 때문입니다. 한의원의 성장 관리는 키를 직접 늘리는 것이 아니라 소화, 수면, 잦은 감기처럼 성장을 방해하는 요인을 줄여 아이가 가진 성장 가능성을 충분히 발휘하도록 돕는 것이 목표입니다. 결과에는 개인차가 있습니다.
 related: growth.html | 소아 성장 진료 안내; schedule.html | 진료시간 및 오시는길
+refs: 국가건강정보포털: 저신장 | https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=5415
 ---
 
 ## 키는 자랄 수 있는 시기가 정해져 있습니다

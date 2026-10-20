@@ -121,7 +121,7 @@
   },
   "Growth.dc.html": {
    "expand": "fill",
-   "h": 7217,
+   "h": 7317,
    "is_interactive": true,
    "title": "27 소아·여성 · 소아 성장",
    "w": 1280,
@@ -256,7 +256,7 @@
   },
   "Traffic.dc.html": {
    "expand": "fill",
-   "h": 6405,
+   "h": 6504,
    "is_interactive": true,
    "title": "21 교통사고 · 교통사고 후유증",
    "w": 1280,
@@ -265,7 +265,7 @@
   },
   "TrafficProcess.dc.html": {
    "expand": "fill",
-   "h": 5656,
+   "h": 5756,
    "is_interactive": true,
    "title": "22 교통사고 · 치료 과정",
    "w": 1280,
@@ -274,7 +274,7 @@
   },
   "TrafficTreat.dc.html": {
    "expand": "fill",
-   "h": 6378,
+   "h": 6477,
    "is_interactive": true,
    "title": "23 교통사고 · 치료 방법",
    "w": 1280,
@@ -283,7 +283,7 @@
   },
   "Women.dc.html": {
    "expand": "fill",
-   "h": 6770,
+   "h": 6895,
    "is_interactive": true,
    "title": "28 소아·여성 · 여성 질환",
    "w": 1280,
