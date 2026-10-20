@@ -54,3 +54,34 @@ PAGES = {
  'Women': ['g_dysmen', 'meno'], 'Growth': ['short'], 'Acne': ['acne'], 'Pigment': ['melasma', 'freckle'],
  'Mole': ['nevus', 'skintag', 'wart'],
 }
+
+# 2차 추가 (2026-10-20): 대한피부과학회·서울아산병원·서울대병원·진료지침
+D = '대한피부과학회'; A = '서울아산병원'
+R.update({
+ 'd_abnom': (f'{D}: ABNOM(후천 양측 오타모반모양반점)', 'https://www.derma.or.kr/new/general/disease.php?uid=3349&mod=document'),
+ 'd_sk': (f'{D}: 지루각화증', 'https://www.derma.or.kr/new/general/disease.php?uid=591&mod=document'),
+ 'a_benign': (f'{A}: 피부의 양성 종양', 'https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31759'),
+ 'sebhyp': (f'{SN}: 피지샘증식증', 'https://www.snuh.org/health/nMedInfo/nView.do?medid=AA001338'),
+ 'd_poro': (f'{D}: 땀구멍각화증(한공각화증)', 'https://www.derma.or.kr/new/general/disease.php?uid=5201&mod=document'),
+ 'a_lentigo': (f'{A}: 흑색점(lentigo) 용어 설명', 'https://www.amc.seoul.kr/asan/healthinfo/easymediterm/easyMediTermDetail.do?dictId=4988'),
+ 'a_epid': (f'{A}: 표피낭종', 'https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=32521'),
+ 'a_spider': (f'{A}: 거미혈관종 용어 설명', 'https://www.amc.seoul.kr/asan/healthinfo/easymediterm/easyMediTermDetail.do?dictId=163'),
+ 's_hair': (f'{SN}: 레이저 제모술', 'https://www.snuh.org/health/nMedInfo/nView.do?medid=BB000029'),
+ 'd_laser': (f'{D}: 피부과적 치료법 - 레이저', 'https://www.derma.or.kr/new/general/treatment.php?uid=3318&mod=document'),
+ 'g_postpartum': (f'{G}: 산후풍', 'https://nikom.or.kr/nckm/module/practiceGuide/view.do?guide_idx=319&menu_idx=14'),
+ 'obesity': (f'{P}: 비만', K + '6694'),
+ 'g_obesity': (f'{G}: 비만', 'https://nikom.or.kr/nckm/module/practiceGuide/view.do?guide_idx=325&menu_idx=14'),
+ 'd_acne': (f'{D}: 보통여드름', 'https://www.derma.or.kr/new/general/disease.php?uid=994&mod=document'),
+ 'a_acne': (f'{A}: 여드름', 'https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31543'),
+})
+COLS.update({
+ 'abnom': ['d_abnom'], 'seborrheic-keratosis': ['d_sk', 'a_benign'], 'sebaceous-hyperplasia': ['sebhyp'],
+ 'porokeratosis': ['d_poro'], 'lentigo': ['a_lentigo'], 'epidermoid-cyst': ['a_epid', 'cyst'],
+ 'steatocystoma': ['a_benign'], 'spider-angioma': ['hemang', 'a_spider'],
+ 'laser-hair-removal-sessions': ['s_hair'], 'sylfirm-x-guide': ['d_laser'], 'postpartum': ['g_postpartum'],
+})
+PAGES.update({
+ 'HairRemoval': ['s_hair', 'd_laser'], 'Pigment': ['melasma', 'freckle', 'd_laser'],
+ 'AcneRed': ['acne', 'd_acne'], 'AcneScar': ['acne', 'a_acne'], 'Acne': ['acne', 'd_acne', 'a_acne'],
+ 'Diet': ['obesity', 'g_obesity'],
+})

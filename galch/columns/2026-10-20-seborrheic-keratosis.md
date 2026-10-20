@@ -3,10 +3,11 @@ title: 검버섯(지루각화증), 나이 들며 생기는 갈색 돌기의 정�
 slug: seborrheic-keratosis
 category: 피부미용
 date: 2026-10-20
-reviewed: 2026-10-15
+reviewed: 2026-10-20
 description: 흔히 검버섯이라 부르는 지루각화증이 무엇인지, 흑자와 다른 점, 유펄스 CO2로 필요한 깊이만큼 제거하는 방법, 제거 전에 먼저 진료가 필요한 경우와 제거 후 관리를 경산 하양 갈창림한의원 대표원장이 정리했습니다.
 summary: 지루각화증은 흔히 '검버섯'이라 부르는 양성 피부 돌기입니다. 나이가 들며 얼굴·목·몸에 갈색~검은색으로 피부에 붙여 놓은 듯 살짝 솟아 생깁니다. 피부암이 아니고 옮지도 않지만 저절로 없어지지 않아, 보기 싫거나 걸리면 레이저로 필요한 깊이만큼 제거할 수 있습니다. 갑자기 여러 개가 생기거나 모양이 빠르게 변하면 다른 질환과 구별하는 진료가 먼저 필요하며, 결과에는 개인차가 있습니다.
 related: mole.html | 점·쥐젖·편평사마귀 진료 안내; pigment.html | 기미·흑자·잡티·색소 진료 안내; price.html#price-pigment | 점·검버섯 제거 비용
+refs: 대한피부과학회: 지루각화증 | https://www.derma.or.kr/new/general/disease.php?uid=591&mod=document ; 서울아산병원: 피부의 양성 종양 | https://www.amc.seoul.kr/asan/healthinfo/disease/diseaseDetail.do?contentId=31759
 ---
 
 ## 검버섯은 어떤 병변인가요?
