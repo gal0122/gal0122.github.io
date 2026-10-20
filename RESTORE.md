@@ -54,3 +54,9 @@
 
 ## 홈 팝업 날짜 (2026-10-15~)
 - Popup 아트보드의 각 팝업에 data-from / data-until (YYYY-MM-DD, 한국 시간)을 넣으면 그 기간에만 보임. 예: 11월 1일 휴진 팝업 data-from="2026-10-19" data-until="2026-11-01".
+
+## 2026-10-20 추가 스크립트 (보드에 이미 반영됨 — 다시 실행해도 한 번만 들어감)
+- tools/side_effects.py — 시술·치료 페이지 '가능한 부작용' 섹션 (문구 수정은 이 파일의 PAGES에서 한 뒤 실행)
+- tools/price_links.py — '시술 정보' 제목 옆 가격표 바로가기
+- tools/traffic_strip.py — 교통사고 3개 페이지 상단 접수·진료시간 안내
+- tools/place_links.py — 지도 링크(네이버 naver.me/FW6SmWrn · 카카오 628214691 · 구글 cid)와 하단 지도 바로가기
