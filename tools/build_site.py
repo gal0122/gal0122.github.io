@@ -671,7 +671,6 @@ NOTICE_BAR = ('<div class="notice-bar" id="site-notice" role="region" aria-label
               '<button type="button" class="nb-x" aria-label="공지 24시간 동안 닫기">×</button></div>\n')
 POPUP_CSS += '''
 .notice-bar{display:none}
-@media (max-width:640px){
 .notice-bar:not([hidden]){display:flex;align-items:stretch;background:#2f5241;color:#ffffff;font-family:'Pretendard','Pretendard Variable',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Noto Sans KR',sans-serif}
 .notice-bar button{border:0;background:transparent;color:inherit;font:inherit;cursor:pointer}
 .nb-open{flex:1 1 auto;min-width:0;display:flex;align-items:center;gap:8px;min-height:42px;padding:0 4px 0 16px;text-align:left;font-size:13px;font-weight:600}
@@ -680,7 +679,7 @@ POPUP_CSS += '''
 .nb-more{flex:0 0 auto;font-size:12px;color:#d7c9a7}
 .nb-x{flex:0 0 44px;font-size:20px!important;line-height:1}
 .notice-bar button:focus-visible{outline:2px solid #d7c9a7;outline-offset:-2px}
-}'''
+@media (min-width:641px){.nb-open{padding-left:max(16px,calc((100vw - 1240px) / 2 + 24px));font-size:14px}.nb-x{margin-right:max(0px,calc((100vw - 1240px) / 2))}}'''
 
 POPUP_JS = '''<script>
 (function () {
@@ -731,8 +730,17 @@ POPUP_JS = '''<script>
     if (e.key === 'Escape' && open.length) closePop(open[0], false);
   });
   if (mq.addEventListener) mq.addEventListener('change', layout);
-  // popups open on arrival on every device (phones show them one at a time), unless snoozed for 24 hours
-  show(all.filter(function (p) { return !(Number(load(KEY + p.getAttribute('data-pop')) || 0) > now); }));
+  // a thin notice bar on every device instead of popups covering the page (Google's intrusive-interstitial
+  // guideline); tapping it opens the notices
+  if (bar) {
+    var labels = all.map(function (p) { return p.getAttribute('data-label') || ''; }).filter(Boolean);
+    bar.querySelector('.nb-text').textContent = labels.join(' · ');
+    bar.hidden = !all.length || Number(load(BARKEY) || 0) > now;
+    bar.querySelector('.nb-open').addEventListener('click', function () { show(all); });
+    bar.querySelector('.nb-x').addEventListener('click', function () {
+      save(BARKEY, String(Date.now() + DAY)); bar.hidden = true;
+    });
+  }
 })();
 </script>'''
 
@@ -963,7 +971,7 @@ img[width][height]{{height:auto}}
 </style>
 </head>
 <body>
-{body.strip()}
+{NOTICE_BAR if is_home and POPUP_HTML else ''}{body.strip()}
 {POPUP_HTML if is_home else ''}
 {BASE_JS}
 {POPUP_JS if is_home and POPUP_HTML else ''}
