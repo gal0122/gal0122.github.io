@@ -112,3 +112,11 @@ PAGES.update({
  'AcneScar': ['acne', 'a_acne', 'p_fmr_scar'],
 })
 COLS.update({'sylfirm-x-guide': ['p_fmr_scar', 'p_fmr_pore', 'd_laser']})
+
+# 다른 세션(2026-10-20 17:55)에서 홈페이지에 직접 넣은 알트코어·ECM 참고 자료를 원본에 옮김
+R['x_BoosterAltcore_0'] = ('논문: ALT001의 미토파지(손상 미토콘드리아 정리) 유도 작용 (Theranostics 2024, 세포·동물 연구, 기전 참고)', 'https://doi.org/10.7150/thno.88718')
+R['x_BoosterAltcore_1'] = ('논문: ALT001의 미토파지 표적 작용 (Theranostics 2025, 세포·동물 연구, 기전 참고)', 'https://doi.org/10.7150/thno.105953')
+PAGES['BoosterAltcore'] = ['x_BoosterAltcore_0', 'x_BoosterAltcore_1']
+R['x_BoosterECM_0'] = ('논문: 초임계 이산화탄소로 탈세포한 돼지 진피 기질 (Int J Med Sci 2020, 동물 연구, 상처 치유)', 'https://doi.org/10.7150/ijms.41155')
+R['x_BoosterECM_1'] = ('논문: 초임계 공정 탈세포 ECM과 광노화 진피 환경 개선 (Adv Healthc Mater 2025, 세포·동물 연구)', 'https://doi.org/10.1002/adhm.202403213')
+PAGES['BoosterECM'] = ['x_BoosterECM_0', 'x_BoosterECM_1']

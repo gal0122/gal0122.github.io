@@ -23,76 +23,76 @@ GOOGLE_VERIFY = 'J8QaDGTCXl33x5qhQ0BFwqwJQ9_kGM2WzyDeolMWfLE'   # content of <me
 
 # search title / description per page (keywords: 경산 한의원, 경산 레이저제모)
 SEO = {
- 'index.html': ('경산 한의원 갈창림한의원 | 하양 · 토·일요일 진료',
-   '경상북도 경산시 하양읍 갈창림한의원. 평일 08:30–18:30, 토·일 08:30–14:00 진료. 레이저제모·리프팅·색소·여드름 피부미용, 교통사고 후유증, 척추·관절 통증, 소화불량·두통·불면·비염, 다이어트, 소아 성장, 여성 질환.'),
- 'about.html': ('병원 소개 | 경산 한의원 갈창림한의원',
-   '경산 하양 갈창림한의원 소개. 충분히 듣고, 꼭 필요한 치료를 정직하게 제안하는 한의원입니다. 평일은 아침 8시 30분부터, 토·일요일에도 진료합니다.'),
- 'doctors.html': ('의료진 소개 | 경산 한의원 갈창림한의원',
-   '갈창림 대표원장 — 대구한의대학교 한의과대학 졸업, 대한통합레이저의학회 정회원·교육위원. 경산 하양 갈창림한의원.'),
- 'equipment.html': ('보유장비 | 경산 하양 갈창림한의원',
-   '악센토N 레이저제모, 리니어펌·볼뉴머 리프팅, 큐마스터플러스, 실펌X 등 경산 하양 갈창림한의원의 보유 장비를 소개합니다.'),
- 'schedule.html': ('진료시간·오시는길 | 경산 하양 갈창림한의원',
+ 'index.html': ('경산 한의원 갈창림 한의원 | 하양 · 토·일요일 진료',
+   '경상북도 경산시 하양읍 갈창림 한의원. 평일 08:30–18:30, 토·일 08:30–14:00 진료. 레이저제모·리프팅·색소·여드름 피부미용, 교통사고 후유증, 척추·관절 통증, 소화불량·두통·불면·비염, 다이어트, 소아 성장, 여성 질환.'),
+ 'about.html': ('병원 소개 | 경산 한의원 갈창림 한의원',
+   '경산 하양 갈창림 한의원 소개. 충분히 듣고, 꼭 필요한 치료를 정직하게 제안하는 한의원입니다. 평일은 아침 8시 30분부터, 토·일요일에도 진료합니다.'),
+ 'doctors.html': ('의료진 소개 | 경산 한의원 갈창림 한의원',
+   '갈창림 대표원장 — 대구한의대학교 한의과대학 졸업, 대한통합레이저의학회 정회원·교육위원. 경산 하양 갈창림 한의원.'),
+ 'equipment.html': ('보유장비 | 경산 하양 갈창림 한의원',
+   '악센토N 레이저제모, 리니어펌·볼뉴머 리프팅, 큐마스터플러스, 실펌X 등 경산 하양 갈창림 한의원의 보유 장비를 소개합니다.'),
+ 'schedule.html': ('진료시간·오시는길 | 경산 하양 갈창림 한의원',
    '경상북도 경산시 하양읍 동서2길 43, 3층. 평일 08:30–18:30(점심 13:00–14:00), 토·일 08:30–14:00, 공휴일 휴진. 전화 053-851-0122.'),
- 'skin.html': ('경산 피부미용 | 갈창림한의원',
-   '리프팅, 스킨부스터, 레이저제모, 기미·잡티, 여드름, 모공까지 — 경산 하양 갈창림한의원의 피부미용 진료를 한눈에 안내합니다.'),
- 'design-lifting.html': ('경산 리프팅 · 리니어펌·볼뉴머 디자인리프팅 | 갈창림한의원',
-   '리니어펌(초음파)과 볼뉴머(고주파)를 얼굴 지방량과 피부 두께에 맞춰 부위별로 설계하는 디자인리프팅. 권장 주기, 가능한 부작용과 주의사항, 가격 안내 — 경산 하양 갈창림한의원.'),
- 'thread-lifting.html': ('경산 실리프팅 · 맞춤형실리프팅 | 갈창림한의원',
-   '처짐의 방향과 볼륨을 함께 설계하는 맞춤형 실리프팅. 녹는 실을 캐뉼라로 넣는 시술 방법과 회복 기간, 가능한 부작용과 주의사항을 안내합니다. 경산 하양 갈창림한의원.'),
- 'booster-pdrn.html': ('경산 PDRN·엑소좀 스킨부스터 | 갈창림한의원',
-   'PDRN·엑소좀을 담은 라디쥬(오리지널·플러스·퓨어)로 재생·탄력·미백을 돕는 스킨부스터. 권장 주기, 가능한 부작용과 주의사항 안내 — 경산 하양 갈창림한의원.'),
- 'booster-plla.html': ('경산 PLLA 스킨부스터 | 갈창림한의원',
-   '시간이 지나며 내 피부의 콜라겐으로 차오르는 볼륨과 탄력, PLLA 스킨부스터. 시술 방법과 권장 주기, 가능한 부작용과 주의사항 안내 — 경산 하양 갈창림한의원.'),
- 'booster-keratin.html': ('경산 케라틴 ANK 약침 | 갈창림한의원',
-   '피부 장벽부터 튼튼하게 세우는 케라틴 ANK 약침. 주입 방법과 권장 주기, 가능한 부작용과 시술 후 주의사항을 안내합니다. 경산 하양 갈창림한의원.'),
- 'booster-altcore.html': ('경산 알트코어 스킨부스터 | 갈창림한의원',
-   '미토콘드리아에 작용해 피부 세포 자체의 건강을 돕는 알트코어 스킨부스터. 주입 방법과 권장 주기, 가능한 부작용과 주의사항 안내 — 경산 하양 갈창림한의원.'),
- 'booster-ecm.html': ('경산 ECM 진피재생약침 | 갈창림한의원',
-   '콜라겐·엘라스틴 등 ECM 성분으로 무너진 진피의 골격을 다시 세우는 ECM 진피재생약침. 권장 주기, 가능한 부작용과 주의사항 안내 — 경산 하양 갈창림한의원.'),
- 'hair-removal.html': ('경산 레이저제모 | 하양 갈창림한의원',
-   '듀얼 파장(755nm·1064nm) 악센토N으로 털과 피부 타입에 맞춰 시술하는 레이저제모. 필요한 횟수, 가능한 부작용과 주의사항, 부위별 가격표 안내 — 경산 하양 갈창림한의원.'),
- 'pigment.html': ('경산 기미·흑자·잡티 색소 | 갈창림한의원',
-   '532·755·1064nm, 색소에 맞춰 고르는 세 가지 파장. 기미·흑자·잡티 진료와 가능한 부작용·주의사항 안내 — 경산 하양 갈창림한의원.'),
- 'mole.html': ('경산 점빼기 · 쥐젖 · 편평사마귀 제거 | 갈창림한의원',
-   '모양과 깊이에 맞춰 고르는 아이스 점빼기와 유펄스 CO2. 점·쥐젖·편평사마귀 제거 방법과 가능한 부작용 안내 — 경산 하양 갈창림한의원.'),
- 'acne.html': ('경산 여드름 | 갈창림한의원',
-   '원인을 나눠 단계별로 — 압출, 필링, ALA-PDT, 골드PTT, PDRN. 시술 정보와 가능한 부작용 안내 — 경산 하양 갈창림한의원의 여드름 진료.'),
- 'acne-red.html': ('경산 여드름 붉은자국 | 갈창림한의원',
-   '여드름이 가라앉은 뒤 남은 붉은 자국과 갈색 자국, 자국의 색에 맞춰 토닝과 스킨부스터로 진료합니다. 가능한 부작용과 주의사항 안내 — 경산 하양 갈창림한의원.'),
- 'acne-scar.html': ('경산 여드름 흉터 | 갈창림한의원',
-   '아이스픽·박스카·롤링, 흉터 모양에 맞춰 서브시전, 니들RF(실펌X), CO2 핀홀, 스킨부스터를 조합합니다. 가능한 부작용과 주의사항 안내 — 경산 하양 갈창림한의원.'),
- 'pore.html': ('경산 모공 | 갈창림한의원',
-   '피지·탄력·흉터, 모공이 넓어진 원인에 맞춰 니들RF, 제네시스 토닝, 스킨부스터, 필링으로 진료합니다. 가능한 부작용과 주의사항 안내 — 경산 하양 갈창림한의원.'),
- 'traffic.html': ('경산 교통사고 한의원 · 후유증 | 갈창림한의원',
-   '검사에서 이상이 없어도 아프다면 치료가 필요합니다. 교통사고 후유증 한방 진료, 자동차보험 진료 — 경산 하양 갈창림한의원.'),
- 'traffic-process.html': ('교통사고 치료 과정 | 경산 하양 갈창림한의원',
-   '사고 직후부터 회복까지, 통증의 시기에 맞춰 치료 목표가 달라집니다. 첫 진료 때 확인하는 것과 자동차보험 진료 안내 — 경산 하양 갈창림한의원 교통사고 치료 과정.'),
- 'traffic-treat.html': ('교통사고 치료 방법 | 경산 하양 갈창림한의원',
-   '침·약침, 추나, 한약, 뜸·부항·물리치료를 증상에 맞춰 함께 씁니다. 교통사고 후유증 한방 치료 방법과 가능한 부작용 안내 — 경산 하양 갈창림한의원.'),
- 'pain-spine.html': ('경산 목·허리 척추 통증 한의원 | 갈창림한의원',
-   '목디스크·허리디스크·척추관협착증 등 목부터 허리까지, 통증을 만든 원인을 찾아 치료합니다. 침·약침·추나·한약 치료와 가능한 부작용 안내 — 경산 하양 갈창림한의원.'),
- 'pain-joint.html': ('경산 어깨·무릎 관절 통증 한의원 | 갈창림한의원',
-   '어깨·팔꿈치·손목·무릎·발목, 쓰는 만큼 지치는 관절이 아픈 이유부터 살핍니다. 침·약침·추나·한약 치료와 가능한 부작용 안내 — 경산 하양 갈창림한의원.'),
- 'internal-digestive.html': ('경산 소화불량·역류성 식도염 한의원 | 갈창림한의원',
-   '검사는 괜찮다는데 계속 불편한 속, 원인부터 살핍니다. 기능성 소화불량, 역류성 식도염, 과민성 대장 증후군 — 경산 하양 갈창림한의원 소화기 질환 진료.'),
- 'internal-neuro.html': ('경산 두통·안면마비·손발 저림 한의원 | 갈창림한의원',
-   '반복되는 두통과 갑작스러운 안면마비, 손발 저림까지 원인을 살핍니다. 경산 하양 갈창림한의원 두통·신경 질환 진료.'),
- 'internal-sleep.html': ('경산 불면증·화병 한의원 | 갈창림한의원',
-   '잠 못 드는 밤, 답답한 가슴, 풀리지 않는 피로를 함께 살핍니다. 경산 하양 갈창림한의원 불면·스트레스 진료.'),
- 'internal-rhinitis.html': ('경산 비염·수족냉증 한의원 | 갈창림한의원',
-   '찬 공기에 예민한 코와 차가운 손발, 원인부터 살핍니다. 비염·수족냉증 침·뜸·부항·한약 치료와 가능한 부작용 안내 — 경산 하양 갈창림한의원.'),
- 'diet.html': ('경산 한방 다이어트 | 갈창림한의원',
-   '체중계 숫자보다 건강하게 유지할 수 있는 몸을 목표로 합니다. 맞춤 탕약과 매일 카카오톡 식단 관리, 다이어트 한약의 가능한 부작용 안내 — 경산 하양 갈창림한의원.'),
- 'growth.html': ('경산 소아 성장 한의원 | 갈창림한의원',
-   '아이가 가진 성장 가능성을 충분히 키울 수 있도록 성장을 방해하는 요인을 살핍니다. 성장 진료 과정과 성장 한약의 가능한 부작용 안내 — 경산 하양 갈창림한의원.'),
- 'women.html': ('경산 여성 질환 한의원 | 갈창림한의원',
-   '생리통부터 산후 회복, 갱년기까지 시기마다 달라지는 여성의 몸을 살핍니다. 한약·침·뜸 치료와 가능한 부작용 안내 — 경산 하양 갈창림한의원 여성 질환 진료.'),
- 'price.html': ('가격표 · 레이저제모 비용 | 경산 갈창림한의원',
-   '레이저제모 부위별 비용, 리니어펌·볼뉴머·실리프팅, 토닝, 필링·여드름, 라디쥬 등 스킨부스터, 패키지 비용 안내(부가세 포함). 경산 하양 갈창림한의원.'),
- 'column.html': ('원장 칼럼 – 피부미용·건강·질환 정보 | 경산 갈창림한의원',
-   '경산 하양 갈창림한의원 대표원장이 피부미용, 교통사고, 척추·관절 통증, 내과 질환, 다이어트, 소아·여성 건강에 대해 진료실에서 자주 받는 질문에 직접 답하는 칼럼입니다.'),
- 'privacy.html': ('개인정보처리방침 | 갈창림한의원', '갈창림한의원 홈페이지 개인정보처리방침.'),
- 'terms.html': ('이용약관 | 갈창림한의원', '갈창림한의원 홈페이지 이용약관.'),
+ 'skin.html': ('경산 피부미용 | 갈창림 한의원',
+   '리프팅, 스킨부스터, 레이저제모, 기미·잡티, 여드름, 모공까지 — 경산 하양 갈창림 한의원의 피부미용 진료를 한눈에 안내합니다.'),
+ 'design-lifting.html': ('경산 리프팅 · 리니어펌·볼뉴머 디자인리프팅 | 갈창림 한의원',
+   '리니어펌(초음파)과 볼뉴머(고주파)를 얼굴 지방량과 피부 두께에 맞춰 부위별로 설계하는 디자인리프팅. 권장 주기, 가능한 부작용과 주의사항, 가격 안내 — 경산 하양 갈창림 한의원.'),
+ 'thread-lifting.html': ('경산 실리프팅 · 맞춤형실리프팅 | 갈창림 한의원',
+   '처짐의 방향과 볼륨을 함께 설계하는 맞춤형 실리프팅. 녹는 실을 캐뉼라로 넣는 시술 방법과 회복 기간, 가능한 부작용과 주의사항을 안내합니다. 경산 하양 갈창림 한의원.'),
+ 'booster-pdrn.html': ('경산 PDRN·엑소좀 스킨부스터 | 갈창림 한의원',
+   'PDRN·엑소좀을 담은 라디쥬(오리지널·플러스·퓨어)로 재생·탄력·미백을 돕는 스킨부스터. 권장 주기, 가능한 부작용과 주의사항 안내 — 경산 하양 갈창림 한의원.'),
+ 'booster-plla.html': ('경산 PLLA 스킨부스터 | 갈창림 한의원',
+   '시간이 지나며 내 피부의 콜라겐으로 차오르는 볼륨과 탄력, PLLA 스킨부스터. 시술 방법과 권장 주기, 가능한 부작용과 주의사항 안내 — 경산 하양 갈창림 한의원.'),
+ 'booster-keratin.html': ('경산 케라틴 ANK 약침 | 갈창림 한의원',
+   '피부 장벽부터 튼튼하게 세우는 케라틴 ANK 약침. 주입 방법과 권장 주기, 가능한 부작용과 시술 후 주의사항을 안내합니다. 경산 하양 갈창림 한의원.'),
+ 'booster-altcore.html': ('경산 알트코어 스킨부스터 | 갈창림 한의원',
+   '미토콘드리아에 작용해 피부 세포 자체의 건강을 돕는 알트코어 스킨부스터. 주입 방법과 권장 주기, 가능한 부작용과 주의사항 안내 — 경산 하양 갈창림 한의원.'),
+ 'booster-ecm.html': ('경산 ECM 진피재생약침 | 갈창림 한의원',
+   '콜라겐·엘라스틴 등 ECM 성분으로 무너진 진피의 골격을 다시 세우는 ECM 진피재생약침. 권장 주기, 가능한 부작용과 주의사항 안내 — 경산 하양 갈창림 한의원.'),
+ 'hair-removal.html': ('경산 레이저제모 | 하양 갈창림 한의원',
+   '듀얼 파장(755nm·1064nm) 악센토N으로 털과 피부 타입에 맞춰 시술하는 레이저제모. 필요한 횟수, 가능한 부작용과 주의사항, 부위별 가격표 안내 — 경산 하양 갈창림 한의원.'),
+ 'pigment.html': ('경산 기미·흑자·잡티 색소 | 갈창림 한의원',
+   '532·755·1064nm, 색소에 맞춰 고르는 세 가지 파장. 기미·흑자·잡티 진료와 가능한 부작용·주의사항 안내 — 경산 하양 갈창림 한의원.'),
+ 'mole.html': ('경산 점빼기 · 쥐젖 · 편평사마귀 제거 | 갈창림 한의원',
+   '모양과 깊이에 맞춰 고르는 아이스 점빼기와 유펄스 CO2. 점·쥐젖·편평사마귀 제거 방법과 가능한 부작용 안내 — 경산 하양 갈창림 한의원.'),
+ 'acne.html': ('경산 여드름 | 갈창림 한의원',
+   '원인을 나눠 단계별로 — 압출, 필링, ALA-PDT, 골드PTT, PDRN. 시술 정보와 가능한 부작용 안내 — 경산 하양 갈창림 한의원의 여드름 진료.'),
+ 'acne-red.html': ('경산 여드름 붉은자국 | 갈창림 한의원',
+   '여드름이 가라앉은 뒤 남은 붉은 자국과 갈색 자국, 자국의 색에 맞춰 토닝과 스킨부스터로 진료합니다. 가능한 부작용과 주의사항 안내 — 경산 하양 갈창림 한의원.'),
+ 'acne-scar.html': ('경산 여드름 흉터 | 갈창림 한의원',
+   '아이스픽·박스카·롤링, 흉터 모양에 맞춰 서브시전, 니들RF(실펌X), CO2 핀홀, 스킨부스터를 조합합니다. 가능한 부작용과 주의사항 안내 — 경산 하양 갈창림 한의원.'),
+ 'pore.html': ('경산 모공 | 갈창림 한의원',
+   '피지·탄력·흉터, 모공이 넓어진 원인에 맞춰 니들RF, 제네시스 토닝, 스킨부스터, 필링으로 진료합니다. 가능한 부작용과 주의사항 안내 — 경산 하양 갈창림 한의원.'),
+ 'traffic.html': ('경산 교통사고 한의원 · 후유증 | 갈창림 한의원',
+   '검사에서 이상이 없어도 아프다면 치료가 필요합니다. 교통사고 후유증 한방 진료, 자동차보험 진료 — 경산 하양 갈창림 한의원.'),
+ 'traffic-process.html': ('교통사고 치료 과정 | 경산 하양 갈창림 한의원',
+   '사고 직후부터 회복까지, 통증의 시기에 맞춰 치료 목표가 달라집니다. 첫 진료 때 확인하는 것과 자동차보험 진료 안내 — 경산 하양 갈창림 한의원 교통사고 치료 과정.'),
+ 'traffic-treat.html': ('교통사고 치료 방법 | 경산 하양 갈창림 한의원',
+   '침·약침, 추나, 한약, 뜸·부항·물리치료를 증상에 맞춰 함께 씁니다. 교통사고 후유증 한방 치료 방법과 가능한 부작용 안내 — 경산 하양 갈창림 한의원.'),
+ 'pain-spine.html': ('경산 목·허리 척추 통증 한의원 | 갈창림 한의원',
+   '목디스크·허리디스크·척추관협착증 등 목부터 허리까지, 통증을 만든 원인을 찾아 치료합니다. 침·약침·추나·한약 치료와 가능한 부작용 안내 — 경산 하양 갈창림 한의원.'),
+ 'pain-joint.html': ('경산 어깨·무릎 관절 통증 한의원 | 갈창림 한의원',
+   '어깨·팔꿈치·손목·무릎·발목, 쓰는 만큼 지치는 관절이 아픈 이유부터 살핍니다. 침·약침·추나·한약 치료와 가능한 부작용 안내 — 경산 하양 갈창림 한의원.'),
+ 'internal-digestive.html': ('경산 소화불량·역류성 식도염 한의원 | 갈창림 한의원',
+   '검사는 괜찮다는데 계속 불편한 속, 원인부터 살핍니다. 기능성 소화불량, 역류성 식도염, 과민성 대장 증후군 — 경산 하양 갈창림 한의원 소화기 질환 진료.'),
+ 'internal-neuro.html': ('경산 두통·안면마비·손발 저림 한의원 | 갈창림 한의원',
+   '반복되는 두통과 갑작스러운 안면마비, 손발 저림까지 원인을 살핍니다. 경산 하양 갈창림 한의원 두통·신경 질환 진료.'),
+ 'internal-sleep.html': ('경산 불면증·화병 한의원 | 갈창림 한의원',
+   '잠 못 드는 밤, 답답한 가슴, 풀리지 않는 피로를 함께 살핍니다. 경산 하양 갈창림 한의원 불면·스트레스 진료.'),
+ 'internal-rhinitis.html': ('경산 비염·수족냉증 한의원 | 갈창림 한의원',
+   '찬 공기에 예민한 코와 차가운 손발, 원인부터 살핍니다. 비염·수족냉증 침·뜸·부항·한약 치료와 가능한 부작용 안내 — 경산 하양 갈창림 한의원.'),
+ 'diet.html': ('경산 한방 다이어트 | 갈창림 한의원',
+   '체중계 숫자보다 건강하게 유지할 수 있는 몸을 목표로 합니다. 맞춤 탕약과 매일 카카오톡 식단 관리, 다이어트 한약의 가능한 부작용 안내 — 경산 하양 갈창림 한의원.'),
+ 'growth.html': ('경산 소아 성장 한의원 | 갈창림 한의원',
+   '아이가 가진 성장 가능성을 충분히 키울 수 있도록 성장을 방해하는 요인을 살핍니다. 성장 진료 과정과 성장 한약의 가능한 부작용 안내 — 경산 하양 갈창림 한의원.'),
+ 'women.html': ('경산 여성 질환 한의원 | 갈창림 한의원',
+   '생리통부터 산후 회복, 갱년기까지 시기마다 달라지는 여성의 몸을 살핍니다. 한약·침·뜸 치료와 가능한 부작용 안내 — 경산 하양 갈창림 한의원 여성 질환 진료.'),
+ 'price.html': ('가격표 · 레이저제모 비용 | 경산 갈창림 한의원',
+   '레이저제모 부위별 비용, 리니어펌·볼뉴머·실리프팅, 토닝, 필링·여드름, 라디쥬 등 스킨부스터, 패키지 비용 안내(부가세 포함). 경산 하양 갈창림 한의원.'),
+ 'column.html': ('원장 칼럼 – 피부미용·건강·질환 정보 | 경산 갈창림 한의원',
+   '경산 하양 갈창림 한의원 대표원장이 피부미용, 교통사고, 척추·관절 통증, 내과 질환, 다이어트, 소아·여성 건강에 대해 진료실에서 자주 받는 질문에 직접 답하는 칼럼입니다.'),
+ 'privacy.html': ('개인정보처리방침 | 갈창림 한의원', '갈창림 한의원 홈페이지 개인정보처리방침.'),
+ 'terms.html': ('이용약관 | 갈창림 한의원', '갈창림 한의원 홈페이지 이용약관.'),
 }
 
 SAME_AS = ['https://blog.naver.com/gal0122', 'https://www.instagram.com/gal__clinic/']   # + place links below
@@ -137,12 +137,12 @@ SERVICE_LD.update({
  'acne-red.html': ('MedicalProcedure', '여드름 붉은 자국 치료'), 'traffic-treat.html': ('MedicalTherapy', '교통사고 후유증 한방 치료'),
 })
 SERVICE_LD['booster-pdrn.html'] = ('MedicalProcedure', 'PDRN·엑소좀 스킨부스터')
-LD_WEBSITE = {'@type': 'WebSite', '@id': SITE_ID, 'url': SITE + '/', 'name': '갈창림한의원',
-              'alternateName': ['갈창림 한의원', '경산 갈창림한의원'], 'inLanguage': 'ko-KR',
+LD_WEBSITE = {'@type': 'WebSite', '@id': SITE_ID, 'url': SITE + '/', 'name': '갈창림 한의원',
+              'alternateName': ['갈창림한의원', '경산 갈창림 한의원'], 'inLanguage': 'ko-KR',
               'publisher': {'@id': CLINIC_ID}}
 LD_CLINIC = {
  '@type': 'MedicalClinic', '@id': CLINIC_ID,
- 'name': '갈창림한의원', 'alternateName': ['갈창림 한의원', 'Gal Chang Lim Korean Medicine Clinic'],
+ 'name': '갈창림 한의원', 'alternateName': ['갈창림한의원', 'Gal Chang Lim Korean Medicine Clinic'],
  'description': SEO['index.html'][1],
  'url': SITE + '/', 'telephone': '+82-53-851-0122',
  'image': SITE + '/assets/og-image.png', 'logo': SITE + '/assets/logo-512.png',
@@ -153,6 +153,9 @@ LD_CLINIC = {
    {'@type': 'OpeningHoursSpecification', 'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], 'opens': '08:30', 'closes': '13:00'},
    {'@type': 'OpeningHoursSpecification', 'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], 'opens': '14:00', 'closes': '18:30'},
    {'@type': 'OpeningHoursSpecification', 'dayOfWeek': ['Saturday', 'Sunday'], 'opens': '08:30', 'closes': '14:00'}],
+ 'specialOpeningHoursSpecification': [   # 공휴일·임시 휴진일 (진료 일정 페이지와 맞출 것)
+   {'@type': 'OpeningHoursSpecification', 'validFrom': '2026-11-01', 'validThrough': '2026-11-01', 'opens': '00:00', 'closes': '00:00'},
+   {'@type': 'OpeningHoursSpecification', 'validFrom': '2026-12-25', 'validThrough': '2026-12-25', 'opens': '00:00', 'closes': '00:00'}],
  'medicalSpecialty': ['https://schema.org/Dermatologic', 'https://schema.org/Musculoskeletal'],
  'hasMap': NAVER_LINK,
  'areaServed': [{'@type': 'City', 'name': '경상북도 경산시'}],
@@ -297,7 +300,7 @@ COL_CRUMBS.update({p['file']: [HOME_C, COL_C, (p['category'], f"{SITE}/{columns.
                                (p['title'], f"{SITE}/{p['file']}")] for p in POSTS})
 
 for k, n in CATS:
-    SEO[columns.cat_file(k)] = (f'{n} 칼럼 | 원장 칼럼 · 경산 갈창림한의원', f'{columns.CAT_INTRO[k]} 경산 하양 갈창림한의원.')
+    SEO[columns.cat_file(k)] = (f'{n} 칼럼 | 원장 칼럼 · 경산 갈창림 한의원', f'{columns.CAT_INTRO[k]} 경산 하양 갈창림 한의원.')
 
 def col_links(body):
     """Menu links 'column.html#skin' -> the category page; drop categories that have no post yet."""
@@ -465,7 +468,7 @@ def make_og(out, f, body):
         sub = plain(sp.group(1)) if sp else ''
         raw = re.sub(r'^\d+(-\d+)?\s*', '', canvas['boards'][f]['title'])
         parts = raw.split(' · ')
-        eyebrow = ' · '.join(dict.fromkeys(parts[:-1])) or '갈창림한의원'
+        eyebrow = ' · '.join(dict.fromkeys(parts[:-1])) or '갈창림 한의원'
         if out in COL_LISTS:
             eyebrow = '원장 칼럼'
         size = 72
@@ -492,7 +495,7 @@ def make_og(out, f, body):
     d.rectangle([0, 540, 1200, 630], fill='#2f5241')
     d.rounded_rectangle([80, 555, 140, 615], radius=12, fill='#faf7f0')
     im.paste(OG_MARK, (80 + (60 - OG_MARK.width) // 2, 555 + (60 - OG_MARK.height) // 2), OG_MARK)
-    d.text((160, 566), '갈창림한의원', font=font(32, 700), fill='#ffffff')
+    d.text((160, 566), '갈창림 한의원', font=font(32, 700), fill='#ffffff')
     right = '경산 하양 · 053-851-0122'
     rf = font(26, 500)
     d.text((1120 - d.textlength(right, font=rf), 572), right, font=rf, fill='#d7c9a7')
@@ -618,7 +621,7 @@ MAP_JS = f'''<script>
   function init() {{
   if (!window.naver || !naver.maps) return;
   var pin = '<div style="transform:translate(-50%,calc(-100% - 8px));display:flex;flex-direction:column;align-items:center">'
-    + '<div style="white-space:nowrap;padding:8px 14px;border-radius:999px;background:#2f5241;color:#ffffff;font:700 13px Pretendard,sans-serif;box-shadow:0 6px 16px rgba(36,48,42,.25)">갈창림한의원</div>'
+    + '<div style="white-space:nowrap;padding:8px 14px;border-radius:999px;background:#2f5241;color:#ffffff;font:700 13px Pretendard,sans-serif;box-shadow:0 6px 16px rgba(36,48,42,.25)">갈창림 한의원</div>'
     + '<div style="width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-top:8px solid #2f5241"></div></div>';
   // {ADDRESS} (checked on the map: next to 베네치아아파트 103동, 동서2길 35)
   var pos = new naver.maps.LatLng({LAT}, {LNG});
@@ -933,7 +936,7 @@ def build_page(f, out=None, transform=None, seo=None):
 
     raw = re.sub(r'^\d+\s*', '', canvas['boards'][f]['title'])
     page = raw.split(' · ')[-1]
-    title, desc = seo or SEO.get(out, (f'{page} | 갈창림한의원', f'{raw} — 경산 하양 갈창림한의원'))
+    title, desc = seo or SEO.get(out, (f'{page} | 갈창림 한의원', f'{raw} — 경산 하양 갈창림 한의원'))
     url = SITE + '/' + ('' if out == 'index.html' else out)
     extra_head = ''
     if is_home:
@@ -956,7 +959,7 @@ def build_page(f, out=None, transform=None, seo=None):
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="{url}">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="갈창림한의원">
+<meta property="og:site_name" content="갈창림 한의원">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
@@ -965,7 +968,7 @@ def build_page(f, out=None, transform=None, seo=None):
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="alternate" type="application/rss+xml" title="갈창림한의원 원장 칼럼" href="{SITE}/rss.xml">
+<link rel="alternate" type="application/rss+xml" title="갈창림 한의원 원장 칼럼" href="{SITE}/rss.xml">
 {extra_head}<link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/favicon.png">
 <link rel="preload" href="assets/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
@@ -1002,7 +1005,7 @@ for k, n in CATS:                                     # one list page per catego
 for p in POSTS:
     build_page('ColumnPost.dc.html', out=p['file'],
                transform=lambda b, p=p: columns.fill(b, columns.regions(p, POSTS, lambda h: h, POST_LINK, CAT_LINK)),
-               seo=(f"{p['title']} | 갈창림한의원", p['description']))
+               seo=(f"{p.get('seo_title') or p['title']} | 갈창림 한의원", p['description']))
 json.dump(columns.search_index(POSTS), open(f'{OUT}/column-search.json', 'w', encoding='utf-8'),
           ensure_ascii=False, separators=(',', ':'))
 
@@ -1017,7 +1020,7 @@ items = ''.join(
     f"<category>{esc(p['category'])}</category>\n<pubDate>{rfc822(p['date'])}</pubDate>\n<description>{esc(p['summary'])}</description>\n</item>\n"
     for p in sorted(POSTS, key=lambda q: q['date'], reverse=True))
 rss = ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n<channel>\n'
-       f'<title>갈창림한의원 원장 칼럼</title>\n<link>{SITE}/column.html</link>\n'
+       f'<title>갈창림 한의원 원장 칼럼</title>\n<link>{SITE}/column.html</link>\n'
        f'<atom:link href="{SITE}/rss.xml" rel="self" type="application/rss+xml"/>\n'
        f'<description>{esc(columns.CAT_INTRO["all"])}</description>\n<language>ko</language>\n'
        f'<lastBuildDate>{rfc822(max(p["date"] for p in POSTS))}</lastBuildDate>\n{items}</channel>\n</rss>\n')
@@ -1059,7 +1062,7 @@ GROUPS = [('병원 안내', ['about.html', 'doctors.html', 'equipment.html', 'sc
 grouped = {s for _, ss in GROUPS for s in ss}
 assert set(SLUG.values()) <= grouped | {'index.html', 'privacy.html', 'terms.html'}, set(SLUG.values()) - grouped
 seo_of = lambda s: (POST_META[s]['title'] + ' | ', POST_META[s]['description']) if s in POST_META else SEO.get(s, (s, ''))
-llms = ['# 갈창림한의원', '',
+llms = ['# 갈창림 한의원', '',
         '> 경상북도 경산시 하양읍 동서2길 43, 3층에 있는 한의원입니다. 평일(월~금) 08:30–18:30(점심 13:00–14:00), '
         '토·일요일 08:30–14:00(점심시간 없음) 진료하며 공휴일은 휴진합니다. 전화 053-851-0122.', '',
         '대표원장 갈창림(대구한의대학교 한의과대학 졸업)이 직접 진찰하고 치료합니다. 레이저제모·리프팅·색소·여드름·모공·스킨부스터 등 '
@@ -1081,7 +1084,7 @@ NOT_FOUND = f'''<!doctype html>
 <head>
 <meta charset="utf-8">
 {GA_HEAD}<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>페이지를 찾을 수 없습니다 | 갈창림한의원</title>
+<title>페이지를 찾을 수 없습니다 | 갈창림 한의원</title>
 <meta name="robots" content="noindex">
 <link rel="icon" type="image/png" href="/assets/favicon.png">
 <style>
@@ -1110,7 +1113,7 @@ footer a{{color:#fff;text-decoration:none;white-space:nowrap}}
 </style>
 </head>
 <body>
-<header><div class="wrap"><a href="/" aria-label="갈창림한의원 홈"><img src="/assets/logo-horizontal.webp" alt="갈창림한의원" width="190" height="40"></a></div></header>
+<header><div class="wrap"><a href="/" aria-label="갈창림 한의원 홈"><img src="/assets/logo-horizontal.webp" alt="갈창림 한의원" width="190" height="40"></a></div></header>
 <main><div class="wrap"><div class="box">
 <p class="code">404</p>
 <h1>페이지를 찾을 수 없어요</h1>
@@ -1122,7 +1125,7 @@ footer a{{color:#fff;text-decoration:none;white-space:nowrap}}
 <a href="tel:053-851-0122">전화 053-851-0122</a>
 </nav>
 </div></div></main>
-<footer><div class="wrap">갈창림한의원 · 경상북도 경산시 하양읍 동서2길 43, 3층 · <a href="tel:053-851-0122">053-851-0122</a></div></footer>
+<footer><div class="wrap">갈창림 한의원 · 경상북도 경산시 하양읍 동서2길 43, 3층 · <a href="tel:053-851-0122">053-851-0122</a></div></footer>
 </body>
 </html>
 '''
