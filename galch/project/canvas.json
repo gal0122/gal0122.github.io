@@ -67,7 +67,7 @@
   },
   "BoosterPDRN.dc.html": {
    "expand": "fill",
-   "h": 6206,
+   "h": 6332,
    "is_interactive": true,
    "title": "09 피부미용 · 스킨부스터 · PDRN·엑소좀",
    "w": 1280,
@@ -76,7 +76,7 @@
   },
   "BoosterPLLA.dc.html": {
    "expand": "fill",
-   "h": 6150,
+   "h": 6276,
    "is_interactive": true,
    "title": "10 피부미용 · 스킨부스터 · PLLA",
    "w": 1280,
@@ -85,7 +85,7 @@
   },
   "DesignLifting.dc.html": {
    "expand": "fill",
-   "h": 7401,
+   "h": 7553,
    "is_interactive": true,
    "title": "07 피부미용 · 리프팅 · 디자인리프팅",
    "w": 1280,
@@ -247,7 +247,7 @@
   },
   "ThreadLifting.dc.html": {
    "expand": "fill",
-   "h": 6500,
+   "h": 6652,
    "is_interactive": true,
    "title": "08 피부미용 · 리프팅 · 맞춤형실리프팅",
    "w": 1280,

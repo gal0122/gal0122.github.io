@@ -85,3 +85,30 @@ PAGES.update({
  'AcneRed': ['acne', 'd_acne'], 'AcneScar': ['acne', 'a_acne'], 'Acne': ['acne', 'd_acne', 'a_acne'],
  'Diet': ['obesity', 'g_obesity'],
 })
+
+# 3차 추가 (2026-10-20): 기기·성분 이름으로 찾은 학술 논문 (PubMed)
+PM = 'https://pubmed.ncbi.nlm.nih.gov/'
+R.update({
+ 'p_hifu_meta': ('논문: 얼굴·목 HIFU(집속초음파) 리프팅의 안전성과 효과 — 체계적 문헌고찰·메타분석', PM + '32026164/'),
+ 'p_hifu_rf': ('논문: 집속초음파와 고주파가 피부에 미치는 영향 비교 (조직 분석)', PM + '25723905/'),
+ 'p_rf_hifu_kr': ('논문: 한국인 얼굴 처짐에 단극성 고주파와 집속초음파 병행 치료', PM + '29469595/'),
+ 'p_thread_meta': ('논문: 실리프팅 합병증 메타분석', PM + '41988336/'),
+ 'p_thread_update': ('논문: 녹는 실을 이용한 얼굴 실리프팅 최신 고찰', PM + '39662017/'),
+ 'p_pdo': ('논문: PDO 실리프팅의 얼굴 회춘 결과', PM + '25993611/'),
+ 'p_pdrn': ('논문: 피부 재생을 위한 PN·PDRN — 무작위 임상시험 체계적 고찰', PM + '42572627/'),
+ 'p_exo': ('논문: 미용 피부과에서의 엑소좀 — 문헌 고찰', PM + '39764639/'),
+ 'p_plla_eu': ('논문: 얼굴 회춘을 위한 주사형 PLLA 사용 — 유럽 전문가 권고', PM + '25226006/'),
+ 'p_plla_adv': ('논문: 얼굴·목 회춘을 위한 PLLA 주사의 발전', PM + '40765682/'),
+ 'p_fmr_pore': ('논문: 넓어진 얼굴 모공의 마이크로니들 고주파 치료 (75명 관찰 연구)', PM + '36038248/'),
+ 'p_fmr_scar': ('논문: 여드름 흉터와 넓은 모공에 대한 마이크로니들 고주파 치료 효과', PM + '22487513/'),
+ 'p_1064_pore': ('논문: 넓은 얼굴 모공에 대한 1565nm 비박피 프랙셔널 레이저와 롱펄스 1064nm 레이저 비교', PM + '35971017/'),
+})
+PAGES.update({
+ 'DesignLifting': ['p_hifu_meta', 'p_hifu_rf', 'p_rf_hifu_kr'],
+ 'ThreadLifting': ['p_thread_meta', 'p_thread_update', 'p_pdo'],
+ 'BoosterPDRN': ['p_pdrn', 'p_exo'],
+ 'BoosterPLLA': ['p_plla_eu', 'p_plla_adv'],
+ 'Pore': ['p_fmr_pore', 'p_1064_pore', 'p_fmr_scar'],
+ 'AcneScar': ['acne', 'a_acne', 'p_fmr_scar'],
+})
+COLS.update({'sylfirm-x-guide': ['p_fmr_scar', 'p_fmr_pore', 'd_laser']})

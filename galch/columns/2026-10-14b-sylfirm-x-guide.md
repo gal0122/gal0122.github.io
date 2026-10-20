@@ -7,7 +7,7 @@ reviewed: 2026-10-20
 description: 바늘 끝의 고주파 열로 작용하는 실펌X가 레이저와 어떻게 다른지, CW·PW 두 방식은 언제 쓰는지, 여드름·붉은 자국·모공·흉터·홍조 고민별로 무엇을 먼저 확인하는지와 시술 후 관리, 비용까지 경산 하양 갈창림한의원 대표원장이 정리했습니다.
 summary: 실펌X는 가는 바늘 끝에서 고주파 열을 내어 목표한 깊이의 진피를 직접 데우는 마이크로니들 고주파 장비입니다. 열을 이어서 주는 CW와 끊어서 주는 PW를 고민에 따라 고르고, 바늘 깊이와 세기도 사람마다 다르게 정합니다. 여드름, 붉은 자국, 모공, 흉터처럼 여러 고민이 겹친 피부에 쓰기 좋습니다. 다른 치료와 함께 계획하는 경우가 많으며, 결과와 필요한 횟수에는 개인차가 있습니다.
 related: pore.html | 모공 진료 안내; acne-scar.html | 여드름 흉터 진료 안내; acne-red.html | 여드름 붉은 자국 진료 안내; price.html#price-acne | 실펌X 비용 (여드름·흉터·모공)
-refs: 대한피부과학회: 피부과적 치료법 - 레이저 | https://www.derma.or.kr/new/general/treatment.php?uid=3318&mod=document
+refs: 논문: 여드름 흉터와 넓은 모공에 대한 마이크로니들 고주파 치료 효과 | https://pubmed.ncbi.nlm.nih.gov/22487513/ ; 논문: 넓어진 얼굴 모공의 마이크로니들 고주파 치료 (75명 관찰 연구) | https://pubmed.ncbi.nlm.nih.gov/36038248/ ; 대한피부과학회: 피부과적 치료법 - 레이저 | https://www.derma.or.kr/new/general/treatment.php?uid=3318&mod=document
 ---
 
 ## 빛 대신 바늘 끝의 열로 작용합니다
