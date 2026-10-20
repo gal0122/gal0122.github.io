@@ -24,7 +24,7 @@ GOOGLE_VERIFY = 'J8QaDGTCXl33x5qhQ0BFwqwJQ9_kGM2WzyDeolMWfLE'   # content of <me
 # search title / description per page (keywords: 경산 한의원, 경산 레이저제모)
 SEO = {
  'index.html': ('경산 한의원 갈창림한의원 | 하양 · 토·일요일 진료',
-   '경북 경산시 하양읍 갈창림한의원. 평일 08:30–18:30, 토·일 08:30–14:00 진료. 레이저제모·리프팅·색소·여드름 피부미용, 교통사고 후유증, 척추·관절 통증, 소화불량·두통·불면·비염, 다이어트, 소아 성장, 여성 질환.'),
+   '경상북도 경산시 하양읍 갈창림한의원. 평일 08:30–18:30, 토·일 08:30–14:00 진료. 레이저제모·리프팅·색소·여드름 피부미용, 교통사고 후유증, 척추·관절 통증, 소화불량·두통·불면·비염, 다이어트, 소아 성장, 여성 질환.'),
  'about.html': ('병원 소개 | 경산 한의원 갈창림한의원',
    '경산 하양 갈창림한의원 소개. 충분히 듣고, 꼭 필요한 치료를 정직하게 제안하는 한의원입니다. 평일은 아침 8시 30분부터, 토·일요일에도 진료합니다.'),
  'doctors.html': ('의료진 소개 | 경산 한의원 갈창림한의원',
@@ -32,7 +32,7 @@ SEO = {
  'equipment.html': ('보유장비 | 경산 하양 갈창림한의원',
    '악센토N 레이저제모, 리니어펌·볼뉴머 리프팅, 큐마스터플러스, 실펌X 등 경산 하양 갈창림한의원의 보유 장비를 소개합니다.'),
  'schedule.html': ('진료시간·오시는길 | 경산 하양 갈창림한의원',
-   '경북 경산시 하양읍 동서2길 43, 3층. 평일 08:30–18:30(점심 13:00–14:00), 토·일 08:30–14:00, 공휴일 휴진. 전화 053-851-0122.'),
+   '경상북도 경산시 하양읍 동서2길 43, 3층. 평일 08:30–18:30(점심 13:00–14:00), 토·일 08:30–14:00, 공휴일 휴진. 전화 053-851-0122.'),
  'skin.html': ('경산 피부미용 | 갈창림한의원',
    '리프팅, 스킨부스터, 레이저제모, 기미·잡티, 여드름, 모공까지 — 경산 하양 갈창림한의원의 피부미용 진료를 한눈에 안내합니다.'),
  'design-lifting.html': ('경산 리프팅 · 리니어펌·볼뉴머 디자인리프팅 | 갈창림한의원',
@@ -130,6 +130,13 @@ SERVICES = [
  ('MedicalTherapy', '소아 성장 치료', 'growth.html'),
  ('MedicalTherapy', '여성 질환 치료', 'women.html'),
 ]
+SERVICE_LD = {u: (t, n) for t, n, u in SERVICES}
+SERVICE_LD.update({
+ 'booster-plla.html': ('MedicalProcedure', 'PLLA 스킨부스터'), 'booster-keratin.html': ('MedicalProcedure', '케라틴 ANK 약침'),
+ 'booster-altcore.html': ('MedicalProcedure', '알트코어 스킨부스터'), 'booster-ecm.html': ('MedicalProcedure', 'ECM 진피재생약침'),
+ 'acne-red.html': ('MedicalProcedure', '여드름 붉은 자국 치료'), 'traffic-treat.html': ('MedicalTherapy', '교통사고 후유증 한방 치료'),
+})
+SERVICE_LD['booster-pdrn.html'] = ('MedicalProcedure', 'PDRN·엑소좀 스킨부스터')
 LD_WEBSITE = {'@type': 'WebSite', '@id': SITE_ID, 'url': SITE + '/', 'name': '갈창림한의원',
               'alternateName': ['갈창림 한의원', '경산 갈창림한의원'], 'inLanguage': 'ko-KR',
               'publisher': {'@id': CLINIC_ID}}
@@ -138,15 +145,15 @@ LD_CLINIC = {
  'name': '갈창림한의원', 'alternateName': ['갈창림 한의원', 'Gal Chang Lim Korean Medicine Clinic'],
  'description': SEO['index.html'][1],
  'url': SITE + '/', 'telephone': '+82-53-851-0122',
- 'image': SITE + '/assets/og-image.png', 'logo': SITE + '/assets/favicon.png',
+ 'image': SITE + '/assets/og-image.png', 'logo': SITE + '/assets/logo-512.png',
  'address': {'@type': 'PostalAddress', 'streetAddress': '하양읍 동서2길 43, 3층', 'addressLocality': '경산시',
-             'addressRegion': '경상북도', 'addressCountry': 'KR'},
+             'addressRegion': '경상북도', 'postalCode': '38417', 'addressCountry': 'KR'},
  'geo': {'@type': 'GeoCoordinates', 'latitude': LAT, 'longitude': LNG},
  'openingHoursSpecification': [
    {'@type': 'OpeningHoursSpecification', 'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], 'opens': '08:30', 'closes': '13:00'},
    {'@type': 'OpeningHoursSpecification', 'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], 'opens': '14:00', 'closes': '18:30'},
    {'@type': 'OpeningHoursSpecification', 'dayOfWeek': ['Saturday', 'Sunday'], 'opens': '08:30', 'closes': '14:00'}],
- 'medicalSpecialty': ['Dermatologic', 'Musculoskeletal'],
+ 'medicalSpecialty': ['https://schema.org/Dermatologic', 'https://schema.org/Musculoskeletal'],
  'hasMap': NAVER_LINK,
  'areaServed': [{'@type': 'City', 'name': '경상북도 경산시'}],
  'employee': {'@type': 'Person', '@id': SITE + '/doctors.html#director', 'name': '갈창림', 'jobTitle': '대표원장 (한의사)', 'url': SITE + '/doctors.html',
@@ -227,6 +234,18 @@ def page_ld(slug_, title, desc, url, body):
         if pm.get('keyword'):
             wp['keywords'] = pm['keyword']
         wp.update({'headline': pm['title'], 'datePublished': pm['date'], 'dateModified': max(pm['date'], pm['reviewed'])})
+    if slug_ in SERVICE_LD:
+        t, n = SERVICE_LD[slug_]
+        graph.append({'@type': t, '@id': url + '#service', 'name': n, 'url': url, 'description': desc})
+        wp['mainEntity'] = {'@id': url + '#service'}
+    if slug_ in POST_META:
+        pm = POST_META[slug_]
+        graph.append({'@type': 'BlogPosting', '@id': url + '#article', 'headline': pm['title'], 'description': pm['description'],
+                      'url': url, 'mainEntityOfPage': {'@id': url + '#webpage'}, 'inLanguage': 'ko-KR',
+                      'image': f"{SITE}/{OG_IMG.get(slug_, 'assets/og-image.png')}",
+                      'datePublished': pm['date'], 'dateModified': max(pm['date'], pm['reviewed']),
+                      'author': {'@id': DIRECTOR_ID}, 'publisher': {'@id': CLINIC_ID}, 'articleSection': pm['category']})
+        wp['mainEntity'] = {'@id': url + '#article'}
     if slug_ == 'doctors.html':
         wp['mainEntity'] = {'@id': DIRECTOR_ID}
         graph.append(LD_DIRECTOR)
@@ -302,6 +321,40 @@ os.makedirs(f'{OUT}/assets')
 open(f'{OUT}/.nojekyll', 'w').close()
 
 asset_url = {}
+IMG_SIZE = {}
+
+
+def img_size(path):
+    if path.endswith('.svg'):
+        t = open(path, encoding='utf-8').read(3000)
+        w = re.search(r'<svg[^>]*?\swidth="([\d.]+)', t); h = re.search(r'<svg[^>]*?\sheight="([\d.]+)', t)
+        if w and h:
+            return round(float(w.group(1))), round(float(h.group(1)))
+        vb = re.search(r'viewBox="[\d.\-]+ [\d.\-]+ ([\d.]+) ([\d.]+)"', t)
+        return (round(float(vb.group(1))), round(float(vb.group(2)))) if vb else None
+    if path.endswith('.woff2'):
+        return None
+    with Image.open(path) as im:
+        return im.size
+
+
+def img_attrs(body):
+    """width/height on every image (no layout shift); lazy loading below the first screen (after the hero section)."""
+    m = re.search(r'</section>', body)
+    fold = m.end() if m else 0
+    def one(mm):
+        tag = mm.group(0)
+        src = re.search(r'src="([^"]+)"', tag)
+        if not src:
+            return tag
+        add = ''
+        size = IMG_SIZE.get(src.group(1))
+        if size and ' width=' not in tag and ' height=' not in tag:
+            add += f' width="{size[0]}" height="{size[1]}"'
+        if mm.start() > fold and 'loading=' not in tag:
+            add += ' loading="lazy" decoding="async"'
+        return tag[:4] + add + tag[4:]
+    return re.sub(r'<img\b[^>]*>', one, body)
 
 
 def asset(bid):
@@ -320,6 +373,7 @@ def asset(bid):
             im = im.resize((1600, round(im.height * 1600 / im.width)), Image.LANCZOS)
         im.save(f'{OUT}/assets/{name}', 'WEBP', quality=84)
     asset_url[bid] = f'assets/{name}'
+    IMG_SIZE[asset_url[bid]] = img_size(f'{OUT}/assets/{name}')
     return asset_url[bid]
 
 
@@ -327,6 +381,11 @@ def asset(bid):
 fav = Image.open(f'{G}/img/logo-mark.png').convert('RGBA')
 fav.thumbnail((192, 192))
 fav.save(f'{OUT}/assets/favicon.png')
+sq = Image.new('RGB', (512, 512), '#faf7f0')
+mk = Image.open(f'{G}/img/logo-mark.png').convert('RGBA')
+mk.thumbnail((400, 400))
+sq.paste(mk, ((512 - mk.width) // 2, (512 - mk.height) // 2), mk)
+sq.save(f'{OUT}/assets/logo-512.png', optimize=True)
 
 # share-preview image (KakaoTalk, Naver, etc.)
 from PIL import ImageDraw, ImageFont
@@ -348,11 +407,94 @@ line = '경산 하양 한의원 · 토·일요일 진료'
 fnt = font(40, 600)
 w = d.textlength(line, font=fnt)
 d.text(((1200 - w) / 2, 400), line, font=fnt, fill='#4d554f')
-foot = '경북 경산시 하양읍 동서2길 43, 3층  ·  053-851-0122'
+foot = '경상북도 경산시 하양읍 동서2길 43, 3층  ·  053-851-0122'
 fnt2 = font(28, 500)
 w2 = d.textlength(foot, font=fnt2)
 d.text(((1200 - w2) / 2, 580), foot, font=fnt2, fill='#ffffff')
 og.save(f'{OUT}/assets/og-image.png', optimize=True)
+
+# per-page share images (KakaoTalk·Naver previews): section, page title, one line — text only, no photos
+OG_IMG = {}
+os.makedirs(f'{OUT}/assets/og', exist_ok=True)
+OG_MARK = Image.open(f'{G}/img/logo-mark.png').convert('RGBA')
+OG_MARK.thumbnail((52, 52))
+
+
+def og_wrap(d, text, fnt, width, max_lines):
+    words, lines, cur = text.split(' '), [], ''
+    for w in words:
+        t = (cur + ' ' + w).strip()
+        if d.textlength(t, font=fnt) <= width:
+            cur = t
+            continue
+        if cur:
+            lines.append(cur)
+        cur = w
+        while d.textlength(cur, font=fnt) > width:      # a single long word: break by characters
+            i = len(cur)
+            while i > 1 and d.textlength(cur[:i], font=fnt) > width:
+                i -= 1
+            lines.append(cur[:i]); cur = cur[i:]
+    if cur:
+        lines.append(cur)
+    if len(lines) > max_lines:
+        lines = lines[:max_lines]
+        while d.textlength(lines[-1] + '…', font=fnt) > width:
+            lines[-1] = lines[-1][:-1]
+        lines[-1] = lines[-1].rstrip(' ,·') + '…'
+    return lines
+
+
+def make_og(out, f, body):
+    if out in ('index.html', 'privacy.html', 'terms.html'):
+        return
+    if out in POST_META:
+        pm = POST_META[out]
+        eyebrow, title, sub, size = '원장 칼럼 · ' + pm['category'], pm['title'], '', 58
+    else:
+        h1 = re.search(r'<h1[^>]*>(.*?)</h1>', body, re.S)
+        if not h1:
+            return
+        title = plain(h1.group(1))
+        after = body[h1.end():h1.end() + 1500]
+        sp = re.search(r'<p[^>]*>(.*?)</p>', after, re.S)
+        sub = plain(sp.group(1)) if sp else ''
+        raw = re.sub(r'^\d+(-\d+)?\s*', '', canvas['boards'][f]['title'])
+        parts = raw.split(' · ')
+        eyebrow = ' · '.join(dict.fromkeys(parts[:-1])) or '갈창림한의원'
+        if out in COL_LISTS:
+            eyebrow = '원장 칼럼'
+        size = 72
+    im = Image.new('RGB', (1200, 630), '#faf7f0')
+    d = ImageDraw.Draw(im)
+    d.ellipse([960, 300, 1360, 700], fill='#efe9dc')
+    tf, sf = font(size, 800), font(32, 500)
+    tl = og_wrap(d, title, tf, 1020, 3 if out in POST_META else 2)
+    sl = og_wrap(d, sub, sf, 1020, 2) if sub else []
+    lh = round(size * 1.28)
+    block = 40 + 30 + len(tl) * lh + (14 + len(sl) * 46 if sl else 0)     # eyebrow + rule + title + sub
+    y = max(56, (540 - block) // 2)
+    d.text((80, y), eyebrow, font=font(30, 700), fill='#7a6b42')
+    d.rectangle([80, y + 50, 128, y + 54], fill='#2f5241')
+    y += 74
+    for ln in tl:
+        d.text((80, y), ln, font=tf, fill='#24302a')
+        y += lh
+    if sl:
+        y += 14
+        for ln in sl:
+            d.text((80, y), ln, font=sf, fill='#4d554f')
+            y += 46
+    d.rectangle([0, 540, 1200, 630], fill='#2f5241')
+    d.rounded_rectangle([80, 555, 140, 615], radius=12, fill='#faf7f0')
+    im.paste(OG_MARK, (80 + (60 - OG_MARK.width) // 2, 555 + (60 - OG_MARK.height) // 2), OG_MARK)
+    d.text((160, 566), '갈창림한의원', font=font(32, 700), fill='#ffffff')
+    right = '경산 하양 · 053-851-0122'
+    rf = font(26, 500)
+    d.text((1120 - d.textlength(right, font=rf), 572), right, font=rf, fill='#d7c9a7')
+    name = 'assets/og/' + out.replace('.html', '.jpg')
+    im.save(f'{OUT}/{name}', 'JPEG', quality=88, optimize=True, progressive=True)
+    OG_IMG[out] = name
 
 
 def fix_links(html):
@@ -771,7 +913,7 @@ def build_page(f, out=None, transform=None, seo=None):
         body = transform(body)
     body = col_links(fix_links(body))
     body = body.replace('onClick="{{ prev }}"', 'onclick="slide(this,-1)"').replace('onClick="{{ next }}"', 'onclick="slide(this,1)"')
-    body = blobs(body)
+    body = img_attrs(blobs(body))
     has_map = 'data-naver-map' in body
     if has_map:
         body = body.replace('<span style="font-size: 13px; color: #5d655f">실제 홈페이지에서 지도가 표시됩니다</span>', FALLBACK)
@@ -788,6 +930,7 @@ def build_page(f, out=None, transform=None, seo=None):
         if GOOGLE_VERIFY:
             extra_head += f'<meta name="google-site-verification" content="{GOOGLE_VERIFY}">\n'
     page_date(out, body)
+    make_og(out, f, body)
     ld, n_faq = page_ld(out, title, desc, url, body)
     extra_head += ld
 
@@ -806,15 +949,17 @@ def build_page(f, out=None, transform=None, seo=None):
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="{SITE}/assets/og-image.png">
+<meta property="og:image" content="{SITE}/{OG_IMG.get(out, 'assets/og-image.png')}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="application/rss+xml" title="갈창림한의원 원장 칼럼" href="{SITE}/rss.xml">
 {extra_head}<link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/favicon.png">
 <link rel="preload" href="assets/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
 <style>
 {style.strip()}
+img[width][height]{{height:auto}}
 </style>
 </head>
 <body>
@@ -845,12 +990,30 @@ for k, n in CATS:                                     # one list page per catego
 for p in POSTS:
     build_page('ColumnPost.dc.html', out=p['file'],
                transform=lambda b, p=p: columns.fill(b, columns.regions(p, POSTS, lambda h: h, POST_LINK, CAT_LINK)),
-               seo=(f"{p['title']} | 원장 칼럼 · 경산 갈창림한의원", p['description']))
+               seo=(f"{p['title']} | 갈창림한의원", p['description']))
 json.dump(columns.search_index(POSTS), open(f'{OUT}/column-search.json', 'w', encoding='utf-8'),
           ensure_ascii=False, separators=(',', ':'))
 
+# rss.xml — 원장 칼럼 (newest first), for Naver Search Advisor
+import email.utils
+def rfc822(day):
+    dt = datetime.datetime.fromisoformat(day + 'T09:40:00+09:00')
+    return email.utils.format_datetime(dt)
+esc = lambda t: htmlmod.escape(t, quote=False)
+items = ''.join(
+    f"<item>\n<title>{esc(p['title'])}</title>\n<link>{SITE}/{p['file']}</link>\n<guid isPermaLink=\"true\">{SITE}/{p['file']}</guid>\n"
+    f"<category>{esc(p['category'])}</category>\n<pubDate>{rfc822(p['date'])}</pubDate>\n<description>{esc(p['summary'])}</description>\n</item>\n"
+    for p in sorted(POSTS, key=lambda q: q['date'], reverse=True))
+rss = ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n<channel>\n'
+       f'<title>갈창림한의원 원장 칼럼</title>\n<link>{SITE}/column.html</link>\n'
+       f'<atom:link href="{SITE}/rss.xml" rel="self" type="application/rss+xml"/>\n'
+       f'<description>{esc(columns.CAT_INTRO["all"])}</description>\n<language>ko</language>\n'
+       f'<lastBuildDate>{rfc822(max(p["date"] for p in POSTS))}</lastBuildDate>\n{items}</channel>\n</rss>\n')
+open(f'{OUT}/rss.xml', 'w', encoding='utf-8').write(rss)
+
 # sitemap.xml + robots.txt for Naver Search Advisor / Google Search Console
-urls = [(SITE + '/' + ('' if SLUG[f] == 'index.html' else SLUG[f]), PAGE_DATE[SLUG[f]]) for f in pages]
+urls = [(SITE + '/' + ('' if SLUG[f] == 'index.html' else SLUG[f]), PAGE_DATE[SLUG[f]]) for f in pages
+        if SLUG[f] not in ('privacy.html', 'terms.html')]
 json.dump({k: PAGE_DB[k] for k in sorted(PAGE_DB)}, open(LASTMOD_DB, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 urls += [(f'{SITE}/{columns.cat_file(k)}', PAGE_DATE[columns.cat_file(k)]) for k, _ in CATS]
 urls += [(f"{SITE}/{p['file']}", PAGE_DATE[p['file']]) for p in POSTS]
@@ -947,7 +1110,7 @@ footer a{{color:#fff;text-decoration:none;white-space:nowrap}}
 <a href="tel:053-851-0122">전화 053-851-0122</a>
 </nav>
 </div></div></main>
-<footer><div class="wrap">갈창림한의원 · 경북 경산시 하양읍 동서2길 43, 3층 · <a href="tel:053-851-0122">053-851-0122</a></div></footer>
+<footer><div class="wrap">갈창림한의원 · 경상북도 경산시 하양읍 동서2길 43, 3층 · <a href="tel:053-851-0122">053-851-0122</a></div></footer>
 </body>
 </html>
 '''

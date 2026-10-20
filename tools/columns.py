@@ -18,11 +18,11 @@ CAT_NAME = dict(CATEGORIES)
 CAT_INTRO = {
     'all': '피부미용과 교통사고, 척추·관절 통증, 내과 질환, 다이어트, 소아·여성 건강까지. 진료실에서 자주 받는 질문에 갈창림 대표원장이 직접 답합니다.',
     'skin': '기미·흑자 같은 색소와 점, 검버섯, 쥐젖 같은 피부 돌기, 아토피와 원형 탈모부터 레이저제모, 리프팅, 여드름, 모공, 스킨부스터까지. 피부 고민과 시술에 대해 궁금한 점을 갈창림 대표원장이 정리했습니다.',
-    'traffic': '교통사고 뒤 늦게 나타나는 통증과 후유증, 자동차보험 진료에 대해 자주 받는 질문을 갈창림 대표원장이 정리했습니다.',
+    'traffic': '교통사고 뒤 며칠이 지나 나타나는 목·허리 통증과 두통, 어지럼, 잠을 설치는 증상처럼 사고 후 생기는 후유증을 다룹니다. 치료는 언제 시작하는 것이 좋은지, 자동차보험 진료는 어떻게 접수하는지 등 진료실에서 자주 받는 질문을 갈창림 대표원장이 정리했습니다.',
     'pain': '허리·목 디스크, 담 결림, 오십견, 무릎 통증, 발목 염좌처럼 척추와 관절, 근육에 생기는 통증을 갈창림 대표원장이 정리했습니다.',
-    'internal': '소화불량, 역류성 식도염, 두통, 불면증, 화병, 비염, 수족냉증처럼 일상을 힘들게 하는 내과 질환을 갈창림 대표원장이 정리했습니다.',
-    'diet': '한약 다이어트와 체중 관리에 대해 자주 받는 질문을 갈창림 대표원장이 정리했습니다.',
-    'kids-women': '아이 성장과 생리통, 갱년기, 산후풍 같은 여성 건강에 대해 보호자와 환자분들이 자주 묻는 질문을 갈창림 대표원장이 정리했습니다.',
+    'internal': '소화불량, 역류성 식도염, 과민성 대장 증후군, 두통, 안면마비, 손발 저림, 불면증, 화병, 만성 피로, 비염, 수족냉증처럼 일상을 힘들게 하는 내과 질환을 다룹니다. 검사에서는 이상이 없다는데 계속 불편할 때 무엇을 살펴야 하는지, 먼저 병원 검사가 필요한 경우는 언제인지 갈창림 대표원장이 정리했습니다.',
+    'diet': '한약 다이어트는 어떻게 진행되는지, 감량 뒤 요요 없이 유지하려면 무엇을 지켜야 하는지 등 체중 관리에 대해 자주 받는 질문을 갈창림 대표원장이 정리했습니다.',
+    'kids-women': '아이 키 성장 치료를 언제 시작하면 좋은지, 성장을 방해하는 생활 습관은 무엇인지부터 생리통, 산후풍, 갱년기처럼 시기마다 달라지는 여성 건강까지 다룹니다. 보호자와 환자분들이 진료실에서 자주 묻는 질문을 갈창림 대표원장이 정리했습니다.',
 }
 
 FAQ_SUMMARY = ('<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; '
@@ -158,7 +158,9 @@ def regions(p, posts, page_link, post_link, cat_link):
         'crumb': f'홈 &gt; 원장 칼럼 &gt; {html.escape(p["category"])}',
         'cat': f'<a class="col-tag" href="{cat_link(p["cat_key"])}">{html.escape(p["category"])}</a>',
         'title': html.escape(p['title']),
-        'meta': f'{kdate(p["date"], "")} · 글·검토 갈창림 대표원장 (한의사)',
+        'meta': (f'<time datetime="{p["date"]}">작성 {kdate(p["date"], "")}</time>'
+                 + (f' · <time datetime="{p["reviewed"]}">수정 {kdate(p["reviewed"], "")}</time>' if p['reviewed'] > p['date'] else '')
+                 + ' · 글·검토 <a href="' + page_link('doctors.html') + '" style="color: #24302a; font-weight: 600; text-decoration: none">갈창림 대표원장</a> (한의사)'),
         'summary': html.escape(p['summary']),
         'body': body,
         'faq': faq,
