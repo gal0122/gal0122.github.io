@@ -6,7 +6,7 @@ date: 2026-10-14
 reviewed: 2026-10-20
 description: 교통사고 직후엔 괜찮다가 며칠 뒤 목·허리 통증과 두통이 생기는 이유, 치료 시작 시기, 자동차보험 한방치료 본인부담금까지 경산 하양 갈창림 한의원 대표원장이 정리했습니다.
 summary: 사고 직후에는 놀라고 긴장한 탓에 통증을 잘 느끼지 못하다가, 며칠이 지나 목과 허리가 뻐근해지거나 두통·어지럼이 나타나는 경우가 많습니다. 통증이 시작되었다면 미루지 말고 진료를 받아 보시는 것이 좋습니다. 자동차보험으로 접수하면 한의원 치료도 본인부담금 없이 받으실 수 있습니다.
-related: traffic.html | 교통사고 후유증 안내; traffic-process.html | 교통사고 치료 과정과 자동차보험 진료; traffic-treat.html | 교통사고 치료 방법
+related: traffic.html | 교통사고 후유증 안내; traffic-process.html | 교통사고 치료 과정과 자동차보험 진료; traffic-treat.html | 교통사고 치료 방법; column-headache.html | 두통 칼럼: 원인과 관리; column-indigestion.html | 기능성 소화불량 칼럼
 refs: 한의표준임상진료지침: 교통사고 상해 증후군 | https://nikom.or.kr/nckm/module/practiceGuide/view.do?guide_idx=143&menu_idx=14
 seo_title: 교통사고 며칠 뒤 통증, 치료 시작 시기
 ---

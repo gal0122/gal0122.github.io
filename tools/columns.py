@@ -142,7 +142,8 @@ def regions(p, posts, page_link, post_link, cat_link):
     if p['related']:
         links = ''.join(f'<li><a href="{page_link(h.split("#")[0])}{("#" + h.split("#")[1]) if "#" in h else ""}">{html.escape(l)} →</a></li>\n'
                         for h, l in p['related'])
-        related = f'<nav class="col-related" aria-label="관련 진료 안내">\n<h2>관련 진료 안내</h2>\n<ul>\n{links}</ul>\n</nav>'
+        rt = '관련 진료·칼럼 안내' if any(h.startswith('column-') for h, _ in p['related']) else '관련 진료 안내'
+        related = f'<nav class="col-related" aria-label="{rt}">\n<h2>{rt}</h2>\n<ul>\n{links}</ul>\n</nav>'
     nxt = ''
     if len(posts) > 1:
         links = ''.join(f'<li><a href="{post_link(q)}"><span class="col-tag">{html.escape(q["category"])}</span>'

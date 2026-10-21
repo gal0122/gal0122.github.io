@@ -329,6 +329,7 @@ open(f'{OUT}/.nojekyll', 'w').close()
 
 asset_url = {}
 IMG_SIZE = {}
+IMG_SMALL = {}
 
 
 def img_size(path):
@@ -358,6 +359,9 @@ def img_attrs(body):
         size = IMG_SIZE.get(src.group(1))
         if size and ' width=' not in tag and ' height=' not in tag:
             add += f' width="{size[0]}" height="{size[1]}"'
+        small = IMG_SMALL.get(src.group(1))
+        if small and 'srcset=' not in tag:
+            add += f' srcset="{small[0]} {small[1]}w, {src.group(1)} {small[2]}w" sizes="(max-width: 640px) 100vw, {small[2]}px"'
         if mm.start() > fold and 'loading=' not in tag:
             add += ' loading="lazy" decoding="async"'
         return tag[:4] + add + tag[4:]
@@ -379,6 +383,10 @@ def asset(bid):
         if im.width > 1600:
             im = im.resize((1600, round(im.height * 1600 / im.width)), Image.LANCZOS)
         im.save(f'{OUT}/assets/{name}', 'WEBP', quality=84)
+        if im.width > 1000:  # a smaller copy for phones (srcset)
+            sm = base + '-800.webp'
+            im.resize((800, round(im.height * 800 / im.width)), Image.LANCZOS).save(f'{OUT}/assets/{sm}', 'WEBP', quality=84)
+            IMG_SMALL[f'assets/{name}'] = (f'assets/{sm}', 800, im.width)
     asset_url[bid] = f'assets/{name}'
     IMG_SIZE[asset_url[bid]] = img_size(f'{OUT}/assets/{name}')
     return asset_url[bid]
@@ -388,6 +396,8 @@ def asset(bid):
 fav = Image.open(f'{G}/img/logo-mark.png').convert('RGBA')
 fav.thumbnail((192, 192))
 fav.save(f'{OUT}/assets/favicon.png')
+_ico = Image.new('RGBA', (max(fav.size),) * 2, (0, 0, 0, 0)); _ico.paste(fav, ((_ico.width - fav.width) // 2, (_ico.height - fav.height) // 2), fav)
+_ico.save(f'{OUT}/favicon.ico', sizes=[(16, 16), (32, 32), (48, 48)])  # crawlers look at /favicon.ico first
 sq = Image.new('RGB', (512, 512), '#faf7f0')
 mk = Image.open(f'{G}/img/logo-mark.png').convert('RGBA')
 mk.thumbnail((400, 400))
@@ -1088,7 +1098,7 @@ NOT_FOUND = f'''<!doctype html>
 <meta name="robots" content="noindex">
 <link rel="icon" type="image/png" href="/assets/favicon.png">
 <style>
-@font-face{{font-family:'Pretendard';src:url('/assets/PretendardVariable.woff2') format('woff2');font-weight:45 920;font-display:swap}}
+@font-face{{font-family:'Pretendard';src:url('/assets/PretendardVariable.woff2') format('woff2');font-weight:400 800;font-display:swap}}
 *{{box-sizing:border-box}}
 body{{margin:0;min-height:100vh;display:flex;flex-direction:column;background:#faf7f0;color:#24302a;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;line-height:1.6;word-break:keep-all;-webkit-text-size-adjust:100%}}
 header{{border-bottom:1px solid #e2dccd}}
@@ -1142,9 +1152,13 @@ for fp in glob.glob(f'{OUT}/*.html'):
     chars |= set(open(fp, encoding='utf-8').read())
 chars |= {chr(c) for c in range(0x20, 0x7f)} | set('‘’“”·–—…→←↑↓※✓•°×₩～⋅「」『』《》〈〉')
 chars = {c for c in chars if ord(c) >= 0x20}
-fopts = ftsubset.Options(); fopts.flavor = 'woff2'; fopts.layout_features = ['*']; fopts.name_IDs = ['*']; fopts.notdef_outline = True
+from fontTools.varLib import instancer
+fopts = ftsubset.Options(); fopts.flavor = 'woff2'; fopts.notdef_outline = True
+fopts.layout_features = fopts.layout_features + ['tnum']  # tabular numbers are used in price tables
+# The site only uses weights 400-800, so the weight axis is trimmed to that range (smaller file).
 ffont = TTFont(f'{S}/fonts/PretendardVariable.woff2')
 fsub = ftsubset.Subsetter(fopts); fsub.populate(text=''.join(chars)); fsub.subset(ffont)
+ffont = instancer.instantiateVariableFont(ffont, {'wght': (400, 800)})
 ffont.flavor = 'woff2'; ffont.save(f'{OUT}/assets/PretendardVariable.woff2')
 print('font subset:', len(chars), 'chars,', os.path.getsize(f'{OUT}/assets/PretendardVariable.woff2') // 1024, 'KB')
 
