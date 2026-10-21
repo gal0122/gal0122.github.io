@@ -25,6 +25,23 @@ CAT_INTRO = {
     'kids-women': '아이 성장과 여성 건강에 대해 갈창림 대표원장이 직접 답한 글입니다. 성장 치료 시작 시기와 성장을 방해하는 습관, 생리통·산후풍·갱년기를 다룹니다.',
 }
 
+# More intro paragraphs on category pages (reviewed by the doctor 2026-10-21).
+CAT_INTRO_MORE = {
+    'traffic': [
+        '교통사고 직후에는 긴장한 탓에 아픈 곳을 잘 느끼지 못하다가, 며칠 뒤 목과 허리가 뻐근해지거나 두통·어지럼이 나타나는 경우가 많습니다. 엑스레이에서 이상이 없다는 말을 들었는데도 불편함이 이어진다면, 뭉친 근육과 인대, 틀어진 몸의 균형을 함께 살펴볼 필요가 있습니다.',
+        '자동차보험으로 접수하면 보험사 접수번호만으로 한의원 진료를 받을 수 있고, 본인부담금은 발생하지 않습니다. 정형외과와 같은 날 함께 다니셔도 됩니다. 평일은 오전 8시 30분부터 오후 6시 30분까지, 토·일요일도 오전 8시 30분부터 오후 2시까지 진료합니다. 치료 기간과 회복 정도는 사고의 정도와 몸 상태에 따라 개인차가 있습니다.',
+    ],
+    'internal': [
+        '위내시경이나 혈액 검사에서 큰 이상이 없다는 결과를 받았는데도 소화가 안 되거나, 두통과 피로, 잠을 설치는 증상이 이어지는 분이 많습니다. 이런 증상은 생활 습관과 스트레스, 몸의 순환 상태가 함께 얽혀 있는 경우가 많아, 증상 하나만이 아니라 몸 전체를 함께 살펴봅니다.',
+        '진료실에서는 증상이 언제부터, 어떤 상황에서 심해지는지 여쭙고 맥과 혀를 살피는 진찰로 상태를 확인한 뒤 침, 뜸, 한약 등 치료를 정합니다. 갑자기 심해진 통증이나 체중 감소, 마비처럼 먼저 병원 검사가 필요한 경우는 각 글에 따로 정리해 두었습니다. 회복 정도는 개인차가 있습니다.',
+    ],
+    'kids-women': [
+        '아이 성장은 키만이 아니라 잠, 식사, 잦은 감기와 비염 같은 몸 상태와 함께 살펴봐야 합니다. 성장 치료를 언제 시작하면 좋을지, 성장판 검사가 필요한 경우는 언제인지, 집에서 챙길 수 있는 생활 습관을 정리했습니다.',
+        "여성 건강은 생리통, 출산 후 산후풍, 갱년기처럼 시기마다 고민이 달라집니다. 진통제로 버티거나 '원래 그렇다'며 참기보다, 지금 몸 상태를 확인하고 시기에 맞게 관리하는 방법을 안내합니다. 치료 방법과 기간은 개인의 상태에 따라 다르며 개인차가 있습니다.",
+    ],
+}
+P_INTRO = '<p style="margin: 0; max-width: 720px; font-size: 17px; color: #4d554f">'
+
 FAQ_SUMMARY = ('<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; '
                'padding: 20px 0; font-size: 17px; font-weight: 500">')
 FAQ_ICON = ('<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span>'
@@ -111,7 +128,8 @@ def list_regions(posts, key, post_link, cat_link):
     return {
         'lcrumb': '홈 &gt; 원장 칼럼' + ('' if key == 'all' else f' &gt; {name}'),
         'h1': '원장 칼럼' if key == 'all' else f'{name} 칼럼',
-        'intro': CAT_INTRO[key],
+        # the template wraps the intro in one <p>; extra paragraphs close it and open the next with the same style
+        'intro': CAT_INTRO[key] + ''.join(f'</p>\n{P_INTRO}{html.escape(t)}' for t in CAT_INTRO_MORE.get(key, [])),
         'chips': ''.join(chips),
         'list': list_items(mine, post_link),
     }
