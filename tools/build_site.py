@@ -674,6 +674,12 @@ if os.path.exists(f'{G}/project/Popup.dc.html'):
     psrc = open(f'{G}/project/Popup.dc.html', encoding='utf-8').read()
     pbody = psrc.split('</helmet>', 1)[1]
     layer = balanced_div(pbody, pbody.index('<div class="pop-layer" data-popups>'))
+    # drop notices whose end date (data-until, Korean time) has passed, so stale notices don't sit in the page source
+    _today = (datetime.datetime.utcnow() + datetime.timedelta(hours=9)).date().isoformat()
+    for _m in list(re.finditer(r'<div class="pop" [^>]*data-until="(\d{4}-\d{2}-\d{2})"', layer)):
+        if _m.group(1) < _today:
+            _old = balanced_div(layer, layer.index(_m.group(0)))
+            layer = layer.replace(_old, '', 1)
     POPUP_HTML = ('<div class="pop-overlay" id="site-popups" hidden>\n' + blobs(fix_links(layer)) + '\n</div>')
     pcss = re.search(r'<style>(.*?)</style>', psrc, re.S).group(1)
     keep = [l for l in pcss.strip().splitlines()
