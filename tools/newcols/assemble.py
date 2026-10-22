@@ -5,8 +5,8 @@ from refs_data import R
 ALL = []
 for m in ['b1_hair','b2_lifting','b3_booster','b4_acne','b5_traffic','b6_pain','b7_diet','b8_kids_women']:
     ALL += importlib.import_module(m).COLS
-assert len(ALL) == 36, len(ALL)
-slugs = [c['slug'] for c in ALL]; assert len(set(slugs)) == 36
+assert len(ALL) == 35, len(ALL)
+slugs = [c['slug'] for c in ALL]; assert len(set(slugs)) == 35
 SP = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 existing = {re.sub(r'^\d{4}-\d\d-\d\d[a-z]?-', '', os.path.basename(f))[:-3] for f in glob.glob(f'{SP}/galch/columns/*.md')}
 pages = {os.path.basename(f) for f in glob.glob('/home/claude/site/*.html')}
@@ -22,7 +22,7 @@ COND = {
  'folliculitis-after-hair-removal':'레이저제모','ultrasound-vs-rf-lifting':'리프팅','lifting-interval':'리프팅','lifting-volume-loss':'리프팅',
  'thread-lifting-duration':'실리프팅','jawline-double-chin':'턱선 리프팅','skin-booster-types':'스킨부스터','pdrn-booster-sessions':'PDRN 스킨부스터',
  'plla-booster':'PLLA 스킨부스터','exosome-booster':'엑소좀 스킨부스터','adult-jaw-acne':'성인 여드름','acne-scar-types':'여드름 흉터',
- 'enlarged-pores':'모공','laser-toning-sessions':'레이저토닝','back-acne':'등드름','acne-red-marks':'여드름 자국',
+ 'enlarged-pores':'모공','laser-toning-sessions':'레이저토닝','acne-red-marks':'여드름 자국',
  'traffic-headache-dizziness':'교통사고 후유증','traffic-at-fault':'교통사고 치료','pedestrian-bicycle-accident':'교통사고 치료',
  'traffic-accident-pregnancy':'교통사고 치료','traffic-herbal-medicine':'교통사고 한약','traffic-insomnia-anxiety':'교통사고 후유증',
  'forward-head-posture':'거북목','spinal-stenosis':'척추관협착증','trigger-finger':'방아쇠수지','chuna-insurance':'추나',
@@ -38,12 +38,12 @@ def rr(lst):
         out += [g for g in grp if g]
     return out
 order = rr([c for c in ALL if c.get('star')]) + rr([c for c in ALL if not c.get('star')])
-d0 = datetime.date(2026, 11, 11)
+d0 = datetime.date(2026, 10, 22)   # 기존 하루 2편에 더해 하루 2편씩
 os.makedirs(f'{SP}/galch/drafts', exist_ok=True)
 for f in glob.glob(f'{SP}/galch/drafts/*.md'): os.remove(f)
 for i, c in enumerate(order):
-    d = (d0 + datetime.timedelta(days=i // 3)).isoformat()
-    suf = 'abc'[i % 3]
+    d = (d0 + datetime.timedelta(days=i // 2)).isoformat()
+    suf = 'cd'[i % 2]
     refs = ' ; '.join(f'{R[k][0]} | {R[k][1]}' for k in c['refs'])
     fm = f"""---
 title: {c['title']}
