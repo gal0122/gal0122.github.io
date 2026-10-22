@@ -1018,7 +1018,8 @@ def list_transform(key):
 
 
 for f in pages:
-    build_page(f, transform=list_transform('all') if f == 'Column.dc.html' else None)
+    build_page(f, transform=list_transform('all') if f == 'Column.dc.html'
+               else (lambda b: columns.fill(b, {'homelatest': columns.home_latest(POSTS, POST_LINK)})) if f == 'Main.dc.html' else None)
 for k, n in CATS:                                     # one list page per category: column-skin.html …
     build_page('Column.dc.html', out=columns.cat_file(k), transform=list_transform(k))
 for p in POSTS:
