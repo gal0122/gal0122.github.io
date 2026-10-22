@@ -296,6 +296,9 @@ sys.path.insert(0, S)
 import columns
 ALL_POSTS = columns.load_posts(f'{G}/columns')
 POSTS = [p for p in ALL_POSTS if p['date'] <= LASTMOD]   # a post goes live on its date (예약 발행)
+_HIDDEN = {f"column-{p['slug']}.html" for p in ALL_POSTS if p['date'] > LASTMOD}
+for _p in POSTS:   # never link a column that is not live yet; the link appears on the build after it goes live
+    _p['related'] = [(h, l) for h, l in _p['related'] if h.split('#')[0] not in _HIDDEN]
 POST_META = {p['file']: p for p in POSTS}
 CATS = columns.used_categories(POSTS)                 # categories with at least one post
 COL_LISTS = {columns.cat_file(k): ([p for p in POSTS if p['cat_key'] == k] if k != 'all' else POSTS)
