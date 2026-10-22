@@ -27,6 +27,11 @@ refs: 국가건강정보포털: 수근굴(수근관) 증후군 | https://health.
 
 밤에 손가락이 저려 잠을 깨고, 손을 털면 조금 나아진다고 오시는 분이 많습니다. 집안일이나 컴퓨터 작업처럼 손목을 많이 쓰는 분들께 흔합니다.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/carpal-tunnel.webp" alt="손목터널증후군 그림: 손목 안쪽 통로에서 신경이 눌려 엄지·검지·중지가 저림" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">손목 안쪽의 좁은 통로에서 신경이 눌려 생깁니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 이런 증상이 나타납니다
 
 - **엄지, 검지, 중지, 약지 절반**이 저리고 찌릿함 (새끼손가락은 대개 괜찮음)

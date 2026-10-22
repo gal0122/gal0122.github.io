@@ -30,6 +30,11 @@ refs: 국가건강정보포털: 아토피피부염 | https://health.kdca.go.kr/h
 
 가려워서 긁으면 피부 장벽이 더 상하고, 상한 피부로 자극이 들어와 염증이 심해지며, 염증은 다시 가려움을 키웁니다. 특히 **밤에 가려움이 심해** 잠을 설치는 경우가 많습니다. 아토피 관리는 이 악순환을 끊는 데서 시작합니다.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/atopy-cycle.webp" alt="아토피 피부염의 가려움과 긁기 악순환 그림" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">긁을수록 피부 장벽이 더 상합니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 이런 경우는 먼저 진료가 필요합니다
 
 - 진물이 나고 **노란 딱지**가 생긴 경우 (세균 감염 가능성)

@@ -32,6 +32,11 @@ refs: 한의표준임상진료지침: 교통사고 상해 증후군 | https://ni
 | 주요 치료 | 약물, 주사, 물리치료, 필요 시 수술 | 침·약침, 추나, 한약, 뜸·부항·물리치료요법 |
 | 이럴 때 먼저 | 골절·신경 손상이 의심될 때 | 검사는 정상인데 통증·두통·어지럼이 이어질 때 |
 
+<figure style="margin: 8px 0 24px">
+<img src="img/ortho-and-km.webp" alt="교통사고 후 정형외과와 한의원 역할 비교 그림" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">두 곳은 살피는 부분과 치료 방법이 달라 함께 다니셔도 됩니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 이렇게 함께 다니시면 좋습니다
 
 - 진료받으실 때 다른 곳에서 받는 치료와 **복용 중인 약**을 알려 주세요. 한약을 함께 드실 때 특히 중요합니다.

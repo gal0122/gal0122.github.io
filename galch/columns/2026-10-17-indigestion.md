@@ -28,6 +28,11 @@ seo_title: 기능성 소화불량, 검사가 정상이어도 불편한 이유
 
 내시경에서 이상이 없다는 말을 듣고도 식후 더부룩함과 명치 답답함이 계속돼 오시는 분이 많습니다. 끼니를 거르거나 급하게 먹는 일이 잦고, 스트레스가 많은 시기에 심해졌다고 말씀하시는 경우가 흔합니다.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/indigestion-symptoms.webp" alt="기능성 소화불량의 세 가지 증상 그림: 식후 더부룩함, 조기 포만감, 명치 통증" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">검사에서 뚜렷한 이상이 없는데도 이런 증상이 반복되는 상태입니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 왜 생길까요?
 
 - **스트레스와 긴장:** 위장은 감정의 영향을 크게 받습니다. 긴장하면 위의 움직임이 둔해집니다.

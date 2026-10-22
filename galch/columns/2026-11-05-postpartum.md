@@ -23,6 +23,11 @@ refs: 한의표준임상진료지침: 산후풍 | https://nikom.or.kr/nckm/modul
 - **반복되는 육아 동작:** 아기를 안고 수유하고 씻기는 동작이 손목과 허리, 무릎에 부담을 줍니다. 엄지 쪽 손목이 아픈 손목건초염도 출산 후에 흔합니다.
 - **찬 기운과 땀:** 땀을 흘린 뒤 찬 바람이나 찬 물에 닿으면 시림을 더 크게 느끼기도 합니다.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/postpartum-causes.webp" alt="산후풍이 생기는 원인 그림" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">출산 후 관절이 시리고 아프며 찬 바람이 드는 듯한 느낌이 이어지는 상태입니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 이런 증상이 나타납니다
 
 - 손목, 손가락, 무릎, 발목, 허리가 시리고 아픔

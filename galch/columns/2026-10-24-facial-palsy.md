@@ -27,6 +27,11 @@ refs: 국가건강정보포털: 얼굴마비(말초성 마비) | https://health.
 
 아침에 양치하다 물이 한쪽으로 새거나 눈이 잘 감기지 않아 놀라서 오시는 분이 많습니다. 며칠 전부터 귀 뒤가 아팠다고 말씀하시는 경우도 흔합니다.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/facial-palsy.webp" alt="안면마비 증상과 응급 신호 비교 그림" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">팔다리 힘 빠짐이나 말이 어눌해지는 증상이 함께 있으면 뇌졸중일 수 있습니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 이런 경우는 바로 응급실로 가세요
 
 - **팔다리에 힘이 빠지거나** 저린 경우

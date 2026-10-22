@@ -21,6 +21,11 @@ refs: 서울대학교병원 N의학정보: 회전근개증후군 | https://www.s
 - **석회성 건염:** 힘줄에 석회가 쌓여 염증을 일으키며, 갑자기 심한 통증이 시작되기도 합니다.
 - **오십견:** 관절을 감싼 주머니가 굳어 여러 방향으로 움직이기 어려워집니다.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/shoulder-causes.webp" alt="어깨 통증의 여러 원인 그림: 회전근개 손상, 충돌증후군, 석회성 건염" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">팔을 들 때 아프다면 어깨를 움직이는 네 개의 힘줄을 살펴봐야 합니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 이런 증상이 있다면 회전근개를 의심해 보세요
 
 - 팔을 옆으로 들 때 **어깨 높이 근처 특정 각도**에서 아픔

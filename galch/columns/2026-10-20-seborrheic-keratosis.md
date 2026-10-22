@@ -20,6 +20,11 @@ seo_title: 검버섯(지루각화증) 원인과 제거 방법
 - **모양:** 연갈색에서 검은색까지 다양하고, 표면이 거칠거나 기름진 듯하며 **피부에 붙여 놓은 것처럼** 살짝 솟아 있습니다.
 - **원인:** 나이와 유전, 자외선이 영향을 줍니다. 다른 사람에게 옮지 않습니다.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/seb-keratosis.webp" alt="검버섯(지루각화증) 피부 단면 그림: 표피가 두꺼워져 살짝 솟은 갈색 돌기" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">검버섯은 피부에 붙여 놓은 듯 살짝 솟은 양성 돌기입니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 흑자와는 어떻게 다를까요?
 
 흑자는 피부와 높이가 같은 평평한 갈색 반점이고, 검버섯은 만졌을 때 도톨도톨하게 솟아 있습니다. 오래된 흑자가 두꺼워지며 검버섯처럼 바뀌기도 해 두 가지가 섞여 있는 경우도 많습니다. 높이에 따라 치료 방법이 달라지므로 진료로 먼저 구분합니다.

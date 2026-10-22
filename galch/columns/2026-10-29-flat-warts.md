@@ -26,6 +26,11 @@ refs: 국가건강정보포털: 사마귀 | https://health.kdca.go.kr/healthinfo
 - 면도할 때는 사마귀가 있는 곳을 피하거나 아주 가볍게 해 주세요.
 - 수건과 면도기는 따로 쓰는 것이 좋습니다.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/flat-warts-spread.webp" alt="편평사마귀가 번지는 과정 그림" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">긁거나 면도하면 그 자리를 따라 번질 수 있습니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 편평사마귀 치료는 이렇게 합니다
 
 편평사마귀는 저절로 없어지기도 하지만 시간이 오래 걸리고, 그 사이 번질 수 있습니다. 갈창림 한의원은 **유펄스 CO2 레이저**로 보이는 병변을 꼼꼼히 제거합니다.

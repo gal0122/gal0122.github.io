@@ -22,6 +22,11 @@ refs: 서울아산병원: 피부의 양성 종양 | https://www.amc.seoul.kr/asa
 
 일상에서는 두 가지를 모두 '피지낭종'이라 부르는 경우가 많지만, 치료 방법과 다시 생기는 양상이 달라 구분하는 것이 좋습니다.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/cyst-compare.webp" alt="표피낭종과 다발성 피지낭종 비교 그림" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">흔히 '피지낭종'이라 부르는 혹은 대부분 표피낭종입니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 다발성 피지낭종은 왜 생길까요?
 
 사춘기 무렵부터 생기기 시작하는 경우가 많고, 가족 중에 같은 혹이 있는 경우가 흔해 **유전의 영향**이 큰 것으로 알려져 있습니다. 피지 분비가 활발해지며 혹이 커지기도 합니다. 피부암과는 관계가 없고 다른 사람에게 옮지 않습니다.

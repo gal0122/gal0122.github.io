@@ -18,6 +18,11 @@ refs: 서울대학교병원 N의학정보: 피지샘증식증 | https://www.snuh
 - **위치:** 이마, 볼, 코 주변에 잘 생깁니다.
 - **누구에게:** 40대 이후, 피지가 많은 피부에 흔합니다. 자외선과 호르몬 변화도 영향을 줍니다.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/sebaceous-hyperplasia.webp" alt="피지선증식증 피부 단면 그림: 커진 피지선 위로 가운데가 살짝 패인 노르스름한 돌기" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">피지를 만드는 피지선이 커져 생긴 양성 돌기입니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 여드름, 비립종과는 무엇이 다를까요?
 
 - **여드름 좁쌀:** 모공이 막혀 생겨 짜면 피지가 나오고, 시간이 지나면 가라앉습니다. 피지선증식증은 짜도 거의 나오지 않고 그대로 남습니다.

@@ -24,6 +24,11 @@ refs: 한의표준임상진료지침: 수족냉증 | https://nikom.or.kr/nckm/mo
 - **무리한 다이어트, 불규칙한 식사:** 열을 만들 에너지가 부족해집니다.
 - **흡연, 꽉 끼는 옷과 신발:** 혈액순환을 방해합니다.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/cold-hands-causes.webp" alt="수족냉증의 흔한 원인 그림" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">다른 사람은 춥지 않은 온도에서도 손발이 유난히 찬 상태입니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 이런 증상이 나타납니다
 
 - 손발이 차고 시리며, 양말을 신어야 잠들 수 있음

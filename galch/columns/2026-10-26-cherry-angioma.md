@@ -18,6 +18,11 @@ refs: 국가건강정보포털: 혈관종 | https://health.kdca.go.kr/healthinfo
 - **원인:** 나이와 유전이 가장 큰 영향을 주며, 임신 같은 호르몬 변화와 관련이 있다는 보고도 있습니다.
 - **특징:** 눌러도 색이 잘 빠지지 않고, 긁히면 피가 날 수 있습니다.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/cherry-angioma.webp" alt="체리혈관종 피부 단면 그림: 작은 혈관이 늘어나 뭉친 선홍색 돌기" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">체리혈관종은 작은 혈관이 늘어나 뭉쳐 생긴 점입니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 거미혈관종이나 점과는 어떻게 다를까요?
 
 - **거미혈관종:** 가운데 붉은 점에서 가는 혈관이 거미 다리처럼 퍼져 나가고, 가운데를 누르면 색이 사라집니다.

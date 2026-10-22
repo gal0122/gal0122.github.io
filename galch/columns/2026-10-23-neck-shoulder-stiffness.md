@@ -24,6 +24,11 @@ refs: 한의표준임상진료지침: 경항통 | https://nikom.or.kr/nckm/modul
 - 피로와 스트레스로 이미 어깨 근육이 굳어 있는 상태
 - 찬 바람을 맞거나 몸이 차가워진 경우
 
+<figure style="margin: 8px 0 24px">
+<img src="img/neck-stiffness.webp" alt="담 결림이 생기는 원인과 확인할 점 그림" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">흔히 '담 걸렸다'고 하는 결림은 근육과 인대가 놀라 굳은 상태입니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 이런 증상이 나타납니다
 
 - 고개를 돌리거나 숙이기 어려움, 움직일 때 찌르는 통증

@@ -14,6 +14,11 @@ refs: 국가건강정보포털: 저신장 | https://health.kdca.go.kr/healthinfo
 
 키는 뼈 끝에 있는 **성장판**이 열려 있는 동안 자랍니다. 태어나서 두 돌 무렵까지 가장 빠르게 자라고, 이후 사춘기 전까지는 꾸준히 자라다가, 사춘기에 다시 한 번 빠르게 자란 뒤 성장판이 닫히면서 멈춥니다.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/growth-timing.webp" alt="아이 키 성장 시기 그림: 초등학생 때 관리를 시작하고, 2차 성징 뒤 성장판이 닫히기까지의 흐름" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">성장판이 닫히기 전, 2차 성징이 나타나기 전에 성장 상태를 확인하는 것이 좋습니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 초등학생 때 시작하기를 권하는 이유
 
 사춘기가 시작되면 키가 한 번 빠르게 자라지만, 그 뒤로 성장판이 닫히기까지 남은 시간은 길지 않습니다. 그래서 **2차 성징이 나타나기 전, 초등학생 때** 아이의 성장 상태를 확인하고 관리를 시작하시는 것을 권해 드립니다. 그래야 성장을 방해하는 요인을 찾아 줄일 시간이 충분합니다.

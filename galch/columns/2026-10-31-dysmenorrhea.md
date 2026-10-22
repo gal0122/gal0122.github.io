@@ -25,6 +25,11 @@ refs: 한의표준임상진료지침: 월경통 | https://nikom.or.kr/cms/practi
 - **원발성 생리통:** 자궁이나 난소에 특별한 질환 없이 생기는 생리통입니다. 첫 생리 후 1~2년 안에 시작되는 경우가 많고, 생리 시작 직전부터 1~3일 정도 아픕니다.
 - **속발성 생리통:** 자궁내막증, 자궁선근증, 자궁근종처럼 원인이 되는 질환이 있어 생기는 생리통입니다. 이전에는 괜찮다가 20~30대 이후에 새로 생기거나, 해마다 점점 심해지는 경우가 많습니다.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/dysmenorrhea-types.webp" alt="생리통 두 가지 비교 그림: 특별한 질환 없이 생기는 생리통과 원인 질환이 있는 생리통" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">자궁이 수축할 때 나오는 물질이 많을수록 통증이 심해집니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 이런 경우는 먼저 산부인과 진료를 받아 보세요
 
 - 생리통이 **해마다 점점 심해지는** 경우

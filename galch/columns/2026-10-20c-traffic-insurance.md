@@ -29,6 +29,11 @@ seo_title: 교통사고 한의원 자동차보험 접수 방법
 
 어느 보험으로 처리할지, 과실 비율에 따라 어떻게 정리되는지는 보험사마다 안내가 다를 수 있습니다. 정확한 내용은 담당 보험사에 확인해 주세요.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/traffic-insurance-flow.webp" alt="교통사고 자동차보험 진료 순서 그림: 보험사 접수, 접수번호 받기, 내원, 자동차보험 진료" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">접수한 보험 종류와 보장 범위는 담당 보험사에 확인해 주세요. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 첫 방문 때 챙겨 주세요
 
 - 보험사 **접수번호**와 보험사 이름

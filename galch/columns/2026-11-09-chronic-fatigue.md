@@ -35,6 +35,11 @@ refs: 국가건강정보포털: 만성피로증후군 | https://health.kdca.go.k
 
 이유 없는 체중 감소, 열, 밤에 흠뻑 젖도록 땀이 나는 경우에도 검사를 먼저 받아 보세요.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/fatigue-check.webp" alt="만성 피로에서 먼저 확인할 원인 질환 그림" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">원인이 되는 질환이 숨어 있을 수 있어 기본 검사를 먼저 받아 보는 것이 좋습니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 검사는 정상인데 계속 피곤하다면
 
 검사에서 뚜렷한 이상이 없는데도 피곤하다면, 수면의 질, 스트레스, 불규칙한 식사, 운동 부족, 과로가 겹쳐 몸이 회복할 틈이 없는 경우가 많습니다. 소화가 안 되거나, 손발이 차거나, 잠을 설치는 등 함께 나타나는 불편을 살피면 피로를 키우는 원인이 보이기도 합니다.

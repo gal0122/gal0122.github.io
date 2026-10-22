@@ -36,6 +36,11 @@ seo_title: 허리를 삐끗했을 때, 쉴까요 움직일까요?
 - **찜질:** 다친 직후 열감이 있으면 차갑게, 하루이틀 지나 뻣뻣함이 남으면 따뜻하게 찜질해 주세요.
 - **무거운 것 들지 않기:** 회복될 때까지 허리를 숙여 물건을 드는 동작은 피해 주세요.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/low-back-first-days.webp" alt="허리를 삐끗했을 때 처음 며칠 지내는 법 그림" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">오래 누워 있기보다 아프지 않은 범위에서 조금씩 움직이는 것이 회복에 도움이 됩니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 이런 경우는 디스크나 다른 원인을 먼저 확인합니다
 
 - 엉덩이에서 다리로 뻗치는 통증이나 저림이 있는 경우

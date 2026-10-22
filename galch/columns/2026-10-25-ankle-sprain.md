@@ -33,6 +33,11 @@ refs: 국가건강정보포털: 염좌 | https://health.kdca.go.kr/healthinfo/bi
 - **압박:** 탄력붕대로 너무 조이지 않게 감아 붓기를 줄입니다.
 - **올리기:** 앉거나 누울 때 발을 심장보다 높게 올려 두세요.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/ankle-first-aid.webp" alt="발목을 삐었을 때 처음 할 일 네 가지 그림: 쉬기, 차갑게, 압박, 올리기" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">다친 직후에는 붓기를 줄이는 것이 중요합니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 이런 경우는 골절부터 확인하세요
 
 - 다친 뒤 **네 걸음도 걷기 어려운** 경우

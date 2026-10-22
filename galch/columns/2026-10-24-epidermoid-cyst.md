@@ -19,6 +19,11 @@ refs: 서울아산병원: 표피낭종 | https://www.amc.seoul.kr/asan/healthinf
 - **위치:** 얼굴, 귀 뒤, 목, 등, 가슴에 잘 생깁니다.
 - **원인:** 모낭 입구가 막히거나, 상처로 표피가 피부 속으로 들어가 생기는 것으로 알려져 있습니다.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/epidermoid-cyst.webp" alt="표피낭종 피부 단면 그림: 진피 속 각질 주머니와 가운데 작은 검은 구멍" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">주머니가 남아 있으면 다시 차오릅니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 염증이 생기면 이렇게 됩니다
 
 평소에는 아프지 않지만, 주머니가 터지거나 세균이 들어가면 갑자기 **붉게 붓고 열감이 생기며 아파집니다.** 이때는 혹을 제거하기 전에 고름을 빼고 염증부터 가라앉혀야 합니다.

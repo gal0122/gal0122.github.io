@@ -35,6 +35,11 @@ refs: 국가건강정보포털: 오십견(동결견) | https://health.kdca.go.kr
 
 전체 과정이 길게는 1~2년 이상 걸리기도 해, 통증을 줄이면서 굳은 관절이 더 굳지 않도록 관리하는 것이 중요합니다.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/frozen-shoulder-stages.webp" alt="오십견의 세 단계 그림: 아픈 시기, 굳는 시기, 풀리는 시기" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">오십견은 세 시기를 거치며 오래가는 경우가 많습니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 회전근개 손상과는 어떻게 다를까요?
 
 | 구분 | 오십견 | 회전근개 손상 |

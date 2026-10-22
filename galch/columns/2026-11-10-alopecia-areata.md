@@ -18,6 +18,11 @@ refs: 국가건강정보포털: 원형탈모 | https://health.kdca.go.kr/healthi
 
 나이 들며 정수리나 이마 쪽이 서서히 가늘어지는 탈모와는 다른 질환으로, 원인과 관리 방법도 다릅니다.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/alopecia-areata.webp" alt="원형 탈모 그림: 두피에 동전 모양으로 머리카락이 빠진 자리" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">면역 체계가 모낭을 잘못 공격해 생깁니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 왜 생길까요?
 
 - **면역 체계의 이상:** 모낭을 외부 물질로 잘못 알고 공격합니다. 모낭이 없어지는 것은 아니어서 다시 머리카락이 날 수 있습니다.

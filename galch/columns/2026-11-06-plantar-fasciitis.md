@@ -35,6 +35,11 @@ refs: 국가건강정보포털: 족저근막염 | https://health.kdca.go.kr/heal
 - 오래 앉아 있다가 일어나 걸을 때 아픔
 - 발뒤꿈치 안쪽을 누르면 아픔
 
+<figure style="margin: 8px 0 24px">
+<img src="img/plantar-fasciitis.webp" alt="족저근막염 증상 그림: 아침 첫발과 오래 앉았다 일어날 때 발뒤꿈치 통증" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">족저근막이 발뒤꿈치에 붙는 자리에 염증과 미세 손상이 생깁니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 아킬레스건 질환과는 다릅니다
 
 발뒤꿈치 **아래쪽**이 아프면 족저근막염, 발뒤꿈치 **위쪽(종아리와 이어지는 부분)**이 아프고 붓는다면 아킬레스건염을 생각해 볼 수 있습니다. "뚝" 하는 느낌과 함께 까치발을 들 수 없게 되었다면 아킬레스건 파열일 수 있어 바로 검사가 필요합니다.

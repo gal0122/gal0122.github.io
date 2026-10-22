@@ -17,6 +17,11 @@ seo_title: 교통사고 며칠 뒤 통증, 치료 시작 시기
 
 특히 뒤에서 부딪히면 머리가 뒤로 젖혀졌다가 곧바로 앞으로 꺾이면서, 목 주변 근육과 인대가 순간적으로 늘어나 손상되기 쉽습니다. 사고 다음 날 아침에 목이 잘 돌아가지 않거나 어깨가 무겁게 느껴지는 것도 이런 이유입니다.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/traffic-delayed.webp" alt="교통사고 후 통증이 나타나는 시점 그림: 사고 직후에는 잘 느끼지 못하다가 며칠 뒤 목·허리 통증과 두통이 나타남" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">사고 직후에는 긴장 때문에 통증을 잘 느끼지 못하는 경우가 많습니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 검사에서 이상이 없다는데 왜 아플까요?
 
 근육과 인대의 작은 손상이나 몸의 균형이 틀어진 상태는 엑스레이 같은 검사로 잘 드러나지 않습니다. 그래서 "이상이 없다"는 결과를 받고도 통증이 이어질 수 있습니다. 검사 결과와 별개로, 지금 느끼는 증상이 있다면 치료가 필요하다는 신호입니다.

@@ -14,6 +14,11 @@ refs: 대한피부과학회: 땀구멍각화증(한공각화증) | https://www.d
 
 한공각화증(汗孔角化症)은 피부 각질이 비정상적으로 만들어져 생기는 질환입니다. 가장 큰 특징은 **가장자리를 따라 실처럼 가늘게 솟은 테두리**로, 가운데는 살짝 꺼지거나 색이 옅어 고리나 도넛 모양처럼 보입니다. 이름에 '한공(땀구멍)'이 들어가지만 땀샘과는 관계가 없는 것으로 알려져 있습니다.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/porokeratosis.webp" alt="한공각화증 그림: 테두리가 실처럼 가늘게 솟은 고리 모양 반점" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">햇빛을 많이 받은 팔다리에 여러 개 생기는 형태가 가장 흔합니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 여러 형태가 있습니다
 
 - **표재성 파종성 광선 한공각화증:** 가장 흔한 형태입니다. 햇빛을 많이 받은 **팔과 다리**에 지름 몇 mm 크기의 고리 모양 반점이 여러 개 생기며, 중년 이후에 많고 여름에 진해지기도 합니다.

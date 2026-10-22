@@ -28,6 +28,11 @@ seo_title: 실펌X와 레이저 차이: CW·PW 방식 비교
 
 한 번의 시술에서 두 방식을 함께 쓰기도 합니다. 바늘이 들어가는 깊이와 에너지 세기도 **피부 두께, 피지 양, 예민한 정도**에 따라 사람마다 다르게 정합니다.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/sylfirm-cw-pw.webp" alt="실펌X CW와 PW 비교 그림: CW는 고주파를 이어서, PW는 짧게 끊어서 보냄" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">한 번의 시술에서 두 방식을 함께 쓰기도 합니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 고민별로 먼저 확인하는 것
 
 실펌X를 쓸 수 있는 고민은 여럿이지만, 고민마다 원인을 먼저 가려야 치료 계획이 정확해집니다.

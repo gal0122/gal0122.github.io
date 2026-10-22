@@ -18,6 +18,11 @@ refs: 국가건강정보포털: 혈관종 | https://health.kdca.go.kr/healthinfo
 - **특징:** 가운데를 누르면 혈관이 비면서 색이 사라지고, 손을 떼면 가운데부터 다시 빨갛게 차오릅니다.
 - **위치:** 얼굴(특히 볼과 코), 목, 가슴 윗부분, 팔, 손등처럼 상체에 잘 생깁니다.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/spider-angioma.webp" alt="거미혈관종 그림: 가운데 붉은 점에서 가는 혈관이 거미 다리처럼 뻗은 모양" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">가운데를 누르면 색이 사라졌다가 다시 차오릅니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 왜 생길까요?
 
 - **어린이:** 아이들에게 흔하며, 자라면서 저절로 옅어지는 경우도 있습니다.

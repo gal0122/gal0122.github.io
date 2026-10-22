@@ -30,6 +30,11 @@ refs: 국가건강정보포털: 폐경기 | https://health.kdca.go.kr/healthinfo
 
 얼굴이 갑자기 화끈 달아오르고 땀이 나며, 밤에 자주 깨서 피곤하다고 오시는 분이 많습니다. 이유 없이 마음이 가라앉거나 짜증이 늘었다고 함께 말씀하시는 경우가 흔합니다.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/menopause-symptoms.webp" alt="갱년기 증후군의 주요 증상 그림" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">폐경 전후로 여성호르몬이 줄면서 나타나는 증상입니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 이런 경우는 먼저 확인이 필요합니다
 
 - **폐경 후에 다시 출혈**이 있는 경우 — 산부인과 진료를 꼭 받아 주세요.

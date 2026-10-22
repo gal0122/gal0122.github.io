@@ -21,6 +21,11 @@ refs: 국가건강정보포털: 건막염 | https://health.kdca.go.kr/healthinfo
 | 아픈 곳 | 팔꿈치 바깥쪽 | 팔꿈치 안쪽 |
 | 아픈 동작 | 물건을 쥐고 들어 올릴 때, 손목을 뒤로 젖힐 때 | 손목을 안쪽으로 굽힐 때, 물건을 들 때 |
 
+<figure style="margin: 8px 0 24px">
+<img src="img/elbow-types.webp" alt="테니스 엘보와 골프 엘보 비교 그림: 팔꿈치 바깥쪽과 안쪽 힘줄" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">반복 사용으로 힘줄에 염증과 미세 손상이 생깁니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 운동을 하지 않아도 생깁니다
 
 이름은 테니스, 골프에서 왔지만 실제로는 **손목을 많이 쓰는 일상 동작**으로 더 흔히 생깁니다.
