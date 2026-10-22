@@ -223,15 +223,22 @@ def mark(values):
     return {k: f'<!--col:{k}-->{v}<!--/col:{k}-->' for k, v in values.items()}
 
 
+HOME_PINNED = 'column-laser-hair-removal-sessions.html'   # 대표 칼럼, always first on the home page
+
+
 def home_latest(posts, link, n=3):
-    """Cards for the newest n columns on the home page (<!--col:homelatest--> region)."""
-    newest = sorted(posts, key=lambda q: (q['date'], q['file']), reverse=True)[:n]
+    """Cards for the home page (<!--col:homelatest--> region): the pinned 대표 칼럼, then the newest columns."""
+    pinned = [p for p in posts if p['file'] == HOME_PINNED]
+    rest = sorted((p for p in posts if p['file'] != HOME_PINNED), key=lambda q: (q['date'], q['file']), reverse=True)
+    newest = (pinned + rest)[:n]
     out = []
     for p in newest:
+        badge = ('<span style="padding: 3px 10px; border-radius: 999px; background: #2f5241; color: #ffffff; font-size: 13px; font-weight: 700">대표 칼럼</span>\n'
+                 if p in pinned else '')
         out.append(
             f'<a href="{link(p)}" class="svc" style="flex: 1 0 280px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px; '
             f'padding: 26px 24px; border-radius: 22px; background: #ffffff; border: 1px solid #e2dccd; text-decoration: none; color: #24302a">\n'
-            f'<span style="align-self: flex-start; padding: 3px 10px; border-radius: 999px; background: #ede9dd; color: #2f5241; font-size: 13px; font-weight: 700">{html.escape(p["category"])}</span>\n'
+            f'<span style="display: flex; flex-wrap: wrap; gap: 6px">{badge}<span style="padding: 3px 10px; border-radius: 999px; background: #ede9dd; color: #2f5241; font-size: 13px; font-weight: 700">{html.escape(p["category"])}</span></span>\n'
             f'<strong style="font-size: 18px; line-height: 1.5; font-weight: 700; word-break: keep-all">{html.escape(p["title"])}</strong>\n'
             f'<span style="margin-top: auto; font-size: 14px; color: #5d655f">{kdate(p["date"])} · 갈창림 대표원장</span>\n'
             f'</a>\n')
