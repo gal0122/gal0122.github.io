@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" font-family="Pretendard, sans-serif">
+<rect width="1200" height="720" fill="#faf7f0"/>
+<text x="60" y="78" font-size="38" font-weight="800" fill="#24302a">털의 성장주기와 레이저제모</text>
+<text x="60" y="122" font-size="22" fill="#5d655f">레이저는 털이 자라는 '성장기' 모낭에 가장 잘 작용합니다. 그래서 간격을 두고 여러 번 받습니다.</text>
+<g transform="translate(60,170)">
+ <!-- skin band -->
+ <rect x="0" y="40" width="1080" height="34" fill="#e8d9c4"/><text x="1072" y="64" font-size="18" font-weight="700" fill="#7a6b42" text-anchor="end">피부 표면</text>
+ <rect x="0" y="74" width="1080" height="300" fill="#f3e7d8"/>
+ <!-- anagen -->
+ <g transform="translate(90,0)">
+  <line x1="90" y1="-10" x2="90" y2="290" stroke="#24302a" stroke-width="10" stroke-linecap="round"/>
+  <ellipse cx="90" cy="300" rx="34" ry="42" fill="#2f5241"/><circle cx="90" cy="312" r="12" fill="#d7c9a7"/>
+  <text x="90" y="430" font-size="28" font-weight="800" fill="#2f5241" text-anchor="middle">① 성장기</text>
+  <text x="90" y="466" font-size="20" fill="#4d554f" text-anchor="middle">털과 모낭이 붙어 있고 색이 진해</text>
+  <text x="90" y="494" font-size="20" fill="#4d554f" text-anchor="middle">레이저 열이 모낭까지 전달됩니다</text>
+ </g>
+ <path d="M300 200 h90" stroke="#b9ab86" stroke-width="4" marker-end="url(#a)"/>
+ <!-- catagen -->
+ <g transform="translate(430,0)">
+  <line x1="90" y1="-10" x2="90" y2="200" stroke="#24302a" stroke-width="10" stroke-linecap="round"/>
+  <ellipse cx="90" cy="212" rx="22" ry="26" fill="#6c7a70"/>
+  <text x="90" y="430" font-size="28" font-weight="800" fill="#24302a" text-anchor="middle">② 퇴행기</text>
+  <text x="90" y="466" font-size="20" fill="#4d554f" text-anchor="middle">모낭이 줄어들며</text>
+  <text x="90" y="494" font-size="20" fill="#4d554f" text-anchor="middle">털이 위로 밀려 올라갑니다</text>
+ </g>
+ <path d="M640 200 h90" stroke="#b9ab86" stroke-width="4" marker-end="url(#a)"/>
+ <!-- telogen -->
+ <g transform="translate(770,0)">
+  <line x1="90" y1="20" x2="90" y2="120" stroke="#8a8f88" stroke-width="8" stroke-linecap="round"/>
+  <ellipse cx="90" cy="132" rx="14" ry="16" fill="#b4b8b0"/>
+  <text x="90" y="430" font-size="28" font-weight="800" fill="#24302a" text-anchor="middle">③ 휴지기</text>
+  <text x="90" y="466" font-size="20" fill="#4d554f" text-anchor="middle">털이 빠질 준비를 하고</text>
+  <text x="90" y="494" font-size="20" fill="#4d554f" text-anchor="middle">레이저 반응이 약합니다</text>
+ </g>
+</g>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#b9ab86"/></marker></defs>
+</svg>

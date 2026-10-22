@@ -2,7 +2,7 @@
 
 Output: /home/claude/site/  (index.html + one .html per page, assets/, .nojekyll)
 """
-import re, json, os, sys, shutil, html as htmlmod, datetime
+import re, json, os, sys, shutil, glob, html as htmlmod, datetime
 from PIL import Image
 
 # Work folder (build_site.py, columns.py, measure.js, galch/, fonts/, pyshim/). Any copy works: GAL_S or the script's folder.
@@ -254,7 +254,7 @@ def page_ld(slug_, title, desc, url, body):
         pm = POST_META[slug_]
         graph.append({'@type': 'BlogPosting', '@id': url + '#article', 'headline': pm['title'], 'description': pm['description'],
                       'url': url, 'mainEntityOfPage': {'@id': url + '#webpage'}, 'inLanguage': 'ko-KR',
-                      'image': f"{SITE}/{OG_IMG.get(slug_, 'assets/og-image.png')}",
+                      'image': [f"{SITE}/{OG_IMG.get(slug_, 'assets/og-image.png')}"] + [f'{SITE}/{x}' for x in re.findall(r'src="(assets/col/[^"]+)"', body)],
                       'datePublished': pm['date'], 'dateModified': max(pm['date'], pm['reviewed']),
                       'author': {'@id': DIRECTOR_ID}, 'publisher': PUBLISHER, 'articleSection': pm['category'],
                       **({'citation': [u for _, u in pm['refs']]} if pm.get('refs') else {})})
@@ -1014,6 +1014,13 @@ img[width][height]{{height:auto}}
 
 
 POST_LINK, CAT_LINK = (lambda p: p['file']), columns.cat_file
+
+# explanatory pictures used inside columns (galch/columns/img → assets/col)
+os.makedirs(f'{OUT}/assets/col', exist_ok=True)
+for _f in sorted(glob.glob(f'{G}/columns/img/*.webp')):
+    _dst = f'assets/col/{os.path.basename(_f)}'
+    shutil.copyfile(_f, f'{OUT}/{_dst}')
+    IMG_SIZE[_dst] = img_size(_f)
 
 
 def list_transform(key):

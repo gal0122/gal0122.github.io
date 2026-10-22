@@ -150,6 +150,7 @@ def regions(p, posts, page_link, post_link, cat_link):
     """HTML for each <!--col:NAME--> region of the post template.
     page_link maps 'traffic.html' to the right href; post_link(post) and cat_link(key) give column hrefs."""
     body = markdown.markdown(p['body_md'], extensions=['tables', 'sane_lists'])
+    body = body.replace('src="img/', 'src="assets/col/')   # explanatory pictures (galch/columns/img)
     body = re.sub(r'href="([a-z0-9-]+\.html)(#[\w-]+)?"', lambda m: f'href="{page_link(m.group(1))}{m.group(2) or ""}"', body)
     faq = ''
     if p['faq']:

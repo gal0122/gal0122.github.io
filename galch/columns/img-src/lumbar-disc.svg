@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" font-family="Pretendard, sans-serif">
+<rect width="1200" height="720" fill="#faf7f0"/>
+<text x="60" y="78" font-size="38" font-weight="800" fill="#24302a">허리디스크는 이렇게 생깁니다</text>
+<text x="60" y="122" font-size="22" fill="#5d655f">디스크 안쪽의 수핵이 밀려 나와 주변 신경을 누르면 허리와 다리에 통증·저림이 생길 수 있습니다.</text>
+<g transform="translate(140,170)">
+ <rect x="0" y="0" width="380" height="120" rx="22" fill="#e8dfcf" stroke="#b9ab86" stroke-width="3"/>
+ <text x="190" y="70" font-size="24" font-weight="700" fill="#5d655f" text-anchor="middle">허리뼈</text>
+ <rect x="20" y="132" width="340" height="66" rx="30" fill="#cfe0d4" stroke="#2f5241" stroke-width="3"/>
+ <ellipse cx="190" cy="165" rx="70" ry="20" fill="#2f5241"/>
+ <text x="190" y="172" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">수핵</text>
+ <rect x="0" y="210" width="380" height="120" rx="22" fill="#e8dfcf" stroke="#b9ab86" stroke-width="3"/>
+ <text x="190" y="280" font-size="24" font-weight="700" fill="#5d655f" text-anchor="middle">허리뼈</text>
+ <text x="190" y="390" font-size="28" font-weight="800" fill="#2f5241" text-anchor="middle">정상 디스크</text>
+</g>
+<g transform="translate(680,170)">
+ <rect x="0" y="0" width="380" height="120" rx="22" fill="#e8dfcf" stroke="#b9ab86" stroke-width="3"/>
+ <text x="190" y="70" font-size="24" font-weight="700" fill="#5d655f" text-anchor="middle">허리뼈</text>
+ <path d="M20 132 h320 q40 0 60 33 q-20 33 -60 33 h-320 q-20 0 -20 -33 q0 -33 20 -33z" fill="#cfe0d4" stroke="#2f5241" stroke-width="3"/>
+ <path d="M150 150 q120 -10 200 15 q40 5 50 0 q-10 20 -50 20 q-80 25 -200 0z" fill="#2f5241"/>
+ <rect x="0" y="210" width="380" height="120" rx="22" fill="#e8dfcf" stroke="#b9ab86" stroke-width="3"/>
+ <text x="190" y="280" font-size="24" font-weight="700" fill="#5d655f" text-anchor="middle">허리뼈</text>
+ <path d="M430 40 q-20 125 0 290" stroke="#c9822f" stroke-width="10" fill="none" stroke-linecap="round"/>
+ <text x="452" y="60" font-size="22" font-weight="700" fill="#c9822f">신경</text>
+ <circle cx="420" cy="165" r="30" fill="none" stroke="#c0392b" stroke-width="4" stroke-dasharray="6 5"/>
+ <text x="190" y="390" font-size="28" font-weight="800" fill="#24302a" text-anchor="middle">수핵이 밀려 나와 신경을 누름</text>
+</g>
+</svg>

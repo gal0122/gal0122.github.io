@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" font-family="Pretendard, sans-serif">
+<rect width="1200" height="720" fill="#faf7f0"/>
+<text x="60" y="78" font-size="38" font-weight="800" fill="#24302a">색소가 있는 깊이에 따라 치료가 달라집니다</text>
+<text x="60" y="122" font-size="22" fill="#5d655f">같은 갈색 반점이라도 피부 어느 층에 있느냐에 따라 파장과 횟수가 달라집니다.</text>
+<g transform="translate(60,160)">
+ <rect x="0" y="0" width="1080" height="120" fill="#f1e2cf"/>
+ <rect x="0" y="120" width="1080" height="300" fill="#ecd3c3"/>
+ <line x1="0" y1="120" x2="1080" y2="120" stroke="#c9a98f" stroke-width="3" stroke-dasharray="10 8"/>
+ <text x="1064" y="40" font-size="22" font-weight="700" fill="#7a6b42" text-anchor="end">표피</text>
+ <text x="1064" y="160" font-size="22" font-weight="700" fill="#7a6b42" text-anchor="end">진피</text>
+ <!-- lentigo / freckle: epidermal -->
+ <g transform="translate(120,0)"><ellipse cx="90" cy="70" rx="80" ry="30" fill="#8a5a3c"/>
+  <text x="90" y="470" font-size="26" font-weight="800" fill="#24302a" text-anchor="middle">흑자 · 주근깨</text>
+  <text x="90" y="504" font-size="20" fill="#4d554f" text-anchor="middle">표피 · 경계가 뚜렷함</text></g>
+ <!-- melasma: epidermis + upper dermis, diffuse -->
+ <g transform="translate(450,0)"><ellipse cx="90" cy="90" rx="120" ry="34" fill="#a77a5c" opacity="0.75"/><ellipse cx="90" cy="150" rx="90" ry="26" fill="#a77a5c" opacity="0.45"/>
+  <text x="90" y="470" font-size="26" font-weight="800" fill="#24302a" text-anchor="middle">기미</text>
+  <text x="90" y="504" font-size="20" fill="#4d554f" text-anchor="middle">표피~진피 위쪽 · 경계가 흐림</text></g>
+ <!-- ABNOM: dermal -->
+ <g transform="translate(790,0)"><circle cx="60" cy="250" r="16" fill="#6f7b8c"/><circle cx="110" cy="290" r="14" fill="#6f7b8c"/><circle cx="80" cy="330" r="12" fill="#6f7b8c"/><circle cx="130" cy="240" r="10" fill="#6f7b8c"/>
+  <text x="90" y="470" font-size="26" font-weight="800" fill="#24302a" text-anchor="middle">ABNOM</text>
+  <text x="90" y="504" font-size="20" fill="#4d554f" text-anchor="middle">진피 · 회갈색으로 보임</text></g>
+</g>
+</svg>

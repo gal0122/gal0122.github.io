@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" font-family="Pretendard, sans-serif">
+<rect width="1200" height="720" fill="#faf7f0"/>
+<text x="60" y="78" font-size="38" font-weight="800" fill="#24302a">무릎 관절의 구조</text>
+<text x="60" y="122" font-size="22" fill="#5d655f">연골과 반월상연골이 충격을 나눠 받고, 주변 근육과 인대가 관절을 붙잡아 줍니다.</text>
+<g transform="translate(380,150)">
+ <path d="M80 0 h200 v170 q0 50 -40 60 h-120 q-40 -10 -40 -60z" fill="#e8dfcf" stroke="#b9ab86" stroke-width="3"/>
+ <text x="180" y="100" font-size="26" font-weight="700" fill="#5d655f" text-anchor="middle">넙다리뼈</text>
+ <path d="M84 196 q96 44 192 0" stroke="#2f5241" stroke-width="12" fill="none" stroke-linecap="round"/>
+ <path d="M60 262 q60 -20 100 0 M200 262 q60 -20 100 0" stroke="#7aa088" stroke-width="16" fill="none" stroke-linecap="round"/>
+ <path d="M70 280 h220 v190 h-220z" fill="#e8dfcf" stroke="#b9ab86" stroke-width="3"/>
+ <path d="M84 284 h192" stroke="#2f5241" stroke-width="12" stroke-linecap="round"/>
+ <text x="180" y="390" font-size="26" font-weight="700" fill="#5d655f" text-anchor="middle">정강이뼈</text>
+</g>
+<g font-size="22" font-weight="700">
+ <line x1="660" y1="350" x2="800" y2="320" stroke="#2f5241" stroke-width="3"/><text x="810" y="327" fill="#2f5241">관절 연골 · 뼈 끝을 매끄럽게 덮음</text>
+ <line x1="680" y1="410" x2="800" y2="420" stroke="#7aa088" stroke-width="3"/><text x="810" y="427" fill="#4f7a60">반월상연골 · 충격을 나눠 받음</text>
+ <text x="810" y="520" font-size="20" font-weight="500" fill="#5d655f">연골이 닳거나 염증이 생기면</text>
+ <text x="810" y="550" font-size="20" font-weight="500" fill="#5d655f">계단을 내려갈 때 통증이 심해집니다</text>
+</g>
+</svg>

@@ -17,6 +17,11 @@ seo_title: 허리디스크 비수술 관리: 증상·치료·생활 습관
 
 허리뼈 사이에는 충격을 흡수하는 쿠션 역할의 **디스크(추간판)**가 있습니다. 오래 앉아 있는 습관, 허리를 숙여 무거운 물건을 드는 동작, 갑작스러운 충격이 쌓이면 디스크 바깥쪽이 약해지고, 안쪽의 젤리 같은 수핵이 밀려 나와 옆을 지나는 **신경을 누르게** 됩니다. 이것이 흔히 말하는 허리디스크(요추 추간판 탈출증)입니다.
 
+<figure style="margin: 8px 0 24px">
+<img src="img/lumbar-disc.webp" alt="허리디스크 그림: 정상 디스크와, 수핵이 밀려 나와 신경을 누르는 디스크 비교" style="display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid #e2dccd">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #5d655f">디스크 안쪽의 수핵이 밀려 나와 신경을 누르면 허리와 다리에 통증·저림이 생길 수 있습니다. (갈창림 한의원 제작 설명 그림)</figcaption>
+</figure>
+
 ## 이런 증상이 나타납니다
 
 - 허리 통증과 함께 **엉덩이에서 다리로 뻗치는 통증·저림** (주로 한쪽)
