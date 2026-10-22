@@ -184,7 +184,7 @@ def regions(p, posts, page_link, post_link, cat_link):
         'crumb': f'홈 &gt; 원장 칼럼 &gt; {html.escape(p["category"])}',
         'cat': f'<a class="col-tag" href="{cat_link(p["cat_key"])}">{html.escape(p["category"])}</a>',
         'title': html.escape(p['title']),
-        'meta': (f'<time datetime="{p["date"]}">작성 {kdate(p["date"], "")}</time>'
+        'meta': (f'<time datetime="{p["date"]}">게시 {kdate(p["date"], "")}</time>'
                  + (f' · <time datetime="{p["reviewed"]}">수정 {kdate(p["reviewed"], "")}</time>' if p['reviewed'] > p['date'] else '')
                  + ' · 글·검토 <a href="' + page_link('doctors.html') + '" style="color: #24302a; font-weight: 600; text-decoration: none">갈창림 대표원장</a> (한의사)'),
         'summary': html.escape(p['summary']),

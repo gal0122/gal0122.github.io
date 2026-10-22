@@ -33,7 +33,7 @@ SEO = {
    '악센토N 레이저제모, 리니어펌·볼뉴머 리프팅, 큐마스터플러스, 실펌X 등 경산 하양 갈창림 한의원의 보유 장비를 소개합니다.'),
  'schedule.html': ('진료시간·오시는길 | 경산 하양 갈창림 한의원',
    '경상북도 경산시 하양읍 동서2길 43, 3층. 평일 08:30–18:30(점심 13:00–14:00), 토·일 08:30–14:00, 공휴일 휴진. 전화 053-851-0122.'),
- 'skin.html': ('경산 피부미용 · 레이저토닝 · 제모 · 리프팅 | 갈창림 한의원',
+ 'skin.html': ('경산 피부미용 · 레이저토닝 · 리프팅 · 스킨부스터 | 갈창림 한의원',
    '리프팅, 스킨부스터, 레이저제모, 기미·잡티, 여드름, 모공까지 — 경산 하양 갈창림 한의원의 피부미용 진료를 한눈에 안내합니다.'),
  'design-lifting.html': ('경산 리프팅 · 리니어펌·볼뉴머 디자인리프팅 | 갈창림 한의원',
    '리니어펌(초음파)과 볼뉴머(고주파)를 얼굴 지방량과 피부 두께에 맞춰 부위별로 설계하는 디자인리프팅. 권장 주기, 가능한 부작용과 주의사항, 가격 안내 — 경산 하양 갈창림 한의원.'),
@@ -50,7 +50,7 @@ SEO = {
  'booster-ecm.html': ('경산 ECM 진피재생약침 | 갈창림 한의원',
    '콜라겐·엘라스틴 등 ECM 성분으로 무너진 진피의 골격을 다시 세우는 ECM 진피재생약침. 권장 주기, 가능한 부작용과 주의사항 안내 — 경산 하양 갈창림 한의원.'),
  'hair-removal.html': ('경산 레이저제모 · 남자 수염제모 · 악센토N | 갈창림 한의원',
-   '듀얼 파장(755nm·1064nm) 악센토N으로 털과 피부 타입에 맞춰 시술하는 레이저제모. 필요한 횟수, 가능한 부작용과 주의사항, 부위별 가격표 안내 — 경산 하양 갈창림 한의원.'),
+   '듀얼 파장(755nm·1064nm) 악센토N으로 털과 피부 타입에 맞춰 시술하는 레이저제모. 필요한 횟수, 가능한 부작용과 주의사항 안내. 부위별 가격은 가격표 페이지에서 안내합니다 — 경산 하양 갈창림 한의원.'),
  'pigment.html': ('경산 기미·흑자·잡티 · 레이저토닝 | 갈창림 한의원',
    '532·755·1064nm, 색소에 맞춰 고르는 세 가지 파장. 기미·흑자·잡티 진료와 레이저토닝·트리플토닝, 가능한 부작용·주의사항 안내 — 경산 하양 갈창림 한의원.'),
  'mole.html': ('경산 점빼기 · 점제거 · 쥐젖 · 편평사마귀 | 갈창림 한의원',
@@ -139,6 +139,9 @@ SERVICE_LD.update({
  'acne-red.html': ('MedicalProcedure', '여드름 붉은 자국 치료'), 'traffic-treat.html': ('MedicalTherapy', '교통사고 후유증 한방 치료'),
 })
 SERVICE_LD['booster-pdrn.html'] = ('MedicalProcedure', 'PDRN·엑소좀 스킨부스터')
+# who publishes the columns — written out in full so a column page alone names the clinic
+PUBLISHER = {'@type': 'MedicalClinic', '@id': CLINIC_ID, 'name': '갈창림 한의원', 'url': SITE + '/',
+             'logo': {'@type': 'ImageObject', 'url': SITE + '/assets/logo-512.png', 'width': 512, 'height': 512}}
 LD_WEBSITE = {'@type': 'WebSite', '@id': SITE_ID, 'url': SITE + '/', 'name': '갈창림 한의원',
               'alternateName': ['갈창림한의원', '경산 갈창림 한의원'], 'inLanguage': 'ko-KR',
               'publisher': {'@id': CLINIC_ID}}
@@ -200,7 +203,7 @@ def page_ld(slug_, title, desc, url, body):
         graph += [LD_WEBSITE, dict(LD_CLINIC)]
     wp = {'@type': 'CollectionPage' if slug_ in COL_LISTS else 'WebPage' if slug_ in NON_MEDICAL else 'MedicalWebPage', '@id': url + '#webpage',
           'url': url, 'name': title, 'description': desc, 'inLanguage': 'ko-KR',
-          'isPartOf': {'@id': SITE_ID}, 'about': {'@id': CLINIC_ID}, 'dateModified': PAGE_DATE.get(slug_, LASTMOD)}
+          'isPartOf': {'@type': 'WebSite', '@id': SITE_ID, 'name': '갈창림 한의원', 'url': SITE + '/'}, 'about': {'@id': CLINIC_ID}, 'dateModified': PAGE_DATE.get(slug_, LASTMOD)}
     if wp['@type'] == 'MedicalWebPage':     # matches the visible "작성·검토 갈창림 대표원장(한의사) · 최종 검토" line
         reviewer = {'@type': 'Person', '@id': DIRECTOR_ID, 'name': '갈창림',
                     'jobTitle': '대표원장 (한의사)', 'url': SITE + '/doctors.html'}
@@ -253,7 +256,7 @@ def page_ld(slug_, title, desc, url, body):
                       'url': url, 'mainEntityOfPage': {'@id': url + '#webpage'}, 'inLanguage': 'ko-KR',
                       'image': f"{SITE}/{OG_IMG.get(slug_, 'assets/og-image.png')}",
                       'datePublished': pm['date'], 'dateModified': max(pm['date'], pm['reviewed']),
-                      'author': {'@id': DIRECTOR_ID}, 'publisher': {'@id': CLINIC_ID}, 'articleSection': pm['category'],
+                      'author': {'@id': DIRECTOR_ID}, 'publisher': PUBLISHER, 'articleSection': pm['category'],
                       **({'citation': [u for _, u in pm['refs']]} if pm.get('refs') else {})})
         wp['mainEntity'] = {'@id': url + '#article'}
     if slug_ == 'doctors.html':
