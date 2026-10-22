@@ -76,6 +76,8 @@ def load_posts(folder):
         for part in filter(None, (p.strip() for p in meta.get('refs', '').split(' ; '))):
             name, url = (x.strip() for x in part.split('|', 1))
             refs.append((name, url))
+        # a column goes live on its date already reviewed: never show a review date earlier than the publish date
+        meta['reviewed'] = max(meta['reviewed'], meta['date'])
         meta.update(body_md=body.strip(), faq=faq, related=related, refs=refs, cat_key=CAT_KEY[meta['category']],
                     file=f"column-{meta['slug']}.html", src=os.path.basename(fp))
         assert meta['slug'] not in CAT_NAME, (fp, 'slug clashes with a category page')
