@@ -87,6 +87,8 @@ SEO = {
    '아이가 가진 성장 가능성을 충분히 키울 수 있도록 성장을 방해하는 요인을 살핍니다. 성장 진료 과정과 성장 한약의 가능한 부작용 안내 — 경산 하양 갈창림 한의원.'),
  'women.html': ('경산 여성 질환 한의원 | 갈창림 한의원',
    '생리통부터 산후 회복, 갱년기까지 시기마다 달라지는 여성의 몸을 살핍니다. 한약·침·뜸 치료와 가능한 부작용 안내 — 경산 하양 갈창림 한의원 여성 질환 진료.'),
+ 'faq.html': ('자주 묻는 질문(FAQ) | 경산 하양 갈창림 한의원',
+   '토·일요일 진료시간, 예약, 주차, 피부미용 시술, 교통사고 자동차보험 진료, 추나, 다이어트, 소아 성장, 여성 질환까지 자주 받는 질문에 답했습니다 — 경산 하양 갈창림 한의원.'),
  'price.html': ('가격표 · 레이저제모 비용 | 경산 갈창림 한의원',
    '레이저제모 부위별 비용, 리니어펌·볼뉴머·실리프팅, 토닝, 필링·여드름, 라디쥬 등 스킨부스터, 패키지 비용 안내(부가세 포함). 경산 하양 갈창림 한의원.'),
  'column.html': ('원장 칼럼 – 피부미용·건강·질환 정보 | 경산 갈창림 한의원',
@@ -168,9 +170,9 @@ LD_CLINIC = {
 CRUMB = {'홈': '', '병원소개': 'about.html', '피부미용': 'skin.html', '리프팅': 'design-lifting.html',
          '스킨부스터': 'booster-pdrn.html', '제모': 'hair-removal.html', '색소': 'pigment.html',
          '여드름': 'acne.html', '모공': 'pore.html', '교통사고': 'traffic.html', '통증': 'pain-spine.html', '내과 질환': 'internal-digestive.html',
-         '다이어트': 'diet.html', '소아·여성': 'growth.html', '가격표': 'price.html', '원장 칼럼': 'column.html'}
+         '다이어트': 'diet.html', '소아·여성': 'growth.html', '가격표': 'price.html', '원장 칼럼': 'column.html', '자주 묻는 질문': 'faq.html'}
 NON_MEDICAL = {'index.html', 'column.html', 'about.html', 'doctors.html', 'equipment.html', 'schedule.html', 'price.html',
-               'privacy.html', 'terms.html'}
+               'privacy.html', 'terms.html', 'faq.html'}
 
 
 def plain(fragment):
@@ -185,6 +187,7 @@ def faq_pairs(body):
         chunk = body[m.end(): end if end > 0 else None]
         for q, a in re.findall(r'<details[^>]*>\s*<summary[^>]*>(.*?)</summary>\s*(.*?)</details>', chunk, re.S):
             q = re.sub(r'<span class="faq-icon".*?</span>', '', q, flags=re.S)
+            a = re.sub(r'<p[^>]*>\s*<a class="faq-more".*?</p>', '', a, flags=re.S)   # '자세히 보기' links are not part of the answer
             q, a = re.sub(r'^Q\.\s*', '', plain(q)), plain(a)
             if q and a:
                 out.append((q, a))
@@ -1065,7 +1068,7 @@ open(f'{OUT}/{INDEXNOW_KEY}.txt', 'w', encoding='utf-8').write(INDEXNOW_KEY)
 open(f'{OUT}/CNAME', 'w', encoding='utf-8').write(DOMAIN + '\n')   # GitHub Pages custom domain
 
 # llms.txt — plain-language summary for AI assistants (https://llmstxt.org)
-GROUPS = [('병원 안내', ['about.html', 'doctors.html', 'equipment.html', 'schedule.html', 'price.html']),
+GROUPS = [('병원 안내', ['about.html', 'doctors.html', 'equipment.html', 'schedule.html', 'price.html', 'faq.html']),
           ('피부미용', ['skin.html', 'hair-removal.html', 'design-lifting.html', 'thread-lifting.html',
                     'booster-pdrn.html', 'booster-plla.html', 'booster-keratin.html', 'booster-altcore.html',
                     'booster-ecm.html', 'pigment.html', 'mole.html', 'acne.html', 'acne-red.html',
@@ -1138,6 +1141,7 @@ footer a{{color:#fff;text-decoration:none;white-space:nowrap}}
 <a class="primary" href="/">홈으로</a>
 <a href="/schedule.html">진료시간·오시는길</a>
 <a href="/price.html">가격표</a>
+<a href="/faq.html">자주 묻는 질문</a>
 <a href="tel:053-851-0122">전화 053-851-0122</a>
 </nav>
 </div></div></main>
