@@ -318,6 +318,9 @@ for _p in sorted(POSTS, key=lambda q: (q['date'], q['src']), reverse=True):
         _h = _h.split('#')[0]
         if not _h.startswith('column') and _h not in NON_MEDICAL and _h != 'skin.html' and _p not in AUTO_COL.setdefault(_h, []):
             AUTO_COL[_h].append(_p)
+AUTO_COL_SKIP = {'diet.html': {'knee-pain', 'indigestion'}}   # 원장님 요청(2026-10-23): 다이어트 페이지에는 빼기
+for _h, _slugs in AUTO_COL_SKIP.items():
+    AUTO_COL[_h] = [p for p in AUTO_COL.get(_h, []) if p['slug'] not in _slugs]
 COL_MAX = 6
 _LI = ('<li style="border-bottom: 1px solid #e2dccd"><a href="{href}" style="display: block; padding: 16px 4px; font-size: 16px; '
        'font-weight: 600; text-decoration: none">{t} →</a></li>\n')
