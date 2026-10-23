@@ -311,7 +311,37 @@ COL_CRUMBS.update({p['file']: [HOME_C, COL_C, (p['category'], f"{SITE}/{columns.
 for k, n in CATS:
     SEO[columns.cat_file(k)] = (f'{n} 칼럼 | 원장 칼럼 · 경산 갈창림 한의원', f'{columns.CAT_INTRO[k]} 경산 하양 갈창림 한의원.')
 
-def col_links(body):
+# service page -> live columns that name it in their 'related' list (newest first): fills '원장 칼럼에서 더 알아보기'
+AUTO_COL = {}
+for _p in sorted(POSTS, key=lambda q: (q['date'], q['src']), reverse=True):
+    for _h, _ in _p['related']:
+        _h = _h.split('#')[0]
+        if not _h.startswith('column') and _h not in NON_MEDICAL and _h != 'skin.html' and _p not in AUTO_COL.setdefault(_h, []):
+            AUTO_COL[_h].append(_p)
+COL_MAX = 6
+_LI = ('<li style="border-bottom: 1px solid #e2dccd"><a href="{href}" style="display: block; padding: 16px 4px; font-size: 16px; '
+       'font-weight: 600; text-decoration: none">{t} →</a></li>\n')
+COL_SECTION = ('<section>\n<div style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 0; display: flex; flex-direction: column; gap: 20px">\n'
+               '<div style="display: flex; flex-direction: column; gap: 8px">\n'
+               '<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">COLUMN</p>\n'
+               '<h2 style="margin: 0; font-size: 28px">원장 칼럼에서 더 알아보기</h2>\n</div>\n'
+               '<ul style="list-style: none; margin: 0; padding: 0; border-top: 1px solid #2f5241">\n{items}</ul>\n</div>\n</section>\n\n')
+
+
+def auto_col_items(page, have):
+    """extra <li> for the page's column list: posts not listed by hand, newest first, up to COL_MAX in all,
+    then a link to the category list when more exist."""
+    posts = [p for p in AUTO_COL.get(page, []) if p['file'] not in have]
+    room = max(0, COL_MAX - len(have))
+    out = ''.join(_LI.format(href=p['file'], t=htmlmod.escape(p['title'])) for p in posts[:room])
+    allp = AUTO_COL.get(page, [])
+    if len(posts) > room and allp:
+        cat = max({p['cat_key'] for p in allp}, key=lambda k: sum(p['cat_key'] == k for p in allp))
+        out += _LI.format(href=columns.cat_file(cat), t=f'{columns.CAT_NAME[cat]} 칼럼 전체 보기')
+    return out
+
+
+def col_links(body, page=None):
     """Menu links 'column.html#skin' -> the category page; drop categories that have no post yet."""
     have = {k for k, _ in CATS}
     for k, _ in columns.CATEGORIES:
@@ -324,8 +354,22 @@ def col_links(body):
     def col_section(m):   # '원장 칼럼에서 더 알아보기' lists: published posts only; no section until one is out
         sec = re.sub(r'<li[^>]*>\s*<a data-col="([a-z0-9-]+)"[^>]*>[^<]*</a>\s*</li>\n?',
                      lambda x: x.group(0).replace(f' data-col="{x.group(1)}"', '') if x.group(1) in live else '', m.group(0))
-        return sec.replace(' data-col-section="true"', '') if '<li' in sec else ''
+        if page:   # then the newer columns that point to this page
+            have = set(re.findall(r'href="(column-[a-z0-9-]+\.html)"', sec))
+            extra = auto_col_items(page, have)
+            sec = sec.replace('</ul>', extra + '</ul>', 1) if extra else sec
+        return (sec.replace(' data-col-section="true"', '') + '\n\n') if '<li' in sec else ''
+    had = 'data-col-section="true"' in body
     body = re.sub(r'<section data-col-section="true">.*?</section>\n*', col_section, body, flags=re.S)
+    if page and not had and AUTO_COL.get(page):   # a service page without a hand-made list gets one
+        items = auto_col_items(page, set())
+        sec = COL_SECTION.format(items=items)
+        i = body.find('>NEXT</p>')      # before the 'NEXT' block, else before 참고 자료 / 작성·검토
+        at = body.rfind('<section', 0, i) if i > 0 else -1
+        if at < 0:
+            at = next((body.find(m) for m in ('<section data-refs="true"', '<section aria-label="작성 및 검토 정보">') if m in body), -1)
+        if at >= 0:
+            body = body[:at] + sec + body[at:]
     body = re.sub(r'<p[^>]*>\s*<a data-col="([a-z0-9-]+)"[^>]*>[^<]*</a>\s*</p>\n?',
                   lambda m: m.group(0).replace(f' data-col="{m.group(1)}"', '') if m.group(1) in live else '', body)
     assert 'data-col=' not in body
@@ -951,7 +995,7 @@ def build_page(f, out=None, transform=None, seo=None):
     body = src.split('</helmet>', 1)[1].split('</x-dc>', 1)[0]
     if transform:
         body = transform(body)
-    body = col_links(fix_links(body))
+    body = col_links(fix_links(body), out)
     body = body.replace('onClick="{{ prev }}"', 'onclick="slide(this,-1)"').replace('onClick="{{ next }}"', 'onclick="slide(this,1)"')
     body = img_attrs(blobs(body))
     has_map = 'data-naver-map' in body
