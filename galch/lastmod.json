@@ -4,12 +4,12 @@
   "d": "2026-10-21"
  },
  "acne-red.html": {
-  "h": "bf81fcc902f30231",
-  "d": "2026-10-20"
+  "h": "ebc9859082ac74e5",
+  "d": "2026-10-26"
  },
  "acne-scar.html": {
-  "h": "c17173da9cf66c76",
-  "d": "2026-10-20"
+  "h": "34f61db8955b1f27",
+  "d": "2026-10-26"
  },
  "acne.html": {
   "h": "d20ef5963d4f72b5",
@@ -39,6 +39,10 @@
   "h": "1d8f0bef2d29a4a2",
   "d": "2026-10-20"
  },
+ "column-acne-scar-types.html": {
+  "h": "cfc1efdba240f720",
+  "d": "2026-10-26"
+ },
  "column-ankle-sprain.html": {
   "h": "1e25a16bb4751569",
   "d": "2026-10-25"
@@ -47,13 +51,17 @@
   "h": "67601e17ac151a19",
   "d": "2026-10-22"
  },
+ "column-cherry-angioma.html": {
+  "h": "362911a34b23c2ea",
+  "d": "2026-10-26"
+ },
  "column-diet-herbal-side-effects.html": {
-  "h": "920fb4396b5f5006",
+  "h": "f10e7304038dc7ce",
   "d": "2026-10-23"
  },
  "column-diet.html": {
-  "h": "1a9a25c173b499ed",
-  "d": "2026-10-25"
+  "h": "5b7abba3b0a51211",
+  "d": "2026-10-26"
  },
  "column-epidermoid-cyst.html": {
   "h": "e4abe6e95e6032d9",
@@ -72,7 +80,7 @@
   "d": "2026-10-20"
  },
  "column-growth-plate-closure.html": {
-  "h": "c96a44857313f566",
+  "h": "76db2993ce2ea807",
   "d": "2026-10-23"
  },
  "column-headache.html": {
@@ -84,16 +92,16 @@
   "d": "2026-10-20"
  },
  "column-internal.html": {
-  "h": "b4341b02d2732602",
-  "d": "2026-10-25"
+  "h": "b2a1f51283604fc7",
+  "d": "2026-10-26"
  },
  "column-kids-growth-when-to-start.html": {
-  "h": "aa491047f9a3ed84",
+  "h": "0dbfe26ea801d4df",
   "d": "2026-10-20"
  },
  "column-kids-women.html": {
-  "h": "a24de7045b5cf09c",
-  "d": "2026-10-25"
+  "h": "063ebe00e3ded568",
+  "d": "2026-10-26"
  },
  "column-knee-pain.html": {
   "h": "2e31e5a47c0b820e",
@@ -102,6 +110,10 @@
  "column-laser-hair-removal-sessions.html": {
   "h": "ab1485b8197e29b9",
   "d": "2026-10-20"
+ },
+ "column-laser-toning-sessions.html": {
+  "h": "785e7761fe0363d1",
+  "d": "2026-10-26"
  },
  "column-lentigo.html": {
   "h": "b7c1596fb513eeab",
@@ -118,6 +130,10 @@
  "column-melasma.html": {
   "h": "208f8fd213e430ac",
   "d": "2026-10-20"
+ },
+ "column-menopause.html": {
+  "h": "e602f6d035d1e380",
+  "d": "2026-10-26"
  },
  "column-milia.html": {
   "h": "88cc7bc5992dc0d5",
@@ -136,8 +152,8 @@
   "d": "2026-10-23"
  },
  "column-pain.html": {
-  "h": "0f2b326c7f360c95",
-  "d": "2026-10-25"
+  "h": "e1d127d2907af8c0",
+  "d": "2026-10-26"
  },
  "column-philtrum-hair-removal.html": {
   "h": "470fd0f01fe34049",
@@ -164,8 +180,8 @@
   "d": "2026-10-21"
  },
  "column-skin.html": {
-  "h": "92a7784cff318098",
-  "d": "2026-10-25"
+  "h": "f9d6198ea206da4d",
+  "d": "2026-10-26"
  },
  "column-steatocystoma.html": {
   "h": "9c67914e79f090ac",
@@ -196,16 +212,16 @@
   "d": "2026-10-20"
  },
  "column-traffic.html": {
-  "h": "65974ee32efc00e5",
-  "d": "2026-10-25"
+  "h": "07d51ad60c4d5080",
+  "d": "2026-10-26"
  },
  "column-ultrasound-vs-rf-lifting.html": {
   "h": "1fa40aacac60d554",
   "d": "2026-10-25"
  },
  "column.html": {
-  "h": "4b835b9294cc893a",
-  "d": "2026-10-25"
+  "h": "7f3f01ccbc5ad7d3",
+  "d": "2026-10-26"
  },
  "design-lifting.html": {
   "h": "ffbeeec2641760a2",
@@ -236,8 +252,8 @@
   "d": "2026-10-24"
  },
  "index.html": {
-  "h": "7e4eca00ad6e6ed0",
-  "d": "2026-10-25"
+  "h": "7a4f866e82543a37",
+  "d": "2026-10-26"
  },
  "internal-digestive.html": {
   "h": "54135c9884ba1908",
@@ -256,8 +272,8 @@
   "d": "2026-10-21"
  },
  "mole.html": {
-  "h": "fb1d16d7f646866b",
-  "d": "2026-10-25"
+  "h": "f4621a32da51c8ee",
+  "d": "2026-10-26"
  },
  "pain-joint.html": {
   "h": "51f0e45b0e9f520a",
@@ -268,8 +284,8 @@
   "d": "2026-10-23"
  },
  "pigment.html": {
-  "h": "71bca91fa44ea03e",
-  "d": "2026-10-23"
+  "h": "e279ac87222d63c8",
+  "d": "2026-10-26"
  },
  "pore.html": {
   "h": "e1780c72fbbc9c11",
@@ -312,7 +328,7 @@
   "d": "2026-10-24"
  },
  "women.html": {
-  "h": "4856a4529c4cd2f3",
-  "d": "2026-10-20"
+  "h": "e27131c73a0fbcbc",
+  "d": "2026-10-26"
  }
 }
