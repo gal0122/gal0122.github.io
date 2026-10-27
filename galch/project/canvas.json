@@ -4,7 +4,7 @@
  "boards": {
   "About.dc.html": {
    "expand": "fill",
-   "h": 4578,
+   "h": 5367,
    "is_interactive": true,
    "title": "02 병원소개 · 갈창림한의원 소개",
    "w": 1280,
@@ -220,7 +220,7 @@
   },
   "Schedule.dc.html": {
    "expand": "fill",
-   "h": 4904,
+   "h": 5403,
    "is_interactive": true,
    "title": "05 병원소개 · 진료시간 및 오시는길",
    "w": 1280,
