@@ -40,7 +40,7 @@
   },
   "BoosterAltcore.dc.html": {
    "expand": "fill",
-   "h": 6457,
+   "h": 6505,
    "is_interactive": true,
    "title": "12 피부미용 · 스킨부스터 · 알트코어",
    "w": 1280,
@@ -49,7 +49,7 @@
   },
   "BoosterECM.dc.html": {
    "expand": "fill",
-   "h": 5863,
+   "h": 6037,
    "is_interactive": true,
    "title": "13 피부미용 · 스킨부스터 · ECM",
    "w": 1280,
@@ -58,7 +58,7 @@
   },
   "BoosterKeratin.dc.html": {
    "expand": "fill",
-   "h": 6173,
+   "h": 6221,
    "is_interactive": true,
    "title": "11 피부미용 · 스킨부스터 · 케라틴",
    "w": 1280,
@@ -67,7 +67,7 @@
   },
   "BoosterPDRN.dc.html": {
    "expand": "fill",
-   "h": 6332,
+   "h": 6380,
    "is_interactive": true,
    "title": "09 피부미용 · 스킨부스터 · PDRN·엑소좀",
    "w": 1280,
@@ -76,7 +76,7 @@
   },
   "BoosterPLLA.dc.html": {
    "expand": "fill",
-   "h": 6276,
+   "h": 6324,
    "is_interactive": true,
    "title": "10 피부미용 · 스킨부스터 · PLLA",
    "w": 1280,
@@ -85,7 +85,7 @@
   },
   "DesignLifting.dc.html": {
    "expand": "fill",
-   "h": 7553,
+   "h": 7601,
    "is_interactive": true,
    "title": "07 피부미용 · 리프팅 · 디자인리프팅",
    "w": 1280,
@@ -139,7 +139,7 @@
   },
   "Main.dc.html": {
    "expand": "fill",
-   "h": 4262,
+   "h": 4293,
    "is_interactive": true,
    "title": "01 홈",
    "w": 1280,
@@ -247,7 +247,7 @@
   },
   "ThreadLifting.dc.html": {
    "expand": "fill",
-   "h": 6652,
+   "h": 6700,
    "is_interactive": true,
    "title": "08 피부미용 · 리프팅 · 맞춤형실리프팅",
    "w": 1280,
