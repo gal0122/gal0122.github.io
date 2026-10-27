@@ -47,6 +47,10 @@
   "h": "1e25a16bb4751569",
   "d": "2026-10-25"
  },
+ "column-armpit-hair-removal.html": {
+  "h": "1f2e095d9bc8eaa6",
+  "d": "2026-10-27"
+ },
  "column-beard-laser-hair-removal.html": {
   "h": "67601e17ac151a19",
   "d": "2026-10-22"
@@ -56,19 +60,19 @@
   "d": "2026-10-26"
  },
  "column-diet-herbal-side-effects.html": {
-  "h": "f10e7304038dc7ce",
+  "h": "045c9b10d8e81ce7",
   "d": "2026-10-23"
  },
  "column-diet.html": {
-  "h": "5b7abba3b0a51211",
-  "d": "2026-10-26"
+  "h": "a67997fa7b8b9d62",
+  "d": "2026-10-27"
  },
  "column-epidermoid-cyst.html": {
   "h": "e4abe6e95e6032d9",
   "d": "2026-10-24"
  },
  "column-facial-palsy.html": {
-  "h": "2aaf0c09a66153ff",
+  "h": "49204429cfe82f07",
   "d": "2026-10-24"
  },
  "column-freckles.html": {
@@ -80,7 +84,7 @@
   "d": "2026-10-20"
  },
  "column-growth-plate-closure.html": {
-  "h": "76db2993ce2ea807",
+  "h": "08a1d6a82bf0b601",
   "d": "2026-10-23"
  },
  "column-headache.html": {
@@ -91,17 +95,21 @@
   "h": "68face44e8cabd69",
   "d": "2026-10-20"
  },
+ "column-insomnia.html": {
+  "h": "355d0165b7101b4b",
+  "d": "2026-10-27"
+ },
  "column-internal.html": {
-  "h": "b2a1f51283604fc7",
-  "d": "2026-10-26"
+  "h": "d11ef82a4744ba1c",
+  "d": "2026-10-27"
  },
  "column-kids-growth-when-to-start.html": {
-  "h": "0dbfe26ea801d4df",
+  "h": "f0bf608b4d5e4947",
   "d": "2026-10-20"
  },
  "column-kids-women.html": {
-  "h": "063ebe00e3ded568",
-  "d": "2026-10-26"
+  "h": "c0015a0c5285293f",
+  "d": "2026-10-27"
  },
  "column-knee-pain.html": {
   "h": "2e31e5a47c0b820e",
@@ -132,7 +140,7 @@
   "d": "2026-10-20"
  },
  "column-menopause.html": {
-  "h": "e602f6d035d1e380",
+  "h": "43b27d10791834a3",
   "d": "2026-10-26"
  },
  "column-milia.html": {
@@ -152,8 +160,12 @@
   "d": "2026-10-23"
  },
  "column-pain.html": {
-  "h": "e1d127d2907af8c0",
-  "d": "2026-10-26"
+  "h": "eaf19262f303befb",
+  "d": "2026-10-27"
+ },
+ "column-pedestrian-bicycle-accident.html": {
+  "h": "fecc9c7b729ef817",
+  "d": "2026-10-27"
  },
  "column-philtrum-hair-removal.html": {
   "h": "470fd0f01fe34049",
@@ -180,8 +192,12 @@
   "d": "2026-10-21"
  },
  "column-skin.html": {
-  "h": "f9d6198ea206da4d",
-  "d": "2026-10-26"
+  "h": "f3f195f7dc0d7f5e",
+  "d": "2026-10-27"
+ },
+ "column-spider-angioma.html": {
+  "h": "5712b1eb39e9ba23",
+  "d": "2026-10-27"
  },
  "column-steatocystoma.html": {
   "h": "9c67914e79f090ac",
@@ -192,7 +208,7 @@
   "d": "2026-10-20"
  },
  "column-traffic-at-fault.html": {
-  "h": "8d023c2ab1306114",
+  "h": "471d9d5e7aacf389",
   "d": "2026-10-24"
  },
  "column-traffic-delayed-pain.html": {
@@ -212,16 +228,16 @@
   "d": "2026-10-20"
  },
  "column-traffic.html": {
-  "h": "07d51ad60c4d5080",
-  "d": "2026-10-26"
+  "h": "ae624e031f329243",
+  "d": "2026-10-27"
  },
  "column-ultrasound-vs-rf-lifting.html": {
   "h": "1fa40aacac60d554",
   "d": "2026-10-25"
  },
  "column.html": {
-  "h": "7f3f01ccbc5ad7d3",
-  "d": "2026-10-26"
+  "h": "fc1df211d8be8c5e",
+  "d": "2026-10-27"
  },
  "design-lifting.html": {
   "h": "ffbeeec2641760a2",
@@ -248,12 +264,12 @@
   "d": "2026-10-23"
  },
  "hair-removal.html": {
-  "h": "e6404b5a161ef6a1",
-  "d": "2026-10-24"
+  "h": "90dcfbdeb2c25165",
+  "d": "2026-10-27"
  },
  "index.html": {
-  "h": "7a4f866e82543a37",
-  "d": "2026-10-26"
+  "h": "ab4d6273cfe7b95c",
+  "d": "2026-10-27"
  },
  "internal-digestive.html": {
   "h": "54135c9884ba1908",
@@ -268,24 +284,24 @@
   "d": "2026-10-23"
  },
  "internal-sleep.html": {
-  "h": "0c3368ae1be064f1",
-  "d": "2026-10-21"
+  "h": "4109ef3033ae4c42",
+  "d": "2026-10-27"
  },
  "mole.html": {
-  "h": "f4621a32da51c8ee",
-  "d": "2026-10-26"
+  "h": "abc6c03855b15954",
+  "d": "2026-10-27"
  },
  "pain-joint.html": {
-  "h": "51f0e45b0e9f520a",
-  "d": "2026-10-25"
+  "h": "fba66e01b5097046",
+  "d": "2026-10-27"
  },
  "pain-spine.html": {
   "h": "e04608953a53dd99",
   "d": "2026-10-23"
  },
  "pigment.html": {
-  "h": "e279ac87222d63c8",
-  "d": "2026-10-26"
+  "h": "c458c32255fc2bd1",
+  "d": "2026-10-27"
  },
  "pore.html": {
   "h": "e1780c72fbbc9c11",
@@ -324,8 +340,8 @@
   "d": "2026-10-23"
  },
  "traffic.html": {
-  "h": "6ea6c2bf9a6a85c9",
-  "d": "2026-10-24"
+  "h": "304c468d7629e695",
+  "d": "2026-10-27"
  },
  "women.html": {
   "h": "e27131c73a0fbcbc",
