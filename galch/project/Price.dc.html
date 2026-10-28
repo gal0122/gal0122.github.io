@@ -97,7 +97,9 @@ footer{padding-bottom:58px}
 .ht thead th{font-size:13px;font-weight:600;color:#5d655f;border-bottom:1px solid #e2dccd}
 .ht tbody th{font-weight:700}
 .ht tbody tr:last-child>*{border-bottom:0}
-@media (max-width:640px){.pt{font-size:15px}.pt th,.pt td{padding-left:6px;padding-right:6px}.pcard{padding-left:14px!important;padding-right:14px!important}.ncard{padding:28px 22px!important}.ht{min-width:0;font-size:13px}.ht th,.ht td{padding:11px 3px}.ht thead th,.ht tbody th{white-space:normal}}
+.eq-track>table.ht{max-width:none}
+.ht tbody th{white-space:nowrap!important;word-break:keep-all}
+@media (max-width:640px){.pt{font-size:15px}.pt th,.pt td{padding-left:6px;padding-right:6px}.pcard{padding-left:14px!important;padding-right:14px!important}.ncard{padding:28px 22px!important}.ht{min-width:0;font-size:13px}.ht th,.ht td{padding:11px 3px}.ht thead th{white-space:normal}#price-hair .ht{font-size:12.5px}#price-hair .ht th,#price-hair .ht td{padding:11px 2px}}
 @media (min-width:961px) and (max-width:1180px){.hd-call-txt{display:none}.hd-call{width:44px;padding:0!important;justify-content:center}.gnb{gap:22px!important}}
 @media (min-width:961px) and (max-width:1060px){.hd-in{gap:24px!important}.gnb{gap:16px!important;font-size:15px!important}}
 </style>
@@ -499,18 +501,18 @@ footer{padding-bottom:58px}
 <h3 style="margin: 0 0 6px; font-size: 18px">남성</h3>
 <div class="eq-track" style="overflow-x: auto">
 <table class="ht">
-<thead><tr><th scope="col">부위</th><th scope="col">5회</th><th scope="col">1년 무제한</th><th scope="col">평생 무제한</th></tr></thead>
+<thead><tr><th scope="col">부위</th><th scope="col">1회</th><th scope="col">5회</th><th scope="col">1년 무제한</th><th scope="col">평생 무제한</th></tr></thead>
 <tbody>
-<tr><th scope="row">얼굴 전체</th><td>264,000원</td><td>462,000원</td><td>693,000원</td></tr>
-<tr><th scope="row">겨드랑이</th><td>88,000원</td><td>154,000원</td><td>231,000원</td></tr>
-<tr><th scope="row">위팔</th><td>132,000원</td><td>231,000원</td><td>346,000원</td></tr>
-<tr><th scope="row">아래팔</th><td>132,000원</td><td>231,000원</td><td>346,000원</td></tr>
-<tr><th scope="row">팔 전체</th><td>220,000원</td><td>385,000원</td><td>577,500원</td></tr>
-<tr><th scope="row">종아리</th><td>220,000원</td><td>385,000원</td><td>577,500원</td></tr>
-<tr><th scope="row">허벅지</th><td>264,000원</td><td>462,000원</td><td>693,000원</td></tr>
-<tr><th scope="row">다리 전체</th><td>396,000원</td><td>693,000원</td><td>1,039,500원</td></tr>
-<tr><th scope="row">배렛나루</th><td>143,000원</td><td>220,000원</td><td>330,000원</td></tr>
-<tr><th scope="row">가슴털</th><td>198,000원</td><td>330,000원</td><td>485,000원</td></tr>
+<tr><th scope="row">얼굴 전체</th><td>88,000원</td><td>264,000원</td><td>462,000원</td><td>693,000원</td></tr>
+<tr><th scope="row">겨드랑이</th><td>22,000원</td><td>88,000원</td><td>154,000원</td><td>231,000원</td></tr>
+<tr><th scope="row">위팔</th><td>44,000원</td><td>132,000원</td><td>231,000원</td><td>346,000원</td></tr>
+<tr><th scope="row">아래팔</th><td>44,000원</td><td>132,000원</td><td>231,000원</td><td>346,000원</td></tr>
+<tr><th scope="row">팔 전체</th><td>77,000원</td><td>220,000원</td><td>385,000원</td><td>577,500원</td></tr>
+<tr><th scope="row">종아리</th><td>77,000원</td><td>220,000원</td><td>385,000원</td><td>577,500원</td></tr>
+<tr><th scope="row">허벅지</th><td>88,000원</td><td>264,000원</td><td>462,000원</td><td>693,000원</td></tr>
+<tr><th scope="row">다리 전체</th><td>132,000원</td><td>396,000원</td><td>693,000원</td><td>1,039,500원</td></tr>
+<tr><th scope="row">배렛나루</th><td>48,000원</td><td>143,000원</td><td>220,000원</td><td>330,000원</td></tr>
+<tr><th scope="row">가슴털</th><td>66,000원</td><td>198,000원</td><td>330,000원</td><td>485,000원</td></tr>
 </tbody>
 </table>
 </div>
@@ -519,16 +521,17 @@ footer{padding-bottom:58px}
 <h3 style="margin: 0 0 6px; font-size: 18px">여성</h3>
 <div class="eq-track" style="overflow-x: auto">
 <table class="ht">
-<thead><tr><th scope="col">부위</th><th scope="col">5회</th><th scope="col">1년 무제한</th><th scope="col">평생 무제한</th></tr></thead>
+<thead><tr><th scope="col">부위</th><th scope="col">1회</th><th scope="col">5회</th><th scope="col">1년 무제한</th><th scope="col">평생 무제한</th></tr></thead>
 <tbody>
-<tr><th scope="row">인중</th><td>44,000원</td><td>77,000원</td><td>115,500원</td></tr>
-<tr><th scope="row">겨드랑이</th><td>44,000원</td><td>77,000원</td><td>115,500원</td></tr>
-<tr><th scope="row">위팔</th><td>132,000원</td><td>231,000원</td><td>346,000원</td></tr>
-<tr><th scope="row">아래팔</th><td>132,000원</td><td>231,000원</td><td>346,000원</td></tr>
-<tr><th scope="row">팔 전체</th><td>220,000원</td><td>385,000원</td><td>577,500원</td></tr>
-<tr><th scope="row">종아리</th><td>220,000원</td><td>385,000원</td><td>577,500원</td></tr>
-<tr><th scope="row">허벅지</th><td>264,000원</td><td>462,000원</td><td>693,000원</td></tr>
-<tr><th scope="row">다리 전체</th><td>396,000원</td><td>693,000원</td><td>1,039,500원</td></tr>
+<tr><th scope="row">인중</th><td>11,000원</td><td>44,000원</td><td>77,000원</td><td>115,500원</td></tr>
+<tr><th scope="row">겨드랑이</th><td>11,000원</td><td>44,000원</td><td>77,000원</td><td>115,500원</td></tr>
+<tr><th scope="row">위팔</th><td>44,000원</td><td>132,000원</td><td>231,000원</td><td>346,000원</td></tr>
+<tr><th scope="row">아래팔</th><td>44,000원</td><td>132,000원</td><td>231,000원</td><td>346,000원</td></tr>
+<tr><th scope="row">팔 전체</th><td>77,000원</td><td>220,000원</td><td>385,000원</td><td>577,500원</td></tr>
+<tr><th scope="row">종아리</th><td>77,000원</td><td>220,000원</td><td>385,000원</td><td>577,500원</td></tr>
+<tr><th scope="row">허벅지</th><td>88,000원</td><td>264,000원</td><td>462,000원</td><td>693,000원</td></tr>
+<tr><th scope="row">다리 전체</th><td>132,000원</td><td>396,000원</td><td>693,000원</td><td>1,039,500원</td></tr>
+<tr><th scope="row">배렛나루</th><td>33,000원</td><td>99,000원</td><td>175,000원</td><td>260,000원</td></tr>
 </tbody>
 </table>
 </div>
