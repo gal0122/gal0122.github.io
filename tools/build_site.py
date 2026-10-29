@@ -323,6 +323,13 @@ AUTO_COL_SKIP = {'diet.html': {'knee-pain', 'indigestion'}}   # 원장님 요청
 for _h, _slugs in AUTO_COL_SKIP.items():
     AUTO_COL[_h] = [p for p in AUTO_COL.get(_h, []) if p['slug'] not in _slugs]
 COL_MAX = 6
+# every column is listed at least on its main service page (the first one in its 'related' list), even past COL_MAX,
+# so a new column never ends up linked from no service page (원장님 요청 2026-10-29)
+COL_HOME = {}
+for _p in POSTS:
+    _home = next((h.split('#')[0] for h, _ in _p['related'] if _p in AUTO_COL.get(h.split('#')[0], [])), None)
+    if _home:
+        COL_HOME[_p['file']] = _home
 _LI = ('<li style="border-bottom: 1px solid #e2dccd"><a href="{href}" style="display: block; padding: 16px 4px; font-size: 16px; '
        'font-weight: 600; text-decoration: none">{t} →</a></li>\n')
 COL_SECTION = ('<section>\n<div style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 0; display: flex; flex-direction: column; gap: 20px">\n'
@@ -336,7 +343,9 @@ def auto_col_items(page, have):
     """extra <li> for the page's column list: posts not listed by hand, newest first, up to COL_MAX in all,
     then a link to the category list when more exist."""
     posts = [p for p in AUTO_COL.get(page, []) if p['file'] not in have]
-    room = max(0, COL_MAX - len(have))
+    must = [p for p in posts if COL_HOME.get(p['file']) == page]
+    room = max(len(must), COL_MAX - len(have))
+    posts = must + [p for p in posts if p not in must]
     out = ''.join(_LI.format(href=p['file'], t=htmlmod.escape(p['title'])) for p in posts[:room])
     allp = AUTO_COL.get(page, [])
     if len(posts) > room and allp:
