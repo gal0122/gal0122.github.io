@@ -8,7 +8,7 @@ keyword: 경산 스킨부스터 종류
 condition: 스킨부스터
 description: PDRN·엑소좀, PLLA, 케라틴 약침, 알트코어, ECM 등 스킨부스터마다 작용하는 곳과 목적이 어떻게 다른지, 내 피부 고민에 맞게 고르는 방법을 경산 하양 갈창림 한의원 대표원장이 정리했습니다.
 summary: 스킨부스터는 성분마다 피부 속에서 작용하는 곳과 목적이 다릅니다. PDRN·엑소좀은 진피의 재생과 탄력, PLLA는 서서히 차오르는 볼륨, 케라틴 약침은 약해진 피부 장벽, 알트코어는 세포 기능, ECM은 진피 구조를 주로 살핍니다. 한 가지로 모든 고민을 해결하기보다 지금 피부에 필요한 목적에 맞춰 고르고 조합하며, 결과에는 개인차가 있습니다.
-related: booster-pdrn.html | PDRN·엑소좀 스킨부스터; booster-plla.html | PLLA 스킨부스터; price.html#price-booster | 스킨부스터 비용
+related: booster-pdrn.html | PDRN·엑소좀 스킨부스터; booster-plla.html | PLLA 스킨부스터; booster-altcore.html | 알트코어 스킨부스터; booster-keratin.html | 케라틴 ANK 약침 안내; booster-ecm.html | ECM 스킨부스터; price.html#price-booster | 스킨부스터 비용
 refs: 논문: 피부 재생을 위한 PN·PDRN — 무작위 임상시험 체계적 고찰 | https://pubmed.ncbi.nlm.nih.gov/42572627/ ; 논문: 미용 피부과에서의 엑소좀 — 문헌 고찰 | https://pubmed.ncbi.nlm.nih.gov/39764639/ ; 논문: 얼굴 회춘을 위한 주사형 PLLA 사용 — 유럽 전문가 권고 | https://pubmed.ncbi.nlm.nih.gov/25226006/
 ---
 
