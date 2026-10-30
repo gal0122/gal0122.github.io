@@ -60,12 +60,12 @@
   "d": "2026-10-26"
  },
  "column-diet-herbal-side-effects.html": {
-  "h": "921be93af387e404",
+  "h": "31ce367cf8d8cbf7",
   "d": "2026-10-23"
  },
  "column-diet.html": {
-  "h": "fd57eef559b3ce12",
-  "d": "2026-10-29"
+  "h": "89ed14c15cfc713e",
+  "d": "2026-10-30"
  },
  "column-epidermoid-cyst.html": {
   "h": "e4abe6e95e6032d9",
@@ -74,6 +74,10 @@
  "column-facial-palsy.html": {
   "h": "49204429cfe82f07",
   "d": "2026-10-24"
+ },
+ "column-flat-warts.html": {
+  "h": "a3964cebfe729456",
+  "d": "2026-10-30"
  },
  "column-forward-head-posture.html": {
   "h": "85b8cacff0f57370",
@@ -88,7 +92,7 @@
   "d": "2026-10-20"
  },
  "column-growth-plate-closure.html": {
-  "h": "b515c16fc22a4874",
+  "h": "2e9007f9af5dab8f",
   "d": "2026-10-23"
  },
  "column-headache.html": {
@@ -100,20 +104,20 @@
   "d": "2026-10-20"
  },
  "column-insomnia.html": {
-  "h": "355d0165b7101b4b",
+  "h": "08f25efce6967a40",
   "d": "2026-10-27"
  },
  "column-internal.html": {
-  "h": "cb59f037bd357e03",
-  "d": "2026-10-29"
+  "h": "01dd30373bf38343",
+  "d": "2026-10-30"
  },
  "column-kids-growth-when-to-start.html": {
-  "h": "cf35e3cf6467a0ad",
+  "h": "61327c1964aee57d",
   "d": "2026-10-20"
  },
  "column-kids-women.html": {
-  "h": "e778fe978a3abf06",
-  "d": "2026-10-29"
+  "h": "b340c7a4d6b8ab94",
+  "d": "2026-10-30"
  },
  "column-knee-pain.html": {
   "h": "2e31e5a47c0b820e",
@@ -144,7 +148,7 @@
   "d": "2026-10-20"
  },
  "column-menopause.html": {
-  "h": "28c54817aea5f5ec",
+  "h": "d78a7ec60776481d",
   "d": "2026-10-26"
  },
  "column-milia.html": {
@@ -164,8 +168,8 @@
   "d": "2026-10-23"
  },
  "column-pain.html": {
-  "h": "3a4944f32881df2c",
-  "d": "2026-10-29"
+  "h": "0bde35d87e7d44f3",
+  "d": "2026-10-30"
  },
  "column-pedestrian-bicycle-accident.html": {
   "h": "fecc9c7b729ef817",
@@ -180,8 +184,12 @@
   "d": "2026-10-28"
  },
  "column-postpartum-diet.html": {
-  "h": "ecc1b7dc4c77ca4d",
+  "h": "cc44c75fbe36eb0d",
   "d": "2026-10-29"
+ },
+ "column-reflux.html": {
+  "h": "7c840811d29b8ada",
+  "d": "2026-10-30"
  },
  "column-rhinitis.html": {
   "h": "6c6a0ec891fcdf44",
@@ -208,8 +216,8 @@
   "d": "2026-10-21"
  },
  "column-skin.html": {
-  "h": "0b6052cfa697d280",
-  "d": "2026-10-29"
+  "h": "da957b3edfefbdad",
+  "d": "2026-10-30"
  },
  "column-spider-angioma.html": {
   "h": "5712b1eb39e9ba23",
@@ -244,16 +252,16 @@
   "d": "2026-10-20"
  },
  "column-traffic.html": {
-  "h": "6e196a1dcfad9130",
-  "d": "2026-10-29"
+  "h": "11867985d75e7794",
+  "d": "2026-10-30"
  },
  "column-ultrasound-vs-rf-lifting.html": {
   "h": "1fa40aacac60d554",
   "d": "2026-10-25"
  },
  "column.html": {
-  "h": "4c0027fd2df2518f",
-  "d": "2026-10-29"
+  "h": "1e76cdc1fb0cfa87",
+  "d": "2026-10-30"
  },
  "design-lifting.html": {
   "h": "37afc5f4f0a96e6a",
@@ -284,12 +292,12 @@
   "d": "2026-10-27"
  },
  "index.html": {
-  "h": "a1f65ce159962329",
-  "d": "2026-10-29"
+  "h": "fac921e547230c5c",
+  "d": "2026-10-30"
  },
  "internal-digestive.html": {
-  "h": "54135c9884ba1908",
-  "d": "2026-10-23"
+  "h": "ac116fe4f096afde",
+  "d": "2026-10-30"
  },
  "internal-neuro.html": {
   "h": "7251ef4b74822c9e",
@@ -304,8 +312,8 @@
   "d": "2026-10-27"
  },
  "mole.html": {
-  "h": "56f15e2ddada9f9b",
-  "d": "2026-10-29"
+  "h": "78fb5d30ca70ef9c",
+  "d": "2026-10-30"
  },
  "pain-joint.html": {
   "h": "8d650a319f15d828",
