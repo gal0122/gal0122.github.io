@@ -279,7 +279,7 @@ BLOB = {k: S + v.split('/scratchpad', 1)[1] if '/scratchpad/' in v else v for k,
 
 canvas = json.load(open(f'{G}/project/canvas.json', encoding='utf-8'))
 order = canvas['order']
-NON_PAGES = {'Popup.dc.html', 'ColumnPost.dc.html', 'Booking.dc.html'}          # design-only boards, not web pages
+NON_PAGES = {'Popup.dc.html', 'ColumnPost.dc.html', 'Booking.dc.html', 'HomeIdea.dc.html'}          # design-only boards, not web pages
 pages = [f for f in order if f not in NON_PAGES]
 
 

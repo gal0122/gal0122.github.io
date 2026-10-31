@@ -361,6 +361,15 @@
    "w": 1280,
    "x": 1360,
    "y": 1000
+  },
+  "HomeIdea.dc.html": {
+   "expand": "fill",
+   "h": 2755,
+   "is_interactive": true,
+   "title": "시안 · 홈 분위기 + 진료 분야 사진 카드",
+   "w": 1280,
+   "x": 1360,
+   "y": 2900
   }
  },
  "createdOnFiles": {
@@ -376,6 +385,7 @@
   "Main.dc.html",
   "Popup.dc.html",
   "Booking.dc.html",
+  "HomeIdea.dc.html",
   "About.dc.html",
   "Doctors.dc.html",
   "Equipment.dc.html",
