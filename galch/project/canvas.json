@@ -352,6 +352,15 @@
    "w": 1280,
    "x": 51680,
    "y": 0
+  },
+  "Booking.dc.html": {
+   "expand": "fill",
+   "h": 1860,
+   "is_interactive": true,
+   "title": "시안 · 네이버 예약 버튼 위치",
+   "w": 1280,
+   "x": 1360,
+   "y": 1000
   }
  },
  "createdOnFiles": {
@@ -366,6 +375,7 @@
  "order": [
   "Main.dc.html",
   "Popup.dc.html",
+  "Booking.dc.html",
   "About.dc.html",
   "Doctors.dc.html",
   "Equipment.dc.html",
