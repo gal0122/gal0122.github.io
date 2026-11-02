@@ -48,6 +48,9 @@ FAQ_ICON = ('<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; fo
             '</summary>')
 
 
+# 시술·치료·관리 칼럼(증상이 아닌 것): 글 끝 안내 문장을 '증상이 오래가거나…' 대신 다르게 씀 (원장님 요청 2026-11-03)
+NOT_SYMPTOM = ('제모', '스킨부스터', '리프팅', '토닝', '추나', '한약', '치료', '다이어트', '성장', '모공', '자국', '흉터')
+
 def load_posts(folder):
     posts = []
     for fp in sorted(glob.glob(os.path.join(folder, '*.md'))):
@@ -177,8 +180,10 @@ def regions(p, posts, page_link, post_link, cat_link):
                  f'<p>갈창림 한의원은 경상북도 경산시 하양읍 동서2길 43, 3층에 있습니다. 하양역에서 걸어서 약 10~15분 거리이며, '
                  f'건물 주차장과 이면도로에 주차할 수 있습니다.</p>\n'
                  f'<p>평일 08:30–18:30(점심 13:00–14:00), 토·일요일 08:30–14:00에 진료하며 공휴일은 휴진합니다. '
-                 f'{c} 증상이 오래가거나 자주 반복된다면 지금 상태를 확인하고 알맞은 치료를 안내해 드립니다.</p>\n'
-                 f'<p><a href="tel:053-851-0122">전화 053-851-0122</a> · <a href="https://talk.naver.com/W4F2TI" target="_blank" rel="noopener">네이버 톡톡 상담</a> · '
+                 + (f'{c}에 대해 궁금한 점이 있다면 지금 상태를 먼저 확인하고 알맞은 방법을 안내해 드립니다.</p>\n'
+                    if any(k in p['condition'] for k in NOT_SYMPTOM) else
+                    f'{c} 증상이 오래가거나 자주 반복된다면 지금 상태를 확인하고 알맞은 치료를 안내해 드립니다.</p>\n')
+                 + f'<p><a href="tel:053-851-0122">전화 053-851-0122</a> · <a href="https://talk.naver.com/W4F2TI" target="_blank" rel="noopener">네이버 톡톡 상담</a> · '
                  f'<a href="{page_link("schedule.html")}">진료시간 및 오시는길</a></p>\n<p>톡톡 상담은 진료시간 중 최대한 빠르게 답해 드립니다.</p>\n</section>')
     if p.get('refs'):
         items = ''.join(f'<li><a href="{html.escape(u)}" target="_blank" rel="noopener">{html.escape(n)}</a></li>\n' for n, u in p['refs'])
