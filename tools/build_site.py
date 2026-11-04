@@ -23,7 +23,7 @@ GOOGLE_VERIFY = 'J8QaDGTCXl33x5qhQ0BFwqwJQ9_kGM2WzyDeolMWfLE'   # content of <me
 
 # search title / description per page (keywords: 경산 한의원, 경산 레이저제모)
 SEO = {
- 'index.html': ('경산 한의원 갈창림 한의원 | 하양 · 토·일요일 진료',
+ 'index.html': ('경산·하양 한의원 | 토·일요일 진료 · 갈창림 한의원',
    '경상북도 경산시 하양읍 갈창림 한의원. 평일 08:30–18:30, 토·일 08:30–14:00 진료. 레이저제모·리프팅·색소·여드름 피부미용, 교통사고 후유증, 척추·관절 통증, 소화불량·두통·불면·비염, 다이어트, 소아 성장, 여성 질환.'),
  'about.html': ('병원 소개 | 경산 한의원 갈창림 한의원',
    '경산 하양 갈창림 한의원 소개. 충분히 듣고, 꼭 필요한 치료를 정직하게 제안하는 한의원입니다. 평일은 아침 8시 30분부터, 토·일요일에도 진료합니다.'),
@@ -109,7 +109,10 @@ LD_DIRECTOR = {'@type': 'Person', '@id': DIRECTOR_ID, 'name': '갈창림', 'jobT
                'alumniOf': {'@type': 'CollegeOrUniversity', 'name': '대구한의대학교 한의과대학'},
                'memberOf': [{'@type': 'OrganizationRole', 'roleName': '정회원·교육위원', 'memberOf': {'@type': 'Organization', 'name': '대한통합레이저의학회'}},
                             {'@type': 'OrganizationRole', 'roleName': '정회원', 'memberOf': {'@type': 'Organization', 'name': '국제레이저미용피부과학회'}}],
-               'hasCredential': {'@type': 'EducationalOccupationalCredential', 'name': 'RMSK (미국 근골격 초음파 자격)', 'credentialCategory': 'certification'}}
+               'hasCredential': {'@type': 'EducationalOccupationalCredential', 'name': 'RMSK (미국 근골격 초음파 자격)', 'credentialCategory': 'certification'},
+               'knowsAbout': ['한의학', '레이저 피부미용', '레이저제모', '리프팅', '스킨부스터', '색소 치료', '여드름 치료',
+                              '교통사고 후유증', '척추·관절 통증', '추나요법', '근골격 초음파', '한방 다이어트', '소아 성장'],
+               'sameAs': ['https://blog.naver.com/gal0122']}   # 원장이 직접 쓰는 블로그 (원장님 확인 2026-11-04)
 # services offered (names as shown on the site) -> page
 SERVICES = [
  ('MedicalProcedure', '레이저제모', 'hair-removal.html'),
@@ -164,8 +167,16 @@ LD_CLINIC = {
    {'@type': 'OpeningHoursSpecification', 'validFrom': '2026-12-25', 'validThrough': '2026-12-25', 'opens': '00:00', 'closes': '00:00'}],
  'medicalSpecialty': ['https://schema.org/Dermatologic', 'https://schema.org/Musculoskeletal'],
  'hasMap': NAVER_LINK,
- 'areaServed': [{'@type': 'City', 'name': '경상북도 경산시'}],
- 'employee': {'@type': 'Person', '@id': SITE + '/doctors.html#director', 'name': '갈창림', 'jobTitle': '대표원장 (한의사)', 'url': SITE + '/doctors.html',
+ 'areaServed': [   # 실제로 환자분이 많이 오시는 지역 (원장님 확인 2026-11-04)
+     {'@type': 'AdministrativeArea', 'name': '경상북도 경산시 하양읍'},
+     {'@type': 'AdministrativeArea', 'name': '경상북도 경산시 진량읍'},
+     {'@type': 'AdministrativeArea', 'name': '경상북도 경산시 와촌면'},
+     {'@type': 'AdministrativeArea', 'name': '경상북도 경산시 압량읍'},
+     {'@type': 'City', 'name': '경상북도 경산시'},
+     {'@type': 'AdministrativeArea', 'name': '대구광역시 동구 (안심·반야월)'},
+     {'@type': 'AdministrativeArea', 'name': '경상북도 영천시 금호읍'},
+     {'@type': 'City', 'name': '경상북도 영천시'}],
+ 'employee': {'@type': 'Person', '@id': SITE + '/doctors.html#director', 'name': '갈창림', 'jobTitle': '대표원장 (한의사)', 'url': SITE + '/doctors.html', 'sameAs': ['https://blog.naver.com/gal0122'],
               'alumniOf': {'@type': 'CollegeOrUniversity', 'name': '대구한의대학교 한의과대학'}},
  'availableService': [{'@type': t, 'name': n, 'url': f'{SITE}/{u}'} for t, n, u in SERVICES],
  'sameAs': SAME_AS + [NAVER_LINK, KAKAO_LINK, GOOGLE_LINK],
