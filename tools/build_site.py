@@ -61,6 +61,8 @@ SEO = {
    '여드름이 가라앉은 뒤 남은 붉은 자국과 갈색 자국, 자국의 색에 맞춰 토닝과 스킨부스터로 진료합니다. 가능한 부작용과 주의사항 안내 — 경산 하양 갈창림 한의원.'),
  'acne-scar.html': ('경산·하양 여드름 흉터 | 갈창림 한의원',
    '아이스픽·박스카·롤링, 흉터 모양에 맞춰 서브시전, 니들RF(실펌X), CO2 핀홀, 스킨부스터를 조합합니다. 가능한 부작용과 주의사항 안내 — 경산 하양 갈창림 한의원.'),
+ 'peeling.html': ('경산·하양 피지·각질 · 필링 · GD토닝 | 갈창림 한의원',
+                  '블랙헤드·피지·각질·거친 피부결을 AHA+BHA 필링, 밀크필, 레티놀필, GD토닝으로 정리합니다. 권장 주기와 시술 전 확인할 점, 가능한 부작용 안내 — 경산 하양 갈창림 한의원.'),
  'pore.html': ('경산·하양 모공 | 갈창림 한의원',
    '피지·탄력·흉터, 모공이 넓어진 원인에 맞춰 니들RF, 제네시스 토닝, 스킨부스터, 필링으로 진료합니다. 가능한 부작용과 주의사항 안내 — 경산 하양 갈창림 한의원.'),
  'traffic.html': ('경산·하양 교통사고 한의원 · 후유증 · 토·일 진료 | 갈창림 한의원',
@@ -124,6 +126,7 @@ SERVICES = [
  ('MedicalProcedure', '여드름 치료', 'acne.html'),
  ('MedicalProcedure', '여드름 흉터 치료', 'acne-scar.html'),
  ('MedicalProcedure', '모공 치료', 'pore.html'),
+ ('MedicalProcedure', '필링 · GD토닝 (피지·각질 관리)', 'peeling.html'),
  ('MedicalTherapy', '교통사고 후유증 치료 (자동차보험 진료)', 'traffic.html'),
  ('MedicalTherapy', '척추 질환 치료', 'pain-spine.html'),
  ('MedicalTherapy', '관절 질환 치료', 'pain-joint.html'),
@@ -290,7 +293,7 @@ BLOB = {k: S + v.split('/scratchpad', 1)[1] if '/scratchpad/' in v else v for k,
 
 canvas = json.load(open(f'{G}/project/canvas.json', encoding='utf-8'))
 order = canvas['order']
-NON_PAGES = {'Popup.dc.html', 'ColumnPost.dc.html', 'Booking.dc.html', 'HomeIdea.dc.html', 'Peeling.dc.html'}  # Peeling: 원장님 검토 후 공개          # design-only boards, not web pages
+NON_PAGES = {'Popup.dc.html', 'ColumnPost.dc.html', 'Booking.dc.html', 'HomeIdea.dc.html'}          # design-only boards, not web pages
 pages = [f for f in order if f not in NON_PAGES]
 
 
@@ -1154,7 +1157,7 @@ GROUPS = [('병원 안내', ['about.html', 'doctors.html', 'equipment.html', 'sc
           ('피부미용', ['skin.html', 'hair-removal.html', 'design-lifting.html', 'thread-lifting.html',
                     'booster-pdrn.html', 'booster-plla.html', 'booster-keratin.html', 'booster-altcore.html',
                     'booster-ecm.html', 'pigment.html', 'mole.html', 'acne.html', 'acne-red.html',
-                    'acne-scar.html', 'pore.html']),
+                    'acne-scar.html', 'pore.html', 'peeling.html']),
           ('교통사고 · 통증', ['traffic.html', 'traffic-process.html', 'traffic-treat.html', 'pain-spine.html',
                          'pain-joint.html']),
           ('내과 질환', ['internal-digestive.html', 'internal-neuro.html', 'internal-sleep.html', 'internal-rhinitis.html']),
