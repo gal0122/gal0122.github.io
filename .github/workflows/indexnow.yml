@@ -1,0 +1,46 @@
+name: IndexNow 알림
+
+# 새 칼럼이나 페이지를 main에 올리면, 바뀐 페이지 주소를 IndexNow로 빙·네이버에 바로 알립니다.
+# 이 설정을 처음 넣을 때는 사이트맵 전체를 한 번 제출합니다.
+# Actions 탭에서 "Run workflow"를 누르면 언제든 사이트맵 전체를 다시 제출할 수 있습니다.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.html'
+      - 'sitemap.xml'
+      - '2f452286a2a2029189ac09582bdfdcaa.txt'
+      - '.github/workflows/indexnow.yml'
+      - '.github/scripts/indexnow.sh'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          sparse-checkout: |
+            sitemap.xml
+            .github/scripts/indexnow.sh
+          sparse-checkout-cone-mode: false
+
+      - name: 바뀐 페이지를 IndexNow로 알리기
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SITE_HOST: galclinic.co.kr
+          INDEXNOW_KEY: 2f452286a2a2029189ac09582bdfdcaa
+          REPO: ${{ github.repository }}
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+          MODE: ${{ github.event_name == 'workflow_dispatch' && 'all' || 'auto' }}
+        run: bash .github/scripts/indexnow.sh
