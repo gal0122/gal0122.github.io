@@ -52,7 +52,7 @@
   "d": "2026-10-27"
  },
  "column-atopic-dermatitis.html": {
-  "h": "6da8629b7a83a6ca",
+  "h": "305d2c8c8f358b03",
   "d": "2026-11-04"
  },
  "column-beard-laser-hair-removal.html": {
@@ -64,7 +64,7 @@
   "d": "2026-11-01"
  },
  "column-chemical-peel-types.html": {
-  "h": "dc688ccb395254f0",
+  "h": "3b4ce93900205006",
   "d": "2026-11-04"
  },
  "column-cherry-angioma.html": {
@@ -72,23 +72,23 @@
   "d": "2026-10-26"
  },
  "column-diet-herbal-side-effects.html": {
-  "h": "d369d3a9fedf54b7",
+  "h": "8d2cfb0b9c74804e",
   "d": "2026-10-23"
  },
  "column-diet-yoyo.html": {
-  "h": "a1334940d9c50fe7",
+  "h": "b8b520b694849533",
   "d": "2026-11-03"
  },
  "column-diet.html": {
-  "h": "4119625b543de30c",
-  "d": "2026-11-05"
+  "h": "3e55e7867131ddef",
+  "d": "2026-11-06"
  },
  "column-dysmenorrhea.html": {
   "h": "7a7c27a1a741067b",
   "d": "2026-11-02"
  },
  "column-elbow-pain.html": {
-  "h": "0d739595ba607a7d",
+  "h": "0a4f80b9b757f1d8",
   "d": "2026-11-05"
  },
  "column-epidermoid-cyst.html": {
@@ -104,7 +104,7 @@
   "d": "2026-10-30"
  },
  "column-folliculitis-after-hair-removal.html": {
-  "h": "482a4ee322834ea5",
+  "h": "7bffde376c24b1dd",
   "d": "2026-11-04"
  },
  "column-forward-head-posture.html": {
@@ -136,8 +136,8 @@
   "d": "2026-10-27"
  },
  "column-internal.html": {
-  "h": "a4ad902aceffd8e7",
-  "d": "2026-11-05"
+  "h": "964b4fec3c7d0c59",
+  "d": "2026-11-06"
  },
  "column-irregular-periods.html": {
   "h": "cde1ea8b52299897",
@@ -152,8 +152,8 @@
   "d": "2026-10-31"
  },
  "column-kids-women.html": {
-  "h": "1100277cb2251f1c",
-  "d": "2026-11-05"
+  "h": "58d88924d14ddd16",
+  "d": "2026-11-06"
  },
  "column-knee-pain.html": {
   "h": "2e31e5a47c0b820e",
@@ -174,6 +174,10 @@
  "column-lentigo.html": {
   "h": "b7c1596fb513eeab",
   "d": "2026-10-20"
+ },
+ "column-lifting-interval.html": {
+  "h": "f7ed88bb94aeabc6",
+  "d": "2026-11-06"
  },
  "column-low-back-pain.html": {
   "h": "642beec285f6e116",
@@ -208,8 +212,8 @@
   "d": "2026-10-23"
  },
  "column-pain.html": {
-  "h": "a0dcbacb45fa9311",
-  "d": "2026-11-05"
+  "h": "4e731e1c877dc9ce",
+  "d": "2026-11-06"
  },
  "column-pedestrian-bicycle-accident.html": {
   "h": "19b8bd4efd1af123",
@@ -224,7 +228,7 @@
   "d": "2026-10-28"
  },
  "column-postpartum-diet.html": {
-  "h": "1b52f668dcb2635c",
+  "h": "4e75d42484fbc1e6",
   "d": "2026-10-29"
  },
  "column-reflux.html": {
@@ -256,8 +260,8 @@
   "d": "2026-10-21"
  },
  "column-skin.html": {
-  "h": "a80d167cdc48dd9d",
-  "d": "2026-11-05"
+  "h": "329745c1a0a8eb6d",
+  "d": "2026-11-06"
  },
  "column-spider-angioma.html": {
   "h": "5712b1eb39e9ba23",
@@ -304,20 +308,24 @@
   "d": "2026-10-20"
  },
  "column-traffic.html": {
-  "h": "49487a84af7bb48c",
-  "d": "2026-11-05"
+  "h": "cbb54797f7c7467f",
+  "d": "2026-11-06"
+ },
+ "column-trigger-finger.html": {
+  "h": "71088730176c7e79",
+  "d": "2026-11-06"
  },
  "column-ultrasound-vs-rf-lifting.html": {
   "h": "f3358580f44ad53f",
   "d": "2026-10-25"
  },
  "column.html": {
-  "h": "3c088f2b22e3a616",
-  "d": "2026-11-05"
+  "h": "42b000c85e25b83d",
+  "d": "2026-11-06"
  },
  "design-lifting.html": {
-  "h": "37afc5f4f0a96e6a",
-  "d": "2026-10-27"
+  "h": "247678cf1f67ae7f",
+  "d": "2026-11-06"
  },
  "diet.html": {
   "h": "11811a535b63d4ae",
@@ -344,8 +352,8 @@
   "d": "2026-11-04"
  },
  "index.html": {
-  "h": "c7e6b88d9dc0dccf",
-  "d": "2026-11-05"
+  "h": "41b51ea3fa90e834",
+  "d": "2026-11-06"
  },
  "internal-digestive.html": {
   "h": "ac116fe4f096afde",
@@ -368,8 +376,8 @@
   "d": "2026-10-31"
  },
  "pain-joint.html": {
-  "h": "d4cb0cf7361cb869",
-  "d": "2026-11-05"
+  "h": "eaed359d56ce7a32",
+  "d": "2026-11-06"
  },
  "pain-spine.html": {
   "h": "55fd1e482867e03d",
