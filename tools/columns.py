@@ -140,13 +140,48 @@ def list_regions(posts, key, post_link, cat_link):
     }
 
 
-def others(p, posts, n=3):
-    """Other columns to read next: same category first (closest in date, i.e. the neighbours in a series), then the newest."""
+def others(p, posts, n=4):
+    """Other columns to read next (column-to-column links, 2026-11-06): columns about the same treatment first
+    (sharing the same service pages in 'related', the main one counting most), then the same category, closest in
+    date. Recomputed on every build, so a new column also shows up under the older columns on the same topic."""
     import datetime
     day = lambda q: datetime.date.fromisoformat(q['date'])
+    def svc(q):
+        return [h.split('#')[0] for h, _ in q['related']
+                if not h.startswith(('column', 'price.html', 'schedule.html', 'faq.html'))]
+    ps = svc(p)
+    def score(q):
+        qs = svc(q)
+        s = len(set(ps) & set(qs))
+        if ps and qs and ps[0] == qs[0]:
+            s += 2
+        return s
     rest = [q for q in posts if q is not p]
-    same = sorted((q for q in rest if q['cat_key'] == p['cat_key']), key=lambda q: (abs((day(q) - day(p)).days), q['date']))
-    return (same + [q for q in rest if q['cat_key'] != p['cat_key']])[:n]
+    rest.sort(key=lambda q: (-score(q), q['cat_key'] != p['cat_key'], abs((day(q) - day(p)).days), q['date']))
+    return rest[:n]
+
+
+_NEXT = {}
+def next_posts(p, posts, n=4):
+    """others() for every column, plus a guarantee that each column is linked from at least one other column
+    (a column nobody links to is put in place of the last item of its closest columns' lists)."""
+    key = tuple(q['file'] for q in posts)
+    if key not in _NEXT:
+        m = {q['file']: others(q, posts, n) for q in posts}
+        incoming = {q['file']: 0 for q in posts}
+        for lst in m.values():
+            for q in lst: incoming[q['file']] += 1
+        for q in posts:
+            if incoming[q['file']]:
+                continue
+            for r in others(q, posts, 2):          # its two closest columns link back to it
+                lst = m[r['file']]
+                if q not in lst:
+                    incoming[lst[-1]['file']] -= 1
+                    lst[-1] = q
+                    incoming[q['file']] += 1
+        _NEXT[key] = m
+    return _NEXT[key][p['file']]
 
 
 def regions(p, posts, page_link, post_link, cat_link):
@@ -171,7 +206,7 @@ def regions(p, posts, page_link, post_link, cat_link):
     nxt = ''
     if len(posts) > 1:
         links = ''.join(f'<li><a href="{post_link(q)}"><span class="col-tag">{html.escape(q["category"])}</span>'
-                        f'<span class="col-next-t">{html.escape(q["title"])}</span></a></li>\n' for q in others(p, posts))
+                        f'<span class="col-next-t">{html.escape(q["title"])}</span></a></li>\n' for q in next_posts(p, posts))
         nxt = f'<nav class="col-next" aria-label="함께 읽으면 좋은 칼럼">\n<h2>함께 읽으면 좋은 칼럼</h2>\n<ul>\n{links}</ul>\n</nav>'
     local = ''
     if p.get('condition'):

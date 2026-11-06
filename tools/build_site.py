@@ -749,6 +749,7 @@ def balanced_div(html, start):
 
 
 # ---- home-page popups (designed on the "Popup" board) ----
+_today = (datetime.datetime.utcnow() + datetime.timedelta(hours=9)).date().isoformat()
 POPUP_HTML, POPUP_CSS = '', ''
 if os.path.exists(f'{G}/project/Popup.dc.html'):
     psrc = open(f'{G}/project/Popup.dc.html', encoding='utf-8').read()
@@ -769,9 +770,14 @@ if os.path.exists(f'{G}/project/Popup.dc.html'):
 .pop-overlay[hidden]{display:none}
 @media (max-width:640px){.pop-overlay{align-items:flex-start;padding:16px 16px 76px}.pop-layer{width:100%;margin:auto 0}.pop-cal td{height:36px}.pop-body{gap:12px}.pop-reasons li{padding:9px 14px}.pop-open{padding:11px 14px}.pop{flex:0 1 auto;width:100%;max-width:380px}.pop-body{padding:24px 22px 20px}.pop-date{font-size:30px}.pop-title{font-size:20px!important}}'''
 
-NOTICE_BAR = ('<div class="notice-bar" id="site-notice" role="region" aria-label="공지" hidden>'
-              '<button type="button" class="nb-open"><span class="nb-tag">공지</span><span class="nb-text"></span><span class="nb-more">보기 ›</span></button>'
-              '<button type="button" class="nb-x" aria-label="공지 24시간 동안 닫기">×</button></div>\n')
+# the bar is rendered visible at build time (labels of today's notices) and hidden synchronously right after it
+# when the visitor closed it, so it never pushes the page down after first paint (layout shift, 2026-11-06)
+_labels = [m.group(1) for m in re.finditer(r'<div class="pop" [^>]*data-label="([^"]*)"', POPUP_HTML)
+           if not re.search(r'data-from="(\d{4}-\d{2}-\d{2})"', m.group(0)) or re.search(r'data-from="(\d{4}-\d{2}-\d{2})"', m.group(0)).group(1) <= _today]
+NOTICE_BAR = (f'<div class="notice-bar" id="site-notice" role="region" aria-label="공지"{"" if _labels else " hidden"}>'
+              f'<button type="button" class="nb-open"><span class="nb-tag">공지</span><span class="nb-text">{" · ".join(_labels)}</span><span class="nb-more">보기 ›</span></button>'
+              '<button type="button" class="nb-x" aria-label="공지 24시간 동안 닫기">×</button></div>\n'
+              "<script>try{if(Number(localStorage.getItem('galclinic-notice-hide')||0)>Date.now())document.getElementById('site-notice').hidden=true}catch(e){}</script>\n")
 POPUP_CSS += '''
 .notice-bar{display:none}
 .notice-bar:not([hidden]){display:flex;align-items:stretch;background:#2f5241;color:#ffffff;font-family:'Pretendard','Pretendard Variable',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Noto Sans KR',sans-serif}
