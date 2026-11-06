@@ -155,7 +155,7 @@ LD_CLINIC = {
  '@type': 'MedicalClinic', '@id': CLINIC_ID,
  'name': '갈창림 한의원', 'alternateName': ['갈창림한의원', 'Gal Chang Lim Korean Medicine Clinic'],
  'description': SEO['index.html'][1],
- 'url': SITE + '/', 'telephone': '+82-53-851-0122', 'faxNumber': '+82-53-854-0122',
+ 'url': SITE + '/', 'telephone': '+82-53-851-0122', 'faxNumber': '+82-53-854-0122', 'potentialAction': {'@type': 'ReserveAction', 'name': '네이버 예약', 'target': {'@type': 'EntryPoint', 'urlTemplate': 'https://m.booking.naver.com/booking/16/bizes/1769133', 'actionPlatform': ['http://schema.org/DesktopWebPlatform', 'http://schema.org/MobileWebPlatform']}},
  'image': [SITE + '/assets/og-image.png', SITE + '/assets/clinic-exterior.webp'], 'logo': SITE + '/assets/logo-512.png',
  'foundingDate': '2020',
  'address': {'@type': 'PostalAddress', 'streetAddress': '하양읍 동서2길 43, 3층', 'addressLocality': '경산시',
@@ -1168,7 +1168,8 @@ assert set(SLUG.values()) <= grouped | {'index.html', 'privacy.html', 'terms.htm
 seo_of = lambda s: (POST_META[s]['title'] + ' | ', POST_META[s]['description']) if s in POST_META else SEO.get(s, (s, ''))
 llms = ['# 갈창림 한의원', '',
         '> 경상북도 경산시 하양읍 동서2길 43, 3층에 있는 한의원입니다. 평일(월~금) 08:30–18:30(점심 13:00–14:00), '
-        '토·일요일 08:30–14:00(점심시간 없음) 진료하며 공휴일은 휴진합니다. 전화 053-851-0122.', '',
+        '토·일요일 08:30–14:00(점심시간 없음) 진료하며 공휴일은 휴진합니다. 전화 053-851-0122, '
+        '네이버 예약 https://m.booking.naver.com/booking/16/bizes/1769133 .', '',
         '대표원장 갈창림(대구한의대학교 한의과대학 졸업)이 직접 진찰하고 치료합니다. 레이저제모·리프팅·색소·여드름·모공·스킨부스터 등 '
         '피부미용, 교통사고 후유증(자동차보험 진료), 척추·관절 통증, 소화불량·두통·불면·비염 같은 내과 질환, 다이어트, 소아 성장, 여성 질환을 진료합니다. '
         '하양역(대구도시철도 1호선·대구선)에서 걸어서 약 10~15분이며, 건물 주차장과 이면도로에 주차할 수 있습니다. '
