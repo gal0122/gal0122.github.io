@@ -165,7 +165,8 @@ img[width][height]{height:auto}
 </style>
 </head>
 <body>
-<div class="notice-bar" id="site-notice" role="region" aria-label="공지" hidden><button type="button" class="nb-open"><span class="nb-tag">공지</span><span class="nb-text"></span><span class="nb-more">보기 ›</span></button><button type="button" class="nb-x" aria-label="공지 24시간 동안 닫기">×</button></div>
+<div class="notice-bar" id="site-notice" role="region" aria-label="공지"><button type="button" class="nb-open"><span class="nb-tag">공지</span><span class="nb-text">이벤트 종료 안내</span><span class="nb-more">보기 ›</span></button><button type="button" class="nb-x" aria-label="공지 24시간 동안 닫기">×</button></div>
+<script>try{if(Number(localStorage.getItem('galclinic-notice-hide')||0)>Date.now())document.getElementById('site-notice').hidden=true}catch(e){}</script>
 <div style="font-family: 'Pretendard', 'Pretendard Variable', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; color: #24302a; background: #faf7f0; line-height: 1.6; min-height: 100vh">
 
 <header class="site-hd" style="position: sticky; top: 0; z-index: 30; background: #faf7f0; border-bottom: 1px solid #e2dccd">
