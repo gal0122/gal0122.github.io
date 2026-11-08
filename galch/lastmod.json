@@ -71,6 +71,10 @@
   "h": "01a9739f39412ef2",
   "d": "2026-10-26"
  },
+ "column-chuna-insurance.html": {
+  "h": "6420981e220a5d9a",
+  "d": "2026-11-08"
+ },
  "column-cold-hands-feet.html": {
   "h": "52e4a5c74647416d",
   "d": "2026-11-07"
@@ -84,8 +88,8 @@
   "d": "2026-11-03"
  },
  "column-diet.html": {
-  "h": "34a3281f7b611d9f",
-  "d": "2026-11-07"
+  "h": "7d93e2199850e858",
+  "d": "2026-11-08"
  },
  "column-dysmenorrhea.html": {
   "h": "2ad9cdaf8cde1b82",
@@ -100,7 +104,7 @@
   "d": "2026-10-24"
  },
  "column-facial-palsy.html": {
-  "h": "667bbf2689611d51",
+  "h": "7cd66c884fb0b09a",
   "d": "2026-10-24"
  },
  "column-flat-warts.html": {
@@ -112,7 +116,7 @@
   "d": "2026-11-04"
  },
  "column-forward-head-posture.html": {
-  "h": "c43dfe3dab1b2536",
+  "h": "4ce3eec63fa05f4e",
   "d": "2026-10-29"
  },
  "column-freckles.html": {
@@ -128,7 +132,7 @@
   "d": "2026-10-23"
  },
  "column-headache.html": {
-  "h": "d6c06f0395969b81",
+  "h": "ed25e390ecd440db",
   "d": "2026-10-20"
  },
  "column-indigestion.html": {
@@ -140,8 +144,8 @@
   "d": "2026-10-27"
  },
  "column-internal.html": {
-  "h": "d5e698049fd17636",
-  "d": "2026-11-07"
+  "h": "0fc1f6c68000240e",
+  "d": "2026-11-08"
  },
  "column-irregular-periods.html": {
   "h": "e79ec84376f2676c",
@@ -156,8 +160,8 @@
   "d": "2026-10-31"
  },
  "column-kids-women.html": {
-  "h": "e44e3addffb58766",
-  "d": "2026-11-07"
+  "h": "63bcaa75a40fc248",
+  "d": "2026-11-08"
  },
  "column-knee-pain.html": {
   "h": "2353e9dce3ad4ffc",
@@ -215,9 +219,13 @@
   "h": "ae3ffad0985e50d8",
   "d": "2026-10-23"
  },
+ "column-numbness.html": {
+  "h": "e28b21c3fd4dbba7",
+  "d": "2026-11-08"
+ },
  "column-pain.html": {
-  "h": "41e249cd4fbc3c3d",
-  "d": "2026-11-07"
+  "h": "407ec48ccd073af9",
+  "d": "2026-11-08"
  },
  "column-pedestrian-bicycle-accident.html": {
   "h": "cc55e0efcc6f0c5f",
@@ -264,15 +272,15 @@
   "d": "2026-10-21"
  },
  "column-skin.html": {
-  "h": "37780dedd049293e",
-  "d": "2026-11-07"
+  "h": "5c9f5f090b98933a",
+  "d": "2026-11-08"
  },
  "column-spider-angioma.html": {
   "h": "37897330a40a4c0d",
   "d": "2026-10-27"
  },
  "column-spinal-stenosis.html": {
-  "h": "8d401884d5748ae5",
+  "h": "2e5a7b1061a22981",
   "d": "2026-11-02"
  },
  "column-steatocystoma.html": {
@@ -316,8 +324,8 @@
   "d": "2026-10-20"
  },
  "column-traffic.html": {
-  "h": "6a6be8f68655d3bf",
-  "d": "2026-11-07"
+  "h": "afe4962908ff00b6",
+  "d": "2026-11-08"
  },
  "column-trigger-finger.html": {
   "h": "a893be13d5636537",
@@ -328,8 +336,8 @@
   "d": "2026-10-25"
  },
  "column.html": {
-  "h": "f2c5a77890ff12fe",
-  "d": "2026-11-07"
+  "h": "84cc0232d8592df6",
+  "d": "2026-11-08"
  },
  "design-lifting.html": {
   "h": "54414c664e756267",
@@ -360,16 +368,16 @@
   "d": "2026-11-06"
  },
  "index.html": {
-  "h": "ac9fc9b6991b56ef",
-  "d": "2026-11-07"
+  "h": "f9d9e4d308f4f5c0",
+  "d": "2026-11-08"
  },
  "internal-digestive.html": {
   "h": "b2d8ea7b370537f9",
   "d": "2026-11-06"
  },
  "internal-neuro.html": {
-  "h": "a35a5cbc453c1132",
-  "d": "2026-11-06"
+  "h": "f80377ce61c44ffd",
+  "d": "2026-11-08"
  },
  "internal-rhinitis.html": {
   "h": "3033d2556c638b07",
@@ -388,8 +396,8 @@
   "d": "2026-11-06"
  },
  "pain-spine.html": {
-  "h": "4b3031c4457acfd9",
-  "d": "2026-11-06"
+  "h": "2ad2e7b818d8a76d",
+  "d": "2026-11-08"
  },
  "peeling.html": {
   "h": "3e296322784735fd",
@@ -432,8 +440,8 @@
   "d": "2026-11-06"
  },
  "traffic-treat.html": {
-  "h": "3c27421143640d0e",
-  "d": "2026-11-07"
+  "h": "5b9da4d090f969b1",
+  "d": "2026-11-08"
  },
  "traffic.html": {
   "h": "03b60811baba4f90",
