@@ -167,6 +167,7 @@ LD_CLINIC = {
    {'@type': 'OpeningHoursSpecification', 'dayOfWeek': ['Saturday', 'Sunday'], 'opens': '08:30', 'closes': '14:00'}],
  'specialOpeningHoursSpecification': [   # 공휴일·임시 휴진일 (진료 일정 페이지와 맞출 것)
    {'@type': 'OpeningHoursSpecification', 'validFrom': '2026-11-01', 'validThrough': '2026-11-01', 'opens': '00:00', 'closes': '00:00'},
+   {'@type': 'OpeningHoursSpecification', 'validFrom': '2026-12-13', 'validThrough': '2026-12-13', 'opens': '00:00', 'closes': '00:00'},   # 미용 세미나
    {'@type': 'OpeningHoursSpecification', 'validFrom': '2026-12-25', 'validThrough': '2026-12-25', 'opens': '00:00', 'closes': '00:00'}],
  'medicalSpecialty': ['https://schema.org/Dermatologic', 'https://schema.org/Musculoskeletal'],
  'hasMap': NAVER_LINK,
