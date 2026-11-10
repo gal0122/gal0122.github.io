@@ -867,6 +867,7 @@ document.addEventListener('click', function (e) {{
   var h = a.getAttribute('href') || '';
   if (h.indexOf('tel:') === 0) gtag('event', 'call_click', {{ link_text: (a.textContent || '').trim().slice(0, 40) }});
   else if (h.indexOf('talk.naver.com') > -1) gtag('event', 'talk_click', {{ link_text: (a.textContent || '').trim().slice(0, 40) }});
+  else if (h.indexOf('booking.naver.com') > -1) gtag('event', 'booking_click', {{ link_text: (a.textContent || '').trim().slice(0, 40), link_place: a.classList.contains('qn-book') ? 'quick_bar' : (a.closest('main section') === document.querySelector('main section') ? 'hero' : 'bottom') }});
 }});
 </script>
 ''' if GA_ID else ''
