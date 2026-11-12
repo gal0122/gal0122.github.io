@@ -140,6 +140,8 @@ def list_regions(posts, key, post_link, cat_link):
     }
 
 
+TOPIC_STOP = {'경산', '하양', '가격', '비용', '횟수', '추천', '치료', '주기', '시기', '종류', '차이', '레이저', '한의원', '증상', '원인', '관리', '시술'}
+
 def others(p, posts, n=4):
     """Other columns to read next (column-to-column links, 2026-11-06): columns about the same treatment first
     (sharing the same service pages in 'related', the main one counting most), then the same category, closest in
@@ -150,12 +152,21 @@ def others(p, posts, n=4):
         return [h.split('#')[0] for h, _ in q['related']
                 if not h.startswith(('column', 'price.html', 'schedule.html', 'faq.html'))]
     ps = svc(p)
+    # topic words of this column (condition + keyword, minus place names and generic words); a column whose title,
+    # condition or keyword shares them counts more than one that only shares the service page (2026-11-12:
+    # a toning column should be followed by toning·기미 columns, not by other columns of the 색소 page)
+    words = {w for w in re.split(r'[\s,·/()]+', p.get('condition', '') + ' ' + p.get('keyword', ''))
+             if len(w) > 1 and w not in TOPIC_STOP}
+    words |= {w[3:] for w in words if w.startswith('레이저') and len(w) > 4}   # 레이저토닝 → 토닝, 레이저제모 → 제모
+    def topic(q):
+        head = ' '.join([q['title'], q.get('condition', ''), q.get('keyword', '')])
+        return sum(2 if w in head else 1 if w in q['summary'] else 0 for w in words)
     def score(q):
         qs = svc(q)
         s = len(set(ps) & set(qs))
         if ps and qs and ps[0] == qs[0]:
             s += 2
-        return s
+        return s + min(topic(q), 4)
     rest = [q for q in posts if q is not p]
     rest.sort(key=lambda q: (-score(q), q['cat_key'] != p['cat_key'], abs((day(q) - day(p)).days), q['date']))
     return rest[:n]
