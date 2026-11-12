@@ -121,7 +121,7 @@ TODAY = os.environ.get('GAL_TODAY') or datetime.datetime.now(datetime.timezone(d
 posts = [p for p in columns.load_posts(C) if p['date'] <= TODAY]   # only posts that are live
 _order = json.load(open(P + 'canvas.json', encoding='utf-8'))['order']
 _rev = {('index.html' if b == 'Main.dc.html' else re.sub(r'(?<=[a-z])(?=[A-Z])', '-', b[:-8]).lower() + '.html'): b for b in _order}
-dc = lambda slug: _rev[slug]
+dc = lambda slug: 'ColumnPost.dc.html' if slug.startswith('column-') else _rev[slug]   # links between columns inside a post body
 
 # ---- list board (the build also makes one page per category from it) ----
 L = columns.mark(columns.list_regions(posts, 'all', lambda p: 'ColumnPost.dc.html', lambda k: 'Column.dc.html'))
