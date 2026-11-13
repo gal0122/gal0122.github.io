@@ -4,16 +4,16 @@
   "d": "2026-11-06"
  },
  "acne-red.html": {
-  "h": "b029a6d8f5a90295",
-  "d": "2026-11-06"
+  "h": "e072eb68ab7a4aff",
+  "d": "2026-11-13"
  },
  "acne-scar.html": {
   "h": "ccf0bbb3ced1f927",
   "d": "2026-11-06"
  },
  "acne.html": {
-  "h": "86d97177bbff4e7a",
-  "d": "2026-11-11"
+  "h": "5e32f7a721c3ec12",
+  "d": "2026-11-13"
  },
  "booster-altcore.html": {
   "h": "e9064c76228b278d",
@@ -40,8 +40,12 @@
   "d": "2026-10-20"
  },
  "column-acne-scar-types.html": {
-  "h": "56c2337751b00a14",
+  "h": "c22c57e56bb30a61",
   "d": "2026-10-26"
+ },
+ "column-adult-jaw-acne.html": {
+  "h": "bc3c53d4b5474b53",
+  "d": "2026-11-13"
  },
  "column-ankle-sprain.html": {
   "h": "203a4a5fc9aab26e",
@@ -64,7 +68,7 @@
   "d": "2026-11-01"
  },
  "column-chemical-peel-types.html": {
-  "h": "2e37b84a1bdd55fc",
+  "h": "04d4c7ce19d1ab43",
   "d": "2026-11-04"
  },
  "column-cherry-angioma.html": {
@@ -88,8 +92,8 @@
   "d": "2026-11-03"
  },
  "column-diet.html": {
-  "h": "dd6ae256d3fce0ec",
-  "d": "2026-11-12"
+  "h": "b34d26c5064dc315",
+  "d": "2026-11-13"
  },
  "column-dysmenorrhea.html": {
   "h": "733cf8fac76b8519",
@@ -139,17 +143,21 @@
   "h": "05eed09d8409d568",
   "d": "2026-10-20"
  },
+ "column-hwabyung.html": {
+  "h": "5be1b3d4ee058ff6",
+  "d": "2026-11-13"
+ },
  "column-indigestion.html": {
   "h": "397b47c8fe657fa4",
   "d": "2026-10-20"
  },
  "column-insomnia.html": {
-  "h": "7cc9e93aeb892fc0",
+  "h": "791b5afd4d358b05",
   "d": "2026-10-27"
  },
  "column-internal.html": {
-  "h": "02e246a51c2a957a",
-  "d": "2026-11-12"
+  "h": "f4981b439fa66a1f",
+  "d": "2026-11-13"
  },
  "column-irregular-periods.html": {
   "h": "9a1ef845f0614a53",
@@ -168,8 +176,8 @@
   "d": "2026-10-31"
  },
  "column-kids-women.html": {
-  "h": "7a543bfc1123e352",
-  "d": "2026-11-12"
+  "h": "b2f33859c08ffb36",
+  "d": "2026-11-13"
  },
  "column-knee-pain.html": {
   "h": "7ff9b975f46865d4",
@@ -244,8 +252,8 @@
   "d": "2026-11-08"
  },
  "column-pain.html": {
-  "h": "d404bfb6973afba0",
-  "d": "2026-11-12"
+  "h": "91c479273fa8ce22",
+  "d": "2026-11-13"
  },
  "column-pdrn-booster-sessions.html": {
   "h": "1965cfea88003cb4",
@@ -308,8 +316,8 @@
   "d": "2026-10-21"
  },
  "column-skin.html": {
-  "h": "e9248a3176d4c426",
-  "d": "2026-11-12"
+  "h": "77e099b75e288e8a",
+  "d": "2026-11-13"
  },
  "column-spider-angioma.html": {
   "h": "34d49429533f5825",
@@ -364,8 +372,8 @@
   "d": "2026-10-20"
  },
  "column-traffic.html": {
-  "h": "37cafc3af31833c9",
-  "d": "2026-11-12"
+  "h": "947b08ccaa50a411",
+  "d": "2026-11-13"
  },
  "column-trigger-finger.html": {
   "h": "c3812945501235d1",
@@ -376,8 +384,8 @@
   "d": "2026-10-25"
  },
  "column.html": {
-  "h": "c18054287b2d5606",
-  "d": "2026-11-12"
+  "h": "705d7e49c9a61d19",
+  "d": "2026-11-13"
  },
  "design-lifting.html": {
   "h": "7cd4d74ac176499e",
@@ -408,8 +416,8 @@
   "d": "2026-11-12"
  },
  "index.html": {
-  "h": "fa7eeed563afb217",
-  "d": "2026-11-12"
+  "h": "e2bbc4f4b2cc7293",
+  "d": "2026-11-13"
  },
  "internal-digestive.html": {
   "h": "b2d8ea7b370537f9",
@@ -424,8 +432,8 @@
   "d": "2026-11-07"
  },
  "internal-sleep.html": {
-  "h": "b7b4ceb240fc4b08",
-  "d": "2026-11-07"
+  "h": "4be08f28d66958d6",
+  "d": "2026-11-13"
  },
  "mole.html": {
   "h": "bac40fba1d38c0cc",
