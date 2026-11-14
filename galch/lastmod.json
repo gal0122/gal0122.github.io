@@ -4,12 +4,12 @@
   "d": "2026-11-06"
  },
  "acne-red.html": {
-  "h": "e072eb68ab7a4aff",
-  "d": "2026-11-13"
+  "h": "d31f794b4e8ab30e",
+  "d": "2026-11-15"
  },
  "acne-scar.html": {
-  "h": "f8645a490ab78477",
-  "d": "2026-11-14"
+  "h": "6809e33bf3a9ff54",
+  "d": "2026-11-15"
  },
  "acne.html": {
   "h": "5e32f7a721c3ec12",
@@ -39,12 +39,16 @@
   "h": "68b4e494006fd4e9",
   "d": "2026-10-20"
  },
+ "column-acne-red-marks.html": {
+  "h": "9781b9c6fc8f01fa",
+  "d": "2026-11-15"
+ },
  "column-acne-scar-types.html": {
-  "h": "c744ece7f53fae44",
+  "h": "835e0f1ede4abc0a",
   "d": "2026-10-26"
  },
  "column-adult-jaw-acne.html": {
-  "h": "d2b9e5fdf24a1c41",
+  "h": "73f0990518304e18",
   "d": "2026-11-13"
  },
  "column-ankle-sprain.html": {
@@ -75,6 +79,10 @@
   "h": "3e020cce06a9abe5",
   "d": "2026-10-26"
  },
+ "column-chronic-fatigue.html": {
+  "h": "907fb478fb72634b",
+  "d": "2026-11-15"
+ },
  "column-chuna-insurance.html": {
   "h": "edfdbfa2fa23b3f5",
   "d": "2026-11-08"
@@ -92,8 +100,8 @@
   "d": "2026-11-03"
  },
  "column-diet.html": {
-  "h": "ab5a41ad38be057c",
-  "d": "2026-11-14"
+  "h": "105836354a7690e5",
+  "d": "2026-11-15"
  },
  "column-dysmenorrhea.html": {
   "h": "733cf8fac76b8519",
@@ -120,7 +128,7 @@
   "d": "2026-10-24"
  },
  "column-flat-warts.html": {
-  "h": "2a6845f6ff5fb470",
+  "h": "af9954d4e6d8eb65",
   "d": "2026-10-30"
  },
  "column-folliculitis-after-hair-removal.html": {
@@ -148,7 +156,7 @@
   "d": "2026-10-20"
  },
  "column-hwabyung.html": {
-  "h": "452a62d40865831c",
+  "h": "efa8c2ee393b23e2",
   "d": "2026-11-13"
  },
  "column-ibs.html": {
@@ -160,12 +168,12 @@
   "d": "2026-10-20"
  },
  "column-insomnia.html": {
-  "h": "791b5afd4d358b05",
+  "h": "874512ce6f32f6fd",
   "d": "2026-10-27"
  },
  "column-internal.html": {
-  "h": "7fd80bfa06c1d063",
-  "d": "2026-11-14"
+  "h": "6e2f0a50f7016fcd",
+  "d": "2026-11-15"
  },
  "column-irregular-periods.html": {
   "h": "9a1ef845f0614a53",
@@ -184,8 +192,8 @@
   "d": "2026-10-31"
  },
  "column-kids-women.html": {
-  "h": "5f179673d6f8c1da",
-  "d": "2026-11-14"
+  "h": "6df466b8451a0641",
+  "d": "2026-11-15"
  },
  "column-knee-pain.html": {
   "h": "7ff9b975f46865d4",
@@ -248,7 +256,7 @@
   "d": "2026-11-13"
  },
  "column-moles.html": {
-  "h": "c38a59e559c77e5c",
+  "h": "85d8015612670242",
   "d": "2026-10-20"
  },
  "column-neck-disc.html": {
@@ -264,8 +272,8 @@
   "d": "2026-11-08"
  },
  "column-pain.html": {
-  "h": "e83163ff1cd2b0b6",
-  "d": "2026-11-14"
+  "h": "126c9b53c0f91363",
+  "d": "2026-11-15"
  },
  "column-pdrn-booster-sessions.html": {
   "h": "1965cfea88003cb4",
@@ -328,12 +336,12 @@
   "d": "2026-10-21"
  },
  "column-skin.html": {
-  "h": "4166a696e43fc3c2",
-  "d": "2026-11-14"
+  "h": "432c5a520181bd51",
+  "d": "2026-11-15"
  },
  "column-small-acne-scars-shockwave.html": {
-  "h": "1db2efc05e79c088",
-  "d": "2026-11-14"
+  "h": "81ae3c5a0ebf04a8",
+  "d": "2026-11-15"
  },
  "column-spider-angioma.html": {
   "h": "34d49429533f5825",
@@ -348,7 +356,7 @@
   "d": "2026-10-25"
  },
  "column-sylfirm-x-guide.html": {
-  "h": "b86acdf8ad29047d",
+  "h": "c2543dc5a194adf1",
   "d": "2026-10-20"
  },
  "column-thread-lifting-duration.html": {
@@ -388,8 +396,8 @@
   "d": "2026-10-20"
  },
  "column-traffic.html": {
-  "h": "b55d4101e6891aea",
-  "d": "2026-11-14"
+  "h": "ddfcb340d23bd2bd",
+  "d": "2026-11-15"
  },
  "column-trigger-finger.html": {
   "h": "c3812945501235d1",
@@ -400,12 +408,12 @@
   "d": "2026-10-25"
  },
  "column-under-eye-fat-non-surgical.html": {
-  "h": "3754ac4fe2932608",
-  "d": "2026-11-14"
+  "h": "bf464194ea9c8a09",
+  "d": "2026-11-15"
  },
  "column.html": {
-  "h": "63e4cf455944ba28",
-  "d": "2026-11-14"
+  "h": "1664a35044e601e3",
+  "d": "2026-11-15"
  },
  "design-lifting.html": {
   "h": "7cd4d74ac176499e",
@@ -436,8 +444,8 @@
   "d": "2026-11-12"
  },
  "index.html": {
-  "h": "ed74cb7e79067452",
-  "d": "2026-11-14"
+  "h": "40517433c55761ee",
+  "d": "2026-11-15"
  },
  "internal-digestive.html": {
   "h": "2f424bfce7e7ce90",
@@ -452,8 +460,8 @@
   "d": "2026-11-07"
  },
  "internal-sleep.html": {
-  "h": "4be08f28d66958d6",
-  "d": "2026-11-13"
+  "h": "c84e4625ea3f3ddd",
+  "d": "2026-11-15"
  },
  "mole.html": {
   "h": "5022155b96581ae1",
@@ -480,8 +488,8 @@
   "d": "2026-11-14"
  },
  "price.html": {
-  "h": "c3c4c36395d19ac6",
-  "d": "2026-11-14"
+  "h": "b4bd01f6238c60ab",
+  "d": "2026-11-15"
  },
  "privacy.html": {
   "h": "c0138a30a1b4c062",
