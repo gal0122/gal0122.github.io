@@ -379,6 +379,15 @@
    "w": 1280,
    "x": 27200,
    "y": 8200
+  },
+  "Shockwave.dc.html": {
+   "expand": "fill",
+   "h": 7800,
+   "is_interactive": true,
+   "title": "20-2 피부미용 · 눈밑지방·흉터 충격파",
+   "w": 1280,
+   "x": 27200,
+   "y": 15600
   }
  },
  "createdOnFiles": {
@@ -415,6 +424,7 @@
   "AcneScar.dc.html",
   "Pore.dc.html",
   "Peeling.dc.html",
+  "Shockwave.dc.html",
   "Traffic.dc.html",
   "TrafficProcess.dc.html",
   "TrafficTreat.dc.html",

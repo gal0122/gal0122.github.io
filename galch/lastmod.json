@@ -8,8 +8,8 @@
   "d": "2026-11-13"
  },
  "acne-scar.html": {
-  "h": "ccf0bbb3ced1f927",
-  "d": "2026-11-06"
+  "h": "f8645a490ab78477",
+  "d": "2026-11-14"
  },
  "acne.html": {
   "h": "5e32f7a721c3ec12",
@@ -40,11 +40,11 @@
   "d": "2026-10-20"
  },
  "column-acne-scar-types.html": {
-  "h": "fa9dab494b20541d",
+  "h": "c744ece7f53fae44",
   "d": "2026-10-26"
  },
  "column-adult-jaw-acne.html": {
-  "h": "955283c34d47ee38",
+  "h": "d2b9e5fdf24a1c41",
   "d": "2026-11-13"
  },
  "column-ankle-sprain.html": {
@@ -92,7 +92,7 @@
   "d": "2026-11-03"
  },
  "column-diet.html": {
-  "h": "40c75ae15db3fe57",
+  "h": "ab5a41ad38be057c",
   "d": "2026-11-14"
  },
  "column-dysmenorrhea.html": {
@@ -104,7 +104,7 @@
   "d": "2026-11-05"
  },
  "column-enlarged-pores.html": {
-  "h": "64d95ae6eeef4170",
+  "h": "ea6a4efbe3980d37",
   "d": "2026-11-14"
  },
  "column-epidermoid-cyst.html": {
@@ -164,7 +164,7 @@
   "d": "2026-10-27"
  },
  "column-internal.html": {
-  "h": "337e67d5818db3fc",
+  "h": "7fd80bfa06c1d063",
   "d": "2026-11-14"
  },
  "column-irregular-periods.html": {
@@ -184,7 +184,7 @@
   "d": "2026-10-31"
  },
  "column-kids-women.html": {
-  "h": "6bc2e78d5083e297",
+  "h": "5f179673d6f8c1da",
   "d": "2026-11-14"
  },
  "column-knee-pain.html": {
@@ -264,7 +264,7 @@
   "d": "2026-11-08"
  },
  "column-pain.html": {
-  "h": "39c04d6e18bd428b",
+  "h": "e83163ff1cd2b0b6",
   "d": "2026-11-14"
  },
  "column-pdrn-booster-sessions.html": {
@@ -328,7 +328,11 @@
   "d": "2026-10-21"
  },
  "column-skin.html": {
-  "h": "4c70ae4e3421885a",
+  "h": "4166a696e43fc3c2",
+  "d": "2026-11-14"
+ },
+ "column-small-acne-scars-shockwave.html": {
+  "h": "1db2efc05e79c088",
   "d": "2026-11-14"
  },
  "column-spider-angioma.html": {
@@ -344,7 +348,7 @@
   "d": "2026-10-25"
  },
  "column-sylfirm-x-guide.html": {
-  "h": "63583c15e8de6284",
+  "h": "b86acdf8ad29047d",
   "d": "2026-10-20"
  },
  "column-thread-lifting-duration.html": {
@@ -384,7 +388,7 @@
   "d": "2026-10-20"
  },
  "column-traffic.html": {
-  "h": "b2b0c03a2eab32d1",
+  "h": "b55d4101e6891aea",
   "d": "2026-11-14"
  },
  "column-trigger-finger.html": {
@@ -395,8 +399,12 @@
   "h": "2227e6c669046f11",
   "d": "2026-10-25"
  },
+ "column-under-eye-fat-non-surgical.html": {
+  "h": "3754ac4fe2932608",
+  "d": "2026-11-14"
+ },
  "column.html": {
-  "h": "8ea3685bca4cb3eb",
+  "h": "63e4cf455944ba28",
   "d": "2026-11-14"
  },
  "design-lifting.html": {
@@ -412,8 +420,8 @@
   "d": "2026-11-06"
  },
  "equipment.html": {
-  "h": "20ccd497de9a1ede",
-  "d": "2026-11-13"
+  "h": "0de79bdfc6ca4266",
+  "d": "2026-11-14"
  },
  "faq.html": {
   "h": "ab48e04110f73457",
@@ -428,7 +436,7 @@
   "d": "2026-11-12"
  },
  "index.html": {
-  "h": "4730894cbe568dc9",
+  "h": "ed74cb7e79067452",
   "d": "2026-11-14"
  },
  "internal-digestive.html": {
@@ -468,12 +476,12 @@
   "d": "2026-11-12"
  },
  "pore.html": {
-  "h": "b4dd12c1149f9820",
+  "h": "ee7cce9bef282684",
   "d": "2026-11-14"
  },
  "price.html": {
-  "h": "f0abd97985875635",
-  "d": "2026-11-06"
+  "h": "670d3d3263a6ad40",
+  "d": "2026-11-14"
  },
  "privacy.html": {
   "h": "c0138a30a1b4c062",
@@ -483,9 +491,13 @@
   "h": "5ea55cbf78d11c4a",
   "d": "2026-11-09"
  },
+ "shockwave.html": {
+  "h": "2dabbd6d5acb826b",
+  "d": "2026-11-14"
+ },
  "skin.html": {
-  "h": "23069b70cb187781",
-  "d": "2026-11-11"
+  "h": "a7ca63bb1b706ae1",
+  "d": "2026-11-14"
  },
  "terms.html": {
   "h": "8f9482d74ba4a2fc",
