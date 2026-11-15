@@ -28,7 +28,7 @@ SEO = {
  'about.html': ('병원 소개 | 경산 한의원 갈창림 한의원',
    '경산 하양 갈창림 한의원 소개. 충분히 듣고, 꼭 필요한 치료를 정직하게 제안하는 한의원입니다. 평일은 아침 8시 30분부터, 토·일요일에도 진료합니다.'),
  'doctors.html': ('갈창림 대표원장 소개 | 경산 하양 갈창림 한의원',
-   '갈창림 대표원장 — 대구한의대학교 한의과대학 졸업, 대한통합레이저의학회 정회원·교육위원·인정의, 대한의료마취학회 대외협력이사. 경산 하양 갈창림 한의원.'),
+   '갈창림 대표원장 — 대구한의대학교 한의과대학 졸업, 대한통합레이저의학회 정회원·교육위원, 대한의료마취학회 대외협력이사. 경산 하양 갈창림 한의원.'),
  'equipment.html': ('피부 레이저 보유장비 · 악센토N · 실펌X · 야누스프로 | 갈창림 한의원',
    '악센토N 레이저제모, 리니어펌·볼뉴머 리프팅, 큐마스터플러스, 실펌X 등 경산 하양 갈창림 한의원의 보유 장비를 소개합니다.'),
  'schedule.html': ('진료시간·오시는길 | 경산 하양 갈창림 한의원',
@@ -111,11 +111,10 @@ LD_DIRECTOR = {'@type': 'Person', '@id': DIRECTOR_ID, 'name': '갈창림', 'jobT
                'url': SITE + '/doctors.html', 'image': SITE + '/assets/director.webp',
                'worksFor': {'@id': CLINIC_ID},
                'alumniOf': {'@type': 'CollegeOrUniversity', 'name': '대구한의대학교 한의과대학'},
-               'memberOf': [{'@type': 'OrganizationRole', 'roleName': '정회원·교육위원·인정의', 'memberOf': {'@type': 'Organization', 'name': '대한통합레이저의학회'}},
+               'memberOf': [{'@type': 'OrganizationRole', 'roleName': '정회원·교육위원', 'memberOf': {'@type': 'Organization', 'name': '대한통합레이저의학회'}},
                             {'@type': 'OrganizationRole', 'roleName': '대외협력이사', 'memberOf': {'@type': 'Organization', 'name': '대한의료마취학회'}},
                             {'@type': 'OrganizationRole', 'roleName': '정회원', 'memberOf': {'@type': 'Organization', 'name': '국제레이저미용피부과학회'}}],
-               'hasCredential': [{'@type': 'EducationalOccupationalCredential', 'name': 'RMSK (미국 근골격 초음파 자격)', 'credentialCategory': 'certification'},
-                                 {'@type': 'EducationalOccupationalCredential', 'name': '대한통합레이저의학회 인정의', 'credentialCategory': 'certification', 'recognizedBy': {'@type': 'Organization', 'name': '대한통합레이저의학회'}}],
+               'hasCredential': {'@type': 'EducationalOccupationalCredential', 'name': 'RMSK (미국 근골격 초음파 자격)', 'credentialCategory': 'certification'},   # '인정의' 표기는 원장님 요청으로 뺌 (2026-11-16, 의료광고 표현 문제)
                'knowsAbout': ['한의학', '레이저 피부미용', '레이저제모', '리프팅', '스킨부스터', '색소 치료', '여드름 치료',
                               '교통사고 후유증', '척추·관절 통증', '추나요법', '근골격 초음파', '한방 다이어트', '소아 성장'],
                'sameAs': ['https://blog.naver.com/gal0122']}   # 원장이 직접 쓰는 블로그 (원장님 확인 2026-11-04)
