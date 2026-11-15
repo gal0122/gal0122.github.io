@@ -1102,8 +1102,7 @@ img[width][height]{{height:auto}}
 </style>
 </head>
 <body>
-{NOTICE_BAR if is_home and POPUP_HTML else ''}{body.strip()}
-{EXPIRE_JS if has_expiry else ''}
+{NOTICE_BAR if is_home and POPUP_HTML else ''}{body.strip()}{chr(10) + EXPIRE_JS if has_expiry else ''}
 {POPUP_HTML if is_home else ''}
 {BASE_JS}
 {POPUP_JS if is_home and POPUP_HTML else ''}
