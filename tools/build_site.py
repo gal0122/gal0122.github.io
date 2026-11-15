@@ -752,15 +752,31 @@ def balanced_div(html, start):
     raise ValueError('unbalanced div')
 
 
+# ---- wording tied to a date (a closure notice, an event price): data-hide-after="YYYY-MM-DD" ----
+# The element is shown through that day (Korean time). From the next day the browser removes it (EXPIRE_JS, only on
+# pages that carry such an element), and the first build after that day leaves it out of the page source and the
+# FAQ structured data altogether — so nothing has to be scheduled to take a dated sentence down (2026-11-15).
+def drop_expired(html):
+    def sub(m):
+        assert f'<{m.group(1)}' not in m.group(3), 'a data-hide-after element must not contain its own tag'
+        return '' if m.group(2) < _today else m.group(0)
+    return re.sub(r'<(span|details|p|li|tr)\b[^>]*\bdata-hide-after="(\d{4}-\d{2}-\d{2})"[^>]*>(.*?)</\1>\n?', sub, html, flags=re.S)
+
+
+EXPIRE_JS = ("<script>(function(){var t=new Date(Date.now()+324e5).toISOString().slice(0,10);"
+             "[].forEach.call(document.querySelectorAll('[data-hide-after]'),function(e){"
+             "if(t>e.getAttribute('data-hide-after'))e.parentNode.removeChild(e)})})();</script>")
+
+
 # ---- home-page popups (designed on the "Popup" board) ----
-_today = (datetime.datetime.utcnow() + datetime.timedelta(hours=9)).date().isoformat()
+_today = os.environ.get('GAL_TODAY') or (datetime.datetime.utcnow() + datetime.timedelta(hours=9)).date().isoformat()   # GAL_TODAY=YYYY-MM-DD: build as if on that day (tests)
 POPUP_HTML, POPUP_CSS = '', ''
 if os.path.exists(f'{G}/project/Popup.dc.html'):
     psrc = open(f'{G}/project/Popup.dc.html', encoding='utf-8').read()
     pbody = psrc.split('</helmet>', 1)[1]
     layer = balanced_div(pbody, pbody.index('<div class="pop-layer" data-popups>'))
     # drop notices whose end date (data-until, Korean time) has passed, so stale notices don't sit in the page source
-    _today = (datetime.datetime.utcnow() + datetime.timedelta(hours=9)).date().isoformat()
+    _today = os.environ.get('GAL_TODAY') or (datetime.datetime.utcnow() + datetime.timedelta(hours=9)).date().isoformat()   # GAL_TODAY=YYYY-MM-DD: build as if on that day (tests)
     for _m in list(re.finditer(r'<div class="pop" [^>]*data-until="(\d{4}-\d{2}-\d{2})"', layer)):
         if _m.group(1) < _today:
             _old = balanced_div(layer, layer.index(_m.group(0)))
@@ -1030,7 +1046,8 @@ def build_page(f, out=None, transform=None, seo=None):
     extra = re.findall(r'<style>(.*?)</style>', src.split('</helmet>')[0], re.S)[1:]
     is_home = f == 'Main.dc.html'
     style = blobs('\n'.join([style] + extra + ([POPUP_CSS] if is_home and POPUP_HTML else [])))
-    body = src.split('</helmet>', 1)[1].split('</x-dc>', 1)[0]
+    body = drop_expired(src.split('</helmet>', 1)[1].split('</x-dc>', 1)[0])
+    has_expiry = 'data-hide-after' in body
     if transform:
         body = transform(body)
     body = col_links(fix_links(body), out)
@@ -1086,6 +1103,7 @@ img[width][height]{{height:auto}}
 </head>
 <body>
 {NOTICE_BAR if is_home and POPUP_HTML else ''}{body.strip()}
+{EXPIRE_JS if has_expiry else ''}
 {POPUP_HTML if is_home else ''}
 {BASE_JS}
 {POPUP_JS if is_home and POPUP_HTML else ''}
