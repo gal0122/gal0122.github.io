@@ -170,7 +170,6 @@ LD_CLINIC = {
    {'@type': 'OpeningHoursSpecification', 'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], 'opens': '14:00', 'closes': '18:30'},
    {'@type': 'OpeningHoursSpecification', 'dayOfWeek': ['Saturday', 'Sunday'], 'opens': '08:30', 'closes': '14:00'}],
  'specialOpeningHoursSpecification': [   # 공휴일·임시 휴진일 (진료 일정 페이지와 맞출 것)
-   {'@type': 'OpeningHoursSpecification', 'validFrom': '2026-11-01', 'validThrough': '2026-11-01', 'opens': '00:00', 'closes': '00:00'},
    {'@type': 'OpeningHoursSpecification', 'validFrom': '2026-12-13', 'validThrough': '2026-12-13', 'opens': '00:00', 'closes': '00:00'},   # 미용 세미나
    {'@type': 'OpeningHoursSpecification', 'validFrom': '2026-12-25', 'validThrough': '2026-12-25', 'opens': '00:00', 'closes': '00:00'}],
  'medicalSpecialty': ['https://schema.org/Dermatologic', 'https://schema.org/Musculoskeletal'],
@@ -771,6 +770,8 @@ EXPIRE_JS = ("<script>(function(){var t=new Date(Date.now()+324e5).toISOString()
 
 # ---- home-page popups (designed on the "Popup" board) ----
 _today = os.environ.get('GAL_TODAY') or (datetime.datetime.utcnow() + datetime.timedelta(hours=9)).date().isoformat()   # GAL_TODAY=YYYY-MM-DD: build as if on that day (tests)
+# closure days that have already passed drop out of the structured data on the next build (2026-11-17)
+LD_CLINIC['specialOpeningHoursSpecification'] = [x for x in LD_CLINIC['specialOpeningHoursSpecification'] if x['validThrough'] >= _today]
 POPUP_HTML, POPUP_CSS = '', ''
 if os.path.exists(f'{G}/project/Popup.dc.html'):
     psrc = open(f'{G}/project/Popup.dc.html', encoding='utf-8').read()
@@ -1047,6 +1048,11 @@ def build_page(f, out=None, transform=None, seo=None):
     extra = re.findall(r'<style>(.*?)</style>', src.split('</helmet>')[0], re.S)[1:]
     is_home = f == 'Main.dc.html'
     style = blobs('\n'.join([style] + extra + ([POPUP_CSS] if is_home and POPUP_HTML else [])))
+    # the web font is preloaded; with 'optional' the browser uses it only if it is ready at first paint and never swaps
+    # fonts afterwards, so text does not re-wrap and push the page down while it loads (columns measured CLS ≈0.245 on
+    # a slow mobile run with 'swap', 2026-11-17). The design canvas keeps 'swap'.
+    assert style.count("font-style:normal;font-display:swap}") == 1, out
+    style = style.replace("font-style:normal;font-display:swap}", "font-style:normal;font-display:optional}")
     body = drop_expired(src.split('</helmet>', 1)[1].split('</x-dc>', 1)[0])
     has_expiry = 'data-hide-after' in body
     if transform:
