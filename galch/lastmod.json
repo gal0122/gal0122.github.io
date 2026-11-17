@@ -52,7 +52,7 @@
   "d": "2026-11-13"
  },
  "column-alopecia-areata.html": {
-  "h": "abdfafeac4850ac3",
+  "h": "10fb659fc8262466",
   "d": "2026-11-16"
  },
  "column-ankle-sprain.html": {
@@ -80,7 +80,7 @@
   "d": "2026-11-04"
  },
  "column-cherry-angioma.html": {
-  "h": "3e020cce06a9abe5",
+  "h": "a3133eebc939369d",
   "d": "2026-10-26"
  },
  "column-chronic-fatigue.html": {
@@ -104,8 +104,8 @@
   "d": "2026-11-03"
  },
  "column-diet.html": {
-  "h": "ab6377e54246ae67",
-  "d": "2026-11-16"
+  "h": "d99b753f0975f8dd",
+  "d": "2026-11-17"
  },
  "column-dysmenorrhea.html": {
   "h": "733cf8fac76b8519",
@@ -176,8 +176,8 @@
   "d": "2026-10-27"
  },
  "column-internal.html": {
-  "h": "cb1b58ba37dd5884",
-  "d": "2026-11-16"
+  "h": "419e5d2335aac871",
+  "d": "2026-11-17"
  },
  "column-irregular-periods.html": {
   "h": "9a1ef845f0614a53",
@@ -196,8 +196,8 @@
   "d": "2026-10-31"
  },
  "column-kids-women.html": {
-  "h": "96ea648085b78974",
-  "d": "2026-11-16"
+  "h": "714e9ee184acd548",
+  "d": "2026-11-17"
  },
  "column-knee-pain.html": {
   "h": "7ff9b975f46865d4",
@@ -216,7 +216,7 @@
   "d": "2026-11-12"
  },
  "column-laser-toning-sessions.html": {
-  "h": "659462ad319b938d",
+  "h": "370ff0dbe33c3a9f",
   "d": "2026-11-12"
  },
  "column-leg-hair-removal-timing.html": {
@@ -256,7 +256,7 @@
   "d": "2026-10-22"
  },
  "column-mole-removal-pigmentation.html": {
-  "h": "a1e11d3879cac316",
+  "h": "46160f9840aa7334",
   "d": "2026-11-13"
  },
  "column-moles.html": {
@@ -276,8 +276,8 @@
   "d": "2026-11-08"
  },
  "column-pain.html": {
-  "h": "32802746262fbcef",
-  "d": "2026-11-16"
+  "h": "73f9fca2a765dde9",
+  "d": "2026-11-17"
  },
  "column-pdrn-booster-sessions.html": {
   "h": "1965cfea88003cb4",
@@ -340,8 +340,8 @@
   "d": "2026-10-21"
  },
  "column-skin.html": {
-  "h": "4b889a10a3fbacca",
-  "d": "2026-11-16"
+  "h": "b77494f4aecbc145",
+  "d": "2026-11-17"
  },
  "column-small-acne-scars-shockwave.html": {
   "h": "81ae3c5a0ebf04a8",
@@ -354,6 +354,10 @@
  "column-spinal-stenosis.html": {
   "h": "bdb33d683e0b0405",
   "d": "2026-11-02"
+ },
+ "column-spots-and-moles-at-once.html": {
+  "h": "f38577e1b8ed2276",
+  "d": "2026-11-17"
  },
  "column-steatocystoma.html": {
   "h": "2a002871d302eaa1",
@@ -400,8 +404,8 @@
   "d": "2026-10-20"
  },
  "column-traffic.html": {
-  "h": "306b6bd4cede7ed0",
-  "d": "2026-11-16"
+  "h": "821a5607c35dbd35",
+  "d": "2026-11-17"
  },
  "column-trigger-finger.html": {
   "h": "c3812945501235d1",
@@ -412,12 +416,12 @@
   "d": "2026-10-25"
  },
  "column-under-eye-fat-non-surgical.html": {
-  "h": "bf464194ea9c8a09",
+  "h": "58ff31aaf3804f90",
   "d": "2026-11-15"
  },
  "column.html": {
-  "h": "4ead4fb2a0a1f508",
-  "d": "2026-11-16"
+  "h": "9b1e3ef3a120264b",
+  "d": "2026-11-17"
  },
  "design-lifting.html": {
   "h": "7cd4d74ac176499e",
@@ -448,8 +452,8 @@
   "d": "2026-11-12"
  },
  "index.html": {
-  "h": "3ed53f2bef3e1cf0",
-  "d": "2026-11-16"
+  "h": "b47d1ec5df1de693",
+  "d": "2026-11-17"
  },
  "internal-digestive.html": {
   "h": "2f424bfce7e7ce90",
@@ -468,8 +472,8 @@
   "d": "2026-11-15"
  },
  "mole.html": {
-  "h": "5022155b96581ae1",
-  "d": "2026-11-13"
+  "h": "d83a4929478b1517",
+  "d": "2026-11-17"
  },
  "pain-joint.html": {
   "h": "937152199a64e961",
@@ -484,16 +488,16 @@
   "d": "2026-11-12"
  },
  "pigment.html": {
-  "h": "6cf14e4c38e482bd",
-  "d": "2026-11-12"
+  "h": "8ea21eec9e1d7485",
+  "d": "2026-11-17"
  },
  "pore.html": {
   "h": "ee7cce9bef282684",
   "d": "2026-11-14"
  },
  "price.html": {
-  "h": "b4bd01f6238c60ab",
-  "d": "2026-11-15"
+  "h": "cb02fa999bca1fec",
+  "d": "2026-11-17"
  },
  "privacy.html": {
   "h": "c0138a30a1b4c062",
