@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>악센토N</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+@font-face{font-family:'Pretendard';src:url('/_blob/8c366efa542f5b0811a2487191ba3cc9') format('woff2');font-weight:45 920;font-style:normal;font-display:swap}
+body{margin:0;-webkit-text-size-adjust:100%}
+a{color:#24302a}a:hover{color:#2f5241}
+h1,h2,h3{letter-spacing:-0.02em;word-break:keep-all}
+p,li,dd,td,figcaption{word-break:keep-all}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #2f5241;outline-offset:2px}
+.gnb>a:hover,.gnb-item:hover>a{color:#2f5241}
+.gnb-sub{display:none}
+.gnb-item:hover .gnb-sub,.gnb-item:focus-within .gnb-sub{display:flex}
+.gnb-sub a:hover{background:#f1ede3}
+.gnb-sub2{display:none}
+.gnb-sub-item:hover>.gnb-sub2,.gnb-sub-item:focus-within>.gnb-sub2{display:flex}
+.gnb-sub-item:hover>a{background:#f1ede3}
+.gnb-sub,.gnb-sub2{border-radius:14px;box-shadow:0 14px 34px rgba(36,48,42,.12)}
+.hd-call:hover{background:#2f5241;color:#ffffff}
+.m-menu{display:none}
+.m-menu summary{list-style:none;cursor:pointer}
+.m-menu summary::-webkit-details-marker{display:none}
+.m-menu[open] .ic-open,.m-menu:not([open]) .ic-close{display:none}
+.qn a:hover{background:#f1ede3}
+.qn .qn-call:hover{background:#24402f}
+.qn-tg{display:flex;align-items:center;justify-content:center;gap:3px;width:100%;height:34px;padding:0;border:0;background:#ffffff;color:#5d655f;font:inherit;font-size:11px;font-weight:600;line-height:1;cursor:pointer}
+@media (hover:hover){.qn-tg:hover{background:#f1ede3}}
+.qn-tg:focus-visible{outline:2px solid #2f5241;outline-offset:-2px}
+.qn-tg .ic-chat{display:none}
+.qn-min a{display:none!important}
+.qn-min .qn-tg{height:62px;flex-direction:column;gap:5px;color:#2f5241}
+.qn-min .qn-tg .ic-chat{display:block}
+.qn-min .qn-tg .qn-chev{display:none}
+footer a:hover{color:#d7c9a7}
+.svc{transition:transform .2s ease,box-shadow .2s ease}
+.svc:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(36,48,42,.10)}
+.btn-fill:hover{background:#24402f;color:#ffffff}
+.btn-line:hover{background:#f1ede3}
+main [style*="border: 1px solid #e2dccd"]:not(tr):not(th):not(td):not(table):not(span){border-radius:18px;background-color:#ffffff}
+main [style*="min-height: 48px; padding: 0 24px"],main [style*="min-height: 44px; padding: 0 18px"],main li[style*="padding: 8px 16px"],main li[style*="padding: 8px 12px"]{border-radius:999px}
+main button[style*="width: 48px; height: 48px"]{border-radius:50%}
+main figure img,main img[style*="width: 100%"]{border-radius:16px}
+main>section[style*="background: #f1ede3"]{border-top-color:transparent!important;border-bottom-color:transparent!important}
+main>section[style*="border-top: 1px solid #e2dccd"]{border-top-color:transparent!important}
+.eq-track{scrollbar-width:thin;scrollbar-color:#c9c0a8 transparent}
+.eq-track::-webkit-scrollbar{height:6px}
+.eq-track::-webkit-scrollbar-thumb{background:#c9c0a8;border-radius:3px}
+@media (max-width:960px){.gnb{display:none!important}.m-menu{display:block}.hd-in{gap:10px!important}.hd-call{margin-left:auto;width:44px;padding:0!important;justify-content:center}.hd-call-txt{display:none}}
+@media (max-width:640px){
+h1{font-size:30px!important;line-height:1.35!important}
+h2{font-size:24px!important;line-height:1.4!important}
+h3{font-size:19px!important}
+.hd-logo{height:36px!important}
+[style*="max-width: 1240px"]{padding-left:16px!important;padding-right:16px!important}
+[style*="padding: 88px 24px"],[style*="padding: 96px 24px"],[style*="padding: 104px 24px"],[style*="padding: 80px 24px"],[style*="padding: 72px 24px"],[style*="padding: 64px 24px"]{padding-top:52px!important;padding-bottom:52px!important}
+[style*="padding: 56px 24px 0"]{padding-top:32px!important}
+[style*="minmax(3"],[style*="minmax(4"]{grid-template-columns:minmax(0,1fr)!important}
+.eq-track>*{max-width:84vw}
+.stack-m{flex-direction:column!important;align-items:stretch!important}
+.full-m{flex:0 0 auto!important;width:100%!important;max-width:100%!important}
+.hero-art{height:260px!important}
+.br-d{display:none}
+.map-box{min-height:240px!important}
+.qn-blog{display:none!important}
+.qn{top:auto!important;bottom:0!important;left:0!important;right:0!important;transform:none!important;flex-direction:row!important;width:auto!important;border-radius:0!important}
+.qn a{flex:1 1 0!important;height:58px!important;flex-direction:row!important;gap:6px!important;font-size:14px!important;border-bottom:0!important}
+.qn-tg{flex:0 0 44px;width:44px;height:58px}
+.qn-tg .qn-chev{transform:rotate(90deg)}
+.qn:not(.qn-min) .qn-tg-txt{display:none}
+.qn.qn-min{left:auto!important;width:auto!important;border-radius:14px 0 0 0!important;box-shadow:0 -4px 18px rgba(36,48,42,.18)!important}
+.qn.qn-min .qn-tg{flex:0 0 64px;width:64px;height:54px}
+footer{padding-bottom:58px}
+}
+.eq-track{scrollbar-width:thin;scrollbar-color:#c9c0a8 #ede9dd}
+.eq-track::-webkit-scrollbar{height:6px}
+.eq-track::-webkit-scrollbar-track{background:#ede9dd}
+.eq-track::-webkit-scrollbar-thumb{background:#c9c0a8}
+.faq summary{list-style:none;cursor:pointer}
+.faq summary::-webkit-details-marker{display:none}
+.faq details[open] .faq-icon{transform:rotate(45deg)}
+@media (min-width:961px) and (max-width:1180px){.hd-call-txt{display:none}.hd-call{width:44px;padding:0!important;justify-content:center}.gnb{gap:22px!important}}
+@media (min-width:961px) and (max-width:1060px){.hd-in{gap:24px!important}.gnb{gap:16px!important;font-size:15px!important}}
+</style>
+</helmet>
+<div style="font-family: 'Pretendard', 'Pretendard Variable', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; color: #24302a; background: #faf7f0; line-height: 1.6; min-height: 100vh">
+
+<header class="site-hd" style="position: sticky; top: 0; z-index: 30; background: #faf7f0; border-bottom: 1px solid #e2dccd">
+<div class="hd-in" style="max-width: 1240px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; gap: 40px">
+<a href="Main.dc.html" aria-label="갈창림 한의원 홈" style="flex: 0 0 auto; display: inline-flex; align-items: center; text-decoration: none"><img class="hd-logo" src="/_blob/aa7a2a00288ecf879a5acf4665e97aa0" alt="갈창림 한의원" style="display: block; height: 44px; width: auto"></a>
+<nav class="gnb" aria-label="메인 메뉴" style="flex: 1 1 auto; display: flex; align-items: center; gap: 30px; font-size: 16px; font-weight: 600; white-space: nowrap">
+<div class="gnb-item" style="position: relative">
+<a href="About.dc.html" aria-haspopup="true" style="display: block; text-decoration: none; padding: 10px 0">병원소개</a>
+<div class="gnb-sub" style="position: absolute; top: 100%; left: -20px; z-index: 20; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd; font-size: 15px; font-weight: 400">
+<a href="About.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">갈창림 한의원 소개</a>
+<a href="Doctors.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">의료진 소개</a>
+<a href="Equipment.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">보유장비</a>
+<a href="Schedule.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">진료시간 및 오시는길</a>
+</div>
+</div>
+<div class="gnb-item" style="position: relative">
+<a href="Skin.dc.html" aria-haspopup="true" style="display: block; text-decoration: none; padding: 10px 0">피부미용</a>
+<div class="gnb-sub" style="position: absolute; top: 100%; left: -20px; z-index: 20; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd; font-size: 15px; font-weight: 400">
+<div class="gnb-sub-item" style="position: relative">
+<a href="Skin.dc.html#lifting" aria-haspopup="true" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 10px 20px; text-decoration: none; white-space: nowrap">리프팅<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></a>
+<div class="gnb-sub2" style="position: absolute; top: -9px; left: 100%; z-index: 21; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd">
+<a href="DesignLifting.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">디자인리프팅</a>
+<a href="ThreadLifting.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">맞춤형실리프팅</a>
+</div>
+</div>
+<div class="gnb-sub-item" style="position: relative">
+<a href="Skin.dc.html#booster" aria-haspopup="true" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 10px 20px; text-decoration: none; white-space: nowrap">스킨부스터<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></a>
+<div class="gnb-sub2" style="position: absolute; top: -9px; left: 100%; z-index: 21; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd">
+<a href="BoosterPDRN.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">PDRN·엑소좀</a>
+<a href="BoosterPLLA.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">PLLA</a>
+<a href="BoosterKeratin.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">케라틴</a>
+<a href="BoosterAltcore.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">알트코어</a>
+<a href="BoosterECM.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">ECM</a>
+</div>
+</div>
+<a href="HairRemoval.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">제모</a>
+<div class="gnb-sub-item" style="position: relative">
+<a href="Skin.dc.html#pigment" aria-haspopup="true" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 10px 20px; text-decoration: none; white-space: nowrap">색소<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></a>
+<div class="gnb-sub2" style="position: absolute; top: -9px; left: 100%; z-index: 21; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd">
+<a href="Pigment.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">기미·흑자·잡티·색소</a>
+<a href="Mole.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">점·쥐젖·편평사마귀</a>
+</div>
+</div>
+<div class="gnb-sub-item" style="position: relative">
+<a href="Skin.dc.html#acne" aria-haspopup="true" style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 10px 20px; text-decoration: none; white-space: nowrap">여드름<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></a>
+<div class="gnb-sub2" style="position: absolute; top: -9px; left: 100%; z-index: 21; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd">
+<a href="Acne.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">여드름</a>
+<a href="AcneRed.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">여드름 붉은자국</a>
+<a href="AcneScar.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">여드름 흉터</a>
+</div>
+</div>
+<a href="Pore.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">모공</a>
+<a href="Peeling.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">피지·각질</a>
+<a href="Shockwave.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">눈밑지방·흉터 충격파</a>
+</div>
+</div>
+<div class="gnb-item" style="position: relative">
+<a href="Traffic.dc.html" aria-haspopup="true" style="display: block; text-decoration: none; padding: 10px 0">교통사고</a>
+<div class="gnb-sub" style="position: absolute; top: 100%; left: -20px; z-index: 20; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd; font-size: 15px; font-weight: 400">
+<a href="Traffic.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">교통사고 후유증</a>
+<a href="TrafficProcess.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">치료 과정</a>
+<a href="TrafficTreat.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">치료 방법</a>
+</div>
+</div>
+<div class="gnb-item" style="position: relative">
+<a href="PainSpine.dc.html" aria-haspopup="true" style="display: block; text-decoration: none; padding: 10px 0">통증</a>
+<div class="gnb-sub" style="position: absolute; top: 100%; left: -20px; z-index: 20; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd; font-size: 15px; font-weight: 400">
+<a href="PainSpine.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">척추 질환</a>
+<a href="PainJoint.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">관절 질환</a>
+</div>
+</div>
+<div class="gnb-item" style="position: relative">
+<a href="InternalDigestive.dc.html" aria-haspopup="true" style="display: block; text-decoration: none; padding: 10px 0">내과 질환</a>
+<div class="gnb-sub" style="position: absolute; top: 100%; left: -20px; z-index: 20; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd; font-size: 15px; font-weight: 400">
+<a href="InternalDigestive.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">소화기 질환</a>
+<a href="InternalNeuro.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">두통·신경 질환</a>
+<a href="InternalSleep.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">불면·스트레스</a>
+<a href="InternalRhinitis.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">비염·수족냉증</a>
+</div>
+</div>
+<a href="Diet.dc.html" style="text-decoration: none; padding: 10px 0">다이어트</a>
+<div class="gnb-item" style="position: relative">
+<a href="Growth.dc.html" aria-haspopup="true" style="display: block; text-decoration: none; padding: 10px 0">소아·여성</a>
+<div class="gnb-sub" style="position: absolute; top: 100%; left: -20px; z-index: 20; flex-direction: column; min-width: 200px; padding: 8px 0; background: #ffffff; border: 1px solid #e2dccd; font-size: 15px; font-weight: 400">
+<a href="Growth.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">소아 성장</a>
+<a href="Women.dc.html" style="display: block; padding: 10px 20px; text-decoration: none; white-space: nowrap">여성 질환</a>
+</div>
+</div>
+<a href="Column.dc.html" style="text-decoration: none; padding: 10px 0">원장 칼럼</a>
+<a href="Price.dc.html" style="text-decoration: none; padding: 10px 0">가격표</a>
+<a href="Faq.dc.html" style="text-decoration: none; padding: 10px 0">FAQ</a>
+</nav>
+<a class="hd-call" href="tel:053-851-0122" aria-label="전화 053-851-0122" style="flex: 0 0 auto; display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 18px; box-sizing: border-box; border-radius: 999px; border: 1px solid #2f5241; color: #2f5241; font-size: 15px; font-weight: 700; text-decoration: none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg><span class="hd-call-txt">053-851-0122</span></a>
+<details class="m-menu">
+<summary aria-label="전체 메뉴" style="width: 44px; height: 44px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border-radius: 12px; background: #2f5241; color: #ffffff"><svg class="ic-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg><svg class="ic-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></summary>
+<nav aria-label="전체 메뉴" style="position: absolute; top: 100%; left: 0; right: 0; max-height: calc(100vh - 72px); overflow-y: auto; padding: 4px 20px 28px; background: #faf7f0; border-bottom: 1px solid #e2dccd; box-shadow: 0 20px 30px rgba(36,48,42,0.10)">
+<div style="padding: 14px 0; border-bottom: 1px solid #ebe6da">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">병원소개</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="About.dc.html" style="padding: 8px 0; text-decoration: none">갈창림 한의원 소개</a>
+<a href="Doctors.dc.html" style="padding: 8px 0; text-decoration: none">의료진 소개</a>
+<a href="Equipment.dc.html" style="padding: 8px 0; text-decoration: none">보유장비</a>
+<a href="Schedule.dc.html" style="padding: 8px 0; text-decoration: none">진료시간 및 오시는길</a>
+</div>
+</div>
+<div style="padding: 14px 0; border-bottom: 1px solid #ebe6da">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">피부미용</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="Skin.dc.html" style="padding: 8px 0; text-decoration: none">피부미용 한눈에 보기</a>
+<a href="DesignLifting.dc.html" style="padding: 8px 0; text-decoration: none">디자인리프팅</a>
+<a href="ThreadLifting.dc.html" style="padding: 8px 0; text-decoration: none">맞춤형실리프팅</a>
+<a href="BoosterPDRN.dc.html" style="padding: 8px 0; text-decoration: none">PDRN·엑소좀</a>
+<a href="BoosterPLLA.dc.html" style="padding: 8px 0; text-decoration: none">PLLA</a>
+<a href="BoosterKeratin.dc.html" style="padding: 8px 0; text-decoration: none">케라틴</a>
+<a href="BoosterAltcore.dc.html" style="padding: 8px 0; text-decoration: none">알트코어</a>
+<a href="BoosterECM.dc.html" style="padding: 8px 0; text-decoration: none">ECM</a>
+<a href="HairRemoval.dc.html" style="padding: 8px 0; text-decoration: none">제모</a>
+<a href="Pigment.dc.html" style="padding: 8px 0; text-decoration: none">기미·흑자·잡티·색소</a>
+<a href="Mole.dc.html" style="padding: 8px 0; text-decoration: none">점·쥐젖·편평사마귀</a>
+<a href="Acne.dc.html" style="padding: 8px 0; text-decoration: none">여드름</a>
+<a href="AcneRed.dc.html" style="padding: 8px 0; text-decoration: none">여드름 붉은자국</a>
+<a href="AcneScar.dc.html" style="padding: 8px 0; text-decoration: none">여드름 흉터</a>
+<a href="Pore.dc.html" style="padding: 8px 0; text-decoration: none">모공</a>
+<a href="Peeling.dc.html" style="padding: 8px 0; text-decoration: none">피지·각질</a>
+<a href="Shockwave.dc.html" style="padding: 8px 0; text-decoration: none">눈밑지방·흉터 충격파</a>
+</div>
+</div>
+<div style="padding: 14px 0; border-bottom: 1px solid #ebe6da">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">교통사고 · 통증</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="Traffic.dc.html" style="padding: 8px 0; text-decoration: none">교통사고 후유증</a>
+<a href="TrafficProcess.dc.html" style="padding: 8px 0; text-decoration: none">교통사고 치료 과정</a>
+<a href="TrafficTreat.dc.html" style="padding: 8px 0; text-decoration: none">교통사고 치료 방법</a>
+<a href="PainSpine.dc.html" style="padding: 8px 0; text-decoration: none">척추 질환</a>
+<a href="PainJoint.dc.html" style="padding: 8px 0; text-decoration: none">관절 질환</a>
+</div>
+</div>
+<div style="padding: 14px 0; border-bottom: 1px solid #ebe6da">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">내과 질환</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="InternalDigestive.dc.html" style="padding: 8px 0; text-decoration: none">소화기 질환</a>
+<a href="InternalNeuro.dc.html" style="padding: 8px 0; text-decoration: none">두통·신경 질환</a>
+<a href="InternalSleep.dc.html" style="padding: 8px 0; text-decoration: none">불면·스트레스</a>
+<a href="InternalRhinitis.dc.html" style="padding: 8px 0; text-decoration: none">비염·수족냉증</a>
+</div>
+</div>
+<div style="padding: 14px 0; border-bottom: 1px solid #ebe6da">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">다이어트 · 소아·여성</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="Diet.dc.html" style="padding: 8px 0; text-decoration: none">다이어트</a>
+<a href="Growth.dc.html" style="padding: 8px 0; text-decoration: none">소아 성장</a>
+<a href="Women.dc.html" style="padding: 8px 0; text-decoration: none">여성 질환</a>
+</div>
+</div>
+<div style="padding: 14px 0; border-bottom: 1px solid #ebe6da">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">원장 칼럼</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="Column.dc.html" style="padding: 8px 0; text-decoration: none">전체 칼럼</a>
+<a href="Column.dc.html#skin" style="padding: 8px 0; text-decoration: none">피부미용</a>
+<a href="Column.dc.html#traffic" style="padding: 8px 0; text-decoration: none">교통사고</a>
+<a href="Column.dc.html#pain" style="padding: 8px 0; text-decoration: none">근골격계 통증</a>
+<a href="Column.dc.html#internal" style="padding: 8px 0; text-decoration: none">내과 질환</a>
+<a href="Column.dc.html#diet" style="padding: 8px 0; text-decoration: none">다이어트</a>
+<a href="Column.dc.html#kids-women" style="padding: 8px 0; text-decoration: none">소아·여성</a>
+</div>
+</div>
+<div style="padding: 14px 0">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">가격표</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="Price.dc.html" style="padding: 8px 0; text-decoration: none">전체 가격표</a>
+<a href="Price.dc.html#price-lifting" style="padding: 8px 0; text-decoration: none">리프팅</a>
+<a href="Price.dc.html#price-pigment" style="padding: 8px 0; text-decoration: none">색소·토닝</a>
+<a href="Price.dc.html#price-acne" style="padding: 8px 0; text-decoration: none">여드름·흉터·모공</a>
+<a href="Price.dc.html#price-booster" style="padding: 8px 0; text-decoration: none">스킨부스터</a>
+<a href="Price.dc.html#price-package" style="padding: 8px 0; text-decoration: none">패키지</a>
+<a href="Price.dc.html#price-hair" style="padding: 8px 0; text-decoration: none">제모</a>
+</div>
+</div>
+<div style="padding: 14px 0; border-top: 1px solid #ebe6da">
+<p style="margin: 0 0 6px; font-size: 13px; font-weight: 700; color: #7a6b42">FAQ</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 12px; font-size: 15px">
+<a href="Faq.dc.html" style="padding: 8px 0; text-decoration: none">자주 묻는 질문</a>
+</div>
+</div>
+</nav>
+</details>
+</div>
+</header>
+
+<main>
+
+<section style="background: #f1ede3; border-bottom: 1px solid #e2dccd">
+<div style="max-width: 1240px; margin: 0 auto; padding: 56px 24px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 14px; color: #5d655f">홈 &gt; 병원소개 &gt; <a href="Equipment.dc.html" style="color: #5d655f">보유장비</a> &gt; 악센토N</p>
+<h1 style="margin: 0; font-size: 40px; line-height: 1.3">악센토N (Accento N)</h1>
+<p style="margin: 0; font-size: 18px; color: #4d554f">755nm 알렉산드라이트와 1064nm 엔디야그, 두 파장을 한 장비에서 쓰는 롱펄스 레이저</p>
+<p data-local="true" style="margin: 4px 0 0; font-size: 15px; color: #5d655f">갈창림 한의원은 경상북도 경산시 하양읍에 있습니다. 경산·하양·진량·와촌, 영천 금호, 대구 동구(안심)에서 악센토N 레이저제모·색소 시술을 찾으시는 분께 대표원장이 직접 시술하며, 화~일요일(토·일 포함)에 받으실 수 있습니다.</p>
+</div>
+</section>
+
+<section style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">ACCENTO N · 세븐인터내셔널</p>
+<h2 style="margin: 0; font-size: 32px; line-height: 1.4">두 가지 파장을 골라 쓰는<br>듀얼 파장 레이저</h2>
+<p style="margin: 0; font-size: 17px; color: #4d554f">악센토N은 755nm 알렉산드라이트와 1064nm 엔디야그(Nd:YAG) 두 파장을 한 장비에 담은 롱펄스 레이저입니다. 파장마다 잘 흡수되는 대상과 닿는 깊이가 달라, 털의 굵기와 피부색, 고민에 맞춰 파장을 고릅니다.</p>
+<p style="margin: 0; font-size: 17px; color: #4d554f">레이저를 쏘기 직전과 직후에 냉각 가스를 뿌려 피부 표면을 보호합니다. 그래서 레이저제모는 대부분 마취 없이 받으십니다.</p>
+
+<ul style="list-style: none; margin: 8px 0 0; padding: 0; border-top: 1px solid #2f5241; font-size: 16px">
+<li style="display: flex; gap: 16px; padding: 14px 0; border-bottom: 1px solid #e2dccd"><strong style="flex: 0 0 120px; font-weight: 600">파장</strong><span style="color: #4d554f">755nm 알렉산드라이트 · 1064nm 엔디야그 (롱펄스)</span></li>
+<li style="display: flex; gap: 16px; padding: 14px 0; border-bottom: 1px solid #e2dccd"><strong style="flex: 0 0 120px; font-weight: 600">냉각</strong><span style="color: #4d554f">조사 직전·직후 냉각 가스 분사</span></li>
+<li style="display: flex; gap: 16px; padding: 14px 0; border-bottom: 1px solid #e2dccd"><strong style="flex: 0 0 120px; font-weight: 600">주요 시술</strong><span style="color: #4d554f">레이저제모, 주근깨·잡티, 아이스 점빼기, 여드름 붉은자국, 골드PTT, 제네시스토닝</span></li>
+</ul>
+</div>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px"><img src="/_blob/108f20cc10de3a1a0bff024c2989f7a6" alt="악센토N 장비" style="display: block; width: 100%; max-height: 460px; object-fit: contain; background: #ffffff; border: 1px solid #e2dccd"><figcaption style="font-size: 14px; color: #5d655f">갈창림 한의원에서 사용하는 악센토N</figcaption></figure>
+</section>
+
+<section style="border-top: 1px solid #e2dccd">
+<div style="max-width: 1240px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 8px; max-width: 820px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">TREATMENTS</p>
+<h2 style="margin: 0; font-size: 30px; line-height: 1.4">악센토N으로 하는 시술</h2>
+<p style="margin: 0; font-size: 17px; color: #4d554f">한 장비로 여러 시술을 하지만, 시술마다 고르는 파장과 세기가 다릅니다.</p>
+</div>
+<ul style="list-style: none; margin: 0; padding: 0; border-top: 2px solid #2f5241; font-size: 16px">
+<li style="display: flex; flex-wrap: wrap; gap: 6px 24px; padding: 18px 0; border-bottom: 1px solid #e2dccd"><strong style="flex: 0 0 200px; font-size: 17px">레이저제모</strong><span style="flex: 1 1 320px; color: #4d554f">밝은 피부의 가는 털은 755nm, 굵은 털이나 어두운 피부는 1064nm를 고릅니다. 4주 간격 6회를 1사이클로 봅니다. <a href="HairRemoval.dc.html" style="font-weight: 600; color: #2f5241; white-space: nowrap">레이저제모 보기 →</a></span></li>
+<li style="display: flex; flex-wrap: wrap; gap: 6px 24px; padding: 18px 0; border-bottom: 1px solid #e2dccd"><strong style="flex: 0 0 200px; font-size: 17px">주근깨·잡티</strong><span style="flex: 1 1 320px; color: #4d554f">755nm로 피부 얕은 층의 갈색 색소를 다룹니다. 약 1주 동안 얇은 딱지가 생길 수 있습니다. <a href="Pigment.dc.html" style="font-weight: 600; color: #2f5241; white-space: nowrap">색소 보기 →</a></span></li>
+<li style="display: flex; flex-wrap: wrap; gap: 6px 24px; padding: 18px 0; border-bottom: 1px solid #e2dccd"><strong style="flex: 0 0 200px; font-size: 17px">아이스 점빼기</strong><span style="flex: 1 1 320px; color: #4d554f">색이 짙고 평평한 점을 피부를 깎지 않고 옅게 합니다. <a href="Mole.dc.html" style="font-weight: 600; color: #2f5241; white-space: nowrap">점빼기 보기 →</a></span></li>
+<li style="display: flex; flex-wrap: wrap; gap: 6px 24px; padding: 18px 0; border-bottom: 1px solid #e2dccd"><strong style="flex: 0 0 200px; font-size: 17px">여드름 붉은자국</strong><span style="flex: 1 1 320px; color: #4d554f">붉게 남은 자국과 혈관에 맞춰 파장과 세기를 조절합니다. <a href="AcneRed.dc.html" style="font-weight: 600; color: #2f5241; white-space: nowrap">붉은자국 보기 →</a></span></li>
+<li style="display: flex; flex-wrap: wrap; gap: 6px 24px; padding: 18px 0; border-bottom: 1px solid #e2dccd"><strong style="flex: 0 0 200px; font-size: 17px">여드름 (골드PTT)</strong><span style="flex: 1 1 320px; color: #4d554f">금 입자를 모공에 넣은 뒤 레이저를 조사해 피지샘을 겨냥합니다. <a href="Acne.dc.html" style="font-weight: 600; color: #2f5241; white-space: nowrap">여드름 보기 →</a></span></li>
+<li style="display: flex; flex-wrap: wrap; gap: 6px 24px; padding: 18px 0; border-bottom: 1px solid #e2dccd"><strong style="flex: 0 0 200px; font-size: 17px">모공·피부결 (제네시스토닝)</strong><span style="flex: 1 1 320px; color: #4d554f">1064nm를 낮은 세기로 여러 번 나눠 조사해 피부를 고르게 데웁니다. <a href="Pore.dc.html" style="font-weight: 600; color: #2f5241; white-space: nowrap">모공 보기 →</a></span></li>
+</ul>
+</div>
+</section>
+
+<section style="background: #f1ede3; border-top: 1px solid #e2dccd; border-bottom: 1px solid #e2dccd">
+<div style="max-width: 1240px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 8px; max-width: 820px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">HOW WE USE</p>
+<h2 style="margin: 0; font-size: 30px; line-height: 1.4">갈창림 한의원이 악센토N을 쓰는 방식</h2>
+</div>
+<div class="eq-track" style="display: flex; gap: 16px; overflow-x: auto; padding-bottom: 12px">
+<div style="flex: 1 0 300px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; padding: 28px; background: #ffffff; border: 1px solid #e2dccd"><strong style="font-size: 19px">털과 피부에 맞춰 파장을 고릅니다</strong><span style="color: #4d554f">같은 부위라도 털이 가늘고 피부가 밝으면 755nm, 털이 굵거나 피부가 어두우면 1064nm를 씁니다. 남성 수염처럼 굵은 털은 1064nm를 주로 씁니다.</span></div>
+<div style="flex: 1 0 300px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; padding: 28px; background: #ffffff; border: 1px solid #e2dccd"><strong style="font-size: 19px">냉각으로 통증과 열을 줄입니다</strong><span style="color: #4d554f">조사 전후 냉각 가스로 피부 표면 온도를 낮춥니다. 통증이 걱정되시면 마취 크림을 바른 뒤 시술합니다.</span></div>
+<div style="flex: 1 0 300px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; padding: 28px; background: #ffffff; border: 1px solid #e2dccd"><strong style="font-size: 19px">여러 시술을 한 번에 계획합니다</strong><span style="color: #4d554f">제모와 잡티, 붉은자국처럼 고민이 겹치면 한 장비로 함께 계획할 수 있어, 올인원 레이저 같은 프로그램에도 쓰입니다.</span></div>
+</div>
+</div>
+</section>
+
+<section style="border-top: 1px solid #e2dccd">
+<div style="max-width: 1240px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 8px; max-width: 820px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">INFO</p>
+<h2 style="margin: 0; font-size: 30px; line-height: 1.4">통증 · 시간 · 횟수 · 비용</h2>
+</div>
+<dl class="eq-track" style="margin: 0; display: flex; gap: 16px; overflow-x: auto; padding-bottom: 12px">
+<div style="flex: 1 0 220px; display: flex; flex-direction: column; gap: 6px; padding: 24px; background: #ffffff; border: 1px solid #e2dccd">
+<dt style="font-size: 14px; color: #5d655f">통증</dt>
+<dd style="margin: 0; font-size: 19px; font-weight: 700">대부분 마취 없이<span style="display: block; margin-top: 4px; font-size: 14px; font-weight: 400; color: #5d655f">냉각 가스로 보호, 원하시면 마취 크림</span></dd>
+</div>
+<div style="flex: 1 0 220px; display: flex; flex-direction: column; gap: 6px; padding: 24px; background: #ffffff; border: 1px solid #e2dccd">
+<dt style="font-size: 14px; color: #5d655f">시술 시간</dt>
+<dd style="margin: 0; font-size: 19px; font-weight: 700">5~30분<span style="display: block; margin-top: 4px; font-size: 14px; font-weight: 400; color: #5d655f">부위에 따라 다름</span></dd>
+</div>
+<div style="flex: 1 0 220px; display: flex; flex-direction: column; gap: 6px; padding: 24px; background: #ffffff; border: 1px solid #e2dccd">
+<dt style="font-size: 14px; color: #5d655f">제모 횟수</dt>
+<dd style="margin: 0; font-size: 19px; font-weight: 700">4주 간격 6회<span style="display: block; margin-top: 4px; font-size: 14px; font-weight: 400; color: #5d655f">1사이클, 털 굵기에 따라 2~4사이클</span></dd>
+</div>
+<div style="flex: 1 0 220px; display: flex; flex-direction: column; gap: 6px; padding: 24px; background: #ffffff; border: 1px solid #e2dccd">
+<dt style="font-size: 14px; color: #5d655f">비용 예</dt>
+<dd style="margin: 0; font-size: 19px; font-weight: 700">인중·겨드랑이 1회 11,000원<span style="display: block; margin-top: 4px; font-size: 14px; font-weight: 400; color: #5d655f">남성 얼굴 전체 1회 88,000원</span></dd>
+</div>
+</dl>
+<p style="margin: 0; display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 15px"><a href="Price.dc.html#price-hair" style="font-weight: 700; color: #2f5241">가격표에서 보기 →</a><span style="color: #5d655f">피부 분석과 시술은 대표원장이 진료하는 화~일요일에 받으실 수 있습니다 (월요일은 피부 시술을 하지 않습니다).</span></p>
+<p style="margin: 0; font-size: 14px; color: #5d655f">※ 부작용으로 붉어짐·부기가 생길 수 있고, 드물게 모낭염·물집·일시적 색소 변화가 생길 수 있습니다. 필요한 횟수와 결과에는 개인차가 있습니다.</p>
+</div>
+</section>
+
+<section style="border-top: 1px solid #e2dccd">
+<div class="faq" style="max-width: 1240px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 8px; max-width: 820px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">FAQ</p>
+<h2 style="margin: 0; font-size: 30px; line-height: 1.4">자주 묻는 질문</h2>
+</div>
+<div style="border-top: 1px solid #2f5241">
+<details style="border-bottom: 1px solid #e2dccd">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-size: 17px; font-weight: 500">Q. 경산·하양에서 악센토N으로 레이저제모를 받을 수 있나요?<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 0 0 20px; color: #4d554f">네. 경산시 하양읍 갈창림 한의원에서 악센토N으로 여성·남성 레이저제모를 하고 있습니다. 화~일요일(토·일 포함)에 대표원장이 직접 시술합니다.</p>
+</details>
+<details style="border-bottom: 1px solid #e2dccd">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-size: 17px; font-weight: 500">Q. 악센토N은 아픈가요?<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 0 0 20px; color: #4d554f">조사 전후로 냉각 가스를 뿌려 피부를 보호하기 때문에 대부분 마취 없이 받으십니다. 부위와 개인에 따라 따끔함이 다르며, 걱정되시면 마취 크림을 사용합니다.</p>
+</details>
+<details style="border-bottom: 1px solid #e2dccd">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-size: 17px; font-weight: 500">Q. 755nm와 1064nm는 무엇이 다른가요?<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 0 0 20px; color: #4d554f">755nm는 멜라닌에 잘 흡수되어 밝은 피부의 가는 털이나 얕은 잡티에, 1064nm는 더 깊이 들어가고 피부 표면 색소에 덜 반응해 굵은 털이나 어두운 피부, 제네시스토닝에 씁니다.</p>
+</details>
+<details style="border-bottom: 1px solid #e2dccd">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-size: 17px; font-weight: 500">Q. 남자 수염 제모도 악센토N으로 하나요?<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 0 0 20px; color: #4d554f">네. 굵은 수염에는 주로 1064nm를 쓰며, 평균 12회 정도, 숱이 많거나 굵으면 18~24회까지 받기도 합니다. 결과에는 개인차가 있습니다.</p>
+</details>
+</div>
+</div>
+</section>
+
+<section data-col-section="true">
+<div style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 0; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #7a6b42; letter-spacing: 0.04em">COLUMN</p>
+<h2 style="margin: 0; font-size: 28px">원장 칼럼에서 더 알아보기</h2>
+</div>
+<ul style="list-style: none; margin: 0; padding: 0; border-top: 1px solid #2f5241">
+<li style="border-bottom: 1px solid #e2dccd"><a data-col="laser-hair-removal-sessions" href="column-laser-hair-removal-sessions.html" style="display: block; padding: 16px 4px; font-size: 16px; font-weight: 600; text-decoration: none">레이저제모 몇 번 받아야 할까요? 털 성장주기로 보는 횟수와 간격 →</a></li>
+<li style="border-bottom: 1px solid #e2dccd"><a data-col="laser-hair-removal-cost" href="column-laser-hair-removal-cost.html" style="display: block; padding: 16px 4px; font-size: 16px; font-weight: 600; text-decoration: none">경산 레이저제모 비용, 부위별로 얼마인가요? →</a></li>
+<li style="border-bottom: 1px solid #e2dccd"><a data-col="beard-laser-hair-removal" href="column-beard-laser-hair-removal.html" style="display: block; padding: 16px 4px; font-size: 16px; font-weight: 600; text-decoration: none">남자 수염 레이저제모, 몇 번·몇 달 걸릴까요? 과정과 관리 →</a></li>
+<li style="border-bottom: 1px solid #e2dccd"><a data-col="leg-hair-removal-timing" href="column-leg-hair-removal-timing.html" style="display: block; padding: 16px 4px; font-size: 16px; font-weight: 600; text-decoration: none">여름 전에 다리·팔 제모, 언제 시작해야 할까요? →</a></li>
+<li style="border-bottom: 1px solid #e2dccd"><a data-col="freckles" href="column-freckles.html" style="display: block; padding: 16px 4px; font-size: 16px; font-weight: 600; text-decoration: none">주근깨는 왜 여름에 진해질까요? 원인과 레이저 치료, 재발 관리 →</a></li>
+<li style="border-bottom: 1px solid #e2dccd"><a data-col="spots-and-moles-at-once" href="column-spots-and-moles-at-once.html" style="display: block; padding: 16px 4px; font-size: 16px; font-weight: 600; text-decoration: none">얼굴 잡티와 작은 점, 한 번에 정리할 수 있을까요? →</a></li>
+</ul>
+</div>
+</section>
+
+<section aria-label="작성 및 검토 정보">
+<div class="reviewed" style="max-width: 1240px; margin: 0 auto; padding: 0 24px">
+<p style="margin: 0; padding: 20px 0; border-top: 1px solid #e2dccd; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; font-size: 14px; color: #5d655f"><span style="display: inline-flex; align-items: center; gap: 6px; font-weight: 700; color: #2f5241"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>작성·검토</span><span><a href="Doctors.dc.html" style="color: #24302a; font-weight: 600; text-decoration: none">갈창림 대표원장</a> (한의사)</span><span>최종 검토 2026년 11월 17일</span></p>
+</div>
+</section>
+
+<section style="background: #f1ede3; border-top: 1px solid #e2dccd">
+<div style="max-width: 1240px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center">
+<h2 style="margin: 0; font-size: 28px">악센토N 시술이 나에게 맞는지 궁금하다면</h2>
+<p style="margin: 0; color: #4d554f">야누스프로 피부 분석(무료)과 진찰로 지금 피부에 맞는 시술인지 먼저 확인해 드립니다.</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 8px">
+<a href="https://m.booking.naver.com/booking/16/bizes/1769133" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 6px; min-height: 48px; padding: 0 24px; background: #2f5241; color: #ffffff; text-decoration: none; font-weight: 700"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M16 3v4M8 3v4M3 10h18"></path></svg>네이버 예약</a>
+<a href="https://talk.naver.com/W4F2TI" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border: 1px solid #2f5241; background: #ffffff; text-decoration: none; font-weight: 500">네이버상담</a>
+<a href="tel:053-851-0122" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; background: #2f5241; color: #ffffff; text-decoration: none; font-weight: 500">전화 상담</a>
+</div>
+</div>
+</section>
+
+
+</main>
+</main>
+
+<footer style="background: #24302a; color: #c9cfc6">
+<div style="max-width: 1240px; margin: 0 auto; padding: 56px 24px 64px; display: flex; flex-direction: column; gap: 14px; font-size: 14px">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px"><img src="/_blob/1bca22fc9730cca11fb19f0787b8b06c" alt="" aria-hidden="true" style="display: block; height: 32px; width: auto"><strong style="font-size: 20px; color: #ffffff">갈창림 한의원</strong></div>
+<div class="eq-track" style="display: flex; gap: 0 20px; overflow-x: auto; white-space: nowrap">
+<span>상호 갈창림 한의원</span>
+<span>대표자 갈창림</span>
+<span>사업자등록번호 732-20-02200</span>
+</div>
+<div class="eq-track" style="display: flex; gap: 0 20px; overflow-x: auto; white-space: nowrap">
+<span>주소 경상북도 경산시 하양읍 동서2길 43, 3층</span>
+<span>전화 <a href="tel:053-851-0122" style="color: #c9cfc6; text-decoration: none">053-851-0122</a></span>
+<span>팩스 053-854-0122</span>
+</div>
+<div class="eq-track" style="display: flex; gap: 0 20px; overflow-x: auto; white-space: nowrap; margin-top: 4px">
+<a href="Privacy.dc.html" style="color: #ffffff; font-weight: 700; text-decoration: none">개인정보처리방침</a>
+<a href="Terms.dc.html" style="color: #ffffff; text-decoration: none">이용약관</a>
+<a href="https://blog.naver.com/gal0122" target="_blank" rel="noopener" style="color: #ffffff; text-decoration: none">블로그</a>
+<a href="https://www.instagram.com/gal__clinic/" target="_blank" rel="noopener" style="color: #ffffff; text-decoration: none">인스타그램</a>
+<a href="https://naver.me/FW6SmWrn" target="_blank" rel="noopener" data-place-link="true" style="color: #ffffff; text-decoration: none">네이버 지도</a>
+<a href="https://place.map.kakao.com/628214691" target="_blank" rel="noopener" data-place-link="true" style="color: #ffffff; text-decoration: none">카카오맵</a>
+<a href="https://maps.google.com/?cid=18044492256827464131" target="_blank" rel="noopener" data-place-link="true" style="color: #ffffff; text-decoration: none">구글 지도</a>
+</div>
+<p style="margin: 0; color: #8f978d">© 2026 갈창림 한의원. All rights reserved.</p>
+</div>
+</footer>
+
+<nav class="qn" aria-label="바로가기" style="position: fixed; right: 20px; top: 50%; transform: translateY(-50%); z-index: 40; display: flex; flex-direction: column; overflow: hidden; width: 76px; border-radius: 20px; background: #ffffff; box-shadow: 0 12px 30px rgba(36,48,42,0.16)">
+<a href="https://m.booking.naver.com/booking/16/bizes/1769133" target="_blank" rel="noopener" class="qn-book" style="height: 72px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; border-bottom: 1px solid #ebe6da; color: #2f5241; font-size: 12px; font-weight: 700; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M16 3v4M8 3v4M3 10h18"></path></svg>예약</a>
+<a href="https://blog.naver.com/gal0122" target="_blank" rel="noopener" class="qn-blog" style="height: 72px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; border-bottom: 1px solid #ebe6da; color: #2f5241; font-size: 12px; font-weight: 600; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"></path><path d="M13 7l4 4"></path></svg>블로그</a>
+<a href="https://talk.naver.com/W4F2TI" target="_blank" rel="noopener" style="height: 72px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; border-bottom: 1px solid #ebe6da; color: #2f5241; font-size: 12px; font-weight: 600; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.2 7.5L3 21l2-5.3A8.4 8.4 0 1 1 21 11.5z"></path></svg>톡톡상담</a>
+<a href="tel:053-851-0122" class="qn-call" style="height: 72px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; background: #2f5241; color: #ffffff; font-size: 12px; font-weight: 600; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg>전화</a>
+<button type="button" class="qn-tg" aria-expanded="true" aria-label="바로가기 접기"><svg class="qn-chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg><svg class="ic-chat" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.2 7.5L3 21l2-5.3A8.4 8.4 0 1 1 21 11.5z"></path></svg><span class="qn-tg-txt">접기</span></button>
+</nav>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":6200}}'>
+class Component extends DCLogic {
+slide(e, dir) {
+const root = e.currentTarget.closest('[data-eq-slider]');
+const track = root ? root.querySelector('[data-eq-track]') : null;
+if (!track) return;
+const first = track.firstElementChild;
+const step = first ? first.getBoundingClientRect().width + 16 : 276;
+const visible = Math.max(1, Math.floor(track.clientWidth / step));
+track.scrollBy({ left: dir * step * visible, behavior: 'smooth' });
+}
+renderVals() {
+return {
+prev: (e) => this.slide(e, -1),
+next: (e) => this.slide(e, 1)
+};
+}
+}
+</script>
+</body>
+</html>

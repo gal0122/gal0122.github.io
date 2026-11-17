@@ -8,7 +8,7 @@ keyword: 경산 다리 제모 시기
 condition: 팔·다리 제모
 description: 다리와 팔 레이저제모를 여름 전에 끝내려면 언제 시작해야 하는지, 팔·다리 털이 여러 번 필요한 이유, 여름철 시술 주의사항을 경산 하양 갈창림 한의원 대표원장이 정리했습니다.
 summary: 팔·다리는 한 시점에 성장기인 털이 약 20%로 적어, 4주 간격 6회(약 6개월)를 한 사이클로 봅니다. 시작하면 효과를 느끼기 시작하지만 적어도 6회는 받아야 효과가 충분해, 여름에 매끈한 피부를 원한다면 최소 6개월 전인 가을~겨울에 시작하는 것이 좋습니다. 여름에도 시술할 수 있지만 햇볕에 그을린 직후에는 색소침착 위험이 커져 자외선 차단에 더 신경 써야 합니다. 필요한 횟수와 결과에는 개인차가 있습니다.
-related: hair-removal.html | 레이저제모 진료 안내; price.html#price-hair | 제모 부위별 비용
+related: hair-removal.html | 레이저제모 진료 안내; price.html#price-hair | 제모 부위별 비용; accento-n.html | 악센토N 장비 안내
 refs: 서울대학교병원 N의학정보: 레이저 제모술 | https://www.snuh.org/health/nMedInfo/nView.do?medid=BB000029
 ---
 

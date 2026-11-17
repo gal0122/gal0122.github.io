@@ -8,7 +8,7 @@ keyword: 경산 초음파 고주파 리프팅 차이
 condition: 리프팅
 description: 초음파(HIFU) 리프팅과 고주파(RF) 리프팅이 열을 전달하는 방식, 각각 잘 맞는 고민, 함께 받는 경우를 리니어펌·볼뉴머를 예로 경산 하양 갈창림 한의원 대표원장이 정리했습니다.
 summary: 초음파 리프팅은 에너지를 정해진 깊이에 모아 처진 볼과 턱선 같은 윤곽을 정돈하는 데, 고주파 리프팅은 피부를 넓고 고르게 데워 탄력과 타이트닝에 주로 씁니다. 어느 쪽이 더 좋다기보다 고민이 깊은 조직의 처짐인지 피부 자체의 느슨함인지에 따라 고르고, 두 고민이 함께 있으면 함께 계획합니다. 효과와 유지 기간에는 개인차가 있습니다.
-related: design-lifting.html | 디자인리프팅 진료 안내; price.html#price-lifting | 리프팅 비용
+related: design-lifting.html | 디자인리프팅 진료 안내; price.html#price-lifting | 리프팅 비용; volnewmer.html | 볼뉴머 장비 안내; linearfirm.html | 리니어펌 장비 안내
 refs: 논문: 얼굴·목 HIFU(집속초음파) 리프팅의 안전성과 효과 — 체계적 문헌고찰·메타분석 | https://pubmed.ncbi.nlm.nih.gov/32026164/ ; 논문: 집속초음파와 고주파가 피부에 미치는 영향 비교 (조직 분석) | https://pubmed.ncbi.nlm.nih.gov/25723905/ ; 논문: 한국인 얼굴 처짐에 단극성 고주파와 집속초음파 병행 치료 | https://pubmed.ncbi.nlm.nih.gov/29469595/
 ---
 

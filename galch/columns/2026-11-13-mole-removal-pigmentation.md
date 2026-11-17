@@ -8,7 +8,7 @@ keyword: 경산 점빼기, 하양 점제거, 경산 편평사마귀 제거, 경�
 condition: 점빼기·편평사마귀 제거
 description: 점빼기나 편평사마귀(편사) 제거 뒤 갈색 자국(염증 후 색소침착)이 생기는 이유, 잘 생기는 경우, 유펄스 100W 울트라펄스 CO2와 핀홀 방식으로 깊이와 열을 조절하는 이유, 자국을 줄이는 시술 후 관리를 경산시 하양읍 갈창림 한의원 대표원장이 정리했습니다.
 summary: 점이나 편평사마귀를 레이저로 제거한 자리는 회복 과정에서 붉은 자국이 갈색으로 짙어지는 염증 후 색소침착이 생길 수 있으며, 대개 수개월에 걸쳐 옅어집니다. 생길지 여부는 피부 유형, 병변의 깊이와 개수, 시술 강도, 자외선 차단과 딱지 관리 같은 사후 관리에 따라 달라집니다. 경산시 하양읍 갈창림 한의원은 최대 출력 100W의 울트라펄스 CO2 레이저인 유펄스로 짧은 순간에 병변을 기화시키고, 핀홀 방식으로 필요한 부위와 깊이만큼 제거해 주변 피부의 열 손상을 줄이려 합니다. 다만 장비만으로 색소침착이 없어지지는 않으며, 결과에는 개인차가 있습니다.
-related: mole.html | 점·쥐젖·편평사마귀 진료 안내; price.html#price-pigment | 점·편평사마귀 제거 비용
+related: mole.html | 점·쥐젖·편평사마귀 진료 안내; price.html#price-pigment | 점·편평사마귀 제거 비용; upulse.html | 유펄스 장비 안내
 refs: 국가건강정보포털: 사마귀 | https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=6537 ; 국가건강정보포털: 모반(점) | https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=5692
 seo_title: 점빼기·편평사마귀 제거 후 갈색 자국(색소침착) 원인과 관리
 ---

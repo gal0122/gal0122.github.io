@@ -8,7 +8,7 @@ keyword: 경산 턱선 리프팅
 condition: 턱선 리프팅
 description: 이중턱과 흐려진 턱선의 원인을 처짐·지방·피부 탄력으로 나눠 보고, 초음파 리프팅·실리프팅으로 정리할 수 있는 범위와 한계를 경산 하양 갈창림 한의원 대표원장이 정리했습니다.
 summary: 턱선이 흐려지는 원인은 조직이 아래로 처진 경우, 턱 아래 지방이 많은 경우, 피부 탄력이 떨어진 경우가 섞여 있습니다. 처진 윤곽과 이중턱 주변은 초음파 리프팅(리니어펌)이나 코그실로, 피부의 느슨함은 고주파 리프팅으로 정리합니다. 지방이 아주 많거나 늘어진 피부가 많으면 리프팅만으로는 한계가 있어, 기대할 수 있는 범위를 먼저 함께 확인합니다. 결과에는 개인차가 있습니다.
-related: design-lifting.html | 디자인리프팅 진료 안내; thread-lifting.html | 맞춤형실리프팅
+related: design-lifting.html | 디자인리프팅 진료 안내; thread-lifting.html | 맞춤형실리프팅; volnewmer.html | 볼뉴머 장비 안내; linearfirm.html | 리니어펌 장비 안내
 refs: 논문: 얼굴·목 HIFU(집속초음파) 리프팅의 안전성과 효과 — 체계적 문헌고찰·메타분석 | https://pubmed.ncbi.nlm.nih.gov/32026164/ ; 논문: 녹는 실을 이용한 얼굴 실리프팅 최신 고찰 | https://pubmed.ncbi.nlm.nih.gov/39662017/
 ---
 

@@ -8,7 +8,7 @@ keyword: 경산 레이저토닝 가격, 하양 토닝, 경산 기미 토닝 횟�
 condition: 레이저토닝
 description: 경산시 하양읍 갈창림 한의원의 레이저토닝·GD토닝 1회·3회·5회·10회 가격과 토닝 패키지, 기미·주근깨·흑자 등 색소별 횟수, GD토닝과 일반 토닝의 차이, 시술 후 관리를 대표원장이 정리했습니다.
 summary: 경산시 하양읍 갈창림 한의원의 레이저토닝은 1회 88,000원, 10회 550,000원(회당 55,000원)이고 트리플토닝·제네시스토닝이 포함됩니다(부가세 포함). 기미는 2주 간격 최소 10~20회의 토닝과 함께 자외선 차단 등 생활 관리가 중요하고, 토닝만으로는 한계가 있어 피부 상태에 따라 고주파·스킨부스터로 기저막·진피층 개선을 함께 진행하는 것을 권하며, 주근깨나 흑자는 그보다 적은 횟수로 변화를 보는 경우가 많습니다. 색소 종류에 따라 횟수가 달라 피부 분석 후 계획을 세우며, 결과에는 개인차가 있습니다.
-related: pigment.html | 기미·흑자·잡티·색소 진료 안내; price.html#price-pigment | 색소·토닝 비용; peeling.html | 피지·각질 · GD토닝
+related: pigment.html | 기미·흑자·잡티·색소 진료 안내; price.html#price-pigment | 색소·토닝 비용; peeling.html | 피지·각질 · GD토닝; qmaster-plus.html | 큐마스터플러스 장비 안내
 refs: 서울대학교병원 N의학정보: 기미 | https://www.snuh.org/health/nMedInfo/nView.do?category=DIS&medid=AA000203 ; 대한피부과학회: 피부과적 치료법 - 레이저 | https://www.derma.or.kr/new/general/treatment.php?uid=3318&mod=document
 seo_title: 경산 레이저토닝 가격과 횟수: 기미·잡티별 횟수와 GD토닝
 ---

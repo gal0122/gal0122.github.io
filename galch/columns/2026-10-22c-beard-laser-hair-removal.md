@@ -8,7 +8,7 @@ keyword: 경산 수염 레이저제모
 condition: 수염 레이저제모
 description: 남자 수염 레이저제모가 다른 부위보다 횟수가 많이 필요한 이유, 4주 간격 시술 일정과 전체 기간, 시술 중 면도 방법과 주의사항을 경산 하양 갈창림 한의원 대표원장이 정리했습니다.
 summary: 남자 수염은 굵고 모낭이 깊으며 털이 빽빽해, 다른 부위보다 레이저제모 횟수가 많이 필요한 편입니다. 갈창림 한의원에서는 4주 간격 6회를 한 사이클로 보고, 수염은 평균 12회(약 두 사이클) 정도 받으며, 수염의 양이 많거나 굵으면 18~24회까지 진행하기도 합니다. 시술 기간에는 털을 뽑지 말고 면도로 정리하되, 시술 직후 3일은 피부 자극을 줄이기 위해 면도도 쉬는 것이 좋으며, 필요한 횟수와 결과에는 개인차가 있습니다.
-related: hair-removal.html | 레이저제모 진료 안내; price.html#price-hair | 제모 부위별 비용
+related: hair-removal.html | 레이저제모 진료 안내; price.html#price-hair | 제모 부위별 비용; accento-n.html | 악센토N 장비 안내
 refs: 서울대학교병원 N의학정보: 레이저 제모술 | https://www.snuh.org/health/nMedInfo/nView.do?medid=BB000029 ; 대한피부과학회: 피부과적 치료법 - 레이저 | https://www.derma.or.kr/new/general/treatment.php?uid=3318&mod=document
 ---
 

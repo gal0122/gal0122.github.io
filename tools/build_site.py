@@ -29,6 +29,20 @@ SEO = {
    '경산 하양 갈창림 한의원 소개. 충분히 듣고, 꼭 필요한 치료를 정직하게 제안하는 한의원입니다. 평일은 아침 8시 30분부터, 토·일요일에도 진료합니다.'),
  'doctors.html': ('갈창림 대표원장 소개 | 경산 하양 갈창림 한의원',
    '갈창림 대표원장 — 대구한의대학교 한의과대학 졸업, 대한통합레이저의학회 정회원·교육위원, 대한의료마취학회 대외협력이사. 경산 하양 갈창림 한의원.'),
+ 'accento-n.html': ('경산·하양 악센토N 레이저제모·색소 · 755nm·1064nm | 갈창림 한의원',
+                    '악센토N(755nm 알렉산드라이트·1064nm 엔디야그)으로 하는 레이저제모·잡티·점·제네시스토닝과 통증·횟수·비용 — 경산 하양 갈창림 한의원.'),
+ 'qmaster-plus.html': ('경산·하양 큐마스터플러스 토닝·기미·잡티 | 갈창림 한의원',
+                       '532nm·1064nm 큐스위치 레이저 큐마스터플러스로 하는 레이저토닝·기미·잡티·GD토닝과 회복·횟수·비용 — 경산 하양 갈창림 한의원.'),
+ 'volnewmer.html': ('경산·하양 볼뉴머 정품팁 리프팅 600샷 | 갈창림 한의원',
+                    '클래시스 정품 볼뉴머와 정품 팁으로 하는 모노폴라 고주파 리프팅. 얼굴+턱 600샷 기준 시술 시간, 통증, 다시 받는 간격, 비용 — 경산 하양 갈창림 한의원.'),
+ 'sylfirm-x.html': ('경산·하양 실펌X 모공·여드름 흉터·붉은자국 | 갈창림 한의원',
+                    'CW·PW 두 가지 고주파를 쓰는 마이크로니들 고주파 실펌X로 하는 모공·여드름 흉터·붉은자국 치료와 통증·간격·비용 — 경산 하양 갈창림 한의원.'),
+ 'upulse.html': ('경산·하양 유펄스 CO2 점빼기·쥐젖·편평사마귀 · 100W | 갈창림 한의원',
+                  '최대 출력 100W 울트라펄스 CO2 레이저 유펄스로 하는 점빼기·쥐젖·편평사마귀 제거와 CO2 핀홀, 회복·비용 — 경산 하양 갈창림 한의원.'),
+ 'linearfirm.html': ('경산·하양 리니어펌 초음파 리프팅 | 갈창림 한의원',
+                     '깊이별 라인형 카트리지로 시술하는 집속 초음파(HIFU) 리프팅 리니어펌. 볼뉴머와의 차이, 통증, 1달 간격 3회, 비용 — 경산 하양 갈창림 한의원.'),
+ 'janus-pro.html': ('경산·하양 무료 피부 분석 · 야누스프로 선라이크 | 갈창림 한의원',
+                    '3방향·4가지 빛으로 촬영해 18가지 항목을 분석하는 야누스프로 선라이크 피부 분석. 시술 없이 분석만 무료, 약 10분 — 경산 하양 갈창림 한의원.'),
  'equipment.html': ('피부 레이저 보유장비 · 악센토N · 실펌X · 야누스프로 | 갈창림 한의원',
    '악센토N 레이저제모, 리니어펌·볼뉴머 리프팅, 큐마스터플러스, 실펌X 등 경산 하양 갈창림 한의원의 보유 장비를 소개합니다.'),
  'schedule.html': ('진료시간·오시는길 | 경산 하양 갈창림 한의원',
@@ -1188,7 +1202,7 @@ open(f'{OUT}/{INDEXNOW_KEY}.txt', 'w', encoding='utf-8').write(INDEXNOW_KEY)
 open(f'{OUT}/CNAME', 'w', encoding='utf-8').write(DOMAIN + '\n')   # GitHub Pages custom domain
 
 # llms.txt — plain-language summary for AI assistants (https://llmstxt.org)
-GROUPS = [('병원 안내', ['about.html', 'doctors.html', 'equipment.html', 'schedule.html', 'price.html', 'faq.html']),
+GROUPS = [('병원 안내', ['about.html', 'doctors.html', 'equipment.html', 'janus-pro.html', 'accento-n.html', 'qmaster-plus.html', 'volnewmer.html', 'linearfirm.html', 'sylfirm-x.html', 'upulse.html', 'schedule.html', 'price.html', 'faq.html']),
           ('피부미용', ['skin.html', 'hair-removal.html', 'design-lifting.html', 'thread-lifting.html',
                     'booster-pdrn.html', 'booster-plla.html', 'booster-keratin.html', 'booster-altcore.html',
                     'booster-ecm.html', 'pigment.html', 'mole.html', 'acne.html', 'acne-red.html',
@@ -1207,8 +1221,8 @@ llms = ['# 갈창림 한의원', '',
         '네이버 예약 https://m.booking.naver.com/booking/16/bizes/1769133 .', '',
         '대표원장 갈창림(대구한의대학교 한의과대학 졸업)이 직접 진찰하고 치료합니다. 레이저제모·리프팅·색소·여드름·모공·스킨부스터 등 '
         '피부미용, 교통사고 후유증(자동차보험 진료), 척추·관절 통증, 소화불량·두통·불면·비염 같은 내과 질환, 다이어트, 소아 성장, 여성 질환을 진료합니다. '
-        '하양역(대구도시철도 1호선·대구선)에서 걸어서 약 10~15분이며, 건물 주차장과 이면도로에 주차할 수 있습니다. '
-        '상담·예약은 네이버 톡톡 또는 전화로 할 수 있습니다. 시술 결과와 필요한 횟수는 개인에 따라 차이가 있습니다.', '']
+        '하양역(대구도시철도 1호선·대구선)에서 걸어서 약 10~15분이며, 1층 GS25 편의점 건물 3층(엘리베이터)이고 건물 주차장과 이면도로에 무료로 주차할 수 있습니다. '
+        '예약은 네이버 예약, 네이버 톡톡 또는 전화로 할 수 있습니다. 시술 결과와 필요한 횟수는 개인에 따라 차이가 있습니다.', '']
 for name, slugs in GROUPS:
     llms += [f'## {name}', '']
     for s in slugs:

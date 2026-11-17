@@ -8,7 +8,7 @@ keyword: 경산 리프팅 주기
 condition: 리프팅
 description: 초음파 리프팅(리니어펌)과 고주파 리프팅(볼뉴머)을 얼마 간격으로 받는지, 효과가 유지되는 기간에 영향을 주는 요인, 너무 자주 받으면 안 되는 이유를 경산 하양 갈창림 한의원 대표원장이 정리했습니다.
 summary: 갈창림 한의원에서는 리니어펌은 1달 간격 3회 시술한 뒤 6개월~1년마다, 볼뉴머는 1회 시술 후 6개월~1년마다 받으시길 권합니다. 콜라겐이 새로 만들어지는 데 시간이 걸리고, 피부 노화는 계속 진행되기 때문에 간격을 두고 유지하는 것이 좋습니다. 유지 기간은 피부 상태, 에너지, 샷 수, 생활 습관에 따라 개인차가 있습니다.
-related: design-lifting.html | 디자인리프팅 진료 안내; price.html#price-lifting | 리프팅 비용
+related: design-lifting.html | 디자인리프팅 진료 안내; price.html#price-lifting | 리프팅 비용; volnewmer.html | 볼뉴머 장비 안내; linearfirm.html | 리니어펌 장비 안내
 refs: 논문: 얼굴·목 HIFU(집속초음파) 리프팅의 안전성과 효과 — 체계적 문헌고찰·메타분석 | https://pubmed.ncbi.nlm.nih.gov/32026164/ ; 논문: 한국인 얼굴 처짐에 단극성 고주파와 집속초음파 병행 치료 | https://pubmed.ncbi.nlm.nih.gov/29469595/
 ---
 

@@ -388,6 +388,69 @@
    "w": 1280,
    "x": 27200,
    "y": 15600
+  },
+  "AccentoN.dc.html": {
+   "expand": "fill",
+   "h": 6400,
+   "is_interactive": true,
+   "title": "04-1 병원소개 · 보유장비 · 악센토N",
+   "w": 1280,
+   "x": 5440,
+   "y": 6400
+  },
+  "QmasterPlus.dc.html": {
+   "expand": "fill",
+   "h": 6400,
+   "is_interactive": true,
+   "title": "04-2 병원소개 · 보유장비 · 큐마스터플러스",
+   "w": 1280,
+   "x": 5440,
+   "y": 13000
+  },
+  "Volnewmer.dc.html": {
+   "expand": "fill",
+   "h": 6400,
+   "is_interactive": true,
+   "title": "04-3 병원소개 · 보유장비 · 볼뉴머",
+   "w": 1280,
+   "x": 5440,
+   "y": 19600
+  },
+  "SylfirmX.dc.html": {
+   "expand": "fill",
+   "h": 6400,
+   "is_interactive": true,
+   "title": "04-4 병원소개 · 보유장비 · 실펌X",
+   "w": 1280,
+   "x": 5440,
+   "y": 26200
+  },
+  "JanusPro.dc.html": {
+   "expand": "fill",
+   "h": 6400,
+   "is_interactive": true,
+   "title": "04 병원소개 · 보유장비 · 야누스프로",
+   "w": 1280,
+   "x": 6800,
+   "y": 6400
+  },
+  "Linearfirm.dc.html": {
+   "expand": "fill",
+   "h": 6400,
+   "is_interactive": true,
+   "title": "04 병원소개 · 보유장비 · 리니어펌",
+   "w": 1280,
+   "x": 6800,
+   "y": 13000
+  },
+  "UPulse.dc.html": {
+   "expand": "fill",
+   "h": 6400,
+   "is_interactive": true,
+   "title": "04 병원소개 · 보유장비 · 유펄스",
+   "w": 1280,
+   "x": 6800,
+   "y": 19600
   }
  },
  "createdOnFiles": {
@@ -407,6 +470,13 @@
   "About.dc.html",
   "Doctors.dc.html",
   "Equipment.dc.html",
+  "JanusPro.dc.html",
+  "AccentoN.dc.html",
+  "QmasterPlus.dc.html",
+  "Volnewmer.dc.html",
+  "Linearfirm.dc.html",
+  "SylfirmX.dc.html",
+  "UPulse.dc.html",
   "Schedule.dc.html",
   "Skin.dc.html",
   "DesignLifting.dc.html",
