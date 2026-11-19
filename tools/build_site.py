@@ -186,7 +186,7 @@ LD_CLINIC = {
  'specialOpeningHoursSpecification': [   # 공휴일·임시 휴진일 (진료 일정 페이지와 맞출 것)
    {'@type': 'OpeningHoursSpecification', 'validFrom': '2026-12-13', 'validThrough': '2026-12-13', 'opens': '00:00', 'closes': '00:00'},   # 미용 세미나
    {'@type': 'OpeningHoursSpecification', 'validFrom': '2026-12-25', 'validThrough': '2026-12-25', 'opens': '00:00', 'closes': '00:00'}],
- 'medicalSpecialty': ['https://schema.org/Dermatologic', 'https://schema.org/Musculoskeletal'],
+ 'medicalSpecialty': ['https://schema.org/Musculoskeletal'],
  'hasMap': NAVER_LINK,
  'areaServed': [   # 실제로 환자분이 많이 오시는 지역 (원장님 확인 2026-11-04)
      {'@type': 'AdministrativeArea', 'name': '경상북도 경산시 하양읍'},
