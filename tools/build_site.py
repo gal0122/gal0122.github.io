@@ -274,7 +274,7 @@ def page_ld(slug_, title, desc, url, body):
     if slug_ in POST_META:
         pm = POST_META[slug_]
         if pm.get('condition'):     # 질환 칼럼: the page is about this condition, written by the clinic
-            wp['about'] = {'@type': 'MedicalCondition', 'name': pm['condition']}
+            wp['about'] = {'@type': 'MedicalCondition' if columns.is_condition(pm['condition']) else 'Thing', 'name': pm['condition']}
             wp['mentions'] = {'@id': CLINIC_ID}
         if pm.get('keyword'):
             wp['keywords'] = pm['keyword']

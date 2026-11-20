@@ -49,7 +49,14 @@ FAQ_ICON = ('<span class="faq-icon" aria-hidden="true" style="flex-shrink: 0; fo
 
 
 # 시술·치료·관리 칼럼(증상이 아닌 것): 글 끝 안내 문장을 '증상이 오래가거나…' 대신 다르게 씀 (원장님 요청 2026-11-03)
-NOT_SYMPTOM = ('제모', '필링', '스킨부스터', '리프팅', '토닝', '추나', '한약', '치료', '다이어트', '성장', '모공', '자국', '흉터', '제거', '충격파')
+NOT_SYMPTOM = ('제모', '필링', '스킨부스터', '리프팅', '토닝', '추나', '한약', '치료', '다이어트', '성장', '모공', '자국', '흉터', '제거', '충격파',
+               '시술', '관리', '비용', '가격', '기간', '분석', '압출', '약침', '레이저')
+# condition 가운데 질환·증상이 아닌 주제(시술·비용·관리 등): 구조화 데이터 about 을 MedicalCondition 대신 Thing 으로.
+# 모공·자국·흉터는 상담 문구만 일반형이고, 분류는 피부 상태(MedicalCondition)로 둔다.
+NOT_CONDITION = tuple(k for k in NOT_SYMPTOM if k not in ('모공', '자국', '흉터'))
+
+def is_condition(c):
+    return not any(k in c for k in NOT_CONDITION)
 
 def load_posts(folder):
     posts = []
