@@ -278,7 +278,7 @@ def page_ld(slug_, title, desc, url, body):
             wp['mentions'] = {'@id': CLINIC_ID}
         if pm.get('keyword'):
             wp['keywords'] = pm['keyword']
-        wp.update({'headline': pm['title'], 'datePublished': pm['date'], 'dateModified': max(pm['date'], pm['reviewed'])})
+        wp.update({'headline': pm['title'], 'datePublished': pm['date'], 'dateModified': max(pm['date'], pm['reviewed'], PAGE_DATE.get(slug_, ''))})
     if slug_ in SERVICE_LD:
         t, n = SERVICE_LD[slug_]
         graph.append({'@type': t, '@id': url + '#service', 'name': n, 'url': url, 'description': desc})
@@ -288,7 +288,7 @@ def page_ld(slug_, title, desc, url, body):
         graph.append({'@type': 'BlogPosting', '@id': url + '#article', 'headline': pm['title'], 'description': pm['description'],
                       'url': url, 'mainEntityOfPage': {'@id': url + '#webpage'}, 'inLanguage': 'ko-KR',
                       'image': [f"{SITE}/{OG_IMG.get(slug_, 'assets/og-image.png')}"] + [f'{SITE}/{x}' for x in re.findall(r'src="(assets/col/[^"]+)"', body)],
-                      'datePublished': pm['date'], 'dateModified': max(pm['date'], pm['reviewed']),
+                      'datePublished': pm['date'], 'dateModified': max(pm['date'], pm['reviewed'], PAGE_DATE.get(slug_, '')),
                       'author': {'@id': DIRECTOR_ID}, 'publisher': PUBLISHER, 'articleSection': pm['category'],
                       **({'citation': [u for _, u in pm['refs']]} if pm.get('refs') else {})})
         wp['mainEntity'] = {'@id': url + '#article'}
