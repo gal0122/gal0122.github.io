@@ -1068,9 +1068,9 @@ def build_page(f, out=None, transform=None, seo=None):
     assert style.count("font-style:normal;font-display:swap}") == 1, out
     style = style.replace("font-style:normal;font-display:swap}", "font-style:normal;font-display:optional}")
     body = drop_expired(src.split('</helmet>', 1)[1].split('</x-dc>', 1)[0])
-    has_expiry = 'data-hide-after' in body
     if transform:
-        body = transform(body)
+        body = drop_expired(transform(body))   # column bodies (markdown) arrive via transform and may carry data-hide-after too
+    has_expiry = 'data-hide-after' in body
     body = col_links(fix_links(body), out)
     body = body.replace('onClick="{{ prev }}"', 'onclick="slide(this,-1)"').replace('onClick="{{ next }}"', 'onclick="slide(this,1)"')
     body = img_attrs(blobs(body))
